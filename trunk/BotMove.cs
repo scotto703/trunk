@@ -19,16 +19,13 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using OpenMetaverse;
-//using AStar;
 
 namespace BotGUI
 {
     class BotMove
     {
         #region Attributes
-        GridClient client;
-        const double regionCornerX = 288768.00000;  //X global coordinate of island
-        const double regionCornerY = 294400.00000;  //Y global coordinate of island
+        GridClient client;        
         const float TARGET_DISTANCE = 1.25F;
         string regionName;    // for use with teleport
         
@@ -54,13 +51,7 @@ namespace BotGUI
         /// </summary>
         /// <param name="destination">Position to move bot to</param>
         public void moveTo(Vector3 destination)
-        {            
-            /*Works!!! But pretty choppy and only 2D.  If you wanna test it, undo the comments around it
-             * and comment out the autopilot() method call a few lines below
-            AStarBrain pathFinder = new AStarBrain(client);
-            pathFinder.MoveTo(destination);*/
-            
-                       
+        {                          
             bool arrived = false;
             Vector3 currentPos = vectorConvert(destination);
 
@@ -68,7 +59,7 @@ namespace BotGUI
             while (!arrived)
             {
                 Thread.Sleep(0);                
-                if (currentPos.ApproxEquals(vectorConvert(client.Self.RelativePosition), TARGET_DISTANCE))
+                if (currentPos.ApproxEquals(vectorConvert(client.Self.SimPosition), TARGET_DISTANCE))
                 {
                     client.Self.AutoPilotCancel();
                     arrived = true;
@@ -81,17 +72,8 @@ namespace BotGUI
         /// </summary>        
         public void teleportTo(Vector3 destination)
         {
-            //bool arrived = false;
-            //Vector3 currentPos = vectorConvert(destination);
-
             client.Self.Teleport(regionName, destination);
-            Thread.Sleep(2000);
-            /*while (!arrived)
-            {
-                Thread.Sleep(0);
-                if (currentPos.ApproxEquals(vectorConvert(client.Self.RelativePosition), TARGET_DISTANCE))
-                    arrived = true;
-            }*/
+            Thread.Sleep(2000);           
         }
 
         /// <summary>
@@ -102,13 +84,25 @@ namespace BotGUI
  
         static Vector3 vectorConvert(Vector3 localCoordinate)
         {
-            float newX, newY, newZ;
+            /***************************************************************************
+             * This is how the program TestClient (included in the openmetaverse libray)
+             * gets the region corners from the current simulator that it is connected to
+             * and creates global coordinates. It has been altered to return a Vector3 object 
+             * instead of calling autopilot() directly.
+             * *************************************************************************/
 
-            newX = (float)Math.Round((regionCornerX + localCoordinate.X), 1);
-            newY = (float)Math.Round((regionCornerY + localCoordinate.Y), 1);
-            newZ = localCoordinate.Z;
+            uint regionX, regionY;
+            Utils.LongToUInts(client.Network.CurrentSim.Handle, out regionX, out regionY);
 
-            return new Vector3(newX, newY, newZ);
+            double x, y, z;
+            x = (double)localCoordinate.X;
+            y = (double)localCoordinate.Y;
+            z = (double)localCoordinate.Z;
+
+            x += (double)regionX;
+            y += (double)regionY;
+
+            return new Vector3((float)x, (float)y, (float)z); 
         }
         #endregion
     }
