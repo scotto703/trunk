@@ -25,9 +25,7 @@ namespace BotGUI
     class BotMove
     {
         #region Attributes
-        GridClient client;
-        const double regionCornerX = 288768.00000;  //X global coordinate of island
-        const double regionCornerY = 294400.00000;  //Y global coordinate of island
+        GridClient client;        
         const float TARGET_DISTANCE = 1.25F;
         string regionName;    // for use with teleport
         
@@ -61,7 +59,7 @@ namespace BotGUI
             while (!arrived)
             {
                 Thread.Sleep(0);                
-                if (currentPos.ApproxEquals(vectorConvert(client.Self.RelativePosition), TARGET_DISTANCE))
+                if (currentPos.ApproxEquals(vectorConvert(client.Self.SimPosition), TARGET_DISTANCE))
                 {
                     client.Self.AutoPilotCancel();
                     arrived = true;
@@ -89,7 +87,8 @@ namespace BotGUI
             /***************************************************************************
              * This is how the program TestClient (included in the openmetaverse libray)
              * gets the region corners from the current simulator that it is connected to
-             * and creates global coordinates. 
+             * and creates global coordinates. Updated it to return a Vector3 object instead
+             * of calling autopilot() directly.
              * *************************************************************************/
 
             uint regionX, regionY;
