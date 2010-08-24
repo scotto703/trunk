@@ -172,14 +172,14 @@ namespace BotGUI
 
             // populate login srutct properties
             clientLogin = client.Network.DefaultLoginParams(FirstName, LastName, Password, "Baker Island Bots", Assembly.GetExecutingAssembly().GetName().Version.ToString());
-            //client.Settings.USE_LLSD_LOGIN = true;
+            client.Settings.USE_LLSD_LOGIN = true;
             client.Settings.USE_ASSET_CACHE = true;
             string startLocation = NetworkManager.StartLocation(LocationName, x, y, z);
             clientLogin.Start = startLocation;
 
             // register events for this bot
             client.Network.SimDisconnected += new EventHandler<SimDisconnectedEventArgs>(Network_SimDisconnected);
-            client.Network.SimConnected += new EventHandler<SimConnectedEventArgs>(Network_SimConnected);
+            client.Network.LoginProgress +=new EventHandler<LoginProgressEventArgs>(Network_LoginProgress);
             client.Self.ChatFromSimulator += new EventHandler<ChatEventArgs>(Self_ChatFromSimulator);
             client.Self.ChatFromSimulator += new EventHandler<ChatEventArgs>(Log_ChatFromSimulator);
             client.Self.IM += new EventHandler<InstantMessageEventArgs>(Self_InstantMessage);
@@ -411,12 +411,13 @@ namespace BotGUI
             }
         }
 
-        void Network_SimConnected(object sender, SimConnectedEventArgs e)
+        void Network_LoginProgress(object sender, LoginProgressEventArgs e)
         {
-            // Set Appearance, say hello, and position bot             
-            //client.Appearance.SetPreviousAppearance(true);
-            client.Self.Chat("Hi everyone!", 0, ChatType.Normal);
-            PositionBot();
+            if (e.Status == LoginStatus.Success)
+            {
+                client.Self.Chat("Hi everyone!", 0, ChatType.Normal);
+                PositionBot();
+            }
         }
 
         void Self_InstantMessage(object sender, InstantMessageEventArgs e)
