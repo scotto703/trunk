@@ -25,7 +25,9 @@ namespace BotGUI
     class BotMove
     {
         #region Attributes
-        GridClient client;        
+        GridClient client;
+        const double regionCornerX = 288768.00000;  //X global coordinate of island
+        const double regionCornerY = 294400.00000;  //Y global coordinate of island
         const float TARGET_DISTANCE = 1.25F;
         string regionName;    // for use with teleport
         
@@ -51,7 +53,7 @@ namespace BotGUI
         /// </summary>
         /// <param name="destination">Position to move bot to</param>
         public void moveTo(Vector3 destination)
-        {                          
+        {                      
             bool arrived = false;
             Vector3 currentPos = vectorConvert(destination);
 
@@ -59,7 +61,7 @@ namespace BotGUI
             while (!arrived)
             {
                 Thread.Sleep(0);                
-                if (currentPos.ApproxEquals(vectorConvert(client.Self.SimPosition), TARGET_DISTANCE))
+                if (currentPos.ApproxEquals(vectorConvert(client.Self.RelativePosition), TARGET_DISTANCE))
                 {
                     client.Self.AutoPilotCancel();
                     arrived = true;
@@ -82,13 +84,12 @@ namespace BotGUI
         /// <param name="localCoordinate">Vector3 object that has local coordinates</param>
         /// <returns></returns>
  
-        static Vector3 vectorConvert(Vector3 localCoordinate)
+        private Vector3 vectorConvert(Vector3 localCoordinate)
         {
             /***************************************************************************
              * This is how the program TestClient (included in the openmetaverse libray)
              * gets the region corners from the current simulator that it is connected to
-             * and creates global coordinates. It has been altered to return a Vector3 object 
-             * instead of calling autopilot() directly.
+             * and creates global coordinates. 
              * *************************************************************************/
 
             uint regionX, regionY;
@@ -102,7 +103,7 @@ namespace BotGUI
             x += (double)regionX;
             y += (double)regionY;
 
-            return new Vector3((float)x, (float)y, (float)z); 
+            return new Vector3((float)x, (float)y, (float)z);  
         }
         #endregion
     }
