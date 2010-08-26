@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+<!--author: Roberta09-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V1.2.0.33320-->
+<category>
+	<pattern>WHO DO I TALK TO ABOUT APPLYING FOR A LOAN</pattern>
+	<template>You would talk to Elminstyr, our loan officer. If you look behind me then you can see the loan officer's desk.</template>
+</category>
+<category>
+	<pattern>WHERE DO I GET AN APPLICATION FOR AN AUTO LOAN</pattern>
+	<template><srai>Who do I talk to about applying for a loan.</srai></template>
+</category>
+<category>
+	<pattern>WHO CAN HELP ME FILL OUT A LOAN APPLICATION</pattern>
+	<template><srai>Who do I talk to about applying for a loan.</srai></template>
+</category>
+<category>
+	<pattern>I HAVE QUESTIONS ABOUT LOANS WHO DO I TALK TO</pattern>
+	<template><srai>Who do I talk to about applying for a loan.</srai></template>
+</category>
+<category>
+	<pattern>WHO IS YOUR LOAN OFFICER</pattern>
+	<template>Elminstyr Exonar is our Loan Officer.</template>
+</category>
+<category>
+	<pattern>HOW CAN I APPLY FOR A LOAN</pattern>
+	<template><srai>Who do I talk to about applying for a loan.</srai></template>
+</category>
+<category>
+	<pattern>I HAVE A MEETING WITH YOUR LOAN OFFICER</pattern>
+	<template>That is Elminstyr Exonar, located just behind my desk to the right.</template>
+</category>
+<category>
+	<pattern>WHO DO I TALK TO ABOUT A MORTGAGE</pattern>
+	<template><srai>Who do I talk to about applying for a loan.</srai></template>
+</category>
+<category>
+	<pattern>WHAT TYPES OF LOANS DOES THE BANK OFFER</pattern>
+	<template>Elministyr Exonar, our loan officer, is the best person to answer that question.</template>
+</category>
+<category>
+	<pattern>I HAVE A MEETING WITH ELMINSTYR</pattern>
+	<template>The loan officer's desk is located behind mine and to the right.</template>
+</category>
+<category>
+	<pattern>I NEED WITH MY LOAN APPLICATION</pattern>
+	<template>Our Loan Officer, Elminstyr, can help you with that.</template>
+</category>
+</aiml>

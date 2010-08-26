@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+
+<!--author: Justin-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V1.1.0.33027-->
+<!--Modified: June 21, 2009 -->
+<!--by Tammy Coutelle-->
+<!--Last Modified: December 12, 2009 -->
+<!--by Matthew Tyson-->
+
+<category>
+	<pattern>CHESTER</pattern>
+	<template>That's my name, don't wear it out!</template>
+</category>
+<category>
+	<pattern>HOW LONG HAVE  * BEEN THE MANAGER</pattern>
+	<template>Way too long.</template>
+</category>
+<category>
+	<pattern>THANKS FOR THE INFO</pattern>
+	<template>No problem, anytime!</template>
+</category>
+<category>
+	<pattern>THANKS FOR THE INFORMATION</pattern>
+	<template><srai>THANKS FOR THE INFO</srai></template>
+</category>
+<category>
+	<pattern>THANKS</pattern>
+	<template><srai>THANKS FOR THE INFO</srai></template>
+</category>
+<category>
+	<pattern>THANK *</pattern>
+	<template><srai>THANKS FOR THE INFO</srai></template>
+</category>
+<category>
+	<pattern>THANK YOU FOR *</pattern>
+	<template><srai>THANKS FOR THE INFO</srai></template>
+</category>
+<category>
+	<pattern>DO YOU STOCK *</pattern>
+	<template>Sometimes, but my clerk Oriana does the majority of it.</template>
+</category>
+<category>
+	<pattern>* GOING ON</pattern>
+	<template><srai>WHATS UP</srai></template>
+</category>
+<category>
+	<pattern>HOW ARE YOU</pattern>
+	<template>I am okay, its all good.</template>
+</category>
+<category>
+	<pattern>HOW ARE YOU *</pattern>
+	<template><srai>HOW ARE YOU</srai></template>
+</category>
+<category>
+	<pattern>HOWS IT *</pattern>
+	<template>Its going good. Being manager has its benefits.</template>
+</category>
+
+
+</aiml>

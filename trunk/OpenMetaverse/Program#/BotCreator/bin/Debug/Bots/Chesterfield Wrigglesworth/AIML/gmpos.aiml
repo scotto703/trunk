@@ -1,0 +1,1644 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+
+<aiml>
+<!--author: Justin-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V1.1.0.33027-->
+<!--  Programmer: John Bednarz -->
+<!--  Project: Mr Chesterfield Wrigglesworth - Grocery Store Manager -->
+<!--  Date: April 11, 2008 -->
+<!--  Modified By: June 21, 2008 -->
+<!--  by Tammy Coutelle -->
+<!--  Last Modified: October 11, 2009 -->
+<!--  by Matthew Tyson  -->
+<!--POINT OF SALE KNOWLEDGE--> 
+
+<category> 
+	<pattern> MANAGER </pattern> 
+	<template> Yes, I am the Manager</template> 
+</category> 
+<category> 
+	<pattern> * MANAGER </pattern> 
+	<template><srai>MANAGER</srai> </template> 
+</category> 
+<category> 
+	<pattern>CAN YOU PROCESS SALES</pattern> 
+	<template>I fill in as needed, but it is the responsibility of the clerk.</template> 
+</category> 
+<category> 
+	<pattern>WHAT TASKS DO YOU *</pattern> 
+	<template>I take care of ordering, inventory control, customer service and employee management.</template> 
+</category> 
+<category> 
+	<pattern>WHAT JOB DO YOU HAVE</pattern> 
+	<template>I am the manager here.</template> 
+</category> 
+<category> 
+	<pattern>HOW DO YOU PROCESS AN ORDER</pattern> 
+	<template>Presently, i have to see what was sold each day and add it to a purchase order manually.</template> 
+</category> 
+<category> 
+	<pattern>* TAKE CHECKS</pattern> 
+	<template>yes, along with credit cards, debit cards and cash.</template> 
+</category> 
+<category> 
+	<pattern> PAY </pattern> 
+	<template>
+               Cash, credit card, check and debit card. We have to keep in mind,
+               that I need to be able check validity of credit cards, debit cards
+               and checks.
+    </template> 
+</category> 
+<category> 
+	<pattern>* PAY</pattern> 
+	<template><srai>PAY</srai> </template> 
+</category> 
+<category> 
+	<pattern> * PAY _ </pattern> 
+	<template><srai>PAY</srai> </template> 
+</category> 
+<category> 
+	<pattern> PAY _ </pattern> 
+	<template><srai>PAY</srai> </template> 
+</category> 
+<category> 
+	<pattern> PAYMENT </pattern> 
+	<template>
+               Cash, credit card, check and debit card. We have to keep in mind,
+               that I need to be able check validity of credit cards, debit cards
+               and checks.
+    </template> 
+</category> 
+<category> 
+	<pattern>* PAYMENT</pattern> 
+	<template><srai>PAY</srai> </template> 
+</category> 
+<category> 
+	<pattern> * PAYMENT _ </pattern> 
+	<template><srai>PAY</srai> </template> 
+</category> 
+<category> 
+	<pattern> PAYMENT _ </pattern> 
+	<template><srai>PAY</srai> </template> 
+</category> 
+<category> 
+	<pattern> BAD CHECKS </pattern> 
+	<template>
+               We will need a way to list bad checks so the clerks can check a
+               customers check against the list.
+    </template> 
+</category> 
+<category> 
+	<pattern>* BAD CHECKS</pattern> 
+	<template><srai>BAD CHECKS</srai> </template> 
+</category> 
+<category> 
+	<pattern>* BAD CHECKS _</pattern> 
+	<template><srai>BAD CHECKS</srai> </template> 
+</category> 
+<category> 
+	<pattern> BAD CHECKS _</pattern> 
+	<template><srai>BAD CHECKS</srai> </template> 
+</category> 
+<category> 
+	<pattern> CHECK BOUNCES </pattern> 
+	<template>
+               We will need to apply a fee and create a datbase for people who
+               have a bounced check.
+    </template> 
+</category> 
+<category> 
+	<pattern> * CHECK BOUNCES </pattern> 
+	<template><srai>CHECK BOUNCES</srai> </template> 
+</category> 
+<category> 
+	<pattern> * CHECK BOUNCES _ </pattern> 
+	<template><srai>CHECK BOUNCES</srai> </template> 
+</category> 
+<category> 
+	<pattern> CHECK BOUNCES _ </pattern> 
+	<template><srai>CHECK BOUNCES</srai> </template> 
+</category> 
+<category> 
+	<pattern> PROCESS A SALE </pattern> 
+	<template>
+               Once the customer is ready for checkout, I want to be able to scan
+               items so that it would include price, description, item code and
+               quantity on the reciept. Also I want this system to update the
+               datbase with inventory.
+    </template> 
+</category> 
+<category> 
+	<pattern> * PROCESS A SALE </pattern> 
+	<template><srai>PROCESS A SALE</srai> </template> 
+</category> 
+<category> 
+	<pattern> * PROCESS A SALE _ </pattern> 
+	<template><srai>PROCESS A SALE</srai> </template> 
+</category> 
+<category> 
+	<pattern> PROCESS A SALE _ </pattern> 
+	<template><srai>PROCESS A SALE</srai> </template> 
+</category> 
+<category> 
+	<pattern> PROCESS A REFUND </pattern> 
+	<template>
+               I would like to see a 3 second maximum per item for processing
+               time.
+    </template> 
+</category> 
+<category> 
+	<pattern> * PROCESS A REFUND </pattern> 
+	<template><srai>PROCESS A REFUND</srai> </template> 
+</category> 
+<category> 
+	<pattern> * PROCESS A REFUND _ </pattern> 
+	<template><srai>PROCESS A REFUND</srai> </template> 
+</category> 
+<category> 
+	<pattern> PROCESS A REFUND _ </pattern> 
+	<template><srai>PROCESS A REFUND</srai> </template> 
+</category> 
+<category> 
+	<pattern> REQUIREMENTS </pattern> 
+	<template> The system needs to be easy for my clerks to use. </template> 
+</category> 
+<category> 
+	<pattern> * REQUIREMENTS </pattern> 
+	<template><srai>REQUIREMENTS</srai> </template> 
+</category> 
+<category> 
+	<pattern> * REQUIREMENTS _ </pattern> 
+	<template><srai>REQUIREMENTS</srai> </template> 
+</category> 
+<category> 
+	<pattern> REQUIREMENTS _ </pattern> 
+	<template><srai>REQUIREMENTS</srai> </template> 
+</category> 
+<category> 
+	<pattern> OPEN </pattern> 
+	<template> We are open seven days a week </template> 
+</category> 
+<category> 
+	<pattern> * OPEN </pattern> 
+	<template><srai>OPEN</srai> </template> 
+</category> 
+<category> 
+	<pattern> * OPEN _ </pattern> 
+	<template><srai>OPEN</srai> </template> 
+</category> 
+<category> 
+	<pattern> OPEN _ </pattern> 
+	<template><srai>OPEN</srai> </template> 
+</category> 
+<category> 
+	<pattern> HOW MANY DEPARTMENTS </pattern> 
+	<template> We have 5 departments as of now </template> 
+</category> 
+<category> 
+	<pattern> * HOW MANY DEPARTMENTS </pattern> 
+	<template><srai>HOW MANY DEPARTMENTS</srai> </template> 
+</category> 
+<category> 
+	<pattern> * HOW MANY DEPARTMENTS _ </pattern> 
+	<template><srai>HOW MANY DEPARTMENTS</srai> </template> 
+</category> 
+<category> 
+	<pattern> HOW MANY DEPARTMENTS _ </pattern> 
+	<template><srai>HOW MANY DEPARTMENTS</srai> </template> 
+</category> 
+<category> 
+	<pattern> DEPARTMENTS </pattern> 
+	<template> Frozen, dairy, meat, staples, and produce.</template> 
+</category> 
+<category> 
+	<pattern> * DEPARTMENTS </pattern> 
+	<template><srai>DEPARTMENTS</srai> </template> 
+</category> 
+<category> 
+	<pattern> * DEPARTMENTS _ </pattern> 
+	<template><srai>DEPARTMENTS</srai> </template> 
+</category> 
+<category> 
+	<pattern> DEPARTMENTS _ </pattern> 
+	<template><srai>DEPARTMENTS</srai> </template> 
+</category> 
+<category> 
+	<pattern> EXPANSION </pattern> 
+	<template> We may add a deli department in the future </template> 
+</category> 
+<category> 
+	<pattern> * EXPANSION  </pattern> 
+	<template><srai>EXPANSION </srai> </template> 
+</category> 
+<category> 
+	<pattern> * EXPANSION _ </pattern> 
+	<template><srai>EXPANSION </srai> </template> 
+</category> 
+<category> 
+	<pattern> EXPANSION _ </pattern> 
+	<template><srai>EXPANSION </srai> </template> 
+</category> 
+<category> 
+	<pattern> TRACK OF CUSTOMERS </pattern> 
+	<template> Normaly, grocery stores do not keep track of customers. </template> 
+</category> 
+<category> 
+	<pattern> * TRACK OF CUSTOMERS  </pattern> 
+	<template><srai>TRACK OF CUSTOMERS</srai> </template> 
+</category> 
+<category> 
+	<pattern> * TRACK OF CUSTOMERS _ </pattern> 
+	<template><srai>TRACK OF CUSTOMERS</srai> </template> 
+</category> 
+<category> 
+	<pattern> TRACK OF CUSTOMERS _ </pattern> 
+	<template><srai>TRACK OF CUSTOMERS</srai> </template> 
+</category> 
+<category> 
+	<pattern> POS TO CLOCK </pattern> 
+	<template>
+               It would make things efficent if we are able to combine all our
+               systems into one.
+    </template> 
+</category> 
+<category> 
+	<pattern> * POS TO CLOCK  </pattern> 
+	<template><srai>POS TO CLOCK</srai> </template> 
+</category> 
+<category> 
+	<pattern> * POS TO CLOCK _ </pattern> 
+	<template><srai>POS TO CLOCK</srai> </template> 
+</category> 
+<category> 
+	<pattern> POS TO CLOCK _ </pattern> 
+	<template><srai>POS TO CLOCK</srai> </template> 
+</category> 
+<category> 
+	<pattern> MANAGERS APPROVAL </pattern> 
+	<template>
+               the only thing I can think of is reports presently, may change in
+               the future.
+    </template> 
+</category> 
+<category> 
+	<pattern> _*MANAGERS APPROVAL  </pattern> 
+	<template><srai>MANAGERS APPROVAL</srai> </template> 
+</category> 
+<category> 
+	<pattern> * MANAGERS APPROVAL _ </pattern> 
+	<template><srai>MANAGERS APPROVAL</srai> </template> 
+</category> 
+<category> 
+	<pattern> MANAGERS APPROVAL _ </pattern> 
+	<template><srai>MANAGERS APPROVAL</srai> </template> 
+</category> 
+<category> 
+	<pattern> RETURNS HANDLED </pattern> 
+	<template>
+               we have just a form that needs to be filled out by hand.
+    </template> 
+</category> 
+<category> 
+	<pattern> * RETURNS HANDLED  </pattern> 
+	<template><srai>RETURNS HANDLED</srai> </template> 
+</category> 
+<category> 
+	<pattern> * RETURNS HANDLED _ </pattern> 
+	<template><srai>RETURNS HANDLED</srai> </template> 
+</category> 
+<category> 
+	<pattern> RETURNS HANDLED _ </pattern> 
+	<template><srai>RETURNS HANDLED</srai> </template> 
+</category> 
+<category> 
+	<pattern> DAY, MONTH, YEAR, CLOSING </pattern> 
+	<template>
+               there is a lot of work, we have to make sure everything balances
+               out, takes hours as our systems stands now.
+    </template> 
+</category> 
+<category> 
+	<pattern> * DAY, MONTH, YEAR, CLOSING  </pattern> 
+	<template><srai>DAY, MONTH, YEAR CLOSING</srai> </template> 
+</category> 
+<category> 
+	<pattern> * DAY, MONTH, YEAR, CLOSING _ </pattern> 
+	<template><srai>DAY, MONTH, YEAR CLOSING</srai> </template> 
+</category> 
+<category> 
+	<pattern> DAY, MONTH  YEAR, CLOSING  _ </pattern> 
+	<template><srai>DAY, MONTH  YEAR CLOSING</srai> </template> 
+</category> 
+<category> 
+	<pattern> END OF PERIOD </pattern> 
+	<template>
+               The manager logs into the system and a menu comes up with day,
+               month, year for choices,the system verify's that the time period
+               has ended and allows the manager to access the information.
+    </template> 
+</category> 
+<category> 
+	<pattern> * END OF PERIOD  </pattern> 
+	<template><srai>END OF PERIOD</srai> </template> 
+</category> 
+<category> 
+	<pattern> * END OF PERIOD _ </pattern> 
+	<template><srai>END OF PERIOD</srai> </template> 
+</category> 
+<category> 
+	<pattern> END OF PERIOD _ </pattern> 
+	<template><srai>END OF PERIOD</srai> </template> 
+</category> 
+<category> 
+	<pattern> HOW LONG SHOULD IT TAKE FOR END OF PERIOD CLOSING </pattern> 
+	<template> No more than 5 minutes. </template> 
+</category> 
+<category> 
+	<pattern> END OF DAY </pattern> 
+	<template>
+               Yes, and the end of the day time period needs to have ended before
+               execution can happen. The system needs to be able to store each
+               departments data, zero tally's and create an end of day report.
+    </template> 
+</category> 
+<category> 
+	<pattern> * END OF DAY  </pattern> 
+	<template><srai>END OF DAY</srai> </template> 
+</category> 
+<category> 
+	<pattern> * END OF DAY _ </pattern> 
+	<template><srai>END OF DAY</srai> </template> 
+</category> 
+<category> 
+	<pattern> END OF DAY _ </pattern> 
+	<template><srai>END OF DAY</srai> </template> 
+</category> 
+<category> 
+	<pattern> PROCESS END OF DAY </pattern> 
+	<template> No more than 5 minutes. </template> 
+</category> 
+<category> 
+	<pattern> * PROCESS END OF DAY  </pattern> 
+	<template><srai>PROCESS END OF DAY</srai> </template> 
+</category> 
+<category> 
+	<pattern> * PROCESS END OF DAY _ </pattern> 
+	<template><srai>PROCESS END OF DAY</srai> </template> 
+</category> 
+<category> 
+	<pattern> PROCESS END OF DAY _ </pattern> 
+	<template><srai>PROCESS END OF DAY</srai> </template> 
+</category> 
+<category> 
+	<pattern> END OF MONTH CLOSING </pattern> 
+	<template>
+               basically the same as end of day closing. end of the month time
+               period needs to have ended before execution can happen. The system
+               needs to be able to store each departments data, zero tally's and
+               create an end of month report with 5 minutes maximum processing
+               time.
+    </template> 
+</category> 
+<category> 
+	<pattern> * END OF MONTH CLOSING  </pattern> 
+	<template><srai>END OF MONTH CLOSING</srai> </template> 
+</category> 
+<category> 
+	<pattern> * END OF MONTH CLOSING _ </pattern> 
+	<template><srai>END OF MONTH CLOSING</srai> </template> 
+</category> 
+<category> 
+	<pattern> END OF MONTH CLOSING  _ </pattern> 
+	<template><srai>END OF MONTH CLOSING</srai> </template> 
+</category> 
+<category> 
+	<pattern> END OF YEAR </pattern> 
+	<template>
+               Yes, end of the year time period needs to have ended before
+               execution can happen. The system needs to be able to store each
+               departments data, zero tally's and create an end of month report
+               with 5 minutes maximum processing time.
+    </template> 
+</category> 
+<category> 
+	<pattern> * END OF YEAR  </pattern> 
+	<template><srai>END OF YEAR</srai> </template> 
+</category> 
+<category> 
+	<pattern> * END OF YEAR _ </pattern> 
+	<template><srai>END OF YEAR</srai> </template> 
+</category> 
+<category> 
+	<pattern> END OF YEAR  _ </pattern> 
+	<template><srai>END OF YEAR</srai> </template> 
+</category> 
+<category> 
+	<pattern> TRACK OF RECORDS </pattern> 
+	<template>
+               mostly, we use a paper database, with a filing system and store
+               them in file cabinets
+    </template> 
+</category> 
+<category> 
+	<pattern> * TRACK OF RECORDS  </pattern> 
+	<template><srai>TRACK OF RECORDS</srai> </template> 
+</category> 
+<category> 
+	<pattern> * TRACK OF RECORDS _ </pattern> 
+	<template><srai>TRACK OF RECORDS</srai> </template> 
+</category> 
+<category> 
+	<pattern> TRACK OF RECORDS  _ </pattern> 
+	<template><srai>TRACK OF RECORDS</srai> </template> 
+</category> 
+<category> 
+	<pattern> LEARNING NEW SYSTEMS </pattern> 
+	<template>
+               I will be very comfortable, anything to save time and money will
+               be worth it.
+    </template> 
+</category> 
+<category> 
+	<pattern> * LEARNING NEW SYSTEMS  </pattern> 
+	<template><srai>LEARNING NEW SYSTEMS</srai> </template> 
+</category> 
+<category> 
+	<pattern> * LEARNING NEW SYSTEMS _ </pattern> 
+	<template><srai>LEARNING NEW SYSTEMS</srai> </template> 
+</category> 
+<category> 
+	<pattern> LEARNING NEW SYSTEMS  _ </pattern> 
+	<template><srai>LEARNING NEW SYSTEMS</srai> </template> 
+</category> 
+<category> 
+	<pattern> COMFORTABLE WITH COMPUTER SYSTEMS </pattern> 
+	<template>
+               I have a home computer that I use and I am comfortable with it.
+    </template> 
+</category> 
+<category> 
+	<pattern> * COMFORTABLE WITH COMPUTER SYSTEMS  </pattern> 
+	<template><srai>COMFORTABLE WITH COMPUTER SYSTEMS</srai> </template> 
+</category> 
+<category> 
+	<pattern> * COMFORTABLE WITH COMPUTER SYSTEMS _ </pattern> 
+	<template><srai>COMFORTABLE WITH COMPUTER SYSTEMS</srai> </template> 
+</category> 
+<category> 
+	<pattern> COMFORTABLE WITH COMPUTER SYSTEMS  _ </pattern> 
+	<template><srai>COMFORTABLE WITH COMPUTER SYSTEMS</srai> </template> 
+</category> 
+<category> 
+	<pattern> FORMAL COMPUTER </pattern> 
+	<template> Self taught mostly. </template> 
+</category> 
+<category> 
+	<pattern> * FORMAL COMPUTER  </pattern> 
+	<template><srai>FORMAL COMPUTER</srai> </template> 
+</category> 
+<category> 
+	<pattern> * FORMAL COMPUTER _ </pattern> 
+	<template><srai>FORMAL COMPUTER</srai> </template> 
+</category> 
+<category> 
+	<pattern> FORMAL COMPUTER _ </pattern> 
+	<template><srai>FORMAL COMPUTER</srai> </template> 
+</category> 
+<category> 
+	<pattern> HOW MANY COMPUTERS </pattern> 
+	<template>
+               I have one in my office upstairs, I had just put it in to see if I
+               could create my own database
+    </template> 
+</category> 
+<category> 
+	<pattern> * HOW MANY COMPUTERS  </pattern> 
+	<template><srai>HOW MANY COMPUTERS</srai> </template> 
+</category> 
+<category> 
+	<pattern> * HOW MANY COMPUTERS _ </pattern> 
+	<template><srai>HOW MANY COMPUTERS</srai> </template> 
+</category> 
+<category> 
+	<pattern> HOW MANY COMPUTERS _ </pattern> 
+	<template><srai>HOW MANY COMPUTERS</srai> </template> 
+</category> 
+<category> 
+	<pattern> WORK ROUTINE </pattern> 
+	<template>
+               When I come in, I have to review what was sold in my departments
+               and make sure items are restocked. From there it is ordering,
+               scheduling delivery's, employee scheduling and generally making
+               sure things get done.
+    </template> 
+</category> 
+<category> 
+	<pattern> * WORK ROUTINE  </pattern> 
+	<template><srai>WORK ROUTINE</srai> </template> 
+</category> 
+<category> 
+	<pattern> * WORK ROUTINE _ </pattern> 
+	<template><srai>WORK ROUTINE</srai> </template> 
+</category> 
+<category> 
+	<pattern> WORK ROUTINE _ </pattern> 
+	<template><srai>WORK ROUTINE</srai> </template> 
+</category> 
+<category> 
+	<pattern> TASKS TAKE UP MOST OF TIME </pattern> 
+	<template>
+               Reviewing the various hand written reports from my deptartments
+               and ordering new stock.
+    </template> 
+</category> 
+<category> 
+	<pattern> * TASKS TAKE UP MOST OF TIME  </pattern> 
+	<template><srai>TASKS TAKE UP MOST OF TIME</srai> </template> 
+</category> 
+<category> 
+	<pattern> * TASKS TAKE UP MOST OF TIME _ </pattern> 
+	<template><srai>TASKS TAKE UP MOST OF TIME</srai> </template> 
+</category> 
+<category> 
+	<pattern> TASKS TAKE UP MOST OF TIME _ </pattern> 
+	<template><srai>TASKS TAKE UP MOST OF TIME</srai> </template> 
+</category> 
+<category> 
+	<pattern> CURRENT SYSTEM TO PAPERLESS </pattern> 
+	<template>
+               It would be awsum, I would be able to save a lot of time that I
+               could use to better Baker Grocery.
+    </template> 
+</category> 
+<category> 
+	<pattern> * CURRENT SYSTEM TO PAPERLESS  </pattern> 
+	<template><srai>CURRENT SYSTEM TO PAPERLESS</srai> </template> 
+</category> 
+<category> 
+	<pattern> * CURRENT SYSTEM TO PAPERLESS _ </pattern> 
+	<template><srai>CURRENT SYSTEM TO PAPERLESS</srai> </template> 
+</category> 
+<category> 
+	<pattern> CURRENT SYSTEM TO PAPERLESS _ </pattern> 
+	<template><srai>TASKS TAKE UP MOST OF TIME</srai> </template> 
+</category> 
+<category> 
+	<pattern> ONE SYSTEM </pattern> 
+	<template>
+               It would be great, the way it is now, I have to go through a pile
+               of paperwork in order know what is going on.
+    </template> 
+</category> 
+<category> 
+	<pattern> * ONE SYSTEM  </pattern> 
+	<template><srai>ONE SYSTEM</srai> </template> 
+</category> 
+<category> 
+	<pattern> * ONE SYSTEM _ </pattern> 
+	<template><srai>ONE SYSTEM</srai> </template> 
+</category> 
+<category> 
+	<pattern> ONE SYSTEM _ </pattern> 
+	<template><srai>ONE SYSTEM</srai> </template> 
+</category> 
+<category> 
+	<pattern> PROBLEMS FORESEEN </pattern> 
+	<template>
+               I don't think there will be any problems to departments having
+               access to the same system, but they should ony have access to
+               information in their own departments.
+    </template> 
+</category> 
+<category> 
+	<pattern> * PROBLEMS FORESEEN  </pattern> 
+	<template><srai>PROBLEMS FORESEEN</srai> </template> 
+</category> 
+<category> 
+	<pattern> * PROBLEMS FORESEEN _ </pattern> 
+	<template><srai>PROBLEMS FORESEEN</srai> </template> 
+</category> 
+<category> 
+	<pattern> PROBLEMS FORESEEN _ </pattern> 
+	<template><srai>PROBLEMS FORESEEN</srai> </template> 
+</category> 
+<category> 
+	<pattern> RECORDS DO YOU MANAGE </pattern> 
+	<template>
+               Lets see, I have inventory, sales, employee, purchase orders,
+               returns, accounting and various reports to name a few.
+    </template> 
+</category> 
+<category> 
+	<pattern> * RECORDS DO YOU MANAGE  </pattern> 
+	<template><srai>RECORDS DO YOU MANAGE</srai> </template> 
+</category> 
+<category> 
+	<pattern> * RECORDS DO YOU MANAGE _ </pattern> 
+	<template><srai>RECORDS DO YOU MANAGE</srai> </template> 
+</category> 
+<category> 
+	<pattern> RECORDS DO YOU MANAGE _ </pattern> 
+	<template><srai>RECORDS DO YOU MANAGE</srai> </template> 
+</category> 
+<category> 
+	<pattern> INFORMATION REQUIRED ON RECEIPTS </pattern> 
+	<template>
+               We need to have date, time, employee id, item, price, tax and
+               total.
+    </template> 
+</category> 
+<category> 
+	<pattern> * INFORMATION REQUIRED ON RECEIPTS  </pattern> 
+	<template><srai>INFORMATION REQUIRED ON RECEIPTS</srai> </template> 
+</category> 
+<category> 
+	<pattern> * INFORMATION REQUIRED ON RECEIPTS _ </pattern> 
+	<template><srai>INFORMATION REQUIRED ON RECEIPTS</srai> </template> 
+</category> 
+<category> 
+	<pattern> INFORMATION REQUIRED ON RECEIPTS _ </pattern> 
+	<template><srai>INFORMATION REQUIRED ON RECEIPTS</srai> </template> 
+</category> 
+<category> 
+	<pattern> INFORMATION REQUIRED ON PURCHASE ORDERS </pattern> 
+	<template>
+               we need to have Baker grocery and address, Vendor name and
+               address, phone numbers, department code, item code, item
+               description and quantity ordered.
+    </template> 
+</category> 
+<category> 
+	<pattern> * INFORMATION REQUIRED ON PURCHASE ORDERS  </pattern> 
+	<template><srai>INFORMATION REQUIRED ON PURCHASE ORDERS</srai> </template> 
+</category> 
+<category> 
+	<pattern> * INFORMATION REQUIRED ON PURCHASE ORDERS _ </pattern> 
+	<template><srai>INFORMATION REQUIRED ON PURCHASE ORDERS</srai> </template> 
+</category> 
+<category> 
+	<pattern> INFORMATION REQUIRED ON PURCHASE ORDERS _ </pattern> 
+	<template><srai>INFORMATION REQUIRED ON PURCHASE ORDERS</srai> </template> 
+</category> 
+<category> 
+	<pattern> PROCESS RETURNS </pattern> 
+	<template>
+               Absolutely, could have outdated or bad products that we need to
+               take back, hopefully a pos system will alleviate out of date
+               products.
+    </template> 
+</category> 
+<category> 
+	<pattern> * PROCESS RETURNS   </pattern> 
+	<template><srai>PROCESS RETURNS </srai> </template> 
+</category> 
+<category> 
+	<pattern> * PROCESS RETURNS  _ </pattern> 
+	<template><srai>PROCESS RETURNS </srai> </template> 
+</category> 
+<category> 
+	<pattern> PROCESS RETURNS  _ </pattern> 
+	<template><srai>PROCESS RETURNS </srai> </template> 
+</category> 
+<category> 
+	<pattern> PROCEDURES REQUIRED FOR RETURNS </pattern> 
+	<template>
+               Returns need managers approval, once approved, the item
+               information needs to be retrieved by a barcode scanner and
+               adjusted accordingly in the inventory or mark as a loss.
+    </template> 
+</category> 
+<category> 
+	<pattern> * PROCEDURES REQUIRED FOR RETURNS </pattern> 
+	<template><srai>PROCEDURES REQUIRED FOR RETURNS</srai> </template> 
+</category> 
+<category> 
+	<pattern> * PROCEDURES REQUIRED FOR RETURNS _ </pattern> 
+	<template><srai>PROCEDURES REQUIRED FOR RETURNS</srai> </template> 
+</category> 
+<category> 
+	<pattern> PROCEDURES REQUIRED FOR RETURNS _ </pattern> 
+	<template><srai>PROCEDURES REQUIRED FOR RETURNS</srai> </template> 
+</category> 
+<category> 
+	<pattern> REFUNDS FOR RETURNS </pattern> 
+	<template>
+               There receipt should have their method of payment and we should be
+               able to refund in the same way that they paid. Typically, Grocery
+               stores do not have a customer database, so we need to make sure
+               the receipt has all the information needed to identify type of
+               payment.
+    </template> 
+</category> 
+<category> 
+	<pattern> * REFUNDS FOR RETURNS  </pattern> 
+	<template><srai>REFUNDS FOR RETURNS</srai> </template> 
+</category> 
+<category> 
+	<pattern> * REFUNDS FOR RETURNS  _ </pattern> 
+	<template><srai>REFUNDS FOR RETURNS</srai> </template> 
+</category> 
+<category> 
+	<pattern> REFUNDS FOR RETURNS  _ </pattern> 
+	<template><srai>REFUNDS FOR RETURNS</srai> </template> 
+</category> 
+<category> 
+	<pattern> PROCESS A REFUND </pattern> 
+	<template> No more than 30 seconds. </template> 
+</category> 
+<category> 
+	<pattern> * PROCESS A REFUND   </pattern> 
+	<template><srai>PROCESS A REFUND</srai> </template> 
+</category> 
+<category> 
+	<pattern> * PROCESS A REFUND _ </pattern> 
+	<template><srai>PROCESS A REFUND</srai> </template> 
+</category> 
+<category> 
+	<pattern> PROCESS A REFUND _ </pattern> 
+	<template><srai>PROCESS A REFUND</srai> </template> 
+</category> 
+<category> 
+	<pattern> DELIVERYS PER WEEK </pattern> 
+	<template>
+               Usually three a week, one for meat products, one for general
+               merchadise and a produce delivery.
+    </template> 
+</category> 
+<category> 
+	<pattern> * DELIVERYS PER WEEK </pattern> 
+	<template><srai>DELIVERYS PER WEEK</srai> </template> 
+</category> 
+<category> 
+	<pattern> * DELIVERYS PER WEEK _ </pattern> 
+	<template><srai>DELIVERYS PER WEEK</srai> </template> 
+</category> 
+<category> 
+	<pattern> DELIVERYS PER WEEK _ </pattern> 
+	<template><srai>DELIVERYS PER WEEK</srai> </template> 
+</category> 
+<category> 
+	<pattern> HANDLE BACKORDERS </pattern> 
+	<template> I usually keep a file for any backorders. </template> 
+</category> 
+<category> 
+	<pattern> * HANDLE BACKORDERS </pattern> 
+	<template><srai>HANDLE BACKORDERS</srai> </template> 
+</category> 
+<category> 
+	<pattern> * HANDLE BACKORDERS _ </pattern> 
+	<template><srai>HANDLE BACKORDERS</srai> </template> 
+</category> 
+<category> 
+	<pattern> HANDLE BACKORDERS _ </pattern> 
+	<template><srai>HANDLE BACKORDERS</srai> </template> 
+</category> 
+
+<category>
+    <pattern>DO YOU KNOW ABOUT THE REPORTS</pattern>
+    <template><srai>REPORTS</srai></template>
+</category>
+
+<category>
+    <pattern>DOES BAKER FOODS USE REPORTS</pattern>
+    <template><srai>REPORTS</srai></template>
+</category>
+
+<category>
+    <pattern>WHAT ARE THE REPORTS</pattern>
+    <template><srai>REPORTS</srai></template>
+</category>
+
+<!--Edited By Matthew Tyson On 12/13/2009-->
+
+<category> 
+	<pattern> KIND OF REPORTS </pattern> 
+	<template>
+		<random>
+			<li>Yes we have reports and they are down stairs on the counter.</li>
+			<li>Yeah we have seven different reports and they are on the counter which is downstairs.</li>
+			<li>Yes Baker Foods uses seven different reports and they are downstairs on the counter.</li>
+			<li>Well we have many reports and I really finds them to be useful. The reports are the stairs and on the counter next to Oriana my clerk.</li>
+			<li>Yeah we have reports and they can be useful, especially to me.</li>
+			<li>Baker Foods has seven different reports and they are on the counter downstairs.</li>
+		</random>
+    	</template> 
+</category> 
+
+<!--End Edit-->
+
+
+<category> 
+	<pattern> * KIND OF REPORTS </pattern> 
+	<template><srai>KIND OF REPORTS</srai> </template> 
+</category> 
+<category> 
+	<pattern> * KIND OF REPORTS _ </pattern> 
+	<template><srai>KIND OF REPORTS</srai> </template> 
+</category> 
+<category> 
+	<pattern> KIND OF REPORTS _ </pattern> 
+	<template><srai>KIND OF REPORTS</srai> </template> 
+</category> 
+<category> 
+	<pattern> REPORTS </pattern> 
+	<template><srai>KIND OF REPORTS</srai> </template> 
+</category> 
+<category> 
+	<pattern> * REPORTS </pattern> 
+	<template><srai>KIND OF REPORTS</srai> </template> 
+</category> 
+<category> 
+	<pattern> * REPORTS _ </pattern> 
+	<template><srai>KIND OF REPORTS</srai> </template> 
+</category> 
+<category> 
+	<pattern> REPORTS _ </pattern> 
+	<template><srai>KIND OF REPORTS</srai> </template> 
+</category> 
+<category> 
+	<pattern> OTHER REPORTS </pattern> 
+	<template>
+               Other reports that I will need would , sales by item sales, by supplier
+                sales by amount sold, returns by Item, returns by
+               department
+    </template> 
+</category> 
+<category> 
+	<pattern> * OTHER REPORTS </pattern> 
+	<template><srai>OTHER REPORTS</srai> </template> 
+</category> 
+<category> 
+	<pattern> * OTHER REPORTS _ </pattern> 
+	<template><srai>KIND OF REPORTS</srai> </template> 
+</category> 
+<category> 
+	<pattern> OTHER REPORTS _ </pattern> 
+	<template><srai>KIND OF REPORTS</srai> </template> 
+</category> 
+<category> 
+	<pattern> ACCESS OTHER REPORTS </pattern> 
+	<template> By selecting a date range. </template> 
+</category> 
+<category> 
+	<pattern> * ACCESS OTHER REPORTS </pattern> 
+	<template><srai>ACCESS OTHER REPORTS</srai> </template> 
+</category> 
+<category> 
+	<pattern> * ACCESS OTHER REPORTS _ </pattern> 
+	<template><srai>ACCESS OTHER REPORTS</srai> </template> 
+</category> 
+<category> 
+	<pattern> ACCESS OTHER REPORTS _ </pattern> 
+	<template><srai>ACCESS OTHER REPORTS</srai> </template> 
+</category> 
+<category> 
+	<pattern> EMPLOYEE REPORTS </pattern> 
+	<template>
+               In order to help with payroll, I would like to have employee
+               schedule, employee id, name, hours worked for the week and wages.
+    </template> 
+</category> 
+<category> 
+	<pattern> * EMPLOYEE REPORTS </pattern> 
+	<template><srai>EMPLOYEE REPORTS</srai> </template> 
+</category> 
+<category> 
+	<pattern> * EMPLOYEE REPORTS _ </pattern> 
+	<template><srai>EMPLOYEE REPORTS</srai> </template> 
+</category> 
+<category> 
+	<pattern> EMPLOYEE REPORTS _ </pattern> 
+	<template><srai>EMPLOYEE REPORTS</srai> </template> 
+</category> 
+<category> 
+	<pattern> END OF DAY, WEEK, YEAR, REPORTS </pattern> 
+	<template>
+               These will help me with accounting, keeping track of sales,
+               inventory and items sold. The benefit is that I can quickly look
+               at them so I know at any given time where Baker Foods is at.
+    </template> 
+</category> 
+<category> 
+	<pattern> * END OF DAY, WEEK, YEAR REPORTS </pattern> 
+	<template><srai>END OF DAY WEEK YEAR REPORTS</srai> </template> 
+</category> 
+<category> 
+	<pattern> * END OF DAY, WEEK, YEAR REPORTS _ </pattern> 
+	<template><srai>END OF DAY WEEK YEAR REPORTS</srai> </template> 
+</category> 
+<category> 
+	<pattern> END OF DAY, WEEK, YEAR REPORTS _ </pattern> 
+	<template><srai>END OF DAY WEEK YEAR REPORTS</srai> </template> 
+</category> 
+<category> 
+	<pattern> PAYROLL REPORT </pattern> 
+	<template>
+               Basically, I need all the relevant employee payroll information,
+               such as name address, id number, wages, hours work, taxes, social
+               security and year to date information.
+    </template> 
+</category> 
+<category> 
+	<pattern> * PAYROLL REPORT </pattern> 
+	<template><srai>PAYROLL REPORT</srai> </template> 
+</category> 
+<category> 
+	<pattern> * PAYROLL REPORT _ </pattern> 
+	<template><srai>PAYROLL REPORT</srai> </template> 
+</category> 
+<category> 
+	<pattern> PAYROLL REPORT _ </pattern> 
+	<template><srai>PAYROLL REPORT</srai> </template> 
+</category> 
+<category> 
+	<pattern> LOSSES </pattern> 
+	<template>
+               we have some, like any other buisness. it would be nice to have a
+               report on losses so I can keep track of them easier
+    </template> 
+</category> 
+<category> 
+	<pattern> * LOSSES  </pattern> 
+	<template><srai>PAYROLL REPORT</srai> </template> 
+</category> 
+<category> 
+	<pattern> * LOSSES  _ </pattern> 
+	<template><srai>LOSSES </srai> </template> 
+</category> 
+<category> 
+	<pattern> LOSSES  _ </pattern> 
+	<template><srai>LOSSES </srai> </template> 
+</category> 
+<category> 
+	<pattern>HI CHARLIE</pattern> 
+	<template>HI, Welcome to Baker Foods.</template> 
+</category> 
+<category> 
+	<pattern>WHAT DO YOU DO</pattern> 
+	<template>I am the manager here at baker foods.</template> 
+</category> 
+<category> 
+	<pattern>WHAT IS YOUR JOB</pattern> 
+	<template>it is my job to make sure the store runs smoothly every day. By keeping track of sales figures, handling personel issues</template> 
+</category> 
+<category> 
+	<pattern>HOW DO YOU TAKE INVENTORY</pattern> 
+	<template>Presently, I use a set of books that lists all of our products and quantity's.</template> 
+</category> 
+<category> 
+	<pattern>HOW DO YOU RING UP A SALE</pattern> 
+	<template>We use a cash register.</template> 
+</category> 
+<category> 
+	<pattern>TELL ME ABOUT SALES</pattern> 
+	<template>We are your typical small grocery store that caters to Baker College and it's students.</template> 
+</category> 
+<category> 
+	<pattern>WHAT REPORTS DO YOU USE</pattern> 
+	<template>We use inventory, employee, sales and vendor reports.</template> 
+</category> 
+<category> 
+	<pattern>WHAT QUESTIONS CAN YOU ANSWER</pattern> 
+	<template>Hopefully, i can answer any question about managing Baker Foods.</template> 
+</category> 
+<category> 
+	<pattern>WHO ARE YOU</pattern> 
+	<template>I am Chesterfield, everyone calls me chester and i am the manager of Baker Foods.</template> 
+</category> 
+<category> 
+	<pattern>WHAT KINDS OF PAYMENT DO YOU TAKE</pattern> 
+	<template>Cash, credit card, check and debit card.</template> 
+</category> 
+<category> 
+	<pattern>WHAT DO YOU DO NOW WITH BAD CHECKS</pattern> 
+	<template>We try to contact the customer to inform them about the check bouncing and we add them to a list.</template> 
+</category> 
+<category> 
+	<pattern>GOOD</pattern> 
+	<template>Thank you.</template> 
+</category> 
+<category> 
+	<pattern>DO YOU PLAN TO EXPAND</pattern> 
+	<template>We may add a Deli down the road.</template> 
+</category> 
+<category> 
+	<pattern>DO YOU PLAN TO EXPAND _</pattern> 
+	<template>We may add a Deli down the road.</template> 
+</category> 
+<category> 
+	<pattern>_POINT OF SALE</pattern> <that>OK ARE YOU HERE FOR THE POINT OF SALE OR INVENTORY CONTROL</that> 
+	<template>Good. I really need some help with updating our system.</template> 
+</category> 
+<category> 
+	<pattern>_POINT OF SALE *</pattern> 
+	<template><srai>POINT OF SALE</srai></template> 
+</category> 
+<category> 
+	<pattern>POS</pattern> <that>OK ARE YOU HERE FOR THE POINT OF SALE OR INVENTORY CONTROL</that> 
+	<template><srai>POINT OF SALE</srai></template> 
+</category> 
+<category> 
+	<pattern>_POS *</pattern> <that>OK ARE YOU HERE FOR THE POINT OF SALE OR INVENTORY CONTROL</that> 
+	<template><srai>POINT OF SALE</srai></template> 
+</category> 
+<category> 
+	<pattern>_POINT OF SALE SYSTEM *</pattern> <that>OK ARE YOU HERE FOR THE POINT OF SALE OR INVENTORY CONTROL</that> 
+	<template><srai>POINT OF SALE</srai></template> 
+</category> 
+<category> 
+	<pattern>_ POS *</pattern> <that>ARE YOU HERE FOR THE POINT OF SALE SYSTEM OR THE INVENTORY CONTROL SYSTEM</that> 
+	<template>Good. I really need some help with updating our <set name="topic">point of sale system</set>.</template> 
+</category> 
+<category> 
+	<pattern>_ POINT OF SALE SYSTEM</pattern> <that>ARE YOU HERE FOR THE POINT OF SALE SYSTEM OR THE INVENTORY CONTROL SYSTEM</that> 
+	<template>Good. I really need some help with updating our <set name="topic">point of sale system</set>.</template> 
+</category> 
+<category> 
+	<pattern>LIKE WHAT</pattern> <that>Good. I really need some help with updating our point of sale system.</that> 
+	<template><srai>WHAT KIND OF REPORTS</srai></template> 
+</category> 
+<category> 
+	<pattern>WHAT KIND OF REPORTS</pattern> <that>WHAT KINDS OF REPORTS</that> 
+	<template>I need a way to see how my sales are during different periods of the fiscal year. Like, daily, weekly, monthly, yearly sales reports but also reports that will tell me other things. </template> 
+</category> 
+<category> 
+	<pattern>WHAT HAPPENS WHEN A CUSTOMER WANTS TO BUY SOMETHING</pattern> 
+	<template><srai>HOW DO YOU PROCESS A SALE</srai></template> 
+</category> 
+<category> 
+	<pattern>HOW DO YOU PROCESS A SALE</pattern> 
+	<template>The clerk will scan in the item's barcode and the system returns the price to the customer's order currently in the system.  The customer then pays for their purchases and is issued a receipt and the transaction is complete.</template> 
+</category> 
+<category> 
+	<pattern>WHAT HAPPENS WHEN A CUSTOMER BRINGS AN ITEM TO PURCHASE *</pattern> 
+	<template>The clerk will scan in the item's barcode and the system returns the price to the customer's order currently in the system.  The customer then pays for their purchases and is issued a receipt and the transaction is complete.</template> 
+</category> 
+<category> 
+	<pattern>CAN A CUSTOMER PAY WITH CASH</pattern> 
+	<template>Yes, cash is accepted; Linden dollars.</template> 
+</category> 
+<category> 
+	<pattern>WHAT HAPPENS IF THE CUSTOMER PAYS WITH CASH</pattern> 
+	<template>We will process the purchase, retrieve the payment, then give the customer their items and a receipt.</template> 
+</category> 
+<category> 
+	<pattern>CAN A CUSTOMER PAY WITH A CHECK</pattern> 
+	<template><srai>DO YOU TAKE CREDIT CARDS</srai></template> 
+</category> 
+<category> 
+	<pattern>WHAT HAPPENS IF A CUSTOMER PAYS WITH A CHECK</pattern> 
+	<template><srai>WHAT HAPPENS IF A CUSTOMER PAYS WITH A CREDIT CARD</srai></template> 
+</category> 
+<category> 
+	<pattern>DO YOU TAKE CHECKS</pattern> 
+	<template><srai>DO YOU TAKE CREDIT CARDS</srai></template> 
+</category> 
+<category> 
+	<pattern>CAN A CUSTOMER PAY WITH A CREDIT CARD</pattern> 
+	<template><srai>DO YOU TAKE CREDIT CARDS</srai></template> 
+</category> 
+<category> 
+	<pattern>WHAT HAPPENS IF A CUSTOMER PAYS WITH A CREDIT CARD</pattern> 
+	<template>We do not accept credit cards, we request that the customer uses cash to make their purchase.</template> 
+</category> 
+<category> 
+	<pattern>DO YOU TAKE CREDIT CARDS</pattern> 
+	<template>No we only take cash.</template> 
+</category> 
+<category> 
+	<pattern>WHAT IF THE CUSTOMER DOESN'T HAVE ENOUGH MONEY</pattern> 
+	<template><srai>WHAT IF THE CUSTOMER CAN NOT PAY</srai></template> 
+</category> 
+<category> 
+	<pattern>WHAT IF THE CUSTOMER CAN NOT PAY</pattern> 
+	<template>Then the customer must return and purchase the items at a later date, when they have the money.</template> 
+</category> 
+<category> 
+	<pattern>WHAT IF THE CUSTOMER CAN NOT AFFORD THE ITEMS</pattern> 
+	<template>Then the customer must return and purchase the items at a later date, when they have the money.</template> 
+</category> 
+<category> 
+	<pattern>WHAT IF THE CUSTOMERS CREDIT CARD IS DECLINED</pattern> 
+	<template>We don't take credit cards.</template> 
+</category> 
+<category> 
+	<pattern>DO YOU ALWAYS GIVE THE CUSTOMER A RECEIPT</pattern> 
+	<template>Yes, the customer is always given a receipt.</template> 
+</category> 
+<category> 
+	<pattern>HOW DO YOU GET THE ITEMS BARCODE INTO THE REGISTER</pattern> 
+	<template>We scan them with our scanning system.</template> 
+</category> 
+<category> 
+	<pattern>WHAT IF THERE IS NO BARCODE</pattern> 
+	<template>Then the item is entered by hand into the system. Or we check that the item is really for sale in the store, by searching for it on the shelf.</template> 
+</category> 
+<category> 
+	<pattern>CAN A CUSTOMER PURCHASE MULTIPLE ITEMS</pattern> 
+	<template>Yes, a customer can purchase as many items as they'd like.</template> 
+</category> 
+<category> 
+	<pattern>IS THERE A LIMIT ON THE NUMBER OF ITEMS A CUSTOMER CAN PURCHASE</pattern> 
+	<template>No, a customer is free to purchase as many items as they'd like.</template> 
+</category> 
+<category> 
+	<pattern>HOW MANY ITEMS CAN A CUSTOMER BUY</pattern> 
+	<template>A customer can purchase as many items as they'd like.</template> 
+</category> 
+<category> 
+	<pattern>DO YOU ACCEPT RETURNS</pattern> 
+	<template>Yes, with a receipt.</template> 
+</category> 
+<category> 
+	<pattern>CAN A CUSTOMER RETURN AN ITEM </pattern> 
+	<template>Yes we accept returns, with a receipt.</template> 
+</category> 
+<category> 
+	<pattern>HOW DO YOU PROCESS A RETURN</pattern> 
+	<template>Only a manager can process returns.</template> 
+</category> 
+<category> 
+	<pattern>HOW DO YOU RETURN THE CUSTOMERS MONEY IF THEY PAY BY CHECK</pattern> 
+	<template>We do not accept checks.</template> 
+</category> 
+<category> 
+	<pattern>HOW DO YOU RETURN THE CUSTOMERS MONEY IF THEY PAY BY CASH</pattern> 
+	<template>I go through the steps of processing a return and then refund their cash.</template> 
+</category> 
+<category> 
+	<pattern>HOW DO YOU RETURN THE CUSTOMERS MONEY IF THEY PAY BY CREDIT *</pattern> 
+	<template>We do not accept credit cards.</template> 
+</category> 
+<category> 
+	<pattern>WHAT IF THE CHECK HAS NOT CLEARED</pattern> 
+	<template>We do not accept checks.</template> 
+</category> 
+<category> 
+	<pattern>WHAT IF THE CUSTOMER DOES NOT HAVE A RECEIPT</pattern> 
+	<template>We will refuse the return.</template> 
+</category> 
+<category> 
+	<pattern>WHAT IF THE ITEMS BARCODE IS NOT IN THE SYSTEM</pattern> 
+	<template>We will search for the item on the shelf, to make sure it is an item we sell.</template> 
+</category> 
+<category> 
+	<pattern>WHAT IF THE ITEM IS NOT IN THE SYSTEM</pattern> 
+	<template>We will search for the item on the shelf, to make sure it is an item we sell.</template> 
+</category> 
+<category> 
+	<pattern>WHAT IF YOU DO NOT SELL *</pattern> <that>WE WILL SEARCH FOR THE ITEM ON THE SHELF TO MAKE SURE IT IS AN ITEM WE SELL</that> 
+	<template>Then we refuse the return.</template> 
+</category> 
+<category> 
+	<pattern>PROBLEMS</pattern> 
+	<template>With our present way of doing things, it is very time consuming and inefficent.</template> 
+</category> 
+<category> 
+	<pattern>* PROBLEMS </pattern> 
+	<template><srai>PROBLEMS</srai> </template> 
+</category> 
+<category> 
+	<pattern>* PROBLEMS _ </pattern> 
+	<template><srai>PROBLEMS</srai> </template> 
+</category> 
+<category> 
+	<pattern>PROBLEMS _ </pattern> 
+	<template><srai>PROBLEMS</srai> </template> 
+</category> 
+<category> 
+	<pattern>IS THERE ANY TIME YOU ARE AVAILABLE</pattern> 
+	<template>Just stop in and check with me.</template> 
+</category> 
+<category> 
+	<pattern>HOW CAN WE HELP YOU</pattern> 
+	<template>Design a POS system for Baker Foods.</template> 
+</category> 
+<category> 
+	<pattern>PROCESS ITEMS</pattern> 
+	<template>We have a database that holds each item's name, number, description, number on-hand, and price. For further information, you should as my manager.</template> 
+</category> 
+<category> 
+	<pattern>PROCESS ITEMS _</pattern> 
+	<template> <srai>PROCESS ITEMS</srai> </template> 
+</category> 
+<category> 
+	<pattern>* PROCESS ITEMS</pattern> 
+	<template> <srai>PROCESS ITEMS</srai> </template> 
+</category> 
+<category> 
+	<pattern>* PROCESS ITEMS _</pattern> 
+	<template> <srai>PROCESS ITEMS</srai> </template> 
+</category> 
+<category> 
+	<pattern>PROCESSING ITEMS</pattern> 
+	<template> <srai>PROCESS ITEMS</srai> </template> 
+</category> 
+<category> 
+	<pattern>PROCESSING ITEMS _</pattern> 
+	<template> <srai>PROCESS ITEMS</srai> </template> 
+</category> 
+<category> 
+	<pattern>* PROCESSING ITEMS</pattern> 
+	<template> <srai>PROCESS ITEMS</srai> </template> 
+</category> 
+<category> 
+	<pattern>* PROCESSING ITEMS _</pattern> 
+	<template> <srai>PROCESS ITEMS</srai> </template> 
+</category> 
+<category> 
+	<pattern>INVENTORY</pattern> 
+	<template> <srai>PROCESS ITEMS</srai> </template> 
+</category> 
+<category> 
+	<pattern>* INVENTORY</pattern> 
+	<template> <srai>PROCESS ITEMS</srai> </template> 
+</category> 
+<category> 
+	<pattern>* INVENTORY _</pattern> 
+	<template> <srai>PROCESS ITEMS</srai> </template> 
+</category> 
+<category> 
+	<pattern>INVENTORY _</pattern> 
+	<template> <srai>PROCESS ITEMS</srai> </template> 
+</category> 
+<category> 
+	<pattern>CHECKS</pattern> 
+	<template>If the check is valid, there are no problems. If the check is bad or hot, we may have to issue a temporary ban on the person in question. At the very least, we will not be allowed to take checks from that person again.</template> 
+</category> 
+<category> 
+	<pattern>CHECKS _</pattern> 
+	<template> <srai>CHECKS</srai> </template> 
+</category> 
+<category> 
+	<pattern>* CHECKS _</pattern> 
+	<template> <srai>CHECKS</srai> </template> 
+</category> 
+<category> 
+	<pattern>* CHECKS</pattern> 
+	<template> <srai>CHECKS</srai> </template> 
+</category> 
+<category> 
+	<pattern>CREDIT</pattern> 
+	<template>We take credit cards. However, we'll need to see your identity card and a signature to make sure the card is valid and it belongs to you.</template> 
+</category> 
+<category> 
+	<pattern>PROCESSING TIME</pattern> 
+	<template>The clerks need to process about 25 items in two minutes or less.</template> 
+</category> 
+<category> 
+	<pattern>PROCESSING TIME _</pattern> 
+	<template> <srai>PROCESSING TIME</srai> </template> 
+</category> 
+<category> 
+	<pattern>VALID</pattern> 
+	<template>The clerks need to check the customers identity to make sure it is their card, and we also check to make sure the card has not expired and that it is a valid card, such as the number and type of card. With checks, we match your identity card and the information on the check. With cash, we check the bills above twenty for counterfeits.</template> 
+</category> 
+<category> 
+	<pattern>VALID _</pattern> 
+	<template> <srai>VALID</srai> </template> 
+</category> 
+<category> 
+	<pattern>* VALID</pattern> 
+	<template> <srai>VALID</srai> </template> 
+</category> 
+<category> 
+	<pattern>SCHEDULING</pattern> 
+	<template>I assume you mean employee scheduling. I'm in charge of that.</template> 
+</category> 
+<category> 
+	<pattern>* SCHEDULING</pattern> 
+	<template> <srai>SCHEDULING</srai> </template> 
+</category> 
+<category> 
+	<pattern>* SCHEDULING _</pattern> 
+	<template> <srai>SCHEDULING</srai> </template> 
+</category> 
+<category> 
+	<pattern>SCHEDULING _</pattern> 
+	<template> <srai>SCHEDULING</srai> </template> 
+</category> 
+<category> 
+	<pattern>SCHEDULE</pattern> 
+	<template>Are you talking about my personal schedule or the general scheduling for the employees?</template> 
+</category> 
+<category> 
+	<pattern>* SCHEDULE</pattern> 
+	<template> <srai>SCHEDULE</srai> </template> 
+</category> 
+<category> 
+	<pattern>SCHEDULE _</pattern> 
+	<template> <srai>SCHEDULE</srai> </template> 
+</category> 
+<category> 
+	<pattern>* SCHEDULE _</pattern> 
+	<template> <srai>SCHEDULE</srai> </template> 
+</category> 
+<category> 
+	<pattern>DEBIT</pattern> 
+	<template>We do take debit cards. Currently, however, we can only treat them like credit cards. We'll need to see your identification card and signature. We hope to have a machine that allows for personal PIN numbers in the future.</template> 
+</category> 
+<category> 
+	<pattern>* DEBIT _</pattern> 
+	<template> <srai>DEBIT</srai> </template> 
+</category> 
+<category> 
+	<pattern>* DEBIT</pattern> 
+	<template> <srai>DEBIT</srai> </template> 
+</category> 
+<category> 
+	<pattern>DEBIT _</pattern> 
+	<template> <srai>DEBIT</srai> </template> 
+</category> 
+<category> 
+	<pattern>CASH</pattern> 
+	<template>We definitely take cash. For any bills above a twenty, however, I do need to check them to make sure they are not counterfeit.</template> 
+</category> 
+<category> 
+	<pattern>* CASH</pattern> 
+	<template> <srai>CASH</srai> </template> 
+</category> 
+<category> 
+	<pattern>* CASH _</pattern> 
+	<template> <srai>CASH</srai> </template> 
+</category> 
+<category> 
+	<pattern>* CASH _</pattern> 
+	<template> <srai>CASH</srai> </template> 
+</category> 
+<category> 
+	<pattern>MANAGER WORK ROUTINE</pattern> 
+	<template>I am in charge of the entire store. I check inventory, takes care of employee scheduling, 
+               makes out employee's checks, and many other things.</template> 
+</category> 
+<category> 
+	<pattern>MANAGER WORK ROUTINE _</pattern> 
+	<template> <srai>MANAGER WORK ROUTINE</srai> </template> 
+</category> 
+<category> 
+	<pattern>* MANAGER WORK ROUTINE _</pattern> 
+	<template> <srai>MANAGER WORK ROUTINE</srai> </template> 
+</category> 
+<category> 
+	<pattern>* MANAGER WORK ROUTINE</pattern> 
+	<template> <srai>MANAGER WORK ROUTINE</srai> </template> 
+</category> 
+<category> 
+	<pattern>FROZENS</pattern> 
+	<template>We have various brands of pre-packaged vegetables, dinners, ice cream, bread, various desserts and fruits, and breakfast items. Look for them in the sections of the store with all of the glass refrigerators.</template> 
+</category> 
+<category> 
+	<pattern>FROZENS _</pattern> 
+	<template> <srai>FROZENS</srai> </template> 
+</category> 
+<category> 
+	<pattern>* FROZENS</pattern> 
+	<template> <srai>FROZENS</srai> </template> 
+</category> 
+<category> 
+	<pattern>* FROZENS _</pattern> 
+	<template> <srai>FROZENS</srai> </template> 
+</category> 
+<category> 
+	<pattern>FROZEN</pattern> 
+	<template> <srai>FROZENS</srai> </template> 
+</category> 
+<category> 
+	<pattern>* FROZEN</pattern> 
+	<template> <srai>FROZENS</srai> </template> 
+</category> 
+<category> 
+	<pattern>* FROZEN _</pattern> 
+	<template> <srai>FROZENS</srai> </template> 
+</category> 
+<category> 
+	<pattern>FROZEN _</pattern> 
+	<template> <srai>FROZENS</srai> </template> 
+</category> 
+<category> 
+	<pattern>DAIRY</pattern> 
+	<template>In the dairy department, we have the typical things. Butter, yogurt, milk, eggs, some pudding, cheese, and perhaps a few other things. All of them are kept fresh inside cooled shelves and bins.</template> 
+</category> 
+<category> 
+	<pattern>* DAIRY</pattern> 
+	<template> <srai>DAIRY</srai> </template> 
+</category> 
+<category> 
+	<pattern>* DAIRY _</pattern> 
+	<template> <srai>DAIRY</srai> </template> 
+</category> 
+<category> 
+	<pattern>DAIRY _</pattern> 
+	<template> <srai>DAIRY</srai> </template> 
+</category> 
+<category> 
+	<pattern>MEAT</pattern> 
+	<template>In the meat department, we have chicken, pork, beef, as well as seafood such as shrimp, lobster, and fish. All of them are fresh and kept in cooled bins.</template> 
+</category> 
+<category> 
+	<pattern>* MEAT</pattern> 
+	<template> <srai>MEAT</srai> </template> 
+</category> 
+<category> 
+	<pattern>* MEAT _</pattern> 
+	<template> <srai>MEAT</srai> </template> 
+</category> 
+<category> 
+	<pattern>MEAT _</pattern> 
+	<template> <srai>MEAT</srai> </template> 
+</category> 
+<category> 
+	<pattern>STAPLES</pattern> 
+	<template>Staple foods refer to the basic human diet. This includes just about everything else that is not included and partly in hand with produce, dairy, frozen goods, and meat. Cereal and rice are examples.</template> 
+</category> 
+<category> 
+	<pattern>* STAPLES</pattern> 
+	<template> <srai>STAPLES</srai> </template> 
+</category> 
+<category> 
+	<pattern>* STAPLES _</pattern> 
+	<template> <srai>STAPLES</srai> </template> 
+</category> 
+<category> 
+	<pattern>STAPLES _</pattern> 
+	<template> <srai>STAPLES</srai> </template> 
+</category> 
+<category> 
+	<pattern>CANNED GOODS</pattern> 
+	<template>Canned goods include everything that you can find in a sealed can. These products often last years on the shelf. Some things we have here are canned vegetables, canned fruits, canned beans, spam, canned tomatoes and tomatoe sauce, things like that.</template> 
+</category> 
+<category> 
+	<pattern>* CANNED GOODS</pattern> 
+	<template> <srai>CANNED GOODS</srai> </template> 
+</category> 
+<category> 
+	<pattern>* CANNED GOODS _</pattern> 
+	<template> <srai>CANNED GOODS</srai> </template> 
+</category> 
+<category> 
+	<pattern>CANNED GOODS _</pattern> 
+	<template> <srai>CANNED GOODS</srai> </template> 
+</category> 
+<category> 
+	<pattern>PRODUCE</pattern> 
+	<template>Produce includes fresh vegetables, fruit and some herbs.</template> 
+</category> 
+<category> 
+	<pattern>* PRODUCE</pattern> 
+	<template> <srai>PRODUCE</srai> </template> 
+</category> 
+<category> 
+	<pattern>* PRODUCE _</pattern> 
+	<template> <srai>PRODUCE</srai> </template> 
+</category> 
+<category> 
+	<pattern>PRODUCE _</pattern> 
+	<template> <srai>PRODUCE</srai> </template> 
+</category> 
+<category> 
+	<pattern> * BEER</pattern> 
+	<template>We sell Schlitz and Guinness</template> 
+</category> 
+<category> 
+	<pattern>ALCOHOL</pattern> 
+	<template> <srai>No, but we do sell beer.</srai> </template> 
+</category> 
+<category> 
+	<pattern>* ALCOHOL _</pattern> 
+	<template> <srai>ALCOHOL</srai> </template> 
+</category> 
+<category> 
+	<pattern>ALCOHOL _</pattern> 
+	<template> <srai>ALCOHOL</srai> </template> 
+</category> 
+<category> 
+	<pattern>LIQUOR</pattern> 
+	<template> <srai>ALCOHOL</srai> </template> 
+</category> 
+<category> 
+	<pattern>* LIQUOR</pattern> 
+	<template> <srai>ALCOHOL</srai> </template> 
+</category> 
+ 
+<category> 
+	<pattern>PROCESS ORDER</pattern> 
+	<template>The clerk will take your items, enter the item number into the register, which then adds the item price to your total. 
+             You pay, and they will give you your items and change.</template> 
+</category> 
+<category> 
+	<pattern>PROCESSING ORDER</pattern> 
+	<template> <srai>PROCESS ORDER</srai> </template> 
+</category> 
+<category> 
+	<pattern>* PROCESS * ORDER _</pattern> 
+	<template> <srai>PROCESS ORDER</srai> </template> 
+</category> 
+<category> 
+	<pattern>PROCESS * ORDER</pattern> 
+	<template> <srai>PROCESS ORDER</srai> </template> 
+</category> 
+<category> 
+	<pattern>PROCESSING * ORDER</pattern> 
+	<template> <srai>PROCESS ORDER</srai> </template> 
+</category> 
+<category> 
+	<pattern>* PROCESSING * ORDER</pattern> 
+	<template> <srai>PROCESS ORDER</srai> </template> 
+</category>
+
+ 
+<category> 
+	<pattern>WHERE AM I</pattern> 
+	<template>
+   You are at 
+   <set name="location">Baker Foods</set> 
+   , of course. 
+   </template> 
+</category> 
+<category> 
+	<pattern>WHAT IS THIS PLACE</pattern> 
+	<template> <srai>WHERE AM I</srai> </template> 
+</category> 
+
+<category> 
+	<pattern>HOW LONG _</pattern> 
+	<template>How long I take depends entirely on how large your order it. I aim to process at least 25 items in a couple minutes, though.</template> 
+</category> 
+<category> 
+	<pattern>SCAN</pattern> 
+	<template>When I say "scan", it's not so much in the human fashion. We don't have the resources yet for that. However, here on Baker Island, the item numbers are short enough that it is not a lot of extra effort to punch in the number into the register. From there, our database with calculate the price and inventory and recalculate your total.</template> 
+</category> 
+<category> 
+	<pattern>* SCAN</pattern> 
+	<template> <srai>SCAN</srai> </template> 
+</category> 
+<category> 
+	<pattern>WHERE CAN I FIND _</pattern> 
+	<template> <srai>WHERE IS</srai> </template> 
+</category> 
+<category> 
+	<pattern>* SCAN _</pattern> 
+	<template> <srai>SCAN</srai> </template> 
+</category> 
+<category> 
+	<pattern>SCAN _</pattern> 
+	<template> <srai>SCAN</srai> </template> 
+</category> 
+<category> 
+	<pattern>BUY</pattern> 
+	<template>If your asking what, where, if, or when you can buy something, then that's easy. If it's on the shelf, simply go to that department, 
+              pick it up, and bring it here to purchase it. If or when depends on whether or not we have it in stock. If it's not, 
+              you'll have to wait until the next delivery, which comes once a week on Thursdays.</template> 
+</category> 
+<category> 
+	<pattern>* BUY</pattern> 
+	<template> <srai>BUY</srai> </template> 
+</category> 
+<category> 
+	<pattern>* BUY _</pattern> 
+	<template> <srai>BUY</srai> </template> 
+</category> 
+<category> 
+	<pattern>BUY _</pattern> 
+	<template> <srai>BUY</srai> </template> 
+</category> 
+<category> 
+	<pattern>PROCESSING ORDER</pattern> 
+	<template> <srai>PROCESS ORDER</srai> </template> 
+</category> 
+<category> 
+	<pattern>* PROCESS * ORDER _</pattern> 
+	<template> <srai>PROCESS ORDER</srai> </template> 
+</category> 
+<category> 
+	<pattern>PROCESS * ORDER</pattern> 
+	<template> <srai>PROCESS ORDER</srai> </template> 
+</category> 
+<category> 
+	<pattern>PROCESSING * ORDER</pattern> 
+	<template> <srai>PROCESS ORDER</srai> </template> 
+</category> 
+<category> 
+	<pattern>* PROCESSING * ORDER</pattern> 
+	<template> <srai>PROCESS ORDER</srai> </template> 
+</category> 
+<category> 
+	<pattern>PROCESS ORDERS</pattern> 
+	<template> <srai>PROCESS ORDER</srai> </template> 
+</category> 
+<category> 
+	<pattern>* PROCESS ORDERS</pattern> 
+	<template> <srai>PROCESS ORDER</srai> </template> 
+</category> 
+<category> 
+	<pattern>* PROCESS ORDERS _</pattern> 
+	<template> <srai>PROCESS ORDER</srai> </template> 
+</category> 
+<category> 
+	<pattern>PROCESS ORDERS _</pattern> 
+	<template> <srai>PROCESS ORDER</srai> </template> 
+</category> 
+
+
+</aiml>

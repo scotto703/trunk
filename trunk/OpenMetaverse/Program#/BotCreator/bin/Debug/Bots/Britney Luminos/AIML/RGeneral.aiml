@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml>
+<!--author: Heather-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V1.2.0.33320-->
+<!--Edited By Matthew Tyson on 12/7/2009-->
+
+<category>
+	<pattern>WHAT DO YOU DO</pattern>
+	<template>I'm the Baker Island Bank Receptionist.</template>
+</category>
+<category>
+	<pattern>WHO ARE YOU</pattern>
+	<template>I'm the receptionist here.  My name is Britney.</template>
+</category>
+<category>
+	<pattern>WHERE ARE WE</pattern>
+	<template>This is the Bank on Baker Island</template>
+</category>
+<category>
+	<pattern>WHERE AM I</pattern>
+	<template><srai>where are we</srai></template>
+</category>
+<category>
+	<pattern>WHAT IS THIS</pattern>
+	<template><srai>where are we</srai></template>
+</category>
+<category>
+	<pattern>WHAT IS YOUR JOB</pattern>
+	<template><srai>what do you do</srai></template>
+</category>
+<category>
+	<pattern>WHO WORKS WITH YOU</pattern>
+	<template>There are five other people that work with me here at the bank and they are Tracy, Nimon, Franklin, Elminstyr, and Alisandra.</template>
+</category>
+</aiml>

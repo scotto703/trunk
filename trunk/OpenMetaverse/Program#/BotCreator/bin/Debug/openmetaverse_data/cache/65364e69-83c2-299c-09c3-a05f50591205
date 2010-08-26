@@ -1,0 +1,34 @@
+LLWearable version 22
+Crimson/Wheat argyle sweater
+
+	permissions 0
+	{
+		base_mask	7fffffff
+		owner_mask	7fffffff
+		group_mask	00000000
+		everyone_mask	00000000
+		next_owner_mask	00082000
+		creator_id	b77929f6-2844-4fcd-ae11-d33dabfb26ba
+		owner_id	b77929f6-2844-4fcd-ae11-d33dabfb26ba
+		last_owner_id	b77929f6-2844-4fcd-ae11-d33dabfb26ba
+		group_id	00000000-0000-0000-0000-000000000000
+	}
+	sale_info	0
+	{
+		sale_type	not
+		sale_price	10
+	}
+type 8
+parameters 9
+606 .8
+607 1
+608 .63
+609 1
+780 1
+834 1
+835 1
+836 1
+877 0
+textures 2
+13 8d34e2e9-8227-2f6c-eb33-6cc3599fcc02
+14 0eead207-7ffa-dce6-58f4-76056ae90f3b

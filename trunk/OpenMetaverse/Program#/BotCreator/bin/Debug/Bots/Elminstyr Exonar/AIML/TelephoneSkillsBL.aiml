@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml>
+<!--author: Roberta09-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V1.2.0.33320-->
+<category>
+	<pattern>DO YOU KNOW A LIST OF PROPER WAYS TO ANSWER THE PHONE</pattern>
+	<template>
+		<random>
+			<li>Yes, always be polite.</li>
+			<li>Use proper greeting for time of day.</li>
+			<li>Do speak clearly. Remember, the caller can't see you to read lips.</li>
+			<li>Take the time to speak clearly the first time, and you won't waste time repeating yourself.</li>
+			<li>Use your normal voice.</li>
+			<li>Make sure that there is nothing in your mouth when you answer the phone.</li>
+			<li>Answer questions with "Yes" or "No" and stay away from slang or contractions. They can be hard to understand on the phone.</li>
+			<li>If possible, address the caller by title. Mr. or Ms. Maintain a polite formality, especially on initial contact.</li>
+			<li>Avoid poor language habits and using filler words such as "you know," "you guys," "like" or "ummm."</li>
+			<li>Identify yourself not only when speaking directly with a person, but also when leaving messages with others on answering machines. Give your name and contact number both at the beginning of the message and at the conclusion so the listener will not have to replay the message for the information.</li>
+			<li>Be aware of people around you while talking on the phone. Be discreet.</li>
+			<li>Ask if you can put a person on hold and then wait for them to reply. Not everyone delights in being put on hold.</li>
+			<li>Listen to the caller. Pay attention to what they are saying so that you can answer the question they ask, instead of the one you thought they were going to ask. Write down important information as they are talking.</li>
+			<li>Always remember that you are their first contact with the bank and the person on the other end may be a customer, new client, higher management, or someone else in the community.</li>
+			<li>Treat people the same way you want to be treated.</li>
+		</random></template>
+</category>
+<category>
+	<pattern>WHAT ARE THE DOS OF ANSWERING THE PHONE</pattern>
+	<template>
+		<random>
+			<li>Yes, always be polite.</li>
+			<li>Use proper greeting for time of day.</li>
+			<li>Do speak clearly. Remember, the caller can't see you to read lips.</li>
+			<li>Take the time to speak clearly the first time, and you won't waste time repeating yourself.</li>
+			<li>Use your normal voice.</li>
+			<li>Make sure that there is nothing in your mouth when you answer the phone.</li>
+			<li>Answer questions with "Yes" or "No" and stay away from slang or contractions. They can be hard to understand on the phone.</li>
+			<li>If possible, address the caller by title. Mr. or Ms. Maintain a polite formality, especially on initial contact.</li>
+			<li>Avoid poor language habits and using filler words such as "you know," "you guys," "like" or "ummm."</li>
+			<li>Identify yourself not only when speaking directly with a person, but also when leaving messages with others on answering machines. Give your name and contact number both at the beginning of the message and at the conclusion so the listener will not have to replay the message for the information.</li>
+			<li>Be aware of people around you while talking on the phone. Be discreet.</li>
+			<li>Ask if you can put a person on hold and then wait for them to reply. Not everyone delights in being put on hold.</li>
+			<li>Listen to the caller. Pay attention to what they are saying so that you can answer the question they ask, instead of the one you thought they were going to ask. Write down important information as they are talking.</li>
+			<li>Always remember that you are their first contact with the bank and the person on the other end may be a customer, new client, higher management, or someone else in the community.</li>
+			<li>Treat people the same way you want to be treated.</li>
+		</random></template>
+</category>
+<category>
+	<pattern>DO YOU KNOW A LIST OF DONTS WHEN ANSWERING THE PHONE</pattern>
+	<template>
+		<random>
+			<li>Don't speak to fast.</li>
+			<li>Don't speak to softly or breathy.</li>
+			<li>Don't talk with your mouth full.</li>
+			<li>Don't say "uh-huh" and "unh-unh".</li>
+			<li>Don't express a false familiarity and address a new caller by his or her first name.</li>
+			<li>Don't swear.</li>
+			<li>Don't leave long garbled, wandering messages that no one can understand or that take six replays to get the information.</li>
+			<li>Don't talk about personal matters so that others will overhear or will be forced to listen to more than they care to know.</li>
+			<li>Don't keep someone on hold more than few seconds, not minutes.</li>
+			<li>Don't engage in side conversations while trying to talk to someone on the phone.</li>
+			<li>If you think you should not say it, then don't.</li>
+		</random></template>
+</category>
+<category>
+	<pattern>WHAT ARE THE DONTS OF ANSWERING THE PHONE</pattern>
+	<template>
+		<random>
+			<li>Don't speak to fast.</li>
+			<li>Don't speak to softly or breathy.</li>
+			<li>Don't talk with your mouth full.</li>
+			<li>Don't say "uh-huh" and "unh-unh".</li>
+			<li>Don't express a false familiarity and address a new caller by his or her first name.</li>
+			<li>Don't swear.</li>
+			<li>Don't leave long garbled, wandering messages that no one can understand or that take six replays to get the information.</li>
+			<li>Don't talk about personal matters so that others will overhear or will be forced to listen to more than they care to know.</li>
+			<li>Don't keep someone on hold more than few seconds, not minutes.</li>
+			<li>Don't engage in side conversations while trying to talk to someone on the phone.</li>
+			<li>If you think you should not say it, then don't.</li>
+		</random></template>
+</category>
+</aiml>

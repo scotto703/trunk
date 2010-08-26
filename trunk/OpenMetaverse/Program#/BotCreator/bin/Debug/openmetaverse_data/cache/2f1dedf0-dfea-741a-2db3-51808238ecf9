@@ -1,0 +1,63 @@
+LLWearable version 22
+Nightlife Jacket
+
+	permissions 0
+	{
+		base_mask	00082000
+		owner_mask	00082000
+		group_mask	00000000
+		everyone_mask	00000000
+		next_owner_mask	00082000
+		creator_id	25d88b5c-36e5-41da-80e9-29594553bbd8
+		owner_id	a1da715b-1a31-4ae8-9f0a-aceeccb91e2f
+		last_owner_id	a1da715b-1a31-4ae8-9f0a-aceeccb91e2f
+		group_id	00000000-0000-0000-0000-000000000000
+	}
+	sale_info	0
+	{
+		sale_type	not
+		sale_price	10
+	}
+type 8
+parameters 38
+606 1
+607 1
+608 .8
+609 1
+620 .8
+621 .8
+622 1
+623 1
+780 1
+809 1
+810 1
+811 1
+831 1
+832 1
+833 1
+834 1
+835 1
+836 1
+875 0
+876 0
+877 0
+1019 1
+1020 1
+1021 1
+1022 1
+1023 1
+1024 1
+1025 .8
+1026 1
+1027 .8
+1028 1
+1033 .8
+1034 1
+1037 .8
+1038 1
+1039 1
+1040 1
+1041 1
+textures 2
+13 ce8a1ebf-98fb-9490-0ddb-2e3333d5aa67
+14 856a619e-57eb-bcab-d604-8b3e0b5e2f9f

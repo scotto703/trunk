@@ -1,0 +1,63 @@
+LLWearable version 22
+Lightly Tanned Skin
+
+	permissions 0
+	{
+		base_mask	00082000
+		owner_mask	00082000
+		group_mask	00082000
+		everyone_mask	00082000
+		next_owner_mask	00082000
+		creator_id	d929385f-41e3-4a34-a04e-f1fc39f24f12
+		owner_id	a9d08fd9-5b16-4ed3-b684-21e5afa02379
+		last_owner_id	a9d08fd9-5b16-4ed3-b684-21e5afa02379
+		group_id	00000000-0000-0000-0000-000000000000
+	}
+	sale_info	0
+	{
+		sale_type	not
+		sale_price	0
+	}
+type 1
+parameters 37
+108 0
+110 .07
+111 .21
+116 .17
+117 .19
+118 .44
+125 .05
+126 .05
+150 .05
+158 .29
+159 .29
+161 .05
+162 .29
+163 .44
+165 .26
+700 .25
+701 0
+702 0
+703 0
+704 0
+705 .5
+706 .6
+707 0
+708 0
+709 0
+710 0
+711 .5
+712 0
+713 .7
+714 0
+715 0
+775 0
+776 0
+777 0
+873 .29
+874 .05
+878 .05
+textures 3
+0 c228d1cf-4b5d-4ba8-84f4-899a0796aa97
+5 c228d1cf-4b5d-4ba8-84f4-899a0796aa97
+6 c228d1cf-4b5d-4ba8-84f4-899a0796aa97

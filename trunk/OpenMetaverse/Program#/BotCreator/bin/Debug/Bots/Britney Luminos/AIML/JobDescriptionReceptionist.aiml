@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+
+<aiml>
+<!--author: Roberta09-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V1.2.0.33320-->
+<category>
+	<pattern>WHY DO YOU THINK THE BANK RECEPTIONIST IS SO IMPORTANT</pattern>
+	<template>
+		<random>
+			<li>I believe that a bank receptionist embodies the "look" and "feel" of personal service today's bank seek to convey to clients.</li>
+			<li>A receptionist is the first face a client sees when entering the bank.</li>
+			<li>The receptionist is the first point of contact for a consumer who calls the financial institution.</li>
+			<li>A bank receptionist has the power to start of a client's banking experience on a positive note.</li>
+			<li>A rude bank receptionist may put a client on edge and also place them on the defensive.</li>
+			<li>If the bank receptionist is poorly trained or selected for the position, the bank could suffer by losing clients.</li>
+		</random></template>
+</category>
+<category>
+	<pattern>WHAT IS THE BASIC JOB DECRIPTION FOR THE BANK RECEPTIONIST</pattern>
+	<template>The basic job description for the bank receptionist is they act as liaison between clients and bank personnel. They perform basic clerical duties and display a professional impression for all that enter the bank. The job description is a mix of administrative work, basic banking tasks, and a high degree of customer service.</template>
+</category>
+<category>
+	<pattern>CAN THE BANK RECEPTIONIST HAVE AN EXPANDED JOB DESCRIPTION</pattern>
+	<template>Yes, it could include supply management and file maintenance. Some cases assist clients when accessing their safe deposit box. If a receptionist is bilingual, they may frequently assist foreign clients and translate interactions between bank personnel and the consumer. The smaller the bank the more extensive the expanded bank receptionist's job description becomes. The receptionist could double as an administrative assistant to a bank manager or sales manager.</template>
+</category>
+<category>
+	<pattern>WHAT TYPE OF ATTITUDE DOES THE BANK RECEPTIONIST NEED TO HAVE</pattern>
+	<template>
+		<random>
+			<li>A personality that is unshakeable.</li>
+			<li>Must be energetic from the moment the bank opens until the time it closes.</li>
+			<li>Strive for a nonstop professional attitude and outward appearance.</li>
+			<li>Receive constructive criticism from bank personnel without problems.</li>
+		</random></template>
+</category>
+<category>
+	<pattern>DOES THE BANK RECEPTIONIST NEED TO BE COMPUTER LITERATE</pattern>
+	<template>Yes, a successful bank receptionist must be computer literate in Microsoft Word and Excel.</template>
+</category>
+<category>
+	<pattern>WHAT IS ONE OF YOUR OTHER JOB REQUIREMENTS</pattern>
+	<template>
+		<random>
+			<li>To be able to type a minimum of 50 words a minutes.</li>
+			<li>Understand the need for client confidentiality.</li>
+			<li>Working at the front desk requires a lot of multi-tasking.</li>
+			<li>Keep the area clean and appealing to clients.</li>
+			<li>Have a clean, uncluttered, and organized desk.</li>
+			<li>Outside training in areas within the job description.</li>
+			<li>Act as liaison between clients and bank personnel.</li>
+			<li>Perform basic clerical duties.</li>
+			<li>Have a professional impression on the general public.</li>
+		</random></template>
+</category>
+<category>
+	<pattern>WHY DOES A BANK HAVE A RECEPTIONIST</pattern>
+	<template>
+		<random>
+			<li>To answer questions for clients.</li>
+			<li>Answer general questions regarding services offered by the bank.</li>
+			<li>Customer service.</li>
+		</random></template>
+</category>
+<category>
+	<pattern>DO YOU NEED PREVIOUS BANKING EXPERIENCE</pattern>
+	<template>Not necessary at a bank, but previous experience in an organization performing duties comparable to those of a telephone switchboard operator and general clerk experience.</template>
+</category>
+<category>
+	<pattern>DO YOU NEED SPECIAL SKILLS</pattern>
+	<template>It helps.</template>
+</category>
+<category>
+	<pattern>WHAT TYPE OF SPECIAL SKILLS</pattern>
+	<template>Possess a pleasant telephone voice and the ability to perate a telephone switchboard. Ability to learn staff names and functions in a reasonable amount of time. Customer service orientation and the ability to maintain confidentiality. Good interpersonal, communication, and good computer skills.</template>
+</category>
+<category>
+	<pattern>CAN YOU SUMMARIZE YOUR POSITION</pattern>
+	<template>Operate a multi-line telephone system, give routine information to the clients, greet each and every person that enters the bank, performs routine clerical work such as typing, filing, scheduling, and accept special deliveries.</template>
+</category>
+<category>
+	<pattern>ESSENTIAL DUTIES FOR THE POSITION INCLUDE</pattern>
+	<template>
+		<random>
+			<li>Receive calls and give information to callers.</li>
+			<li>Screen and route calls to appropriate destination.</li>
+			<li>Greet visitors, staff, and others in a professional and courteous manner.</li>
+			<li>Participate in the recruiting process by receiving and screening resumes, scheduling of interviews and communicating with public on job openings and application process.</li>
+			<li>Assist with the setup of phones and employee extensions.</li>
+			<li>Check the banks general email box.</li>
+			<li>Perform routine clerical work, as time permits.</li>
+			<li>Order and maintain Human Resources Departmental supplies.</li>
+			<li>Perform other job duties or special projects as required.</li>
+		</random></template>
+</category>
+</aiml>

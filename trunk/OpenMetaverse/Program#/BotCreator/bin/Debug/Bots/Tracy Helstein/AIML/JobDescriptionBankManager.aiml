@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+
+<aiml>
+<!--author: Roberta09-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V1.2.0.33320-->
+<category>
+	<pattern>WHAT IS YOUR JOB TITLE</pattern>
+	<template>I am the Bank Manager</template>
+</category>
+<category>
+	<pattern>WHAT IS A SUMMARY OF YOUR POSITION</pattern>
+	<template>To perform supervisory and administrative functions, in support of upper management. To ensure the ongoing effectiveness of business plans and branch operations in conformance with established Bank policies and procedures.</template>
+</category>
+<category>
+	<pattern>WHAT ARE ONE OF YOUR PRIMARY DUTIES</pattern>
+	<template>
+		<random>
+			<li>To supervise and oversee the activities of the assigned branch staff. Assists with periodic performance reviews; provides ongoing counsel, training, development and motivation. Particpate in hiring, salary, promotion and termination recommendation process.</li>
+			<li>Manage the branch day-to-day sales and service activities. Manage sales tracking and reporting processes.</li>
+			<li>Assist in the development and implementation of business plans and initiatives.</li>
+			<li>Meet or exceed business developments and customer service goals. Provide guidance to branch staff to recognize and fulfill client needs.</li>
+			<li>Provide clients with counseling within scope of authority. Troubleshoot and reconcile problems and complaints referred by clients and subordinates.</li>
+			<li>Keep abreast of regulatory compliance and developments for assigned area and appraises staff of same. Recommend procedural changes as needed to support prescribed requirements.</li>
+			<li>Assist with monitoring day-to-day branch security.</li>
+			<li>Participates in maintaining acceptable ratings on all branch audits.</li>
+			<li>Represent the Bank through participation in various community and industry related activities. Actively promote interest in the Bank wherever and whenever possible.</li>
+			<li>Perform related and unrelated duties as may be required.</li>
+		</random></template>
+</category>
+<category>
+	<pattern>WHAT QUALIFICATIONS ARE NEEDED FOR YOUR POSITION</pattern>
+	<template>In general, to perform this job successfully an individual must be able to perform each essential duty satisfactorily. The requirements listed above are representative of the knowledge, skill, and/or ability required. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions.</template>
+</category>
+<category>
+	<pattern>WHAT EDUCATION IS REQUIRED FOR A BANK MANAGER</pattern>
+	<template>A four-year college degree with a minimum of five years branch experience with demonstrated supervisory ability. Good analytical, problem solving, customer service, and communication skills. Technologically proficient.</template>
+</category>
+<category>
+	<pattern>JOB DESCRIPTION DUTIES</pattern>
+	<template>Daily duties will involve meeting clients on a regular basis and completing financial reviews to ensure cross selling and generating new business at every possible opportunity as well as networking and developing referrals to continue to build the portfolio numbers. Targets will be based on overall client experience (customer service, sales retention and quality fact finding) as well as overall sales results including creating value through all channels of the group and adding new to bank business.</template>
+</category>
+<category>
+	<pattern>WHAT ARE SOME OF THE DIFFERENT RESPONSIBILITIES YOU HAVE</pattern>
+	<template>Manage staff assignments. Keep branch stocked with supplies and equipment as needed. Perform weekly and monthly audits of the vault and ATM, work with Tellers to insure audits are completed. Work daily on NSF list. Work daily on Cash Report and CTR Report if needed. Input Money Orders weekly. Manage all Proof Work performed by Branch Staff. Oversee that new accounts are opened properly. Manage cash limits for Teller drawers, vault and ATM. Call clients monthly to clear out and deposit negative accounts. Check the large bid items twice daily. Create weekly status reports. Responsible for net profit or net loss at bank. Marketing for new business, as well as building deposits. Demonstrate a clear understanding of products and services offered by the bank. Have a clear understanding and comply with all bank procedures, laws and federal regulations. Perform other duties as assigned.</template>
+</category>
+<category>
+	<pattern>WHAT IS A PERFORMANCE STANDARD THAT YOU MUST MEET</pattern>
+	<template>
+		<random>
+			<li>Take initiative, motivate others, demonstrate creativity, take risk and effectively handle numerous or crisis situations.</li>
+			<li>Display up-to-date knowledge/technical competence necessary to perform my job.</li>
+			<li>Is resourceful and shows ability to focus on relevant issues and facts.</li>
+			<li>Maintain a positive attitude towards the Bank, all employees, and clients.</li>
+			<li>To coach and develop employees while providing on-going feedback and training opportunities.</li>
+			<li>A working knowledge of personnel policies and procedures.</li>
+			<li>Display effective listening, verbal, and written skills.</li>
+			<li>Plan and organize activities/resources to maximize productivity, formulate goals and action plans; make timely decisions, and meet deadlines.</li>
+			<li>Support the bank's financial goals for growth and profit by managing department expenses, increasing fee income and preventing losses.</li>
+			<li>Demonstrate commitment to operating within planned budget guidelines and meet income/expense profit plans.</li>
+			<li>Manage relationship profitability including cross sales, balance sheet growth, customer service and product knowledge.</li>
+			<li>Maintain a professional appearance and a well-organized neat work area.</li>
+			<li>Sustain a good attendance record, be punctual and report to work on time.</li>
+			<li>Effectively share information with people at various levels prompting teamwork and manage change.</li>
+			<li>Gain the trust and respect of others.</li>
+		</random></template>
+</category>
+<category>
+	<pattern>ARE YOU RESPONSIBLE FOR FILLING IN WHEN AN EMPLOYEE IS ILL</pattern>
+	<template>Sometimes, when there is no one else.</template>
+</category>
+<category>
+	<pattern>DO YOU HANDLE COMPLAINTS MADE BY CLIENTS</pattern>
+	<template>Yes, it is a very important part of my job.</template>
+</category>
+<category>
+	<pattern>WHO HANDLES COMPLAINTS BY CLIENTS</pattern>
+	<template>I handle the complaints.</template>
+</category>
+<category>
+	<pattern>DO YOU WORK IN AN OFFICE</pattern>
+	<template>I don't, I would rather be out with the other employees.</template>
+</category>
+<category>
+	<pattern>WHAT DO I NEED TO HAVE TO BE A GOOD BANK MANAGER</pattern>
+	<template>
+		<random>
+			<li>Experience in management, ideally within the financial sector.</li>
+			<li>Ability to lead and motivate staff to meet targets.</li>
+			<li>Marketing, sales, and IT skills.</li>
+			<li>A business focussed attitude, with a good knowledge of the local economy.</li>
+			<li>Ability to deal courteously with clients, with tact and confidentiality.</li>
+			<li>Ability to communicate effectively, and build long-term working relationships.</li>
+			<li>Ability to negotiate, solve problems and make effective decisions.</li>
+			<li>High levels of integrity and honesty.</li>
+			<li>Ability to work as part of a team.</li>
+			<li>Ability to adapt to change.</li>
+			<li>Language skills if working in investment or international banking.</li>
+		</random></template>
+</category>
+<category>
+	<pattern>IS KNOWING A SECOND LANGUAGE HELPFUL</pattern>
+	<template>Yes, language skills especially German, Japanese, French, and Russian can be an advantage if you want to work with oversears clients and markets.</template>
+</category>
+<category>
+	<pattern>WHAT BENEFITS ARE OFFERED</pattern>
+	<template>They can include normal benefits and others such as: profit-related bonuses, subsidised mortgages, loans, pensions, shares, and insurance.</template>
+</category>
+<category>
+	<pattern>DOES YOUR POSITION REQUIRE YOU TO CONTINUE YOUR EDUCATION</pattern>
+	<template>Yes, it is necessary to attend trainings, seminars, and other forms of education to keep your skills up-to-date.</template>
+</category>
+</aiml>

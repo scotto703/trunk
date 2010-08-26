@@ -1,0 +1,34 @@
+LLWearable version 22
+Hippy- shirt
+
+	permissions 0
+	{
+		base_mask	00082000
+		owner_mask	00082000
+		group_mask	00000000
+		everyone_mask	00000000
+		next_owner_mask	00082000
+		creator_id	e879b165-e8b7-4ca5-bd28-5bacd2983e68
+		owner_id	5423e3a5-a4ad-485d-a62b-497e7a8328bd
+		last_owner_id	5423e3a5-a4ad-485d-a62b-497e7a8328bd
+		group_id	00000000-0000-0000-0000-000000000000
+	}
+	sale_info	0
+	{
+		sale_type	not
+		sale_price	10
+	}
+type 4
+parameters 10
+781 .8
+800 1
+801 .92
+802 1
+803 1
+804 1
+805 1
+828 .14
+840 .17
+868 0
+textures 1
+1 086a0986-24e3-225d-8637-9dcf10fc0b84

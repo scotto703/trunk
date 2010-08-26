@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BotData>
+  <FirstName>Elminstyr</FirstName>
+  <LastName>Exonar</LastName>
+  <Password>baker2008</Password>
+  <Location>Baker Island</Location>
+  <X>133</X>
+  <Y>212</Y>
+  <Z>30</Z>
+  <AIMLPath>\Bots\Elminstyr Exonar\AIML</AIMLPath>
+  <BotSettingsPath>\Bots\Elminstyr Exonar\Elminstyr Exonar.xml</BotSettingsPath>
+</BotData>

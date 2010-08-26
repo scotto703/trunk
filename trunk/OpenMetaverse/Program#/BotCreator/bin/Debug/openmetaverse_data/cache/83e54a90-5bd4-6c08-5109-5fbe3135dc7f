@@ -1,0 +1,44 @@
+LLWearable version 22
+Male Shape & Outfit Shoes
+
+	permissions 0
+	{
+		base_mask	7fffffff
+		owner_mask	7fffffff
+		group_mask	7fffffff
+		everyone_mask	7fffbfff
+		next_owner_mask	7fffffff
+		creator_id	00000000-0000-0000-0000-000000000000
+		owner_id	d7f985f3-c26e-430e-9394-51f068b89c76
+		last_owner_id	d7f985f3-c26e-430e-9394-51f068b89c76
+		group_id	00000000-0000-0000-0000-000000000000
+	}
+	sale_info	0
+	{
+		sale_type	not
+		sale_price	10
+	}
+type 6
+parameters 20
+197 .02
+198 .02
+500 .02
+501 .32
+502 .32
+503 .32
+508 .32
+509 0
+510 .3
+511 0
+512 .16
+513 .65
+514 .58
+616 .24
+654 .2
+812 1
+813 1
+817 1
+1052 .24
+1053 .24
+textures 1
+7 f2142f89-a1b0-0d61-6f89-ccc0d912d798

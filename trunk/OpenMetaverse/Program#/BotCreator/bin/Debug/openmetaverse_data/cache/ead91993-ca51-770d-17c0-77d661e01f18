@@ -1,0 +1,63 @@
+LLWearable version 22
+Male Shape & Outfit Skin
+
+	permissions 0
+	{
+		base_mask	0008e000
+		owner_mask	0008e000
+		group_mask	0008e000
+		everyone_mask	0008a000
+		next_owner_mask	0008e000
+		creator_id	00000000-0000-0000-0000-000000000000
+		owner_id	d7f985f3-c26e-430e-9394-51f068b89c76
+		last_owner_id	d7f985f3-c26e-430e-9394-51f068b89c76
+		group_id	00000000-0000-0000-0000-000000000000
+	}
+	sale_info	0
+	{
+		sale_type	not
+		sale_price	10
+	}
+type 1
+parameters 37
+108 0
+110 .07
+111 .47
+116 .32
+117 .49
+118 0
+125 0
+126 0
+150 0
+158 0
+159 0
+161 0
+162 0
+163 0
+165 0
+700 0
+701 0
+702 0
+703 0
+704 0
+705 1
+706 .2
+707 0
+708 0
+709 0
+710 0
+711 .29
+712 0
+713 .2
+714 0
+715 0
+775 0
+776 0
+777 0
+873 0
+874 0
+878 0
+textures 3
+0 c228d1cf-4b5d-4ba8-84f4-899a0796aa97
+5 c228d1cf-4b5d-4ba8-84f4-899a0796aa97
+6 c228d1cf-4b5d-4ba8-84f4-899a0796aa97

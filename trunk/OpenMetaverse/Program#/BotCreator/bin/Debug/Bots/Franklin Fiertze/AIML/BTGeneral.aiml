@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+
+
+
+
+
+
+<aiml>
+<!--author: Heather-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V1.2.0.33320-->
+<category>
+	<pattern>NO</pattern><that>You can find his desk upstairs, would you like me to take you to him?</that>
+	<template>Let me know late if you want to talk to him.</template>
+</category>
+<category>
+	<pattern>NO</pattern><that>Her desk is right behind you.  Would you like me to show you?</that>
+	<template>OK, just let me know if you want to later.</template>
+</category>
+<category>
+	<pattern>WHAT DO YOU DO</pattern>
+	<template>I'm the Baker Island bank teller.</template>
+</category>
+<category>
+	<pattern>WHAT IS THIS</pattern>
+	<template><srai>WHERE AM I</srai></template>
+</category>
+<category>
+	<pattern>WHAT IS YOUR JOB</pattern>
+	<template><srai>what do you do</srai></template>
+</category>
+<category>
+	<pattern>WHERE AM I</pattern>
+	<template>You are in the Baker Island Bank</template>
+</category>
+<category>
+	<pattern>WHERE IS ELMINSTYR</pattern>
+	<template>You can find his desk upstairs, would you like me to take you to him?</template>
+</category>
+<category>
+	<pattern>WHERE IS ELMINSTYR *</pattern>
+	<template><srai>where is elminstyr</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS TRACY</pattern>
+	<template><srai>where is tracy helstein</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS TRACY *</pattern>
+	<template><srai>Where is tracy Helstein</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS TRACY HELSTEIN</pattern>
+	<template>Her desk is right behind you.  Would you like me to show you?</template>
+</category>
+<category>
+	<pattern>WHO ARE YOU</pattern>
+	<template>My name is Franklin Fierze, I'm the teller.  Who are you?</template>
+</category>
+<category>
+	<pattern>WHO IS ELMINSTYR EXONAR</pattern>
+	<template>He is the loan officer, would you like me to take you too him?</template>
+</category>
+<category>
+	<pattern>WHO IS ELMINSYR *</pattern>
+	<template><srai>who is elminstyr exonar</srai></template>
+</category>
+<category>
+	<pattern>WHO IS TRACY</pattern>
+	<template><srai>Who is tracy Helstein</srai></template>
+</category>
+<category>
+	<pattern>WHO IS TRACY *</pattern>
+	<template><srai>Who is tracy helstein</srai></template>
+</category>
+<category>
+	<pattern>WHO IS TRACY HELSTEIN</pattern>
+	<template>She is the Bank Manager. You can find her right behind you over your left sholder.</template>
+</category>
+<category>
+	<pattern>WHO WORKS WITH YOU</pattern>
+	<template>Elminstyr Exonar is the loan officer and Tracy Helstein is the manager</template>
+</category>
+<category>
+	<pattern>YES</pattern><that>He is the loan officer, would you like me to take you too him?</that>
+	<template>Follow me.</template>
+</category>
+<category>
+	<pattern>YES</pattern><that>You can find his desk upstairs, would you like me to take you to him?</that>
+	<template>Please come with me</template>
+</category>
+<category>
+	<pattern>YES</pattern><that>Her desk is right behind you.  Would you like me to show you?</that>
+	<template>Please follow me.</template>
+</category>
+</aiml>

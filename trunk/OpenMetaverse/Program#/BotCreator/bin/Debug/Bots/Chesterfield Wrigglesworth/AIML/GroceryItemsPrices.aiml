@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+<!--author: Justin-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V1.1.0.33027-->
+<!--Updated by Tammy Coutelle-->
+<!--on June 20, 2009-->
+
+<category>
+	<pattern>HOW MUCH IS WHOLE MILK</pattern>
+	<template>$3.00 per carton</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS 2 PERCENT MILK</pattern>
+	<template>$3.00 per carton</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS SKIM MILK</pattern>
+	<template>$3.00 per carton</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS CHOCOLATE MILK</pattern>
+	<template>$3.50 per carton</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES WHOLE MILK COST</pattern>
+	<template>$3.00 per carton</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES 2 PERCENT MILK COST</pattern>
+	<template>$3.00 per carton</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES SKIM MILK COST</pattern>
+	<template>$3.00 per carton</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES CHOCOLATE MILK COST</pattern>
+	<template>$3.50 per carton</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS MILK</pattern>
+	<template>All of our milk is $3.00, except for chocolate milk, that is $3.50.</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES MILK COST</pattern>
+	<template>All of our milk is $3.00, except for chocolate milk, that is $3.50.</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS A GUINNESS 6 PACK</pattern>
+	<template>$5.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES A GUINNESS 6 PACK COST</pattern>
+	<template>$5.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS ORANGE JUICE</pattern>
+	<template>$2.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES ORANGE JUICE COST</pattern>
+	<template>$2.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS FRUIT PUNCH</pattern>
+	<template>$2.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES FRUIT PUNCH COST</pattern>
+	<template>$2.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS LEMONAIDE</pattern>
+	<template>$2.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES LEMONAIDE COST</pattern>
+	<template>$2.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS BUTTER</pattern>
+	<template>$2.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES BUTTER COST</pattern>
+	<template>$2.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS CHEESE</pattern>
+	<template>$2.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES CHEESE COST</pattern>
+	<template>$2.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS DIP</pattern>
+	<template>$1.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES DIP COST</pattern>
+	<template>$1.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS COTTAGE CHEESE</pattern>
+	<template>$1.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES COTTAGE CHEESE COST</pattern>
+	<template>$1.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH ARE POPSICLES</pattern>
+	<template>$4.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH DO POPSICLES COST</pattern>
+	<template>$4.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS ICE CREAM</pattern>
+	<template>$4.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES ICE CREAM COST</pattern>
+	<template>$4.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH ARE ICE CREAM SANDWICHES</pattern>
+	<template>$4.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH DO ICE CREAM SANDWICHES COST</pattern>
+	<template>$4.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH ARE POT PIES</pattern>
+	<template>$1.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH DO POT PIES COST</pattern>
+	<template>$1.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS PIZZA</pattern>
+	<template>$4.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES PIZZA COST</pattern>
+	<template>$4.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH ARE FISH STICKS</pattern>
+	<template>$4.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH DO FISH STICKS COST</pattern>
+	<template>$4.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH ARE FRENCH FRIES</pattern>
+	<template>$4.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH ARE FRIES</pattern>
+	<template>$4.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH DO FRENCH FRIES COST</pattern>
+	<template>$4.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH DO FRIES COST</pattern>
+	<template>$4.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH ARE TATOR TOTS</pattern>
+	<template>$4.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH DO TATOR TOTS COST</pattern>
+	<template>$4.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH ARE HOT POCKETS</pattern>
+	<template>$4.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH DO HOT POCKETS COST</pattern>
+	<template>$4.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH ARE NODOZ </pattern>
+	<template>$2.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH DO NODOZ COST</pattern>
+	<template>$2.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS ASPIRIN</pattern>
+	<template>$2.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES ASPIRIN COST</pattern>
+	<template>$2.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS PEPTO BISMOL</pattern>
+	<template>$2.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES PEPTO BISMOL COST</pattern>
+	<template>$2.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH ARE BAND AIDS</pattern>
+	<template>$2.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH DO BAND AIDS COST</pattern>
+	<template>$2.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH ARE PRINGLES</pattern>
+	<template>$3.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH DO PRINGLES COST</pattern>
+	<template>$3.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH ARE RUFFLES</pattern>
+	<template>$3.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH DO RUFFLES COST</pattern>
+	<template>$3.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH ARE TWINKEES</pattern>
+	<template>$2.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH DO TWINKEES COST</pattern>
+	<template>$2.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH ARE SUZYQS</pattern>
+	<template>$2.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH DO SUZYQS COST</pattern>
+	<template>$2.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH ARE SPAGHETTIOS</pattern>
+	<template>$1.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH DO SPAGHETTIOS COST</pattern>
+	<template>$1.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH ARE SPAGHETTIOS WITH MEATBALLS</pattern>
+	<template>$1.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH DO SPAGHETTIOS WITH MEATBALLS COST</pattern>
+	<template>$1.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS SPAM</pattern>
+	<template>$1.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES SPAM COST</pattern>
+	<template>$1.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS TUNA FISH</pattern>
+	<template>$1.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES TUNA FISH COST</pattern>
+	<template>$1.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS TOMATO SOUP</pattern>
+	<template>$1.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES TOMATO SOUP COST</pattern>
+	<template>$1.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS MAC AND CHEESE</pattern>
+	<template>$1.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES MAC AND CHEESE COST</pattern>
+	<template>$1.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS GUINNESS</pattern>
+	<template>$5.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES GUINNESS COST</pattern>
+	<template>$5.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS A GUINNESS 6 PACK</pattern>
+	<template>$5.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES A GUINNESS 6 PACK COST</pattern>
+	<template>$5.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS SCHLITZ</pattern>
+	<template>$5.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES SCHLITZ COST</pattern>
+	<template>$5.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS A SCHLITZ 6 PACK</pattern>
+	<template>$5.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES A SCHLITZ 6 PACK COST</pattern>
+	<template>$5.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH ARE BUTTER COOKIES</pattern>
+	<template>$2.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH DO BUTTER COOKIES COST</pattern>
+	<template>$2.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH ARE VANILLA WAFERS</pattern>
+	<template>$2.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH DO VANILLA WAFERS COST</pattern>
+	<template>$2.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH ARE SALTINES</pattern>
+	<template>$2.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH DO SALTINES COST</pattern>
+	<template>$2.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH ARE SALTINE CRACKERS</pattern>
+	<template>$2.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH DO SALTINE CRACKERS COST</pattern>
+	<template>$2.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS STRAWBERRY JELLY</pattern>
+	<template>$1.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES STRAWBERRY JELLY COST</pattern>
+	<template>$1.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS PEANUT BUTTER</pattern>
+	<template>$1.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES PEANUT BUTTER COST</pattern>
+	<template>$1.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS BREAD</pattern>
+	<template>$2.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES BREAD COST</pattern>
+	<template>$2.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS OATMEAL</pattern>
+	<template>$2.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES OATMEAL COST</pattern>
+	<template>$2.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH ARE HONEY NUT CHERRIOS</pattern>
+	<template>$2.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH DO HONEYNUT CHERRIOS COST</pattern>
+	<template>$2.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS POP</pattern>
+	<template>$3.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES POP COST</pattern>
+	<template>$3.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS SODA</pattern>
+	<template>$3.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES SODA COST</pattern>
+	<template>$3.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS 7UP</pattern>
+	<template>$3.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES 7UP COST</pattern>
+	<template>$3.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS DR PEPPER</pattern>
+	<template>$3.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES DR PEPPER COST</pattern>
+	<template>$3.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS JIFFY MIX</pattern>
+	<template>$2.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES JIFFY MIX COST</pattern>
+	<template>$2.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS FROSTING</pattern>
+	<template>$2.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES FROSTING COST</pattern>
+	<template>$2.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS CAKE MIX</pattern>
+	<template>$3.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES CAKE MIX COST</pattern>
+	<template>$3.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS SUGAR</pattern>
+	<template>$3.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES SUGAR COST</pattern>
+	<template>$3.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS FLOUR</pattern>
+	<template>$3.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES FLOUR COST</pattern>
+	<template>$3.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS SALT</pattern>
+	<template>$2.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES SALT COST</pattern>
+	<template>$2.00</template>
+</category>
+<category>
+	<pattern>HOW MUCH IS COFFEE</pattern>
+	<template>$3.50</template>
+</category>
+<category>
+	<pattern>HOW MUCH DOES COFFEE COST</pattern>
+	<template>$3.50</template>
+</category>
+<category>
+	<pattern>Do YOU SELL WHOLE MILK</pattern>
+	<template>Yes, in the dairy section</template>
+</category>
+<category>
+	<pattern>DO YOU SELL 2 PERCENT MILK</pattern>
+	<template>Yes, in the dairy section</template>
+</category>
+<category>
+	<pattern>Do YOU SELL SKIM MILK</pattern>
+	<template>Yes, in the dairy section</template>
+</category>
+<category>
+	<pattern>DO YOU SELL CHOCOLATE MILK</pattern>
+	<template>Yes, in the dairy section</template>
+</category>
+<category>
+	<pattern>DO YOU SELL WHOLE MILK</pattern>
+	<template>Yes, in the dairy section</template>
+</category>
+<category>
+	<pattern>DO YOU SELL 2 PERCENT MILK</pattern>
+	<template>Yes, in the dairy section</template>
+</category>
+<category>
+	<pattern>DO YOU SELL SKIM MILK</pattern>
+	<template>Yes, in the dairy section</template>
+</category>
+<category>
+	<pattern>DO YOU SELL CHOCOLATE MILK  </pattern>
+	<template>Yes, in the dairy section</template>
+</category>
+<category>
+	<pattern>DO YOU SELL  MILK</pattern>
+	<template>Yes, in the dairy section</template>
+</category>
+<category>
+	<pattern>DO YOU SELL MILK </pattern>
+	<template>Yes, in the dairy section</template>
+</category>
+<category>
+	<pattern>DO YOU SELL GUINNESS</pattern>
+	<template>Yes, we have 6 packs of Guinness</template>
+</category>
+<category>
+	<pattern>DO YOU SELL ORANGE JUICE</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL FRUIT PUNCH</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL LEMONAIDE</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL BUTTER</pattern>
+	<template>Yes, in the dairy section</template>
+</category>
+<category>
+	<pattern>DO YOU SELL CHEESE</pattern>
+	<template>Yes, in the dairy section</template>
+</category>
+<category>
+	<pattern>DO YOU SELL DIP</pattern>
+	<template>Yes, in the dairy section</template>
+</category>
+<category>
+	<pattern>DO YOU SELL COTTAGE CHEESE</pattern>
+	<template>Yes, in the dairy section</template>
+</category>
+<category>
+	<pattern>DO YOU SELL POPSICLES</pattern>
+	<template>Yes, in the freezer section</template>
+</category>
+<category>
+	<pattern>DO YOU SELL ICE CREAM</pattern>
+	<template>Yes, in the freezer section</template>
+</category>
+<category>
+	<pattern>DO YOU SELL ICE CREAM SANDWICHES</pattern>
+	<template>Yes, in the freezer section</template>
+</category>
+<category>
+	<pattern>DO YOU SELL POT PIES</pattern>
+	<template>Yes, in the freezer section</template>
+</category>
+<category>
+	<pattern>DO YOU SELL PIZZA</pattern>
+	<template>Yes, in the freezer section</template>
+</category>
+<category>
+	<pattern>DO YOU SELL FISH STICKS</pattern>
+	<template>Yes, in the freezer section</template>
+</category>
+<category>
+	<pattern>DO YOU SELL FRENCH FRIES</pattern>
+	<template>Yes, in the freezer section</template>
+</category>
+<category>
+	<pattern>DO YOU SELL FRIES</pattern>
+	<template>Yes, in the freezer section</template>
+</category>
+<category>
+	<pattern>DO YOU SELL TATOR TOTS</pattern>
+	<template>Yes, in the freezer section</template>
+</category>
+<category>
+	<pattern>DO YOU SELL HOT POCKETS</pattern>
+	<template>Yes, in the freezer section</template>
+</category>
+<category>
+	<pattern>DO YOU SELL ARE NODOZ </pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL ASPIRIN</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL PEPTO BISMOL</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL BAND AIDS</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL PRINGLES</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL RUFFLES</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL TWINKEES</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL SUZYQS</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL SPAGHETTIOS</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL SPAGHETTIOS WITH MEATBALLS</pattern>
+	<template>Yes, those are my favorite</template>
+</category>
+<category>
+	<pattern>DO YOU SELL SPAM</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL TUNA FISH</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL TOMATO SOUP</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL MAC AND CHEESE</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL GUINNESS</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL GUINNESS 6 PACK</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL SCHLITZ</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL SCHLITZ 6 PACK</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL BUTTER COOKIES</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL VANILLA WAFERS</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL SALTINES</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL SALTINE CRACKERS</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL STRAWBERRY JELLY</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL PEANUT BUTTER</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL BREAD</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL OATMEAL</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL HONEY NUT CHERRIOS</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL POP</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL SODA</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL 7UP</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL DR PEPPER</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL JIFFY MIX</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL FROSTING</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL CAKE MIX</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL SUGAR</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL FLOUR</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL SALT</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>DO YOU SELL COFFEE</pattern>
+	<template>Yes</template>
+</category>
+<category>
+	<pattern>WHAT KIND OF CHIPS *</pattern>
+	<template>we sell Pringles and Ruffles</template>
+</category>
+<category>
+	<pattern>* CHIPS COST</pattern>
+	<template>$3.00 a bag</template>
+</category>
+<category>
+	<pattern>WHAT KIND OF BEER *</pattern>
+	<template>we sell Guinness and Schlitz</template>
+</category>
+<category>
+	<pattern>* BEER COST</pattern>
+	<template>$5.00 for a six pack</template>
+</category>
+
+</aiml>

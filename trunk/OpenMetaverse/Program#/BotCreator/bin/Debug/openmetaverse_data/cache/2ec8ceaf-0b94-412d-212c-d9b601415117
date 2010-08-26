@@ -1,0 +1,45 @@
+LLWearable version 22
+professional man pants
+
+	permissions 0
+	{
+		base_mask	00082000
+		owner_mask	00082000
+		group_mask	00000000
+		everyone_mask	00000000
+		next_owner_mask	00082000
+		creator_id	05d08da9-a56f-4821-a4d3-4261008c19cf
+		owner_id	566361fe-e2d6-430c-b1d5-c748d9fd8b77
+		last_owner_id	566361fe-e2d6-430c-b1d5-c748d9fd8b77
+		group_id	00000000-0000-0000-0000-000000000000
+	}
+	sale_info	0
+	{
+		sale_type	not
+		sale_price	10
+	}
+type 5
+parameters 21
+160 0
+516 .07
+614 1
+615 1
+625 .57
+638 0
+793 3
+806 1
+807 1
+808 .5
+814 1
+815 1
+816 .07
+869 0
+913 0
+914 1
+915 1
+1017 1
+1018 1
+1035 1
+1036 1
+textures 1
+2 116dc1ae-155b-d8f6-8e07-01820d79c8bd

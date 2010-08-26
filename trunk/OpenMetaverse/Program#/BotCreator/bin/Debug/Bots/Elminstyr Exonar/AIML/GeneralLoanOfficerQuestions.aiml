@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+
+<aiml>
+<!--author: Roberta09-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V1.2.0.33320-->
+<!--Edited By Matthew Tyson On 12-14-2009-->
+<category>
+	<pattern>WILL EVERYONE QUALIFY FOR A LOAN THE FIRST TIME</pattern>
+	<template>No, some will take extra work to qualify them and others may never qualify.</template>
+</category>
+<category>
+	<pattern>WHAT CAN CAUSE A CLIENT NOT TO QUALIFY</pattern>
+	<template>There are many reasons including: they don't make enough money, bad credit report, no credit, credit rating is low, don't have down payment, too young, and the list continues. Most of the time when a loan is turned down it is not just one reason. </template>
+</category>
+<category>
+	<pattern>ARE ALL LOANS THE SAME</pattern>
+	<template>No, because there are different types of loans and circumstances for the loan.</template>
+</category>
+<category>
+	<pattern>HOW MANY HOURS DO YOU WORK</pattern>
+	<template>I work a normal shift of 8 hours a day 5 days a week.</template>
+</category>
+<category>
+	<pattern>ARE YOU REQUIRED TO REACH A QUOTA</pattern>
+	<template>Yes, the bank has a quota rate that must be meet each month for new loans.</template>
+</category>
+</aiml>

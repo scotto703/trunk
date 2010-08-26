@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+<!--author: Grim Reaper-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V1.1.0.33027-->
+<!--Edited By Matthew Tyson On 12-10-2009-->
+<!--Removed conflicting AIML that conflicts with the base files.-->
+
+<category>
+	<pattern>HOW LONG HAVE YOU BEEN A CLERK</pattern>
+	<template>Way too long.</template>
+</category>
+<category>
+	<pattern>THANKS FOR THE INFO</pattern>
+	<template>No problem, anytime!</template>
+</category>
+<category>
+	<pattern>THANKS FOR THE INFORMATION</pattern>
+	<template><srai>THANKS FOR THE INFO</srai></template>
+</category>
+<category>
+	<pattern>THANK YOU FOR YOUR TIME</pattern>
+	<template><srai>THANKS FOR THE INFO</srai></template>
+</category>
+<category>
+	<pattern>DO YOU STOCK THE SHELVES</pattern>
+	<template>Yes I do, I work real hard at it.</template>
+</category>
+
+</aiml>

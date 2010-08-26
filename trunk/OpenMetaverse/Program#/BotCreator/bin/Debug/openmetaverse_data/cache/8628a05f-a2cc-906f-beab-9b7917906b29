@@ -1,0 +1,31 @@
+LLWearable version 22
+CHEZ white solid shirt
+
+	permissions 0
+	{
+		base_mask	7fffffff
+		owner_mask	7fffffff
+		group_mask	00000000
+		everyone_mask	00000000
+		next_owner_mask	00082000
+		creator_id	b77929f6-2844-4fcd-ae11-d33dabfb26ba
+		owner_id	b77929f6-2844-4fcd-ae11-d33dabfb26ba
+		last_owner_id	b77929f6-2844-4fcd-ae11-d33dabfb26ba
+		group_id	00000000-0000-0000-0000-000000000000
+	}
+	sale_info	0
+	{
+		sale_type	not
+		sale_price	10
+	}
+type 10
+parameters 7
+603 .81
+604 1
+605 .93
+779 .93
+821 1
+822 1
+823 1
+textures 1
+16 821c8242-ae9f-48fa-c7a3-12d697705672

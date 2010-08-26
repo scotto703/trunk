@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+
+<aiml>
+<!--author: Justin-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V1.1.0.33027-->
+<!--  Programmer: John Bednarz -->
+<!--  Project: Mr Chesterfield Wrigglesworth - Grocery Store Manager -->
+<!--  Date: April 11, 2008 -->
+<!--  Last Modified: May 29, 2008 --> 
+<category> 
+	<pattern> INVENTORY REPORTS SET UP  </pattern> 
+	<template>I would like to have a summary of items in stock and total value, break down of items sold by department, our best selling items so that I could schedule automatic ordering and identify what is in stock compared to what should be in stock.</template> 
+</category> 
+<category> 
+	<pattern> * INVENTORY REPORTS SET UP </pattern> 
+	<template><srai>INVENTORY REPORTS SET UP</srai> </template> 
+</category> 
+<category> 
+	<pattern> * INVENTORY REPORTS SET UP _ </pattern> 
+	<template><srai>INVENTORY REPORTS SET UP</srai> </template> 
+</category> 
+<category> 
+	<pattern> INVENTORY REPORTS SET UP _ </pattern> 
+	<template><srai>INVENTORY REPORTS SET UP</srai> </template> 
+</category> 
+<category> 
+	<pattern> INVENTORY CONTROL  </pattern> 
+	<template>We definately need to have an inventory control system in place using UPC codes.</template> 
+</category> 
+<category> 
+	<pattern> * INVENTORY CONTROL </pattern> 
+	<template><srai>INVENTORY CONTROL</srai> </template> 
+</category> 
+<category> 
+	<pattern> * INVENTORY CONTROL _ </pattern> 
+	<template><srai>INVENTORY CONTROL</srai> </template> 
+</category> 
+<category> 
+	<pattern> INVENTORY CONTROL _ </pattern> 
+	<template><srai>INVENTORY CONTROL</srai> </template> 
+</category> 
+<category> 
+	<pattern> UPC INFORMATION </pattern> 
+	<template>We need item name, size, weight, description, retail price, wholesale cost, 
+                  number on hand, re-order pointetc. </template> 
+</category> 
+<category> 
+	<pattern> * UPC INFORMATION </pattern> 
+	<template><srai>UPC INFORMATION</srai> </template> 
+</category> 
+<category> 
+	<pattern> * UPC INFORMATION _ </pattern> 
+	<template><srai>UPC INFORMATION</srai> </template> 
+</category> 
+<category> 
+	<pattern> UPC INFORMATION _ </pattern> 
+	<template><srai>UPC INFORMATION</srai> </template> 
+</category> 
+<category> 
+	<pattern> ITEM NAME </pattern> 
+	<template>I am thinking that we need to have the brand name also with the item name some how because of having
+                  multiple same items, but different brands, just a thought.</template> 
+</category> 
+<category> 
+	<pattern> * ITEM NAME </pattern> 
+	<template><srai>ITEM NAME</srai> </template> 
+</category> 
+<category> 
+	<pattern> * ITEM NAME _ </pattern> 
+	<template><srai>ITEM NAME</srai> </template> 
+</category> 
+<category> 
+	<pattern> ITEM NAME _ </pattern> 
+	<template><srai>ITEM NAME</srai> </template> 
+</category> 
+<category> 
+	<pattern> REORDER POINT </pattern> 
+	<template>Normal consumption during lead-time + Safety Stock, It changes depending on the time of the year.</template> 
+</category> 
+<category> 
+	<pattern> * REORDER POINT </pattern> 
+	<template><srai>REORDER POINT</srai> </template> 
+</category> 
+<category> 
+	<pattern> * REORDER POINT _ </pattern> 
+	<template><srai>REORDER POINT</srai> </template> 
+</category> 
+<category> 
+	<pattern> REORDER POINT _ </pattern> 
+	<template><srai>REORDER POINT</srai> </template> 
+</category> 
+<category> 
+	<pattern>REORDER LEVEL</pattern> 
+	<template>Based on our average daily usage rate x lead-time in days is how i calculate reorder level.</template> 
+</category> 
+<category> 
+	<pattern> * LEVEL </pattern> 
+	<template><srai>REORDER LEVEL</srai> </template> 
+</category> 
+<category> 
+	<pattern> * LEVEL _ </pattern> 
+	<template><srai>REORDER LEVEL</srai> </template> 
+</category> 
+<category> 
+	<pattern> LEVEL _ </pattern> 
+	<template><srai>REORDER LEVEL</srai> </template> 
+</category> 
+<category> 
+	<pattern> MANAGEMENT REPORT </pattern> 
+	<template>I need a daily sales by department report based on a time frame of my choosing.</template> 
+</category> 
+<category> 
+	<pattern> * MANAGEMENT REPORT </pattern> 
+	<template><srai>MANAGEMENT REPORT</srai> </template> 
+</category> 
+<category> 
+	<pattern> * MANAGEMENT REPORT _ </pattern> 
+	<template><srai>MANAGEMENT REPORT</srai> </template> 
+</category> 
+<category> 
+	<pattern> MANAGEMENT REPORT _ </pattern> 
+	<template><srai>MANAGEMENT REPORT</srai> </template> 
+</category> 
+<category> 
+	<pattern>PURCHASE ORDERS</pattern> 
+	<template>We should have Vendor name, address, vendor code,item name and code, quantity ordered and unit price.</template> 
+</category> 
+<category> 
+	<pattern> * PURCHASE ORDERS </pattern> 
+	<template><srai>PURCHASE ORDERS</srai> </template> 
+</category> 
+<category> 
+	<pattern> * PURCHASE ORDERS _ </pattern> 
+	<template><srai>PURCHASE ORDERS</srai> </template> 
+</category> 
+<category> 
+	<pattern> PURCHASE ORDERS _ </pattern> 
+	<template><srai>PURCHASE ORDERS</srai> </template> 
+</category> 
+<category> 
+	<pattern>INVENTORY MAINTENANCE</pattern> 
+	<template>It would save a lot of time if we had automatic reordering, backorders, voiding invoices/backorders, computerized invoices... as much automation as possible. </template>
+</category> 
+<category> 
+	<pattern> * INVENTORY MAINTENANCE </pattern> 
+	<template><srai>INVENTORY MAINTENANCE</srai> </template> 
+</category> 
+<category> 
+	<pattern> * INVENTORY MAINTENANCE _ </pattern> 
+	<template><srai>INVENTORY MAINTENANCE</srai> </template> 
+</category> 
+<category> 
+	<pattern> INVENTORY MAINTENANCE _ </pattern> 
+	<template><srai>INVENTORY MAINTENANCE</srai> </template> 
+</category> 
+<category> 
+	<pattern> * DELIVERY'S</pattern> 
+	<template>We get meat, frozens, produce and dairy every week.</template> 
+</category> 
+<category> 
+	<pattern>INVENTORY REPORTS</pattern> 
+	<template>Summary of in-stock inventory and value,  Breakdown of items sold—reorder report, Best selling items—Top Sellers.</template> 
+</category> 
+<category> 
+	<pattern> * INVENTORY REPORTS </pattern> 
+	<template><srai>INVENTORY REPORTS</srai> </template> 
+</category> 
+<category> 
+	<pattern> * INVENTORY REPORTS _ </pattern> 
+	<template><srai>INVENTORY REPORTS</srai> </template> 
+</category> 
+<category> 
+	<pattern> INVENTORY REPORTS _ </pattern> 
+	<template><srai>INVENTORY REPORTS</srai> </template> 
+</category> 
+<category> 
+	<pattern>OTHER INVENTORY REPORTS</pattern> 
+	<template>Identify what is in-stock in relation to what should be in-stock, Employee Reports .</template> 
+</category> 
+<category> 
+	<pattern> * OTHER INVENTORY REPORTS </pattern> 
+	<template><srai>OTHER INVENTORY REPORTS</srai> </template> 
+</category> 
+<category> 
+	<pattern> * OTHER INVENTORY REPORTS _ </pattern> 
+	<template><srai>OTHER INVENTORY REPORTS</srai> </template> 
+</category> 
+<category> 
+	<pattern> OTHER INVENTORY REPORTS _ </pattern> 
+	<template><srai>OTHER INVENTORY REPORTS</srai> </template> 
+</category> 
+<category> 
+	<pattern>DEPARTMENT ID</pattern> 
+	<template>Our department ID is a number assigned to a department.</template> 
+</category> 
+<category> 
+	<pattern> * DEPARTMENT ID </pattern> 
+	<template><srai>DEPARTMENT ID</srai> </template> 
+</category> 
+<category> 
+	<pattern> * DEPARTMENT ID _ </pattern> 
+	<template><srai>DEPARTMENT ID</srai> </template> 
+</category> 
+<category> 
+	<pattern> DEPARTMENT ID _ </pattern> 
+	<template><srai>DEPARTMENT ID</srai> </template> 
+</category> 
+<category> 
+	<pattern>SUPPLIER</pattern> 
+	<template>We have many suppliers.</template> 
+</category> 
+<category> 
+	<pattern> * SUPPLIER </pattern> 
+	<template><srai>SUPPLIER</srai> </template> 
+</category> 
+<category> 
+	<pattern> * SUPPLIER _ </pattern> 
+	<template><srai>SUPPLIER</srai> </template> 
+</category> 
+<category> 
+	<pattern> SUPPLIER _ </pattern> 
+	<template><srai>SUPPLIER</srai> </template> 
+</category> 
+<category> 
+	<pattern>MANUFACTURER</pattern> 
+	<template>We deal with our suppliers, not with the manufaturer in most cases.</template> 
+</category> 
+<category> 
+	<pattern> * MANUFACTURER </pattern> 
+	<template><srai>MANUFACTURER</srai> </template> 
+</category> 
+<category> 
+	<pattern> * MANUFACTURER _ </pattern> 
+	<template><srai>MANUFACTURER</srai> </template> 
+</category> 
+<category> 
+	<pattern> MANUFACTURER _ </pattern> 
+	<template><srai>MANUFACTURER</srai> </template> 
+</category> 
+<category> 
+	<pattern>BEST SELLERS</pattern> 
+	<template>We have a lot of best sellers, it is important that we keep track of them.</template> 
+</category> 
+<category> 
+	<pattern> * BEST SELLERS </pattern> 
+	<template><srai>BEST SELLERS</srai> </template> 
+</category> 
+<category> 
+	<pattern> * BEST SELLERS _ </pattern> 
+	<template><srai>BEST SELLERS</srai> </template> 
+</category> 
+<category> 
+	<pattern> BEST SELLERS _ </pattern> 
+	<template><srai>BEST SELLERS</srai> </template> 
+</category> 
+<category> 
+	<pattern>STAGNANT ITEMS</pattern> 
+	<template>Stagnant items are important to keep track of so we don't order more.</template> 
+</category> 
+<category> 
+	<pattern> * STAGNANT ITEMS </pattern> 
+	<template><srai>STAGNANT ITEMS</srai> </template> 
+</category> 
+<category> 
+	<pattern> * STAGNANT ITEMS _ </pattern> 
+	<template><srai>STAGNANT ITEMS</srai> </template> 
+</category> 
+<category> 
+	<pattern> STAGNANT ITEMS _ </pattern> 
+	<template><srai>STAGNANT ITEMS</srai> </template> 
+</category> 
+<category> 
+	<pattern>REORDERING</pattern> 
+	<template>I need a way to keep track of reordering.</template> 
+</category> 
+<category> 
+	<pattern> * REORDERING </pattern> 
+	<template><srai>REORDERING</srai> </template> 
+</category> 
+<category> 
+	<pattern> * REORDERING _ </pattern> 
+	<template><srai>REORDERING</srai> </template> 
+</category> 
+<category> 
+	<pattern> REORDERING _ </pattern> 
+	<template><srai>REORDERING</srai> </template> 
+</category> 
+<category> 
+	<pattern>EXPIRED</pattern> 
+	<template>We send expired items back if we can. (except for beer, I take that home and drink it, shhhh)</template> 
+</category> 
+<category> 
+	<pattern> * EXPIRED </pattern> 
+	<template><srai>EXPIRED</srai> </template> 
+</category> 
+<category> 
+	<pattern> * EXPIRED _ </pattern> 
+	<template><srai>EXPIRED</srai> </template> 
+</category> 
+<category> 
+	<pattern> EXPIRED _ </pattern> 
+	<template><srai>EXPIRED</srai> </template> 
+</category> 
+<category> 
+	<pattern>VENDOR RETURNS</pattern> 
+	<template>If possible, we send items back so we need a way to do this.</template> 
+</category> 
+<category> 
+	<pattern> * VENDOR RETURNS </pattern> 
+	<template><srai>VENDOR RETURNS</srai> </template> 
+</category> 
+<category> 
+	<pattern> * VENDOR RETURNS _ </pattern> 
+	<template><srai>VENDOR RETURNS</srai> </template> 
+</category> 
+<category> 
+	<pattern> VENDOR RETURNS _ </pattern> 
+	<template><srai>VENDOR RETURNS</srai> </template> 
+</category> 
+<category> 
+	<pattern>DATABASE</pattern> 
+	<template>Nothing to speak of, thats why you are here.</template> 
+</category> 
+<category> 
+	<pattern> * DATABASE </pattern> 
+	<template><srai>DATABASE</srai> </template> 
+</category> 
+<category> 
+	<pattern> * DATABASE _ </pattern> 
+	<template><srai>DATABASE</srai> </template> 
+</category> 
+<category> 
+	<pattern> DATABASE _ </pattern> 
+	<template><srai>DATABASE</srai> </template> 
+</category> 
+<category> 
+	<pattern>CHECKOUT</pattern> 
+	<template>When the customers are ready, they can be processed at the checkout counter.
+            We also process returns at the checkout because we don't have a courtesy desk.</template> 
+</category> 
+<category> 
+	<pattern> * CHECKOUT </pattern> 
+	<template><srai>CHECKOUT</srai> </template> 
+</category> 
+<category> 
+	<pattern> * CHECKOUT _ </pattern> 
+	<template><srai>CHECKOUT</srai> </template> 
+</category> 
+<category> 
+	<pattern> CHECKOUT _ </pattern> 
+	<template><srai>CHECKOUT</srai> </template> 
+</category> 
+<category> 
+	<pattern>BAR CODE</pattern> 
+	<template>Everything needs a barcode</template> 
+</category> 
+<category> 
+	<pattern> * BAR CODE </pattern> 
+	<template><srai>BAR CODE</srai> </template> 
+</category> 
+<category> 
+	<pattern> * BAR CODE _ </pattern> 
+	<template><srai>BAR CODE</srai> </template> 
+</category> 
+<category> 
+	<pattern> BAR CODE _ </pattern> 
+	<template><srai>BAR CODE</srai> </template> 
+</category> 
+<category> 
+	<pattern> * BARCODE </pattern> 
+	<template><srai>BAR CODE</srai> </template> 
+</category> 
+<category> 
+	<pattern> * BARCODE _ </pattern> 
+	<template><srai>BAR CODE</srai> </template> 
+</category> 
+<category> 
+	<pattern> BARCODE _ </pattern> 
+	<template><srai>BAR CODE</srai> </template> 
+</category> 
+<category> 
+	<pattern>REASON CODES</pattern> 
+	<template>There needs to be reason codes for product returns.</template> 
+</category> 
+<category> 
+	<pattern> * REASON CODES </pattern> 
+	<template><srai>REASON CODES</srai> </template> 
+</category> 
+<category> 
+	<pattern> * REASON CODES _ </pattern> 
+	<template><srai>REASON CODES</srai> </template> 
+</category> 
+<category> 
+	<pattern> REASON CODES _ </pattern> 
+	<template><srai>REASON CODES</srai> </template> 
+</category> 
+<category> 
+	<pattern>ACCOUNTING</pattern> 
+	<template>Accounting should be done automatically. The more automated thing are, the better.</template> 
+</category> 
+<category> 
+	<pattern> * ACCOUNTING </pattern> 
+	<template><srai>ACCOUNTING</srai> </template> 
+</category> 
+<category> 
+	<pattern> * ACCOUNTING _ </pattern> 
+	<template><srai>ACCOUNTING</srai> </template> 
+</category> 
+<category> 
+	<pattern> ACCOUNTING _ </pattern> 
+	<template><srai>ACCOUNTING</srai> </template>
+</category> 
+<category> 
+	<pattern>RFID</pattern> 
+	<template>I don't think we need to go that far right now.</template> 
+</category> 
+<category> 
+	<pattern> * RFID</pattern> 
+	<template><srai>RFID</srai> </template> 
+</category> 
+<category> 
+	<pattern> * RFID _ </pattern> 
+	<template><srai>RFID</srai> </template> 
+</category> 
+<category> 
+	<pattern> RFID _ </pattern> 
+	<template><srai>RFID</srai> </template> 
+</category> 
+<category>
+	<pattern>* ITEM INFORMATION *</pattern>
+	<template><srai>ITEM INFORMATION</srai></template>
+</category>
+<category>
+	<pattern>ITEM INFORMATION</pattern>
+	<template>What ever you think is useful. Barcode, item name, description, retail price, cost, on hand, sold, reorder point, department and supplier probably make sense. I'm sure there is more we could use.</template>
+</category>
+<category>
+	<pattern>* SUPPLIER INFORMATION *</pattern>
+	<template><srai>SUPPLIER INFORMATION</srai></template>
+</category>
+<category>
+	<pattern>SUPPLIER INFORMATION</pattern>
+	<template>We store all of our supplier info in one of the books up on the front counter.</template>
+</category>
+<category>
+	<pattern>SUPPLIER INFORMATION *</pattern>
+	<template><srai>SUPPLIER INFORMATION</srai></template>
+</category>
+<category>
+	<pattern>* SUPPLIER INFORMATION</pattern>
+	<template><srai>SUPPLIER INFORMATION</srai></template>
+</category>
+<category>
+	<pattern>ITEM INFORMATION *</pattern>
+	<template><srai>ITEM INFORMATION</srai></template>
+</category>
+<category>
+	<pattern>* ITEM INFORMATION</pattern>
+	<template><srai>ITEM INFORMATION</srai></template>
+</category>
+<category>
+	<pattern>DELIVERIES</pattern>
+	<template><srai> * DELIVERY'S</srai></template>
+</category>
+<category>
+	<pattern>* DELIVERIES</pattern>
+	<template><srai> * DELIVERY'S</srai></template>
+</category>
+<category>
+	<pattern>* DELIVERIES *</pattern>
+	<template><srai> * DELIVERY'S</srai></template>
+</category>
+</aiml>

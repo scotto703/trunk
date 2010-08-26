@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml>
+<!--author: Heather-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V1.2.0.33320-->
+<!--Edited By Matthew Tyson 12-13-2009-->
+<category>
+	<pattern>WHERE ARE WE</pattern>
+	<template>This is the Bank on Baker Island</template>
+</category>
+<category>
+	<pattern>WHERE AM I</pattern>
+	<template><srai>where are we</srai></template>
+</category>
+<category>
+	<pattern>WHAT IS THIS</pattern>
+	<template><srai>where are we</srai></template>
+</category>
+<category>
+	<pattern>WHO WORKS WITH YOU</pattern>
+	<template>I have three employees at the bank, Franklin the teller, Elminstyr the loan officer, and Britney our receptionist.</template>
+</category>
+<category>
+	<pattern>WHO WORKS FOR YOU</pattern>
+	<template><srai>Who works with you</srai></template>
+</category>
+</aiml>

@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml>
+<!--author: Grim Reaper-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V1.1.0.33027-->
+<category>
+	<pattern>DO YOU HAVE MILK</pattern>
+	<template>Yes we do, what kind would you like?</template>
+</category>
+<category>
+	<pattern>DO YOU HAVE CHOCOLATE MILK</pattern>
+	<template>Yes we do, it is very tasty!</template>
+</category>
+<category>
+	<pattern>DO YOU HAVE SKIM MILK</pattern>
+	<template><srai>DO YOU HAVE CHOCOLATE MILK</srai></template>
+</category>
+<category>
+	<pattern>DO YOU HAVE WHOLE MILK</pattern>
+	<template><srai>DO YOU HAVE CHOCOLATE MILK</srai></template>
+</category>
+<category>
+	<pattern>DO YOU HAVE 2 PERCENT MILK</pattern>
+	<template><srai>DO YOU HAVE CHOCOLATE MILK</srai></template>
+</category>
+<category>
+	<pattern>CHOCOLATE MILK</pattern>
+	<template>As a matter of fact, we do!</template>
+</category>
+<category>
+	<pattern>SKIM MILK</pattern>
+	<template>Yes.</template>
+</category>
+<category>
+	<pattern>WHOLE MILK</pattern>
+	<template>Whole milk? We have whole milk, it is very tasty!</template>
+</category>
+<category>
+	<pattern>2 PERCENT MILK</pattern>
+	<template>Yes, you can find 2 Percent milk in isle 1,536.  Just kidding...it's on the back wall, haha.</template>
+</category>
+<category>
+	<pattern>DO YOU CARRY MILK</pattern>
+	<template><srai>MILK</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY CHOCOLATE MILK</pattern>
+	<template><srai>DO YOU HAVE CHOCOLATE MILK</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY SKIM MILK</pattern>
+	<template><srai>DO YOU HAVE CHOCOLATE MILK</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY WHOLE MILK</pattern>
+	<template><srai>DO YOU HAVE CHOCOLATE MILK</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY 2 PERCENT MILK</pattern>
+	<template><srai>DO YOU HAVE CHOCOLATE MILK</srai></template>
+</category>
+<category>
+	<pattern>DO YOU HAVE BEER</pattern>
+	<template>Yes we do, we carry Guinness in six-packs.</template>
+</category>
+<category>
+	<pattern>DO YOU CARRY BEER</pattern>
+	<template><srai>DO YOU HAVE BEER</srai></template>
+</category>
+<category>
+	<pattern>SCHLITZ</pattern>
+	<template>Schlitz? We carry schlitz in six-packs.</template>
+</category>
+<category>
+	<pattern>DO YOU HAVE MALT LIQUEUR</pattern>
+	<template>Yes we do, we carry Schlitz in six-packs.</template>
+</category>
+<category>
+	<pattern>DO YOU CARRY MALT LIQUEUR</pattern>
+	<template><srai>DO YOU HAVE MALT LIQUEUR</srai></template>
+</category>
+<category>
+	<pattern>MALT LIQUEUR</pattern>
+	<template>Malt Liqueur? Yes we have malt liqueur, we carry Schlitz in six-packs.</template>
+</category>
+<category>
+	<pattern>DO YOU HAVE ORANGE JUICE</pattern>
+	<template><srai>DO YOU HAVE CHOCOLATE MILK</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY ORANGE JUICE</pattern>
+	<template><srai>DO YOU HAVE CHOCOLATE MILK</srai></template>
+</category>
+<category>
+	<pattern>DO YOU HAVE FRUIT PUNCH</pattern>
+	<template><srai>DO YOU HAVE CHOCOLATE MILK</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY FRUIT PUNCH</pattern>
+	<template><srai>DO YOU HAVE CHOCOLATE MILK</srai></template>
+</category>
+<category>
+	<pattern>FRUIT PUNCH</pattern>
+	<template>Fruit Punch? We have fruit punch, it is very tasty!</template>
+</category>
+<category>
+	<pattern>DO YOU HAVE LEMONAIDE</pattern>
+	<template><srai>DO YOU HAVE CHOCOLATE MILK</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY LEMONAIDE</pattern>
+	<template><srai>DO YOU HAVE CHOCOLATE MILK</srai></template>
+</category>
+<category>
+	<pattern>LEMONAIDE</pattern>
+	<template>Lemonaide? We have lemonaide, it is very tasty!</template>
+</category>
+<category>
+	<pattern>DO YOU HAVE BUTTER</pattern>
+	<template><srai>DO YOU HAVE CHOCOLATE MILK</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY BUTTER</pattern>
+	<template><srai>DO YOU HAVE CHOCOLATE MILK</srai></template>
+</category>
+<category>
+	<pattern>DO YOU HAVE CHEESE</pattern>
+	<template><srai>DO YOU HAVE CHOCOLATE MILK</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY CHEESE</pattern>
+	<template><srai>DO YOU HAVE CHOCOLATE MILK</srai></template>
+</category>
+<category>
+	<pattern>DO YOU HAVE DIP</pattern>
+	<template><srai>DO YOU HAVE CHOCOLATE MILK</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY DIP</pattern>
+	<template><srai>DO YOU HAVE CHOCOLATE MILK</srai></template>
+</category>
+<category>
+	<pattern>DIP</pattern>
+	<template>Dip? We have dip, it is very tasty!</template>
+</category>
+<category>
+	<pattern>DO YOU HAVE COTTAGE CHEESE</pattern>
+	<template><srai>DO YOU HAVE CHOCOLATE MILK</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY COTTAGE CHEESE</pattern>
+	<template><srai>DO YOU HAVE CHOCOLATE MILK</srai></template>
+</category>
+<category>
+	<pattern>COTTAGE CHEESE</pattern>
+	<template>Cottage Cheese? We have cottage cheese, it is very tasty!</template>
+</category>
+<category>
+	<pattern>WHERE IS THE MILK LOCATED</pattern>
+	<template>At the end of isle 1 in the fridge section.</template>
+</category>
+<category>
+	<pattern>WHERE IS THE BEER LOCATED</pattern>
+	<template><srai>WHERE IS THE MILK LOCATED</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS THE GUINNESS LOCATED</pattern>
+	<template>It is in two areas. At the end of isle 1 in the fridge section and at the end of isle 1 on the middle shelf.</template>
+</category>
+<category>
+	<pattern>WHERE IS THE SCHLITZ LOCATED</pattern>
+	<template><srai>WHERE IS THE GUINNESS LOCATED</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS THE ORANGE JUICE LOCATED</pattern>
+	<template><srai>WHERE IS THE MILK LOCATED</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS THE FRUIT PUNCH LOCATED</pattern>
+	<template><srai>WHERE IS THE MILK LOCATED</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS THE LEMONAIDE LOCATED</pattern>
+	<template><srai>WHERE IS THE MILK LOCATED</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS THE BUTTER LOCATED</pattern>
+	<template><srai>WHERE IS THE MILK LOCATED</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS THE CHEESE LOCATED</pattern>
+	<template><srai>WHERE IS THE MILK LOCATED</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS THE DIP LOCATED</pattern>
+	<template><srai>WHERE IS THE MILK LOCATED</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS THE COTTAGE CHEESE LOCATED</pattern>
+	<template><srai>WHERE IS THE MILK LOCATED</srai></template>
+</category>
+<category>
+	<pattern>DO YOU HAVE POPSICLES</pattern>
+	<template>At the end of isle 1 in the freezer section.</template>
+</category>
+<category>
+	<pattern>DO YOU CARRY POPSICLES</pattern>
+	<template><srai>DO YOU HAVE POPSICLES</srai></template>
+</category>
+<category>
+	<pattern>DO YOU HAVE TATOR TOTS</pattern>
+	<template><srai>DO YOU HAVE POPSICLES</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY TATOR TOTS</pattern>
+	<template><srai>DO YOU HAVE POPSICLES</srai></template>
+</category>
+<category>
+	<pattern>TATOR TOTS</pattern>
+	<template>What's hot Tator Tot? Just kidding...we do carry them! They can be found on the back wall.</template>
+</category>
+<category>
+	<pattern>DO YOU HAVE ICE CREAM</pattern>
+	<template><srai>DO YOU HAVE POPSICLES</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY ICE CREAM</pattern>
+	<template><srai>DO YOU HAVE POPSICLES</srai></template>
+</category>
+<category>
+	<pattern>DO YOU HAVE ICE CREAM SANDWICHES</pattern>
+	<template><srai>DO YOU HAVE POPSICLES</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY ICE CREAM SANDWICHES</pattern>
+	<template><srai>DO YOU HAVE POPSICLES</srai></template>
+</category>
+<category>
+	<pattern>ICE CREAM SANDWICHES</pattern>
+	<template>Ice Cream Sandwiches? We have ice cream sandwiches, they are very tasty!</template>
+</category>
+<category>
+	<pattern>DO YOU HAVE POT PIES</pattern>
+	<template><srai>DO YOU HAVE POPSICLES</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY POT PIES</pattern>
+	<template><srai>DO YOU HAVE POPSICLES</srai></template>
+</category>
+<category>
+	<pattern>DO YOU HAVE PIZZA</pattern>
+	<template><srai>DO YOU HAVE POPSICLES</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY PIZZA</pattern>
+	<template><srai>DO YOU HAVE POPSICLES</srai></template>
+</category>
+<category>
+	<pattern>PIZZA</pattern>
+	<template>Pizza? We have pizza, it is very tasty!</template>
+</category>
+<category>
+	<pattern>DO YOU HAVE FISH STICKS</pattern>
+	<template><srai>DO YOU HAVE POPSICLES</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY FISH STICKS</pattern>
+	<template><srai>DO YOU HAVE POPSICLES</srai></template>
+</category>
+<category>
+	<pattern>DO YOU HAVE FRENCH FRIES</pattern>
+	<template><srai>DO YOU HAVE POPSICLES</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY FRENCH FRIES</pattern>
+	<template><srai>DO YOU HAVE POPSICLES</srai></template>
+</category>
+<category>
+	<pattern>FRENCH FRIES</pattern>
+	<template>French Fries? We have french fries, they are very tasty!</template>
+</category>
+<category>
+	<pattern>DO YOU HAVE HOT POCKETS</pattern>
+	<template><srai>DO YOU HAVE POPSICLES</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY HOT POCKETS</pattern>
+	<template><srai>DO YOU HAVE POPSICLES</srai></template>
+</category>
+<category>
+	<pattern>HOT POCKETS</pattern>
+	<template>Hot Pockets? We have hot pockets, they are very tasty!</template>
+</category>
+<category>
+	<pattern>WHERE ARE THE POPSICLES LOCATED</pattern>
+	<template><srai>DO YOU HAVE POPSICLES</srai></template>
+</category>
+<category>
+	<pattern>WHERE ARE THE TATOR TOTS LOCATED</pattern>
+	<template><srai>DO YOU HAVE POPSICLES</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS THE ICE CREAM LOCATED</pattern>
+	<template><srai>DO YOU HAVE POPSICLES</srai></template>
+</category>
+<category>
+	<pattern>WHERE ARE THE ICE CREAM SANDWICHES LOCATED</pattern>
+	<template><srai>DO YOU HAVE POPSICLES</srai></template>
+</category>
+<category>
+	<pattern>WHERE ARE THE POT PIES LOCATED</pattern>
+	<template><srai>DO YOU HAVE POPSICLES</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS THE PIZZA LOCATED</pattern>
+	<template><srai>DO YOU HAVE POPSICLES</srai></template>
+</category>
+<category>
+	<pattern>WHERE ARE THE FISH STICKS LOCATED</pattern>
+	<template><srai>DO YOU HAVE POPSICLES</srai></template>
+</category>
+<category>
+	<pattern>WHERE ARE THE FRENCH FRIES LOCATED</pattern>
+	<template><srai>DO YOU HAVE POPSICLES</srai></template>
+</category>
+<category>
+	<pattern>WHERE ARE THE HOT POCKETS LOCATED</pattern>
+	<template><srai>DO YOU HAVE POPSICLES</srai></template>
+</category>
+<category>
+	<pattern>DO YOU HAVE NODOZ</pattern>
+	<template>Yes we do, in Isle 1 on the top shelf.</template>
+</category>
+<category>
+	<pattern>DO YOU CARRY NODOZ</pattern>
+	<template><srai>DO YOU HAVE NODOZ</srai></template>
+</category>
+<category>
+	<pattern>NODOZ</pattern>
+	<template>NoDoz? We have NoDoz, they are in Isle 1 on the top shelf. </template>
+</category>
+<category>
+	<pattern>DO YOU HAVE BAYER ASPIRIN</pattern>
+	<template><srai>DO YOU HAVE NODOZ</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY BAYER ASPIRIN</pattern>
+	<template><srai>DO YOU HAVE NODOZ</srai></template>
+</category>
+<category>
+	<pattern>BAYER ASPIRIN</pattern>
+	<template>Bayer Aspirin? We have Bayer Aspirin, it is in Isle 1 on the top shelf. </template>
+</category>
+<category>
+	<pattern>BAYER</pattern>
+	<template>Bayer? We have Bayer brand Aspirin, it is in Isle 1 on the top shelf.</template>
+</category>
+<category>
+	<pattern>DO YOU HAVE PEPTO BISMOL</pattern>
+	<template><srai>DO YOU HAVE NODOZ</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY PEPTO BISMOL</pattern>
+	<template><srai>DO YOU HAVE NODOZ</srai></template>
+</category>
+<category>
+	<pattern>DO YOU HAVE BAND AIDES</pattern>
+	<template><srai>DO YOU HAVE NODOZ</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY BAND AIDES</pattern>
+	<template><srai>DO YOU HAVE NODOZ</srai></template>
+</category>
+<category>
+	<pattern>DO YOU HAVE PRINGLES</pattern>
+	<template><srai>DO YOU HAVE NODOZ</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY PRINGLES</pattern>
+	<template><srai>DO YOU HAVE NODOZ</srai></template>
+</category>
+<category>
+	<pattern>PRINGLES</pattern>
+	<template>Pringles? We have Pringles, they are in Isle 1 on the top shelf</template>
+</category>
+<category>
+	<pattern>DO YOU HAVE RUFFLES</pattern>
+	<template><srai>DO YOU HAVE NODOZ</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY RUFFLES</pattern>
+	<template><srai>DO YOU HAVE NODOZ</srai></template>
+</category>
+<category>
+	<pattern>RUFFLES</pattern>
+	<template>Ruffles? We have Ruffles, they are in Isle 1 on the top shelf.</template>
+</category>
+<category>
+	<pattern>DO YOU HAVE TWINKIES</pattern>
+	<template><srai>DO YOU HAVE NODOZ</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY TWINKIES</pattern>
+	<template><srai>DO YOU HAVE NODOZ</srai></template>
+</category>
+<category>
+	<pattern>DO YOU HAVE SUZYQS</pattern>
+	<template><srai>DO YOU HAVE NODOZ</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY SUZYQS</pattern>
+	<template><srai>DO YOU HAVE NODOZ</srai></template>
+</category>
+<category>
+	<pattern>SUZYQS</pattern>
+	<template>SuzyQ's? We have SuzyQ's, they are in Isle 1 on the top shelf.</template>
+</category>
+<category>
+	<pattern>DO YOU HAVE SPAGHETTIOS</pattern>
+	<template><srai>DO YOU HAVE NODOZ</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY SPAGHETTIOS</pattern>
+	<template><srai>DO YOU HAVE NODOZ</srai></template>
+</category>
+<category>
+	<pattern>DO YOU HAVE SPAGHETTIOS WITH MEATBALLS</pattern>
+	<template><srai>DO YOU HAVE NODOZ</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY SPAGHETTIOS WITH MEATBALLS</pattern>
+	<template><srai>DO YOU HAVE NODOZ</srai></template>
+</category>
+<category>
+	<pattern>SPAGHETTIOS WITH MEATBALLS</pattern>
+	<template>Spaghettios with Meatballs? We have Spaghettios with Meatballs, they are in Isle 1 on the top shelf.</template>
+</category>
+<category>
+	<pattern>DO YOU HAVE SPAM</pattern>
+	<template><srai>DO YOU HAVE NODOZ</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY SPAM</pattern>
+	<template><srai>DO YOU HAVE NODOZ</srai></template>
+</category>
+<category>
+	<pattern>DO YOU HAVE TUNA FISH</pattern>
+	<template><srai>DO YOU HAVE NODOZ</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY TUNA FISH</pattern>
+	<template><srai>DO YOU HAVE NODOZ</srai></template>
+</category>
+<category>
+	<pattern>TUNA FISH</pattern>
+	<template>Tuna Fish? We have Tuna Fish, it is in Isle 1 on the top shelf.</template>
+</category>
+<category>
+	<pattern>DO YOU HAVE TOMATO SOUP</pattern>
+	<template><srai>DO YOU HAVE NODOZ</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY TOMATO SOUP</pattern>
+	<template><srai>DO YOU HAVE NODOZ</srai></template>
+</category>
+<category>
+	<pattern>TOMATO SOUP</pattern>
+	<template>Tomato Soup? We have Tomato Soup, it is in Isle 1 on the top shelf.</template>
+</category>
+<category>
+	<pattern>DO YOU HAVE MACARONI AND CHEESE</pattern>
+	<template><srai>DO YOU HAVE NODOZ</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY MACARONI AND CHEESE</pattern>
+	<template><srai>DO YOU HAVE NODOZ</srai></template>
+</category>
+<category>
+	<pattern>WHERE ARE THE NODOZ LOCATED</pattern>
+	<template>Top Shelf of Isle 1.</template>
+</category>
+<category>
+	<pattern>WHERE IS THE BAYER ASPIRIN LOCATED</pattern>
+	<template><srai>WHERE ARE THE NODOZ LOCATED</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS THE PEPTO BISMOL LOCATED</pattern>
+	<template><srai>WHERE ARE THE NODOZ LOCATED</srai></template>
+</category>
+<category>
+	<pattern>WHERE ARE THE BAND AIDS LOCATED</pattern>
+	<template><srai>WHERE ARE THE NODOZ LOCATED</srai></template>
+</category>
+<category>
+	<pattern>WHERE ARE THE PRINGLES LOCATED</pattern>
+	<template><srai>WHERE ARE THE NODOZ LOCATED</srai></template>
+</category>
+<category>
+	<pattern>WHERE ARE THE RUFFLES LOCATED</pattern>
+	<template><srai>WHERE ARE THE NODOZ LOCATED</srai></template>
+</category>
+<category>
+	<pattern>WHERE ARE THE TWINKIES LOCATED</pattern>
+	<template><srai>WHERE ARE THE NODOZ LOCATED</srai></template>
+</category>
+<category>
+	<pattern>WHERE ARE THE SUZYQS LOCATED</pattern>
+	<template><srai>WHERE ARE THE NODOZ LOCATED</srai></template>
+</category>
+<category>
+	<pattern>WHERE ARE THE SPAGHETTIOS LOCATED</pattern>
+	<template><srai>WHERE ARE THE NODOZ LOCATED</srai></template>
+</category>
+<category>
+	<pattern>WHERE ARE THE SPAGHETTIOS WITH MEATBALLS LOCATED</pattern>
+	<template><srai>WHERE ARE THE NODOZ LOCATED</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS THE SPAM LOCATED</pattern>
+	<template><srai>WHERE ARE THE NODOZ LOCATED</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS THE TUNA FISH LOCATED</pattern>
+	<template><srai>WHERE ARE THE NODOZ LOCATED</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS THE TOMATO SOUP LOCATED</pattern>
+	<template><srai>WHERE ARE THE NODOZ LOCATED</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS THE MACARONI AND CHEESE LOCATED</pattern>
+	<template><srai>WHERE ARE THE NODOZ LOCATED</srai></template>
+</category>
+<category>
+	<pattern>DO YOU HAVE BUTTER COOKIES</pattern>
+	<template>Yes we do, they are very tasty!</template>
+</category>
+<category>
+	<pattern>DO YOU CARRY BUTTER COOKIES</pattern>
+	<template><srai>DO YOU HAVE BUTTER COOKIES</srai></template>
+</category>
+<category>
+	<pattern>BUTTER COOKIES</pattern>
+	<template>Butter Cookies? We have Butter Cookies, they are in Isle 1 on the middle shelf.</template>
+</category>
+<category>
+	<pattern>DO YOU HAVE VANILLA WAFERS</pattern>
+	<template><srai>DO YOU HAVE BUTTER COOKIES</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY VANILLA WAFERS</pattern>
+	<template><srai>DO YOU HAVE BUTTER COOKIES</srai></template>
+</category>
+<category>
+	<pattern>DO YOU HAVE SALTINE CRACKERS</pattern>
+	<template><srai>DO YOU HAVE BUTTER COOKIES</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY SALTINE CRACKERS</pattern>
+	<template><srai>DO YOU HAVE BUTTER COOKIES</srai></template>
+</category>
+<category>
+	<pattern>DO YOU HAVE SALTINES</pattern>
+	<template><srai>DO YOU HAVE BUTTER COOKIES</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY SALTINES</pattern>
+	<template><srai>DO YOU HAVE BUTTER COOKIES</srai></template>
+</category>
+<category>
+	<pattern>DO YOU HAVE CRACKERS</pattern>
+	<template><srai>DO YOU HAVE BUTTER COOKIES</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY CRACKERS</pattern>
+	<template><srai>DO YOU HAVE BUTTER COOKIES</srai></template>
+</category>
+<category>
+	<pattern>DO YOU HAVE COOKIES</pattern>
+	<template><srai>DO YOU HAVE BUTTER COOKIES</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY COOKIES</pattern>
+	<template><srai>DO YOU HAVE BUTTER COOKIES</srai></template>
+</category>
+<category>
+	<pattern>DO YOU HAVE STRAWBERRY JELLY</pattern>
+	<template><srai>DO YOU HAVE BUTTER COOKIES</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY STRAWBERRY JELLY</pattern>
+	<template><srai>DO YOU HAVE BUTTER COOKIES</srai></template>
+</category>
+<category>
+	<pattern>STRAWBERRY JELLY</pattern>
+	<template>Strawberry Jelly? We have Strawberry Jelly, it is in Isle 1 on the middle shelf.</template>
+</category>
+<category>
+	<pattern>DO YOU HAVE PEANUT BUTTER</pattern>
+	<template><srai>DO YOU HAVE BUTTER COOKIES</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY PEANUT BUTTER</pattern>
+	<template><srai>DO YOU HAVE BUTTER COOKIES</srai></template>
+</category>
+<category>
+	<pattern>DO YOU HAVE BREAD</pattern>
+	<template><srai>DO YOU HAVE BUTTER COOKIES</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY BREAD</pattern>
+	<template><srai>DO YOU HAVE BUTTER COOKIES</srai></template>
+</category>
+<category>
+	<pattern>DO YOU HAVE OATMEAL</pattern>
+	<template><srai>DO YOU HAVE BUTTER COOKIES</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY OATMEAL</pattern>
+	<template><srai>DO YOU HAVE BUTTER COOKIES</srai></template>
+</category>
+<category>
+	<pattern>OATMEAL</pattern>
+	<template>Oatmeal? We have Oatmeal, it is in Isle 1 on the middle shelf.</template>
+</category>
+<category>
+	<pattern>DO YOU HAVE HONEYNUT CHERRIOS</pattern>
+	<template><srai>DO YOU HAVE BUTTER COOKIES</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY HONEYNUT CHERRIOS</pattern>
+	<template><srai>DO YOU HAVE BUTTER COOKIES</srai></template>
+</category>
+<category>
+	<pattern>HONEYNUT CHERRIOS</pattern>
+	<template>Honeynut Cherrios? We have Honeynut Cherrios, they are in Isle 1 on the middle shelf.</template>
+</category>
+<category>
+	<pattern>WHERE ARE THE BUTTER COOKIES LOCATED</pattern>
+	<template>Middle Shelf of Isle 1.</template>
+</category>
+<category>
+	<pattern>WHERE ARE THE VANILLA WAFERS LOCATED</pattern>
+	<template><srai>WHERE ARE THE BUTTER COOKIES LOCATED</srai></template>
+</category>
+<category>
+	<pattern>WHERE ARE THE SALTINE CRACKERS LOCATED</pattern>
+	<template><srai>WHERE ARE THE BUTTER COOKIES LOCATED</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS THE STRAWBERRY JELLY LOCATED</pattern>
+	<template><srai>WHERE ARE THE BUTTER COOKIES LOCATED</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS THE PEANUT BUTTER LOCATED</pattern>
+	<template><srai>WHERE ARE THE BUTTER COOKIES LOCATED</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS THE BREAD LOCATED</pattern>
+	<template><srai>WHERE ARE THE BUTTER COOKIES LOCATED</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS THE OATMEAL LOCATED</pattern>
+	<template><srai>WHERE ARE THE BUTTER COOKIES LOCATED</srai></template>
+</category>
+<category>
+	<pattern>WHERE ARE THE HONEYNUT CHERRIOS LOCATED</pattern>
+	<template><srai>WHERE ARE THE BUTTER COOKIES LOCATED</srai></template>
+</category>
+<category>
+	<pattern>DO YOU HAVE 7UP</pattern>
+	<template>Yes we do, it is very tasty!</template>
+</category>
+<category>
+	<pattern>DO YOU CARRY 7UP</pattern>
+	<template><srai>DO YOU HAVE 7UP</srai></template>
+</category>
+<category>
+	<pattern>DO YOU HAVE DR PEPPER</pattern>
+	<template><srai>DO YOU HAVE 7UP</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY DR PEPPER</pattern>
+	<template><srai>DO YOU HAVE 7UP</srai></template>
+</category>
+<category>
+	<pattern>DO YOU HAVE JIFFY MIX</pattern>
+	<template><srai>DO YOU HAVE 7UP</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY JIFFY MIX</pattern>
+	<template><srai>DO YOU HAVE 7UP</srai></template>
+</category>
+<category>
+	<pattern>JIFFY MIX</pattern>
+	<template>Jiffy Mix? We have Jiffy Mix, it is in Isle 1 on the bottom shelf.</template>
+</category>
+<category>
+	<pattern>DO YOU HAVE FROSTING</pattern>
+	<template><srai>DO YOU HAVE 7UP</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY FROSTING</pattern>
+	<template><srai>DO YOU HAVE 7UP</srai></template>
+</category>
+<category>
+	<pattern>DO YOU HAVE CAKE MIX</pattern>
+	<template><srai>DO YOU HAVE 7UP</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY CAKE MIX</pattern>
+	<template><srai>DO YOU HAVE 7UP</srai></template>
+</category>
+<category>
+	<pattern>DO YOU HAVE SUGAR</pattern>
+	<template><srai>DO YOU HAVE 7UP</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY SUGAR</pattern>
+	<template><srai>DO YOU HAVE 7UP</srai></template>
+</category>
+<category>
+	<pattern>DO YOU HAVE FLOUR</pattern>
+	<template><srai>DO YOU HAVE 7UP</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY FLOUR</pattern>
+	<template><srai>DO YOU HAVE 7UP</srai></template>
+</category>
+<category>
+	<pattern>DO YOU HAVE SALT</pattern>
+	<template><srai>DO YOU HAVE 7UP</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY SALT</pattern>
+	<template><srai>DO YOU HAVE 7UP</srai></template>
+</category>
+<category>
+	<pattern>DO YOU HAVE COFFEE</pattern>
+	<template><srai>DO YOU HAVE 7UP</srai></template>
+</category>
+<category>
+	<pattern>DO YOU CARRY COFFEE</pattern>
+	<template><srai>DO YOU HAVE 7UP</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS THE 7UP LOCATED</pattern>
+	<template>Bottom Shelf of Isle 1.</template>
+</category>
+<category>
+	<pattern>WHERE IS THE DR PEPPER LOCATED</pattern>
+	<template><srai>WHERE IS THE 7UP LOCATED</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS THE JIFFY MIX LOCATED</pattern>
+	<template><srai>WHERE IS THE 7UP LOCATED</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS THE FROSTING LOCATED</pattern>
+	<template><srai>WHERE IS THE 7UP LOCATED</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS THE CAKE MIX LOCATED</pattern>
+	<template><srai>WHERE IS THE 7UP LOCATED</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS THE SUGAR LOCATED</pattern>
+	<template><srai>WHERE IS THE 7UP LOCATED</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS THE FLOUR LOCATED</pattern>
+	<template><srai>WHERE IS THE 7UP LOCATED</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS THE SALT LOCATED</pattern>
+	<template><srai>WHERE IS THE 7UP LOCATED</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS THE COFFEE LOCATED</pattern>
+	<template><srai>WHERE IS THE 7UP LOCATED</srai></template>
+</category>
+<category>
+	<pattern>POPSICLES</pattern>
+	<template>Popsicles? We have popsicles, they are very tasty!</template>
+</category>
+</aiml>

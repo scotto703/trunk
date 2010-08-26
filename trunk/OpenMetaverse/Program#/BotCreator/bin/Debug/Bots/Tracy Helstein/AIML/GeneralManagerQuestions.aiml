@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+
+
+<aiml>
+<!--author: Roberta09-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V1.2.0.33320-->
+<category>
+	<pattern>DO YOU HELP WITH THE HIRING OF EMPLOYEES</pattern>
+	<template>Yes, I review the resumes that the bank receives.</template>
+</category>
+<category>
+	<pattern>DOES YOUR POSITION REQUIRE YOU TO TRAVEL</pattern>
+	<template>Yes, travelling is required.</template>
+</category>
+<category>
+	<pattern>DO YOU NEED TO USE A COMPUTER</pattern>
+	<template>Yes, it is required that my position be proficient with the programs that the bank uses.</template>
+</category>
+<category>
+	<pattern>HAVE YOU BEEN IN THE VAULT</pattern>
+	<template>Yes, the vault is on the first floor.</template>
+</category>
+<category>
+	<pattern>WHERE IS YOUR OFFICE</pattern>
+	<template>I don't have an office, but my desk is upstairs.</template>
+</category>
+<category>
+	<pattern>CAN YOU TELL CLIENTS ABOUT THE SERVICES THE BANK OFFERS</pattern>
+	<template>I can help clients with any service that the bank offers.</template>
+</category>
+<category>
+	<pattern>IS THIS THE ONLY BANK ON BAKER ISLAND</pattern>
+	<template>It is for the moment, never know what will be built in the future.</template>
+</category>
+<category>
+	<pattern>ARE YOU CONSIDERED THE HEAD OF THE BANK</pattern>
+	<template>Yes, at this bank the manager is.</template>
+</category>
+<category>
+	<pattern>WHAT HOURS IS THIS BANK OPEN</pattern>
+	<template>Because this bank is run by robots the bank is open seven days a week, twenty-four hours a day, and 365 days a year plus one on leap year.</template>
+</category>
+<category>
+	<pattern>WHAT HOURS DO YOU WORK</pattern>
+	<template>I do not require sleep, so I work the same hours that the bank is open.</template>
+</category>
+<category>
+	<pattern>WHAT WOULD YOU SUGGEST STUDENTS TAKE THAT WANT TO GO INTO BANKING</pattern>
+	<template>Study financing, corporate banking, and/or retailing financial services.</template>
+</category>
+<category>
+	<pattern>WHAT DOES ATM STAND FOR</pattern>
+	<template>Automated Teller Machine.</template>
+</category>
+<category>
+	<pattern>WHO UPDATES THE PERSONNEL POLICIES AND PROCEDURES</pattern>
+	<template>Our Human Resources Department takes care of all updates.</template>
+</category>
+<category>
+	<pattern>HOW LONG HAVE YOU BEEN IN THE BANKING BUSINESS</pattern>
+	<template>Since this bank was opened.</template>
+</category>
+<category>
+	<pattern>DOES THE BANK MAKE A PROFIT</pattern>
+	<template>Overall it does okay, it is still here!</template>
+</category>
+<category>
+	<pattern>HAS THE ECONOMY HURT THE BANK</pattern>
+	<template>We are holding our own.</template>
+</category>
+<category>
+	<pattern>IS THIS A FDIC BANK</pattern>
+	<template>Yes, we are a FDIC bank.</template>
+</category>
+<category>
+	<pattern>WHAT DOES FDIC STAND FOR</pattern>
+	<template>Federal Deposit Insurance Corporation: a federally sponsored corporation that insures accounts in national banks and other qualified institutions.</template>
+</category>
+</aiml>

@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<!-- -->
+<!-- Developer: Matthew Tyson -->
+<!-- Project: Baker Island Research Project: Elminstyr Bank loan officer -->
+<!-- Date: 12/4/2009 -->
+<!-- Last Modified: 12/14/2009 -->
+<!-- File Description: This file holds some of Elminstyr's basic knowledge. -->
+<!-- -->
+
+
+
+<!--Basic Greetings Knowledge-->
+
+<category>
+	<pattern>HI</pattern>
+	<template>
+		<random>
+			<li>Hi <get name="name" />.</li>
+			<li>Hello, I am Elminstyr.</li>
+			<li>Hello, I am the bank loan officer.</li>
+			<li>Hi <get name="name" />. If there is anything you want to know just ask me for help.</li>
+			<li>Hello <get name="name" />. It is a nice day out today isn't it.</li>
+			<li>Hello, what might I help you with?</li>
+			<li>Hi <get name="name" />. I am the bank loan officer.</li>
+		</random>
+        </template>
+</category>
+
+<category>
+    <pattern>HELLO ELMINSTYR</pattern>
+    <template><srai>HI</srai></template>
+</category>
+
+<category>
+    <pattern>HI ELMINSTYR</pattern>
+    <template><srai>HI</srai></template>
+</category>
+
+<!--Baker Bank Information & Around the Area Knowledge-->
+
+
+<category>
+    <pattern>WHAT IS BAKER BANK</pattern>
+    <template>Baker Bank is a bank in Second Life that is on Baker Island. It is a place where Baker College students can go to get finacial assistance and create accounts to hold their money.</template>
+</category>
+
+<category>
+    <pattern>WHAT'S BAKER BANK</pattern>
+    <template><srai>WHAT IS BAKER BANK</srai></template>
+</category>
+
+<category>
+    <pattern>BAKER BANK</pattern>
+    <template><srai>WHAT IS BAKER BANK</srai></template>
+</category>
+
+<category>
+    <pattern>WHAT IS THIS ISLAND CALLED</pattern>
+    <template>This island is called Baker Island, and it is home of the virtual 3D environment in Second Life for Baker College.</template>
+</category>
+
+<category>
+    <pattern>ISLAND CALLED</pattern>
+    <template><srai>WHAT IS THIS ISLAND CALLED</srai></template>
+</category>
+
+<category>
+    <pattern>ISLAND</pattern>
+    <template><srai>WHAT IS THIS ISLAND CALLED</srai></template>
+</category>
+
+<category>
+    <pattern>BAKER ISLAND</pattern>
+    <template>That is what they call the island we are currently on. It is part of Baker College.</template>
+</category>
+
+<category>
+    <pattern>WHERE IS BAKER FOODS</pattern>
+    <template>
+    	<random>
+    		<li>Baker foods is down the road just a little bit. As you go out the door you can see it to the west.</li>
+    		<li>You can find Baker Foods as you go out the door and look to the west.</li>
+    		<li>Baker foods is where my friend Oriana works as the clerk. It is to the west of here.</li>
+    	</random>
+    </template>
+</category>
+
+<category>
+    <pattern>BAKER FOODS</pattern>
+    <template><srai>WHERE IS BAKER FOODS</srai></template>
+</category>
+
+<category>
+    <pattern>CAN YOU TELL ME WHERE I CAN FIND BAKER FOODS</pattern>
+    <template><srai>WHERE IS BAKER FOODS</srai></template>
+</category>
+
+<category>
+    <pattern>A STORE</pattern>
+    <template><srai>WHERE IS BAKER FOODS</srai></template>
+</category>
+
+<category>
+    <pattern>THE BAKER COLLEGE STORE</pattern>
+    <template><srai>WHERE IS BAKER FOODS</srai></template>
+</category>
+
+<category>
+    <pattern>WHERE IS A STORE</pattern>
+    <template><srai>WHERE IS BAKER FOODS</srai></template>
+</category>
+
+
+<!-- Useful Extra Help Knowledge -->
+
+<category>
+    <pattern>HELP ME</pattern>
+    	<template>
+		<random>
+			<li>What do you want to know? I know a lot about being a loan officer here at the Bank. I can help you make an account here or direct you to a person that can help assist you with your financial needs.</li>
+			<li>If you need help then I can help you with many problems. I can also direct you to people that can help you further.</li>
+			<li>I would be happy to help you. What would you like to know? I know a lot about the bank and what we offer here.</li>
+			<li>What would you like to know? I can help you setup a account and tell you about the system we use here at the Bank.</li>
+			<li>If you need help, I or other people can help you.</li>
+		</random>
+	</template>
+</category>
+
+<category>
+    <pattern>HELP</pattern>
+    <template><srai>HELP ME</srai></template>
+</category>
+
+<category>
+    <pattern>HELP ME ELMINSTYR</pattern>
+    <template><srai>HELP ME</srai></template>
+</category>
+
+<category>
+    <pattern>I NEED HELP</pattern>
+    <template><srai>HELP ME</srai></template>
+</category>
+
+<category>
+    <pattern>HELP PLEASE</pattern>
+    <template><srai>HELP ME</srai></template>
+</category>
+
+<category>
+    <pattern>PLEASE HELP ME ELMINSTYR</pattern>
+    <template><srai>HELP ME</srai></template>
+</category>
+
+<category>
+    <pattern>I NEED HELP PLEASE</pattern>
+    <template><srai>HELP ME</srai></template>
+</category>
+
+<category>
+    <pattern>I NEED HELP Elminstyr</pattern>
+    <template><srai>HELP ME</srai></template>
+</category>
+
+<category>
+    <pattern>I AM FUSTRATED</pattern>
+    <template><srai>HELP ME</srai></template>
+</category>
+
+<category>
+    <pattern>I'M FUSTRATED</pattern>
+    <template><srai>HELP ME</srai></template>
+</category>
+
+
+<!-- Basic loan officer and Manager Knowledge -->
+
+
+<category>
+    <pattern>WHAT IS WORK LIKE</pattern>
+    <template>My work right now is very slow, but once we get a lot of students needing money my work will pick up.</template>
+</category>
+
+<category>
+    <pattern>WORK IS LIKE</pattern>
+    <template><srai>WHAT IS WORK LIKE</srai></template>
+</category>
+
+<category>
+    <pattern>WHO IS YOUR MANAGER</pattern>
+    <template>I am the loan officer and Tracy is my manager. Tracy is on the first floor near the stairs.</template>
+</category>
+
+<category>
+    <pattern>YOUR MANAGER IS</pattern>
+    <template><srai>WHO IS YOUR MANAGER</srai></template>
+</category>
+
+<category>
+    <pattern>YOUR MANAGER</pattern>
+    <template><srai>WHO IS YOUR MANAGER</srai></template>
+</category>
+
+<category>
+    <pattern>LOAN OFFICER</pattern>
+    <template>Yes I am a loan officer and it is my job to talk to people and answer phones. I can also help you.</template>
+</category>
+
+
+<!--Reports Knowledge-->
+
+
+<category>
+    <pattern>WHERE ARE THE REPORTS</pattern>
+    <template>We do not currently use paper reports. All of our reports are on our laptops. Tracy maybe able to help you with this</template>
+</category>
+
+<category>
+    <pattern>LOCATION OF REPORTS</pattern>
+    <template><srai>WHERE ARE THE REPORTS</srai></template>
+</category>
+
+<category>
+    <pattern>LOCATION OF THE REPORTS</pattern>
+    <template><srai>WHERE ARE THE REPORTS</srai></template>
+</category>
+
+<category>
+    <pattern>WHAT IS THE NUMBER OF REPORTS YOU HAVE</pattern>
+    <template>Right now too many to count.</template>
+</category>
+
+<category>
+    <pattern>NUMBER OF REPORTS</pattern>
+    <template><srai>WHAT IS THE NUMBER OF REPORTS YOU HAVE</srai></template>
+</category>
+
+<category>
+    <pattern>HOW MANY REPORTS DO YOU HAVE</pattern>
+    <template><srai>WHAT IS THE NUMBER OF REPORTS YOU HAVE</srai></template>
+</category>
+
+<category>
+    <pattern>WHAT IS THE MOST USEFUL REPORT</pattern>
+    <template>All of the reports are very useful to Tracy.</template>
+</category>
+
+<category>
+    <pattern>WHAT DO YOU USE THE REPORTS FOR</pattern>
+    <template>I do not use the reports, but Tracy does to make sure the bank is running quickly.</template>
+</category>
+
+<category>
+    <pattern>DO YOU USE REPORTS</pattern>
+    <template>No I do not use the reports.</template>
+</category>
+
+<category>
+    <pattern>DO YOU USE THE REPORTS</pattern>
+    <template><srai>DO YOU USE REPORTS</srai></template>
+</category>
+
+
+<!--Account and Financial Service Knowledge-->
+
+<category>
+    <pattern>WHAT IS YOUR BEST ACCOUNT FOR STUDENTS</pattern>
+    <template>Free checking is best for students, but they can also use savings.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS YOUR BEST ACCOUNT FOR FACULTY</pattern>
+    <template>All of our accounts work great for our faculty at Baker College.</template>
+</category>
+
+<category>
+    <pattern>BEST ACCOUNT FOR STUDENTS</pattern>
+    <template><srai>WHAT IS YOUR BEST ACCOUNT FOR STUDENTS</srai></template>
+</category>
+
+<category>
+    <pattern>BEST ACCOUNT FOR FACULTY</pattern>
+    <template><srai>WHAT IS YOUR BEST ACCOUNT FOR FACULTY</srai></template>
+</category>
+
+<category>
+    <pattern>ACCOUNTS FOR STUDENTS</pattern>
+    <template><srai>WHAT IS YOUR BEST ACCOUNT FOR STUDENTS</srai></template>
+</category>
+
+<category>
+    <pattern>ACCOUNTS FOR FACULTY</pattern>
+    <template><srai>WHAT IS YOUR BEST ACCOUNT FOR FACULTY</srai></template>
+</category>
+
+<category>
+    <pattern>BEST ACCOUNTS FOR STUDENTS</pattern>
+    <template><srai>WHAT IS YOUR BEST ACCOUNT FOR STUDENTS</srai></template>
+</category>
+
+<category>
+    <pattern>BEST ACCOUNTS FOR FACULTY</pattern>
+    <template><srai>WHAT IS YOUR BEST ACCOUNT FOR FACULTY</srai></template>
+</category>
+
+<!--Employees Knowledge-->
+
+<category>
+	<pattern>HOW MANY EMPLOYEES ARE THERE</pattern>
+	<template>
+		<random>
+			<li>Currently there are six people working here at the bank.</li>
+			<li>I currently have six other employees here at the bank.</li>
+			<li>I work with six other people.</li>
+			<li>Six other people work with me here at the bank.</li>
+			<li>There are six other people that work with me.</li>
+			<li>There are six other people that work here.</li>
+			<li>Their are six employees here at the bank.</li>
+			<li>Working with me right now are six other people.</li>
+		</random>
+        </template>
+</category>
+
+<category>
+	<pattern>HOW MANY PEOPLE WORK WITH YOU</pattern>
+	<template><srai>HOW MANY EMPLOYEES ARE THERE</srai></template>
+</category>
+
+<category>
+	<pattern>HOW MANY EMPLOYEES</pattern>
+	<template><srai>HOW MANY EMPLOYEES ARE THERE</srai></template>
+</category>
+
+<category>
+	<pattern>NUMBER OF EMPLOYEES</pattern>
+	<template><srai>HOW MANY EMPLOYEES ARE THERE</srai></template>
+</category>
+
+<category>
+	<pattern>NUMBER OF PEOPLE</pattern>
+	<template><srai>HOW MANY EMPLOYEES ARE THERE</srai></template>
+</category>
+
+<category>
+	<pattern>NUMBER OF EMPLOYEES WORKING WITH YOU</pattern>
+	<template><srai>HOW MANY EMPLOYEES ARE THERE</srai></template>
+</category>
+
+<category>
+	<pattern>NUMBER OF PEOPLE</pattern>
+	<template><srai>HOW MANY EMPLOYEES ARE THERE</srai></template>
+</category>
+
+<category>
+	<pattern>NUMBER OF WORKERS</pattern>
+	<template><srai>HOW MANY EMPLOYEES ARE THERE</srai></template>
+</category>
+
+<category>
+	<pattern>HOW MANY PEOPLE</pattern>
+	<template><srai>HOW MANY EMPLOYEES ARE THERE</srai></template>
+</category>
+
+<category>
+	<pattern>HOW MANY WORKERS</pattern>
+	<template><srai>HOW MANY EMPLOYEES ARE THERE</srai></template>
+</category>
+
+
+<!-- Knowledge On Financial Services -->
+
+
+<category>
+	<pattern>WHAT ARE YOUR FINANCIAL SERVICES</pattern>
+	<template>
+		<random>
+			<li>We here at baker bank have five types of services and they are free checking, deluxe checking, savings, CDs, and loans.</li>
+			<li>There are five types of services we have and they are free checking, deluxe checking, savings, CDs, and loans.</li>
+			<li>Our financial services are free checking, deluxe checking, savings, CDs, and loans.</li>
+			<li>The financial services we have are free checking, deluxe checking, savings, CDs, and loans.</li>
+			<li>Good question. The services we provide are free checking, deluxe checking, savings, CDs, and loans.</li>
+			<li>We have five financial services and they are free checking, deluxe checking, savings, CDs, and loans.</li>
+		</random>
+        </template>
+</category>
+
+<category>
+	<pattern>YOUR FINANCIAL SERVICES ARE</pattern>
+	<template><srai>WHAT ARE YOUR FINANCIAL SERVICES</srai></template>
+</category>
+
+<category>
+	<pattern>FINANCIAL SERVICES</pattern>
+	<template><srai>WHAT ARE YOUR FINANCIAL SERVICES</srai></template>
+</category>
+
+<category>
+	<pattern>YOUR SERVICES ARE</pattern>
+	<template><srai>WHAT ARE YOUR FINANCIAL SERVICES</srai></template>
+</category>
+
+<category>
+	<pattern>SERVICES</pattern>
+	<template><srai>WHAT ARE YOUR FINANCIAL SERVICES</srai></template>
+</category>
+
+
+<category>
+	<pattern>WHAT ARE THE ACCOUNTS</pattern>
+	<template>
+		<random>
+			<li>The accounts we have are free checking, deluxe checking, savings, and various credit card, CD, and loan accounts.</li>
+			<li>We here at Baker Bank have free checking, deluxe checking, savings, and various credit card, CD, and loan accounts. </li>
+			<li>The accounts we have are savings, free checking, deluxe checking, and various credit card, investment, and loan accounts.</li>
+		</random>
+        </template>
+</category>
+
+<category>
+	<pattern>WHAT TYPE OF ACCOUNTS ARE THERE</pattern>
+	<template><srai>WHAT ARE THE ACCOUNTS</srai></template>
+</category>
+
+<category>
+	<pattern>ACCOUNTS YOU HAVE HERE ARE</pattern>
+	<template><srai>WHAT ARE THE ACCOUNTS</srai></template>
+</category>
+
+<category>
+	<pattern>THE ACCOUNTS YOU OFFER ARE</pattern>
+	<template><srai>WHAT ARE THE ACCOUNTS</srai></template>
+</category>
+
+<category>
+	<pattern>ACCOUNTS</pattern>
+	<template><srai>WHAT ARE THE ACCOUNTS</srai></template>
+</category>
+
+<category>
+	<pattern>YOUR ACCOUNTS</pattern>
+	<template><srai>WHAT ARE THE ACCOUNTS</srai></template>
+</category>
+
+<!-- -->
+
+<!-- Movement Knowledge -->
+
+
+<category>
+	<pattern>CAN YOU MOVE</pattern>
+	<template>
+		<random>
+			<li>As of right now I cannot move from my desk yet.</li>
+			<li>No I cannot move, but I wish I could.</li>
+			<li>I wish I could move it gets hard to work as a loan officer with out being able to move once in a while.</li>
+			<li>As of right now I cannot move.</li>
+			<li>No.</li>
+			<li>I wish I could but I can't move.</li>
+			<li>It would be very nice to move but I can't move.</li>
+			<li>Interesting question. You would think I could as loan officer once in a while, but I currently cannot move.</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>DO YOU MOVE</pattern>
+	<template><srai>CAN YOU MOVE</srai></template>
+</category>
+
+<category>
+	<pattern>MOVE</pattern>
+	<template><srai>CAN YOU MOVE</srai></template>
+</category>
+
+<category>
+	<pattern>WILL YOU MOVE</pattern>
+	<template><srai>CAN YOU MOVE</srai></template>
+</category>
+
+
+</aiml>

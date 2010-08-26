@@ -1,0 +1,33 @@
+LLWearable version 22
+Set_Cream_Shirt_Jeans
+
+	permissions 0
+	{
+		base_mask	00082000
+		owner_mask	00082000
+		group_mask	00000000
+		everyone_mask	00000000
+		next_owner_mask	00082000
+		creator_id	13fd9595-a47b-4d64-a5fb-6da645f038e0
+		owner_id	5423e3a5-a4ad-485d-a62b-497e7a8328bd
+		last_owner_id	5423e3a5-a4ad-485d-a62b-497e7a8328bd
+		group_id	00000000-0000-0000-0000-000000000000
+	}
+	sale_info	0
+	{
+		sale_type	not
+		sale_price	10
+	}
+type 5
+parameters 9
+625 .38
+638 0
+806 1
+807 1
+808 1
+814 .93
+815 .95
+816 .25
+869 1
+textures 1
+2 7446742d-dfc3-47aa-cc2c-c5ce63d14baa

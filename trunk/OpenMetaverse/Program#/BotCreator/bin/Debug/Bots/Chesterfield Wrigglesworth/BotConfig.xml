@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BotData>
+  <FirstName>Chesterfield</FirstName>
+  <LastName>Wrigglesworth</LastName>
+  <Password>1wb1acfh</Password>
+  <Location>Baker Island</Location>
+  <X>95</X>
+  <Y>193</Y>
+  <Z>31</Z>
+  <AIMLPath>\Bots\Chesterfield Wrigglesworth\AIML</AIMLPath>
+  <BotSettingsPath>\Bots\Chesterfield Wrigglesworth\Chesterfield Wrigglesworth.xml</BotSettingsPath>
+</BotData>

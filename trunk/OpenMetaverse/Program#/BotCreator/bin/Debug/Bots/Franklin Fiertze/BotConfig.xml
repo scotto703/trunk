@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BotData>
+  <FirstName>Franklin</FirstName>
+  <LastName>Fiertze</LastName>
+  <Password>bankteller</Password>
+  <Location>Baker Island</Location>
+  <X>160</X>
+  <Y>216</Y>
+  <Z>25</Z>
+  <AIMLPath>\Bots\Franklin Fiertze\AIML</AIMLPath>
+  <BotSettingsPath>\Bots\Franklin Fiertze\Franklin Fiertze.xml</BotSettingsPath>
+</BotData>

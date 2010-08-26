@@ -1,0 +1,52 @@
+LLWearable version 22
+Anne-nature by INSOLENCE
+
+	permissions 0
+	{
+		base_mask	7fffffff
+		owner_mask	7fffffff
+		group_mask	00000000
+		everyone_mask	00000000
+		next_owner_mask	00088000
+		creator_id	45dc295e-c03d-453e-b115-684bab83d060
+		owner_id	45dc295e-c03d-453e-b115-684bab83d060
+		last_owner_id	45dc295e-c03d-453e-b115-684bab83d060
+		group_id	00000000-0000-0000-0000-000000000000
+	}
+	sale_info	0
+	{
+		sale_type	not
+		sale_price	10
+	}
+type 1
+parameters 26
+108 0
+110 0
+111 .5
+116 0
+117 0
+150 0
+162 0
+163 0
+165 0
+700 .25
+701 0
+702 0
+703 0
+704 0
+705 .5
+706 .6
+707 0
+708 0
+709 0
+710 0
+711 .5
+712 0
+713 .7
+714 0
+715 0
+775 0
+textures 3
+0 48895077-804a-ea58-d753-d2b74ac09ff5
+5 34e1877d-c6be-fabf-90dc-102c7d8bc7e5
+6 8d1b3aa2-260e-5852-3788-9689495b5c44

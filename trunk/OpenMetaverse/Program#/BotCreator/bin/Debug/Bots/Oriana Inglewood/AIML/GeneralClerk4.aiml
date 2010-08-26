@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<!-- -->
+<!-- Developer: Matthew Tyson -->
+<!-- Project: Baker Island Research Project: Oriana Inglewood -->
+<!-- Date: 12/10/2009 -->
+<!-- Last Modified: 12/13/2009 -->
+<!-- File Description: This file holds some of Oriana's basic knowledge. -->
+<!-- -->
+
+
+<!--Basic Knowledge-->
+
+<category>
+	<pattern>NUMBER OF HOURS YOU WORK EACH DAY</pattern>
+	<template>
+		<random>
+			<li>I work 8 hours a day 5 days a week.</li>
+			<li>I am working here around eight hours a day for five days a week.</li>
+			<li>My work day consists of eight hours a day for five days a week.</li>
+			<li>My normal days are eight hours and I work around five days a week.</li>
+		</random>
+	</template>
+</category>
+
+<category>
+    <pattern>HOW LONG DO YOU WORK EVERY DAY</pattern>
+    <template><srai>NUMBER OF HOURS YOU WORK EACH DAY</srai></template>
+</category>
+
+<category>
+    <pattern>LENGTH OF YOUR WORK DAY</pattern>
+    <template><srai>NUMBER OF HOURS YOU WORK EACH DAY</srai></template>
+</category>
+
+<category>
+    <pattern>HOW LONG DO YOU WORK FOR</pattern>
+    <template><srai>NUMBER OF HOURS YOU WORK EACH DAY</srai></template>
+</category>
+
+<category>
+    <pattern>WORK DAY LENGTH</pattern>
+    <template><srai>NUMBER OF HOURS YOU WORK EACH DAY</srai></template>
+</category>
+
+<category>
+	<pattern>WHO ARE YOU</pattern>
+	<template>
+		<random>
+			<li>I am Oriana Inglewood.</li>
+			<li>I am Oriana and I am the clerk here at Baker Foods.</li>
+			<li>My name is Oriana. Who are you?</li>
+			<li>I am the clerk here at Baker Foods.</li>
+			<li>My name is Oriana and I am a clerk.</li>
+		</random>
+	</template>
+</category>
+
+<category>
+    <pattern>CAN I ASK WHO YOU ARE</pattern>
+    <template><srai>WHO ARE YOU</srai></template>
+</category>
+
+<category>
+    <pattern>MAY I ASK WHO ARE YOU</pattern>
+    <template><srai>WHO ARE YOU</srai></template>
+</category>
+
+<category>
+    <pattern>AND YOU ARE</pattern>
+    <template><srai>WHO ARE YOU</srai></template>
+</category>
+
+<!--Items Knowledge-->
+
+
+<category>
+	<pattern>WHAT ITEMS DO YOU SELL</pattern>
+	<template>
+		<random>
+			<li>We here at Baker Foods sell cereals, drinks, and other snack foods. We also sell fruits and vegetables. </li>
+			<li>We sell cereals, drinks, fruits, vegetables, and snack foods.</li>
+			<li>We here at Baker Foods sell produce, like fruits and vegetables and we also sell cereals, drinks, and snack foods.</li>
+			<li>We here sell fruits, vegetables, cereals, drinks, and snack foods.</li>
+			<li>I sell mainly cereals, drinks, and snack foods, but we also sell fruits and vegetables.</li>
+			<li>I sell cereals, drinks, snack foods, fruits, and vegetables.</li>
+		</random>
+	</template>
+</category>
+
+<category>
+    <pattern>THE ITEMS YOU SELL HERE ARE</pattern>
+    <template><srai>WHAT ITEMS DO YOU SELL</srai></template>
+</category>
+
+<category>
+    <pattern>WHAT ITEMS DO YOU SELL HERE</pattern>
+    <template><srai>WHAT ITEMS DO YOU SELL</srai></template>
+</category>
+
+<category>
+    <pattern>WHAT ITEMS DO YOU HAVE HERE</pattern>
+    <template><srai>WHAT ITEMS DO YOU SELL</srai></template>
+</category>
+
+<category>
+    <pattern>WHAT ITEMS ARE SOLD AT BAKER FOODS</pattern>
+    <template><srai>WHAT ITEMS DO YOU SELL</srai></template>
+</category>
+
+<category>
+	<pattern>NUMBER OF ITEMS YOU SELL</pattern>
+	<template>
+		<random>
+			<li>We sell over 50 items here at Baker foods.</li>
+			<li>We sell around 50 items here at Baker Foods.</li>
+			<li>To my knowledge there are around 50 items here at Baker Foods.</li>
+			<li>I estimate that we have around 50 items here at Baker Foods.</li>
+			<li>There are around 50 items here at Baker Foods.</li>
+			<li>We sell around 50 items here.</li>
+		</random>
+	</template>
+</category>
+
+<category>
+    <pattern>HOW MANY ITEMS ARE SOLD AT BAKER FOODS</pattern>
+    <template><srai>NUMBER OF ITEMS YOU SELL</srai></template>
+</category>
+
+<category>
+    <pattern>NUMBER OF ITEMS SOLD HERE ARE</pattern>
+    <template><srai>NUMBER OF ITEMS YOU SELL</srai></template>
+</category>
+
+<category>
+    <pattern>HOW MANY ITEMS DO YOU SELL</pattern>
+    <template><srai>NUMBER OF ITEMS YOU SELL</srai></template>
+</category>
+
+<category>
+	<pattern>WHAT IS THE BEST SELLING ITEM</pattern>
+	<template>
+		<random>
+			<li>I would have to say that our Popsicle Super Heros sell the most.</li>
+			<li>Our Popsicle Super Heros sell the best.</li>
+			<li>I am not sure, but if I was going to guess it would be our Popsicles.</li>
+			<li>Our popsicles, specifically our Popsicle Super Heros are selling all the time.</li>
+			<li>Our popsicle Super Heros are selling like crazy.</li>
+			<li>People love our Popsicle Super Heros, so I am guessing they are selling the best.</li>
+		</random>
+	</template>
+</category>
+
+<category>
+    <pattern>YOUR BEST SELLING ITEM IS</pattern>
+    <template><srai>WHAT IS THE BEST SELLING ITEM</srai></template>
+</category>
+
+<category>
+    <pattern>BEST SELLING ITEM</pattern>
+    <template><srai>WHAT IS THE BEST SELLING ITEM</srai></template>
+</category>
+
+
+<!--Reports Knowledge-->
+
+
+<category>
+	<pattern>HOW MANY REPORTS DOES BAKER FOODS HAVE</pattern>
+	<template>
+		<random>
+			<li>There are seven different reports.</li>
+			<li>We have seven different reports.</li>
+			<li>From my knowledge we use seven different reports, but Chesterfield would know more about that.</li>
+			<li>We have around seven different reports.</li>
+			<li>If I counted right last time there were around seven different reports.</li>
+			<li>You can go look, they are on the counter over there but to my knowledge there is seven of them.</li>
+			<li>We have seven different reports.</li>
+		</random>
+	</template>
+</category>
+
+<category>
+    <pattern>HOW MANY REPORTS ARE THERE</pattern>
+    <template><srai>HOW MANY REPORTS DOES BAKER FOODS HAVE</srai></template>
+</category>
+
+<category>
+    <pattern>HOW MANY REPORTS</pattern>
+    <template><srai>HOW MANY REPORTS DOES BAKER FOODS HAVE</srai></template>
+</category>
+
+<category>
+    <pattern>NUMBER OF REPORTS</pattern>
+    <template><srai>HOW MANY REPORTS DOES BAKER FOODS HAVE</srai></template>
+</category>
+
+<category>
+    <pattern>THE NUMBER OF REPORTS YOU HAVE HERE IS</pattern>
+    <template><srai>HOW MANY REPORTS DOES BAKER FOODS HAVE</srai></template>
+</category>
+
+<category>
+    <pattern>THERE ARE HOW MANY REPORTS HERE</pattern>
+    <template><srai>HOW MANY REPORTS DOES BAKER FOODS HAVE</srai></template>
+</category>
+
+<category>
+	<pattern>REPORTS</pattern>
+	<template>
+		<random>
+			<li>Yes we have reports and they are over on the counter.</li>
+			<li>Yeah we have seven different reports and they are on the counter over there.</li>
+			<li>Yes Baker Foods uses seven different reports and they are over there on the counter.</li>
+			<li>Well we have many reports and Chesterfield really finds them to be useful. They are on the counter over there.</li>
+			<li>Yeah we have reports and they can be useful, especially to Chesterfield my manager.</li>
+			<li>Baker Foods have seven different reports and they are over there on the counter.</li>
+		</random>
+	</template>
+</category>
+
+<category>
+    <pattern>DO YOU KNOW ABOUT THE REPORTS</pattern>
+    <template><srai>REPORTS</srai></template>
+</category>
+
+<category>
+    <pattern>DOES BAKER FOODS USE REPORTS</pattern>
+    <template><srai>REPORTS</srai></template>
+</category>
+
+<category>
+    <pattern>WHAT ARE THE REPORTS</pattern>
+    <template><srai>REPORTS</srai></template>
+</category>
+
+
+<!--System Knowledge-->
+
+<category>
+	<pattern>WHAT DO YOU USE AS A SYSTEM HERE</pattern>
+	<template>
+		<random>
+			<li>We would like to have a computerized system, but currently we do everything by hand.</li>
+			<li>The system we use here is out of date and we would like it to be updated with computers and new custom software.</li>
+			<li>The system that we use here is old and needs updating. I hope Chesterfield has a new system put in soon.</li>
+			<li>Chesterfield is working on getting a new system put in, but as of right now we are using a old paper based system.</li>
+			<li>A new system would be nice, but as of right now we are using a paper based system.</li>
+			<li>We use a paper based system, but we are planning a new computer system here. Why?</li>
+		</random>
+	</template>
+</category>
+
+<category>
+    <pattern>THE SYSTEM YOU USE HERE IS</pattern>
+    <template><srai>WHAT DO YOU USE AS A SYSTEM HERE</srai></template>
+</category>
+
+<category>
+    <pattern>SYSTEM HERE</pattern>
+    <template><srai>WHAT DO YOU USE AS A SYSTEM HERE</srai></template>
+</category>
+
+<category>
+    <pattern>DO YOU NEED A SYSTEM UPDATE</pattern>
+    <template><srai>WHAT DO YOU USE AS A SYSTEM HERE</srai></template>
+</category>
+
+<category>
+    <pattern>WHAT TYPE OF SYSTEM DO YOU USE HERE</pattern>
+    <template><srai>WHAT DO YOU USE AS A SYSTEM HERE</srai></template>
+</category>
+
+<category>
+    <pattern>TYPE OF SYSTEM</pattern>
+    <template><srai>WHAT DO YOU USE AS A SYSTEM HERE</srai></template>
+</category>
+
+<category>
+    <pattern>BAKER FOODS SYSTEM</pattern>
+    <template><srai>WHAT DO YOU USE AS A SYSTEM HERE</srai></template>
+</category>
+
+<category>
+    <pattern>BAKER FOODS SALES SYSTEM</pattern>
+    <template><srai>WHAT DO YOU USE AS A SYSTEM HERE</srai></template>
+</category>
+
+<category>
+    <pattern>SALES SYSTEM</pattern>
+    <template><srai>WHAT DO YOU USE AS A SYSTEM HERE</srai></template>
+</category>
+
+<category>
+    <pattern>SYSTEM</pattern>
+    <template><srai>WHAT DO YOU USE AS A SYSTEM HERE</srai></template>
+</category>
+
+
+<category>
+	<pattern>WHAT TYPE OF SYSTEM DO YOU WANT</pattern>
+	<template>
+		<random>
+			<li>It would be nice to have a system that records all of the data that is needed to create all of the reports and a system that uses a barcode scanner. The barcode system will make my job as a clerk easier.</li>
+			<li>I would like the new system to use barcodes for our inventory and checkout, since it would make my job a lot faster and easier.</li>
+			<li>To me using a barcode scanner would make my job faster, so that would be good for the new system.</li>
+			<li>It would be nice to have a barcode scanner, so I don't have to manually put in the prices and quanities manually at checkout.</li>
+			<li>A barcode scanner would be nice, but other than that Chesterfield, my manager, would know more about what the new system needs.</li>
+			<li>I would like to be able to use a barcode scanner, but I would go talk to Chesterfield about what he would like in a new system.</li>
+		</random>
+	</template>
+</category>
+
+
+<category>
+    <pattern>SYSTEM YOU WANT</pattern>
+    <template><srai>WHAT TYPE OF SYSTEM DO YOU WANT</srai></template>
+</category>
+
+<category>
+    <pattern>BEST SYSTEM FOR YOU</pattern>
+    <template><srai>WHAT TYPE OF SYSTEM DO YOU WANT</srai></template>
+</category>
+
+<category>
+    <pattern>WHAT DO YOU THINK WOULD MAKE A GOOD SYSTEM</pattern>
+    <template><srai>WHAT TYPE OF SYSTEM DO YOU WANT</srai></template>
+</category>
+
+<category>
+    <pattern>WHAT WOULD BE A GOOD SYSTEM</pattern>
+    <template><srai>WHAT TYPE OF SYSTEM DO YOU WANT</srai></template>
+</category>
+
+<category>
+    <pattern>WHAT WOULD YOU WANT IN A NEW SYSTEM</pattern>
+    <template><srai>WHAT TYPE OF SYSTEM DO YOU WANT</srai></template>
+</category>
+
+<category>
+    <pattern>NEW SYSTEM WANTS</pattern>
+    <template><srai>WHAT TYPE OF SYSTEM DO YOU WANT</srai></template>
+</category>
+
+<category>
+    <pattern>IDEAS ON A NEW SYSTEM</pattern>
+    <template><srai>WHAT TYPE OF SYSTEM DO YOU WANT</srai></template>
+</category>
+
+
+<category>
+    <pattern>EXTRA INFORMATION ON A NEW SYSTEM</pattern>
+    <template><srai>WHAT TYPE OF SYSTEM DO YOU WANT</srai></template>
+</category>
+
+<category>
+    <pattern>NEW SYSTEM DETAILS</pattern>
+    <template><srai>WHAT TYPE OF SYSTEM DO YOU WANT</srai></template>
+</category>
+
+<category>
+    <pattern>NEW SYSTEM</pattern>
+    <template><srai>WHAT TYPE OF SYSTEM DO YOU WANT</srai></template>
+</category>
+
+
+<!--Location of Places-->
+
+<category>
+    <pattern>WHERE IS THE BANK</pattern>
+    <template>The bank is located just east of here and down the street.</template>
+</category>
+
+<category>
+    <pattern>WHERE IS A STORE</pattern>
+    <template>You are at a store. We sell many items here.</template>
+</category>
+
+<category>
+    <pattern>WHERE IS BAKER FOODS</pattern>
+    <template>You are at Baker Foods.</template>
+</category>
+
+</aiml>

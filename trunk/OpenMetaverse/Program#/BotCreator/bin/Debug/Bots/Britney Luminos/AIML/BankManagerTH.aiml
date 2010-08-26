@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml>
+<!--author: Roberta09-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V1.2.0.33320-->
+<category>
+	<pattern>WHO IS THE BANK MANAGER</pattern>
+	<template>The Bank Manager is Tracy Helstein.</template>
+</category>
+<category>
+	<pattern>IS THE BANK MANAGER IN</pattern>
+	<template>Yes, Tracy Helstein is our Bank Manager and is located up stairs.</template>
+</category>
+<category>
+	<pattern>CAN I TALK TO THE BANK MANAGER</pattern>
+	<template>Yes, go up the stairs and you will see our Bank Manager's desk Tracy Helstein.</template>
+</category>
+<category>
+	<pattern>CAN I LEAVE A MESSAGE FOR THE BANK MANAGER</pattern>
+	<template>Yes, but it is better to talk in person to Tracy Helstein.</template>
+</category>
+<category>
+	<pattern>I HAVE A MEETING WITH YOUR BANK MANAGER</pattern>
+	<template>Tracy Helstein's desk is up the stairs.</template>
+</category>
+<category>
+	<pattern>I HAVE AN APPOINTMENT WITH YOUR BANK MANAGER</pattern>
+	<template>Tracy Helstein's desk is located at the top of the stairs.</template>
+</category>
+<category>
+	<pattern>I HAVE A MEETING WITH TRACY HELSTEIN</pattern>
+	<template>Tracy Helstein's desk is up the stairs to the right.</template>
+</category>
+<category>
+	<pattern>I HAVE AN APPOINTMENT WITH TRACY HELSTEIN</pattern>
+	<template>Please have a seat and I will be right with you.</template>
+</category>
+<category>
+	<pattern>DO I NEED AN APPOINTMENT TO TALK TO YOUR BANK MANAGER</pattern>
+	<template>No, but it is a good idea. Tracy Helstein's desk is up stairs if you would like to see.</template>
+</category>
+<category>
+	<pattern>YOUR TELLER WAS HELPING ME WITH A SAFETY DEPOSIT BOX AND IS GONE IS THERE SOMEONE ELSE THAT CAN HELP ME</pattern>
+	<template>Tracy Helstein, our bank manager, can help you with that. Just go up the stairs and to the right, you will see Tracy's desk.</template>
+</category>
+<category>
+	<pattern>I NEED HELP WITH A LOAN AND YOUR LOAN OFFICER IS NOT IN WHAT CAN I DO</pattern>
+	<template>Tracy Helstein, our bank manager, would be more than happy to help you. Tracy's desk is up the stairs and to the right.</template>
+</category>
+</aiml>

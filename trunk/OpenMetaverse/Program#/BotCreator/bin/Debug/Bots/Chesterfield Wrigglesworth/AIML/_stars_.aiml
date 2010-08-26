@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+<!--author: Heather-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V1.2.0.33320-->
+<!--Modified By Matthew Tyson On 12-12-2009-->
+
+<category>
+	<pattern>*</pattern>
+	<template>
+		<random>
+			<li>I am not sure what you are asking, but I do know a lot about being a manager, specifically the reports, system we use, and my employees.</li>
+			<li>I don't exactly know what you are asking but if you ask me a specific question about my job, the items we sell, or about my knowledge I can be very helpful.</li>
+			<li>How about rephrasing your question and maybe I can help you. I know a lot about the items we sell, my job here, and I can direct you to our reports. You can also ask my clerk Oriana. She is Downstairs at the counter.</li>
+			<li>I don't understand your question, but I do know a lot about the items we sell and being a manager. I can show you where a item is if you would like. If you need to check out then I can help you with that or Oriana can, since she is my clerk.</li>
+			<li>I don't understand what you are saying but my clerk Oriana may be able to help you. She is downstairs at the counter.</li>
+			<li>Very interesting question. I will have to get back to you on that. If you want to know about the items we sell or my job here just ask. I can also direct you to my clerk Oriana.</li>
+			<li>If can reword your question that will help me figure out what you are trying to ask. I am very helpful when it comes to knowledge about the items we sell and being a manager.</li>
+		</random>
+	</template>
+</category>
+
+</aiml>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+
+<aiml>
+<!--author: Heather-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V1.2.0.33320-->
+<!--Edited By Matthew Tyson On 12-14-2009-->
+<category>
+	<pattern>NO</pattern><that>I'm Elminstyr Exonar, the Baker Island Bank loan officer.  Do you need help with a loan?</that>
+	<template>Then what can I help you with today?</template>
+</category>
+<category>
+	<pattern>WHAT DO YOU DO</pattern>
+	<template>I'm the Baker Island Bank loan officer.</template>
+</category>
+<category>
+	<pattern>WHERE AM I</pattern>
+	<template>The Baker Island Bank</template>
+</category>
+<category>
+	<pattern>WHERE IS FRANKLIN</pattern>
+	<template>He is located downstairs at the main counter</template>
+</category>
+<category>
+	<pattern>WHERE IS FRANKLIN *</pattern>
+	<template><srai>where is Franklin</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS TRACY</pattern>
+	<template>Her desk is located downstairs, see Franklin if you cannot find her</template>
+</category>
+<category>
+	<pattern>WHERE IS TRACY *</pattern>
+	<template><srai>WHERE IS TRACY</srai></template>
+</category>
+<category>
+	<pattern>WHO ARE YOU</pattern>
+	<template>I'm Elminstyr Exonar, the Baker Island Bank loan officer.  Do you need help with a loan?</template>
+</category>
+<category>
+	<pattern>WHO ELSE WORKS HERE</pattern>
+	<template>Franklin is the teller, the manager Tracy, and Britney our receptionist.</template>
+</category>
+<category>
+	<pattern>WHO IS FRANKLIN</pattern>
+	<template>He is the bank teller</template>
+</category>
+<category>
+	<pattern>WHO IS FRANKLIN *</pattern>
+	<template><srai>WHO IS FRANKLIN</srai></template>
+</category>
+<category>
+	<pattern>WHO IS TRACY</pattern>
+	<template>She is my boss, the Manager</template>
+</category>
+<category>
+	<pattern>WHO IS TRACY *</pattern>
+	<template><srai>who is tracy</srai></template>
+</category>
+</aiml>

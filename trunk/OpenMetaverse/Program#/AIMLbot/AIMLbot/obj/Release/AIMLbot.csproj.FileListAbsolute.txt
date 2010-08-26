@@ -1,0 +1,48 @@
+E:\dev\libopenmetaverse\Program#\AIMLbot\AIMLbot\bin\Release\AIMLbot.dll
+E:\dev\libopenmetaverse\Program#\AIMLbot\AIMLbot\bin\Release\AIMLbot.pdb
+E:\dev\libopenmetaverse\Program#\AIMLbot\AIMLbot\bin\Release\OpenMetaverse.dll
+E:\dev\libopenmetaverse\Program#\AIMLbot\AIMLbot\bin\Release\OpenMetaverseTypes.dll
+E:\dev\libopenmetaverse\Program#\AIMLbot\AIMLbot\bin\Release\Mono.Security.dll
+E:\dev\libopenmetaverse\Program#\AIMLbot\AIMLbot\bin\Release\HttpServer.dll
+E:\dev\libopenmetaverse\Program#\AIMLbot\AIMLbot\bin\Release\log4net.dll
+E:\dev\libopenmetaverse\Program#\AIMLbot\AIMLbot\bin\Release\OpenMetaverse.Http.dll
+E:\dev\libopenmetaverse\Program#\AIMLbot\AIMLbot\bin\Release\OpenMetaverse.StructuredData.dll
+E:\dev\libopenmetaverse\Program#\AIMLbot\AIMLbot\bin\Release\OpenMetaverse.xml
+E:\dev\libopenmetaverse\Program#\AIMLbot\AIMLbot\bin\Release\OpenMetaverse.Http.xml
+E:\dev\libopenmetaverse\Program#\AIMLbot\AIMLbot\bin\Release\OpenMetaverse.StructuredData.xml
+E:\dev\libopenmetaverse\Program#\AIMLbot\AIMLbot\bin\Release\OpenMetaverseTypes.xml
+E:\dev\libopenmetaverse\Program#\AIMLbot\AIMLbot\obj\Release\ResolveAssemblyReference.cache
+E:\dev\libopenmetaverse\Program#\AIMLbot\AIMLbot\obj\Release\AIMLbot.dll
+E:\dev\libopenmetaverse\Program#\AIMLbot\AIMLbot\obj\Release\AIMLbot.pdb
+C:\BakerProject\OpenMetaVerse\Program#\AIMLbot\AIMLbot\obj\Release\ResolveAssemblyReference.cache
+C:\BakerProject\OpenMetaVerse\Program#\AIMLbot\AIMLbot\obj\Release\AIMLbot.dll
+C:\BakerProject\OpenMetaVerse\Program#\AIMLbot\AIMLbot\obj\Release\AIMLbot.pdb
+C:\BakerProject\OpenMetaVerse\Program#\AIMLbot\AIMLbot\bin\Release\AIMLbot.dll
+C:\BakerProject\OpenMetaVerse\Program#\AIMLbot\AIMLbot\bin\Release\AIMLbot.pdb
+C:\BakerProject\OpenMetaVerse\Program#\AIMLbot\AIMLbot\bin\Release\OpenMetaverse.dll
+C:\BakerProject\OpenMetaVerse\Program#\AIMLbot\AIMLbot\bin\Release\OpenMetaverseTypes.dll
+C:\BakerProject\OpenMetaVerse\Program#\AIMLbot\AIMLbot\bin\Release\Mono.Security.dll
+C:\BakerProject\OpenMetaVerse\Program#\AIMLbot\AIMLbot\bin\Release\HttpServer.dll
+C:\BakerProject\OpenMetaVerse\Program#\AIMLbot\AIMLbot\bin\Release\XMLRPC.dll
+C:\BakerProject\OpenMetaVerse\Program#\AIMLbot\AIMLbot\bin\Release\log4net.dll
+C:\BakerProject\OpenMetaVerse\Program#\AIMLbot\AIMLbot\bin\Release\OpenMetaverse.Http.dll
+C:\BakerProject\OpenMetaVerse\Program#\AIMLbot\AIMLbot\bin\Release\OpenMetaverse.StructuredData.dll
+C:\BakerProject\OpenMetaVerse\Program#\AIMLbot\AIMLbot\bin\Release\HttpServer.pdb
+C:\BakerProject\OpenMetaVerse\Program#\AIMLbot\AIMLbot\bin\Release\OpenMetaverse.pdb
+C:\BakerProject\OpenMetaVerse\Program#\AIMLbot\AIMLbot\bin\Release\OpenMetaverse.xml
+C:\BakerProject\OpenMetaVerse\Program#\AIMLbot\AIMLbot\bin\Release\OpenMetaverse.Http.pdb
+C:\BakerProject\OpenMetaVerse\Program#\AIMLbot\AIMLbot\bin\Release\OpenMetaverse.Http.xml
+C:\BakerProject\OpenMetaVerse\Program#\AIMLbot\AIMLbot\bin\Release\OpenMetaverse.StructuredData.pdb
+C:\BakerProject\OpenMetaVerse\Program#\AIMLbot\AIMLbot\bin\Release\OpenMetaverse.StructuredData.xml
+C:\BakerProject\OpenMetaVerse\Program#\AIMLbot\AIMLbot\bin\Release\OpenMetaverseTypes.pdb
+C:\BakerProject\OpenMetaVerse\Program#\AIMLbot\AIMLbot\bin\Release\OpenMetaverseTypes.xml
+C:\Users\Archangel\Documents\School\Baker Island\BakerProject\BakerProject\BakerProject\OpenMetaverse\Program#\AIMLbot\AIMLbot\bin\Release\AIMLbot.dll
+C:\Users\Archangel\Documents\School\Baker Island\BakerProject\BakerProject\BakerProject\OpenMetaverse\Program#\AIMLbot\AIMLbot\bin\Release\AIMLbot.pdb
+C:\Users\Archangel\Documents\School\Baker Island\BakerProject\BakerProject\BakerProject\OpenMetaverse\Program#\AIMLbot\AIMLbot\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Archangel\Documents\School\Baker Island\BakerProject\BakerProject\BakerProject\OpenMetaverse\Program#\AIMLbot\AIMLbot\obj\Release\AIMLbot.dll
+C:\Users\Archangel\Documents\School\Baker Island\BakerProject\BakerProject\BakerProject\OpenMetaverse\Program#\AIMLbot\AIMLbot\obj\Release\AIMLbot.pdb
+C:\Users\scotto\Projects\BakerProject\OpenMetaverse\Program#\AIMLbot\AIMLbot\bin\Release\AIMLbot.dll
+C:\Users\scotto\Projects\BakerProject\OpenMetaverse\Program#\AIMLbot\AIMLbot\bin\Release\AIMLbot.pdb
+C:\Users\scotto\Projects\BakerProject\OpenMetaverse\Program#\AIMLbot\AIMLbot\obj\Release\ResolveAssemblyReference.cache
+C:\Users\scotto\Projects\BakerProject\OpenMetaverse\Program#\AIMLbot\AIMLbot\obj\Release\AIMLbot.dll
+C:\Users\scotto\Projects\BakerProject\OpenMetaverse\Program#\AIMLbot\AIMLbot\obj\Release\AIMLbot.pdb

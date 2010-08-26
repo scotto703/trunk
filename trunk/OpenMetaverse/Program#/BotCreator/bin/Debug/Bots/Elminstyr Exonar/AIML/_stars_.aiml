@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+<!--author: Heather-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V1.2.0.33320-->
+<!--Edited By Matthew Tyson On 12/7/2009-->
+<category>
+	<pattern>*</pattern>
+	<template>
+		<random>
+			<li>I know just about everything here at the bank, but I'm unable to anwser that question. Maybe you could rephase it.</li>
+			<li>I know a lot about the accounts we have and a lot being a loan officer. If you need help just ask me for help.</li>
+			<li>I am not sure what you are asking but if you need any help just ask.</li>
+			<li>I am not sure what you are asking but I do know a lot about being a loan officer here at the bank. If you need to know information on our services like me know.</li>
+		</random>
+         </template>
+</category>
+</aiml>

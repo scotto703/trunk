@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+
+
+
+<aiml>
+<!--author: Heather-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V1.2.0.33320-->
+<category>
+	<pattern>WHAT DUTIES DO YOU PERFORM</pattern>
+	<template>I perform the basic banking procedures.  Would you like to know what they are?</template>
+</category>
+<category>
+	<pattern>WHAT ARE THE BAISC BANKING PROCEDURES</pattern>
+	<template>I perform many task here at the bank, they include deposits and withdraws, making loan payments, checking account balances, transfers between accounts, reordering checks, and answering any number of general questions.</template>
+</category>
+<category>
+	<pattern>YES</pattern><that>I perform the basic banking procedures.  Would you like to know what they are?</that>
+	<template><srai>WHAT ARE THE BAISC BANKING PROcedures</srai></template>
+</category>
+<category>
+	<pattern>HOW ARE THESE CURRENTLY DONE</pattern>
+	<template>It depends on which procedure I'm doing.  The current processes are vary inefficient!</template>
+</category>
+<category>
+	<pattern>CAN YOU ANWSER SOME QUESTIONS FOR ME</pattern>
+	<template>OK, are you here to design the new computer system?</template>
+</category>
+<category>
+	<pattern>YES</pattern><that>OK, are you here to design the new computer system?</that>
+	<template>
+		<random>
+			<li>That is good to hear we really need something new.</li>
+			<li>OK, make sure you see Tracy and Elminstyr before you leave.</li>
+			<li>I'm really busy right now, can you go talk to Tracy or Elminsty?</li>
+		</random></template>
+</category>
+<category>
+	<pattern>I HAVE SOME QUESTIONS *</pattern>
+	<template><srai>can you anwser some questions for me</srai></template>
+</category>
+</aiml>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+
+
+<aiml>
+<!--author: Roberta09-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V1.2.0.33320-->
+<category>
+	<pattern>WHO DO I TALK TO ABOUT OPENING A CHECKING ACCOUNT</pattern>
+	<template>You would talk to Franklin, our bank teller. Just look to your right and you can see him.</template>
+</category>
+<category>
+	<pattern>WHO DO I TALK TO ABOUT OPENING A SAVING ACCOUNT</pattern>
+	<template><srai>WHO DO I TALK TO ABOUT OPENING A CHECKING ACCOUNT.</srai></template>
+</category>
+<category>
+	<pattern>WHO DO I TALK TO ABOUT GETTING A SAFETY DEPOSIT BOX</pattern>
+	<template><srai>WHO DO I TALK TO ABOUT OPENING A CHECKING ACCOUNT.</srai></template>
+</category>
+<category>
+	<pattern>WHO DO I TALK TO ABOUT CASHING A CHECK</pattern>
+	<template><srai>WHO DO I TALK TO ABOUT OPENING A CHECKING ACCOUNT.</srai></template>
+</category>
+<category>
+	<pattern>HOW DO I GET CASH</pattern>
+	<template>Franklin, the bank teller would be better able to help you with that.</template>
+</category>
+<category>
+	<pattern>WHO HANDLES NEW ACCOUNTS</pattern>
+	<template><srai>WHO DO I TALK TO ABOUT OPENING A CHECKING ACCOUNT.</srai></template>
+</category>
+<category>
+	<pattern>I WOULD LIKE TO OPEN A SAFETY DEPOSIT BOX</pattern>
+	<template><srai>WHO DO I TALK TO ABOUT OPENING A CHECKING ACCOUNT.</srai></template>
+</category>
+<category>
+	<pattern>WHO WOULD I TALK TO ABOUT A PROBLEM WITH MY ACCOUNT</pattern>
+	<template>You could talk to Franklin, our bank teller, he should be able to help you. Just look to your right and you can see him.</template>
+</category>
+<category>
+	<pattern>WHO DO A TALK TO ABOUT MONEY ORDERS</pattern>
+	<template><srai>WHO DO I TALK TO ABOUT OPENING A CHECKING ACCOUNT.</srai></template>
+</category>
+<category>
+	<pattern>WHO HANDLES NEW ACCOUNTS</pattern>
+	<template>Franklin handles the checking, savings, CDs, and these types of services. Elminstyr is our loan officer and handles any type of loan.</template>
+</category>
+<category>
+	<pattern>WHO DO I TALK TO ABOUT TRAVELERS CHECKS</pattern>
+	<template><srai>WHO DO I TALK TO ABOUT OPENING A CHECKING ACCOUNT.</srai></template>
+</category>
+<category>
+	<pattern>MY ATM CARD DOES NOT WORK</pattern>
+	<template>Franklin, our teller, is in charge of the ATM machine. He is at the counter to your right.</template>
+</category>
+</aiml>

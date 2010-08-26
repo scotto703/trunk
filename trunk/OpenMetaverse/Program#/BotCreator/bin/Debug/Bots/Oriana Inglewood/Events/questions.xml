@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<movementQuestions>
+  <Question eventID ="1">Would you like me to take you to aisle 1?</Question>
+  <Question eventID ="2">Mr. Wrigglesworth is in his office. Would you like me to take you to him?</Question>
+  <Question eventID ="3">Would you like me to take you to aisle 2?</Question>  
+  <Question eventID ="4">Would you like me to take you to the produce section?</Question>
+  <Question eventID ="5">Would you like me to take you to the dairy section?</Question>
+  <Question eventID ="5">Would you like me to take you to the freezer section?</Question>
+</movementQuestions>

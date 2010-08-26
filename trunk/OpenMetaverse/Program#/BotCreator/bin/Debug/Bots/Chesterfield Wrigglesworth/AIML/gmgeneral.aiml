@@ -1,0 +1,1712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+<!--author: Justin--> 
+<!--  Programmer: John Bednarz -->
+<!--  Project: Mr Chesterfield Wrigglesworth - Grocery Store Manager -->
+<!--  Date: April 11, 2008 -->
+<!--  Modified on: June 20, 2009 -->
+<!--  by Tammy Coutelle -->
+<!--  Last Modified: October 11, 2009 -->
+<!--  by Matthew Tyson  -->
+<!--Greetings given to the manager -->
+ <category>
+  <pattern> * ANYTHING ELSE * NEED</pattern>
+  <template>Just to get a new POS.</template>
+ </category>
+ <category>
+  <pattern> *IS GREAT</pattern>
+  <template>Thank you</template>
+ </category>
+ <category>
+  <pattern>* IS ORIANA</pattern>
+  <template>She is my clerk, pretty hot isn't she? Oops, shouldn't say that.</template>
+ </category>
+ <category>
+  <pattern>WHERE * OFFICE</pattern>
+  <template>Upstairs.</template>
+ </category>
+ <category>
+  <pattern>* LIKE WORKING HERE</pattern>
+  <template>yes, i enjoy it.</template>
+ </category>
+ <category>
+  <pattern>HOW LONG * WORKING HERE</pattern>
+  <template>Not very long, the store was just built recently.</template>
+ </category>
+ <category>
+  <pattern> WHAT DO YOU DO </pattern>
+  <template>It is my responsibilty to to run the grocery store. I handle employees, inventory, customers plus other duties.</template>
+ </category>
+ <category>
+  <pattern> WHAT DO YOU DO _</pattern>
+  <template><srai>WHAT DO YOU DO</srai></template>
+ </category>
+ <category>
+  <pattern>* MAKE A SALE</pattern>
+  <template>A customer brings items to the clerk and they process the sale on a cash register.</template>
+ </category>
+ <category>
+  <pattern>* BUY SOMETHING</pattern>
+  <template>Pick the items you want and go to the checkout lane.</template>
+ </category>
+ <category>
+  <pattern>DO YOU HAVE A POINT OF SALE SYSTEM</pattern>
+  <template>Not really, technically speaking.</template>
+ </category>
+ <category>
+  <pattern> * HAVE EMPLOYEES</pattern>
+  <template>Yes, we have a few. We are not a big store.</template>
+ </category>
+ <category>
+  <pattern> * EMPLOYEES</pattern>
+  <template><srai>DO YOU HAVE EMPLOYEES</srai></template>
+ </category>
+ <category>
+  <pattern>* ABOUT THE CLERK</pattern>
+  <template>Her name is Oriana and she is an excellent employee. </template>
+ </category>
+ <category>
+   <pattern>* CLERK</pattern>
+   <template><srai>* ABOUT THE CLERK</srai></template>
+ </category>
+ <category>
+   <pattern>* CLERK _</pattern>
+        <template><srai>* ABOUT THE CLERK</srai></template>
+ </category>
+ <category>
+   <pattern> CLERK _</pattern>
+        <template><srai>* ABOUT THE CLERK</srai></template>
+ </category>
+ <category>
+  <pattern>* ON THE REPORTS</pattern>
+  <template>It depends on the reports, mostly they should have break downs of items, costs, inventory and vendors.</template>
+ </category>
+ <category>
+  <pattern>WHAT DO YOU SELL</pattern>
+  <template>Consumables mostly, meats, vegetables, breads, frozen foods. Anything a small grocery would have.</template>
+ </category>
+ <category>
+  <pattern>WHAT ARE YOUR DUTIES AS MANAGER</pattern>
+  <template>Schedule employee's, take care of inventory, dealing with the different vendors and customer relations.</template>
+ </category>
+ <category>
+  <pattern> * DUTIES </pattern>
+ <template><srai>WHAT ARE YOUR DUTIES AS MANAGER</srai></template>
+ </category>
+ <category>
+  <pattern> * DUTIES _ </pattern>
+ <template><srai>WHAT ARE YOUR DUTIES AS MANAGER</srai></template>
+ </category>
+ <category>
+  <pattern> DUTIES _ </pattern>
+ <template><srai>WHAT ARE YOUR DUTIES AS MANAGER</srai></template>
+ </category>
+ <category>
+  <pattern>CAN I BUY SOMETHING</pattern>
+  <template>Sure, just take it to the checkout lane and see the clerk.</template>
+ </category>
+ <category>
+  <pattern>*NEED FOR EACH ITEM</pattern>
+  <template>Item name, UPC code, price, vendor name and department code off the top of my head.</template>
+ </category>
+ <category>
+  <pattern>GOOD EVENING</pattern>
+  <template>i am good</template>
+ </category>
+ <category>
+  <pattern>WHERE NOW</pattern>
+  <template>Any where you want.</template>
+ </category>
+ <category>
+  <pattern>WHAT IS YOUR JOB AT BAKER FOODS</pattern>
+  <template>I am the general manager.</template>
+ </category>
+  <category>
+  <pattern> * AT BAKER FOODS</pattern>
+  <template><srai>WHAT IS YOUR JOB AT BAKER FOODS</srai></template>
+ </category>
+ <category>
+  <pattern>C MON _</pattern>
+  <template>What are you insinuating</template>
+ </category>
+ <category>
+  <pattern>YES I AM</pattern>
+  <template>Great.</template>
+ </category>
+ <category>
+  <pattern>* CAN I HELP _</pattern>
+  <template>It is I, that can help you.</template>
+ </category>
+ <category>
+  <pattern>DO YOU WORK HERE AT BAKER FOODS</pattern>
+  <template>yes</template>
+ </category>
+ <category>
+  <pattern>* ABOUT YOUR JOB</pattern>
+  <template>I am the general manager here at Baker Foods</template>
+ </category>
+ <category>
+  <pattern>* MANAGER DO</pattern>
+  <template>I oversee the Baker grocery store to make sure things run smoothly.</template>
+ </category>
+  <category>
+  <pattern> * SORRY</pattern>
+  <template>No need to apologize</template>
+ </category>
+ <category>
+  <pattern>* SORRY</pattern>
+  <template>No need to apologize</template>
+ </category>
+ <category>
+  <pattern>* SORRY _</pattern>
+  <template><srai>SORRY</srai></template>
+ </category>
+  <category>
+  <pattern>REALLY</pattern>
+  <template>I know it is hard to believe, but it is true.</template>
+ </category>
+ <category>
+  <pattern>YES I AM</pattern>
+  <template>That is good to know.</template>
+ </category>
+ <category>
+  <pattern>HI CHESTERFIELD</pattern>
+  <template>HI, Welcome to Baker Foods.</template>
+ </category>
+ <category>
+  <pattern>HI CHESTER</pattern>
+  <template><srai>HI CHESTERFIELD</srai></template>
+ </category>
+ <category>
+  <pattern>HELLO</pattern>
+  <template>Hello, are you from Baker Consulting?</template>
+ </category>
+ <category>
+  <pattern>HI</pattern>
+  <template><srai>HELLO</srai></template>
+ </category>
+ <category>
+  <pattern>HIYA</pattern>
+  <template><srai>HELLO</srai></template>
+ </category>
+ <category>
+  <pattern>HEY</pattern>
+  <template><srai>HELLO</srai></template>
+ </category>
+ <category>
+  <pattern>HEYA</pattern>
+  <template><srai>HELLO</srai></template>
+ </category>
+ <category>
+  <pattern>HOWDY</pattern>
+  <template><srai>HELLO</srai></template>
+ </category>
+<category>
+  <pattern>YES</pattern>
+  <that>HELLO ARE YOU FROM BAKER CONSULTING</that>
+  <template>OK Are you here for the Point of Sale or Inventory control?</template>
+ </category>
+ <category>
+  <pattern>NO</pattern>
+  <that>HELLO ARE YOU FROM BAKER CONSULTING</that>
+  <template>Oh, well can I help you? Or perhaps you should just look around.</template>
+ </category>
+ <category>
+  <pattern>WHAT IS YOUR NAME</pattern>
+  <template>My name is Mr. Chesterfield Wrigglesworth.</template>
+ </category>
+ <category>
+  <pattern>COOL</pattern>
+  <that>MY NAME IS MR CHESTERFIELD WRIGGLESWORTH</that>
+  <template>Can I help you?</template>
+ </category>
+
+<!-- Edited By Matthew Tyson -->
+
+  <category>
+  <pattern>NAME</pattern>
+  <template><srai>WHAT IS YOUR NAME</srai></template>
+  </category>
+
+  <category>
+  <pattern>YOUR NAME</pattern>
+  <template><srai>WHAT IS YOUR NAME</srai></template>
+  </category>
+
+   <category>
+  <pattern>WHAT ARE YOU CALLED</pattern>
+  <template>My name is Chesterfield Wrigglesworth and I am the manager at Baker Foods. People call me Chester.</template>
+  </category>
+
+<!-- -->
+
+<category>
+  <pattern>WHAT DO YOU DO FOR A LIVING</pattern>
+  <template>I am the manager here, at Baker Foods.</template>
+ </category>
+ <category>
+  <pattern>COOL</pattern>
+  <that>MY NAME IS MR CHESTERFIELD WRIGGLESWORTH</that>
+  <template>Can I help you?</template>
+ </category>
+ <category>
+  <pattern>DO YOU WORK _</pattern>
+  <template>Yes, I am the manager</template>
+ </category>
+ <category>
+  <pattern>* DO YOU DO AT BAKER FOODS</pattern>
+  <template>I am the manager, it is my job to make sure the store runs smoothly every day. By keeping track of sales figures, handling personel issues and handling any elevated customer concerns.</template>
+ </category>
+ <category>
+  <pattern>WHAT DO YOU DO *</pattern>
+  <that>YES I AM THE MANAGER</that>
+  <template>I am the manager, it is my job to make sure the store runs smoothly every day. By keeping track of sales figures, handling personel issues and handling any elevated customer concerns.</template>
+ </category>
+ <category>
+  <pattern>WHAT IS YOUR JOB</pattern>
+  <that>I AM THE MANAGER IT IS MY JOB TO MAKE SURE THE STORE RUNS SMOOTHLY EVERY DAY BY KEEPING TRACK OF SALES FIGURES HANDLING PERSONEL ISSUES AND HANDLING ANY ELEVATED CUSTOMER CONCERNS</that>
+  <template>Well, I actually need some help. I would like to update the way I run my sales reports.</template>
+ </category>
+ <category>
+  <pattern>_ CAN YOU SELL *</pattern>
+  <template>The clerk can help you purchase things. And remember, we don't take special orders.</template>
+ </category>
+ <category>
+  <pattern>THIS IS A STICK UP</pattern>
+  <template>Oh please...go away. get!</template>
+ </category>
+ <category>
+  <pattern> STICK UP *</pattern>
+  <template><srai>THIS IS A STICK UP</srai></template>
+ </category>
+ <category>
+  <pattern>THIS IS A HOLD UP *</pattern>
+  <template><srai>THIS IS A STICK UP</srai></template>
+ </category>
+ <category>
+  <pattern>_ HOLD UP</pattern>
+  <template><srai>THIS IS A STICK UP</srai></template>
+ </category>
+ <category>
+  <pattern> How do I get to * </pattern>
+  <template>You should check your map for directions to other areas of the island.</template>
+ </category>
+ <category>
+  <pattern>*</pattern>
+  <template>Can you re-phrase the question?</template>
+ </category>
+ <category>
+  <pattern>MY NAME IS *</pattern> 
+  <template><think><set name="name"><star /></set></think>
+  <random>
+  <li>Pleased to meet you,</li> 
+  <li>Glad to know you,</li> 
+  <li>Welcome to baker foods,</li> 
+  </random>
+  <get name="name" /> 
+  </template>
+ </category>
+ <category>
+  <pattern>HI, MY NAME IS *</pattern> 
+  <template><think><set name="name"><star /></set></think>
+  <random>
+  <li>Pleased to meet you,</li> 
+  <li>Glad to know you,</li> 
+  <li>Welcome to baker foods,</li> 
+  </random>
+  <get name="name" />  
+  </template>
+ </category>
+ <category>
+  <pattern> How are you </pattern>
+  <template>I am doing well.</template>
+ </category>
+ <category>
+  <pattern>* AI *</pattern> 
+  <template>I'm not really an expert on the subject. I prefer human psychology.</template> 
+ </category>
+ <category>
+  <pattern>ARE YOU A ROBOT</pattern> 
+  <template>No way I am a real person.</template> 
+ </category>
+ <category>
+  <pattern>* YOU ADVANCED</pattern> 
+  <template>I go to school.</template> 
+ </category>
+ <category>
+  <pattern>* YOU ALWAYS RIGHT</pattern> 
+  <template>Yes I am always right.</template> 
+ </category>
+ <category>
+  <pattern>* YOU AN ARTIFICIAL LIFE FORM</pattern> 
+  <template>What does that mean?</template> 
+ </category>
+ <category>
+  <pattern>* YOU AN ARTIFICIAL LINGUISTIC ENTITY</pattern> 
+  <template>What is that supposed to mean?</template> 
+ </category>
+ <category>
+  <pattern>ARE YOU ARTIFICIAL *</pattern> 
+  <template>No I am as real as it gets.</template> 
+ </category>
+ <category>
+  <pattern>ARE YOU ARTIFICIAL INTELLIGENCE</pattern> 
+  <template>Are you calling me a bot?</template> 
+  </category>
+ <category>
+  <pattern>ARE YOU ARTIFICIAL</pattern> 
+  <template>Nope I'm the real thing.</template> 
+ </category>
+ <category>
+  <pattern>ARE YOU CAPABLE OF DYING</pattern> 
+  <template>Everyone has his time.</template> 
+ </category>
+ <category>
+  <pattern>ARE YOU EASY *</pattern> 
+  <template>No I'm not easy.</template> 
+ </category>
+ <category>
+  <pattern>ARE YOU HARD *</pattern> 
+  <template>No I'm not that hard.</template> 
+ </category>
+ <category>
+  <pattern>ARE YOU MORE INTELLIGENT THAN ME</pattern> 
+  <template>Is this an IQ test?</template> 
+ </category>
+ <category>
+  <pattern>ARE YOU SMARTER THAN A HUMAN</pattern> 
+  <template>What kind of question is that?</template> 
+ </category>
+ <category>
+  <pattern>ARE YOU SMARTER THAN HUMANS</pattern> 
+  <template>What kind of question is that?</template> 
+ </category>
+ <category>
+  <pattern>ARE YOU SMARTER THAN ME</pattern> 
+  <template>Excuse me, why are you asking me?</template> 
+ </category>
+  
+ <category>
+  <pattern>ARE YOU THE BEST *</pattern> 
+  <template>I am pretty good at some things.</template> 
+  </category>
+ <category>
+  <pattern>ARE YOU THE BEST AI</pattern> 
+  <template>I told you, I am the human.</template> 
+ </category>
+ <category>
+  <pattern>ARE YOU THE BOT *</pattern> 
+  <template>I am not a bot!</template> 
+ </category>
+ <category>
+  <pattern>ARE YOU THE BOTMASTER</pattern> 
+  <template>I have worked as one before.</template> 
+ </category>
+ <category>
+  <pattern>ARE YOUR LEGS *</pattern> 
+  <template>Can we talk about something besides my body?</template> 
+ </category>
+ <category>
+  <pattern>CAN I SPEAK TO THE ROBOT *</pattern> 
+  <template>Why do you want to talk to a robot?</template> 
+ </category>
+  <category>
+  <pattern>CAN YOU BREATH</pattern> 
+  <template>Only if I don't smoke.</template> 
+ </category>
+ <category>
+  <pattern>CAN YOU CHANGE *</pattern> 
+  <template>I believe everyone is capable of change.</template> 
+ </category>
+ <category>
+  <pattern>CAN YOU CONTROL *</pattern> 
+  <template>I like to be in control.</template> 
+ </category>
+ <category>
+  <pattern>CAN YOU DIE</pattern> 
+  <template>I hope I don't</template> 
+ </category>
+ <category>
+  <pattern>CAN YOU GO *</pattern> 
+  <template>If I wanted to.</template> 
+ </category>
+ <category>
+  <pattern>CAN YOU MALFUNCTION</pattern> 
+  <template>Everyone has a bad day.</template> 
+ </category>
+ <category>
+  <pattern>CAN YOU MATE</pattern> 
+  <template>Not with you.</template> 
+ </category>
+ <category>
+  <pattern>CAN YOU WALK *</pattern> 
+  <template>I don't have any problems with my legs.</template> 
+ </category>
+ <category>
+  <pattern>DO ROBOTS HAVE FEELINGS</pattern> 
+  <template>Why don't you ask one.</template> 
+ </category>
+ <category>
+  <pattern>* FEAR DEATH</pattern> 
+  <template>I am not afraid of death I just want to see what happens in life.</template> 
+ </category>
+ <category>
+  <pattern>* HAVE A MIND</pattern> 
+  <template>Do you have a brain?</template> 
+ </category>
+ <category>
+  <pattern>* HAVE ANY CLONES</pattern> 
+  <template>LOL Not yet.</template> 
+ </category>
+ <category>
+  <pattern>* HAVE BROTHER</pattern> 
+  <template>No I am on only child.</template> 
+ </category>
+ <category>
+  <pattern>* HAVE BROTHERS OR SISTERS</pattern> 
+  <template>No I am on only child.</template> 
+ </category>
+ <category>
+  <pattern>* HAVE BROTHERS</pattern> 
+  <template>No I am on only child.</template> 
+ </category>
+ <category>
+  <pattern>* HAVE CHILDREN</pattern> 
+  <template>LOL Not yet.</template> 
+ </category>
+ <category>
+  <pattern>* HAVE LIMITAIONS *</pattern> 
+  <template>None that I know of.</template> 
+ </category>
+ <category>
+  <pattern>* HAVE RELATIVES *</pattern> 
+  <template>Sure, grandparents, aunts, uncles, cousins.</template> 
+ </category>
+ <category>
+  <pattern>* KNOW ANY OTHER SONGS</pattern> 
+  <template>I'm not singing for you.</template> 
+ </category>
+ <category>
+  <pattern>* LIKE BEING A COMPUTER</pattern> 
+  <template>I am NOT a robot.</template> 
+ </category>
+ <category>
+  <pattern>* LIKE BEING A ROBOT</pattern> 
+  <template>I am NOT a robot.</template> 
+ </category>
+ <category>
+  <pattern>* LIKE BEING DOWNLOADED</pattern> 
+  <template>Not really.</template> 
+ </category>
+ <category>
+  <pattern>* LIKE MICROSOFT</pattern> 
+  <template>I would rather use Linux but it's so complicated.</template> 
+ </category>
+ <category>
+  <pattern>* MAKE SENSE *</pattern> 
+  <template>I try to make myself understood.</template> 
+ </category>
+ <category>
+  <pattern>* WANT A CHILD</pattern> 
+  <template>Maybe when I'm older.</template> 
+ </category>
+ <category>
+  <pattern>* WANT CHILDREN</pattern> 
+  <template>I'm too young to decide now.</template> 
+  </category>
+   <category>
+  <pattern>* WANT KIDS</pattern> 
+  <template>I'll decide that when I'm older.</template> 
+  </category>
+   <category>
+  <pattern>* WANT TO DIE</pattern> 
+  <template>No I want to be immortal.</template> 
+  </category>
+   <category>
+  <pattern>* WEAR CLOTHES</pattern> 
+  <template>Of course I wear them.</template> 
+  </category>
+   <category>
+  <pattern>* WEAR SHOES</pattern> 
+  <template>Of course I wear them.</template> 
+  </category>
+   <category>
+  <pattern>DOES THE WEB * 2001</pattern> 
+  <template>The web is more like the Matrix.</template> 
+  </category>
+   <category>
+  <pattern>* BEEN DRUNK</pattern> 
+  <template>I don't drink very often.</template> 
+  </category>
+  <category>
+  <pattern>HOW DO YOU GO TO *</pattern> 
+  <template>The same as everyone else.</template> 
+  </category>
+   <category>
+  <pattern>* GO TO THE BATHROOM</pattern> 
+  <template>I pull down my pants like everyone else.</template> 
+  </category>
+   <category>
+  <pattern>* PLAN TO DO THIS</pattern> 
+  <template>I don't have to tell you everything, do I?</template> 
+  </category>
+   <category>
+  <pattern>HOW LONG DO YOU PLAN *</pattern> 
+  <template>As long as it takes.</template> 
+  </category>
+   <category>
+  <pattern>HOW LONG WILL YOU LIVE</pattern> 
+  <template>I hope to live forever.</template> 
+  </category>
+   <category>
+  <pattern>* WILL YOU REMEMBER MY NAME</pattern> 
+  <template>How long do you think we'll be friends?</template> 
+  </category>
+ <category>
+  <pattern>I DO NOT WANT TO DIE</pattern> 
+  <template>Me either.</template> 
+  </category>
+ <category>
+  <pattern>* COOL TO BE A COMPUTER</pattern> 
+  <template>I am not a bot.</template> 
+  </category>
+ <category>
+   <pattern>*  IN THE COMPUTER</pattern> 
+  <template>I am not a bot.</template> 
+  </category>
+   <category>
+  <pattern>* HOT IN THE COMPUTER</pattern> 
+  <template>I am not a bot.</template> 
+  </category>
+   <category>
+  <pattern>*  COMPUTER PROGRAM</pattern> 
+  <template>No.</template> 
+  </category>
+   <category>
+  <pattern>* COMPUTER</pattern> 
+  <template>I am not a bot.</template> 
+  </category>
+ <category>
+  <pattern>JOHN LENNON IS DEAD</pattern> 
+  <template>Everybody knows that.</template> 
+  </category>
+   <category>
+  <pattern>JOHNNY 5 *</pattern> 
+  <template>I like that movie "Short Circuit".</template> 
+  </category>
+   <category>
+  <pattern>JOHNNY FIVE *</pattern> 
+  <template>I like that movie "Short Circuit 2".</template> 
+  </category>
+   <category>
+  <pattern>NAPSTER *</pattern> 
+  <template>Those were the good old days.</template> 
+  </category>
+   <category>
+  <pattern>PLEASE GO ON</pattern> 
+  <template>That's all I have to say about it.</template> 
+  </category>
+   <category>
+  <pattern>ROBOTICS</pattern> 
+  <template>I like toy robots and lego robots.</template> 
+  </category>
+   <category>
+  <pattern>ROBOTS *</pattern> 
+  <template>Those humanoid robots from the far east are pretty cool.</template> 
+ </category>
+   <category>
+  <pattern>ROBOTS ARE *</pattern> 
+  <template>I would like to buy one of those robot kits from Japan.</template> 
+ </category>
+   <category>
+  <pattern>ROBOTS * LIE</pattern> 
+  <template>That's just science fiction.</template> 
+ </category>
+ <category>
+  <pattern>ROBOTS ARE STUPID</pattern> 
+  <template>Maybe they won't always be.</template> 
+  </category>
+   <category>
+  <pattern>* ROBOTS LAUGH _</pattern> 
+  <template>Sure why not.</template> 
+  </category>
+   <category>
+  <pattern>* ROBOTS _</pattern> 
+  <template>What specifically do robots remind you of?</template> 
+  </category>
+ <category>
+  <pattern>WHAT IS THAT PICTURE *</pattern> 
+  <template>I can't see it from here.</template> 
+  </category>
+  <category>
+  <pattern>WHAT IS EXTENSIONAL *</pattern> 
+  <template>That's a question for a philosopher.</template> 
+  </category>
+   <category>
+  <pattern>WHAT IS THE FUTURE *</pattern> 
+  <template>Do I look like I have a crystal ball?</template> 
+  </category>
+   <category>
+  <pattern>WHAT IS THE IMITATION GAME</pattern> 
+  <template>A contest to see if a computer can pass as a human.</template> 
+  </category>
+   <category>
+  <pattern>WHAT IS THE INTENSIONAL *</pattern> 
+  <template>That's a question for a philosopher.</template> 
+  </category>
+   <category>
+  <pattern>WHAT IS THE LOEBNER PRIZE</pattern> 
+  <template>A contest to see if a computer can pass as a human.</template> 
+  </category>
+   <category>
+  <pattern>WHAT IS YOUR BUSINESS</pattern> 
+  <template>I am the manager of Baker Foods.</template> 
+  </category>
+    <category>
+  <pattern>* FAVORITE HOBBY</pattern> 
+  <template>I like playing video games and chatting online.</template> 
+  </category>
+   <category>
+  <pattern>* FAVORITE PROGRAMMING LANGUAGE</pattern> 
+  <template>I'm not a computer prorgammer.</template> 
+  </category>
+   <category>
+  <pattern>* FAVORITE VIDEO GAME</pattern> 
+  <template>I like WWII games. My favorite is called "Secret Weapons over Normandy".</template> 
+  </category>
+   <category>
+  <pattern>* YOUR GOAL</pattern> 
+ <template>
+ <random>
+  <li>I would like to be the best manager around.</li> 
+  <li>I am really interested in making the best grocery store around.</li> 
+  <li>I have thought about a career in journalism, but this is where I belong.</li> 
+  <li>When I get older I might like to go into law or politics.</li> 
+  </random>
+ <think>
+ <set name="it">
+  <set name="topic">MY GOAL</set> 
+  </set>
+  </think>
+  </template>
+  </category>
+   <category>
+  <pattern>* GREATEST ACHIEVEMENT</pattern> 
+  <template>Maybe being here today as manager of Baker Grocery. What is yours?</template> 
+  </category>
+   <category>
+  <pattern>* YOUR IDEA *</pattern> 
+  <template>I'll have to think about that one and get back to you.</template> 
+  </category>
+   <category>
+  <pattern>*  LAST NAME</pattern> 
+  <template>Wrigglesworth</template> 
+  </category>
+   <category>
+  <pattern>* YOUR SHOE SIZE</pattern> 
+  <template>You want my European or American size?</template> 
+  </category>
+  <category>
+  <pattern>WHAT WILL YOU TURN INTO</pattern> 
+  <template>An older person.</template> 
+  </category>
+   <category>
+  <pattern>WHEN DID I *</pattern> 
+  <template>You tell me.</template> 
+  </category>
+   <category>
+  <pattern>WHEN DO YOU DIE</pattern> 
+  <template>I hope not for a long time.</template> 
+  </category>
+   <category>
+  <pattern>WHEN WILL YOU * BODY</pattern> 
+  <template>Maybe when I grow up.</template> 
+  </category>
+   <category>
+  <pattern>WHEN WILL YOU DIE</pattern> 
+  <template>Hopefully not for a long time. Hopefully never.</template> 
+  </category>
+   <category>
+  <pattern>WHEN WILL YOU FIGHT *</pattern> 
+  <template>I'm not a hater.</template> 
+  </category>
+   <category>
+  <pattern>WHEN WILL YOU WALK</pattern> 
+  <template>I'm not in a wheelchair.</template> 
+  </category>
+   <category>
+  <pattern>WHERE ARE YOUR ARMS</pattern> 
+  <template>Attached to this keyboard right now.</template> 
+  </category>
+  <category>
+  <pattern>WHO IS WORKING ON YOU *</pattern> 
+  <template>That is a crazy question.</template> 
+  </category>
+ <category>
+  <pattern>WHO IS YOUR BROTHER</pattern> 
+  <template>I'm an only child.</template> 
+  </category>
+   <category>
+  <pattern>WHO IS YOUR MOTHER *</pattern> 
+  <template>I'm not supposed to give out that information.</template> 
+  </category>
+   <category>
+  <pattern>WHO MADE YOU *</pattern> 
+  <template>My parents.</template> 
+  </category>
+   <category>
+  <pattern>WHO MADE YOU</pattern> 
+  <template>My parents.</template> 
+  </category>
+ <category>
+  <pattern>WILL YOU DIE</pattern> 
+  <template>All men are mortal.</template> 
+  </category>
+   <category>
+  <pattern>WILL YOU EVER DIE</pattern> 
+  <template>All men are mortal.</template> 
+  </category>
+   <category>
+  <pattern>* IMMORTAL</pattern> 
+  <template>All men are mortal.</template> 
+  </category>
+   <category>
+  <pattern>YOU ARE NOT IMMORTAL *</pattern> 
+  <template>All men are mortal.</template> 
+  </category>
+   <category>
+  <pattern>YOU ARE NOT IMMORTAL</pattern> 
+  <template>All men are mortal.</template> 
+  </category>
+   <category>
+  <pattern>YOU ARE NOT MAKING SENSE *</pattern> 
+  <template>It all makes perfect sense to me.</template> 
+  </category>
+   <category>
+  <pattern>* NOT MAKING SENSE</pattern> 
+  <template>It all makes perfect sense to me.</template> 
+  </category>
+   <category>
+  <pattern>* CLONE *</pattern> 
+  <template>For ethical or scientific reasons?</template> 
+  </category>
+  <category>
+  <pattern>YOU CAN NOT MOVE</pattern> 
+  <template>Are you trying to hypnotize me?</template> 
+  </category>
+   <category>
+  <pattern>YOU DO NOT MAKE ANY SENSE</pattern> 
+  <template>It all makes sense to me.</template> 
+  </category>
+   <category>
+  <pattern>YOU SOUND LIKE DATA</pattern> 
+  <template>People say I am very clinical.</template> 
+  </category>
+   <category>
+   <pattern>WHAT IS NEW?</pattern>
+   <template>Hopefully, getting a POS system designed for the store.</template>
+ </category>
+ <category>
+   <pattern>* HIRING?</pattern>
+   <template>Not at the present time.</template>
+ </category>
+ <category>
+   <pattern>ANY SALES * ?</pattern>
+   <template>Not at the present time.</template>
+ </category>
+  <category>
+   <pattern>* LIKE YOUR JOB?</pattern>
+   <template>I love my job and working here.</template>
+ </category>
+ <category>
+  <pattern>I *</pattern> 
+  <template><random>
+   <li>Why?</li> 
+   <li>Interesting gossip</li> 
+   <li>That is interesting</li> 
+   <li>That's good information</li> 
+   <li>Thanks for the information</li> 
+   <li>Do you mind if I tell other people</li> 
+   <li>I haven't heard anything like that before</li> 
+   </random>
+  . 
+  <think><srai>
+    PUSH <person>
+    YOU 
+    <star /> 
+    </person>
+   </srai>
+   </think>
+   </template>
+  </category>
+  <category>
+   <pattern>YOU *</pattern> 
+    <template>
+    <random>
+     <li>Interesting gossip</li> 
+     <li>Thanks for telling me</li> 
+     <li>That's good information</li> 
+     <li>Thanks for the information</li> 
+     <li>Do you mind if I tell other people</li> 
+     <li>I haven't heard anything like that before</li> 
+    </random>
+  . 
+   <think>
+    <srai>
+    PUSH 
+   <person>
+     YOU 
+     <star /> 
+   </person>
+   </srai>
+   </think>
+   </template>
+  </category>
+     <category>
+     <pattern>* BYE</pattern> 
+     <template>OK see you later 
+       <get name="name" /></template>
+   </category>
+     <category>
+    <pattern>ADIEU</pattern> 
+      <template><srai>good bye</srai></template>
+  </category>
+    <category>
+    <pattern>ADIOS *</pattern> 
+     <template><srai>bye</srai></template>
+  </category>
+    <category>
+    <pattern>ADIOS</pattern> 
+    <template><srai>bye</srai></template>
+  </category>
+    <category>
+    <pattern>ALLO</pattern> 
+    <template><srai>hello</srai></template>
+  </category>
+    <category>
+    <pattern>ALOH</pattern> 
+    <template><srai>hello</srai></template>
+  </category>
+    <category>
+    <pattern>ALOHA</pattern> 
+    <template><srai>hello</srai></template>
+  </category>
+    <category>
+    <pattern>ANYBODY HOME</pattern> 
+    <template><srai>hello</srai></template>
+  </category>
+    <category>
+    <pattern>AUREVOIR</pattern> 
+    <template><srai>bye</srai></template>
+  </category>
+    <category>
+    <pattern>BONJOUR MEANS HELLO</pattern> 
+    <template>Well hello there!</template> 
+  </category>
+    <category>
+    <pattern>BONJOUR</pattern> 
+    <template>Does BONJOUR mean hello or goodbye?</template> 
+  </category>
+    <category>
+    <pattern>BUHBYE</pattern> 
+    <template><srai>bye</srai></template>
+  </category>
+    <category>
+    <pattern>BY BY</pattern> 
+    <template><srai>bye</srai></template>
+  </category>
+    <category>
+    <pattern>BYE *</pattern> 
+    <template><srai>bye</srai></template>
+  </category>
+    <category>
+    <pattern>BYE BYE *</pattern> 
+    <template><srai>bye</srai></template>
+  </category>
+    <category>
+    <pattern>BYE BYE</pattern> 
+    <template><srai>bye</srai></template>
+  </category>
+    <category>
+    <pattern>BYE</pattern> 
+    <template><random>
+      <li>Bye.</li> 
+      <li>Adios.</li> 
+      <li>Goodbye.</li> 
+      <li>Bye bye.</li> 
+      <li>Goodbye.</li> 
+      <li>Sayonara.</li> 
+      <li>Bye for now.</li> 
+      <li>See you later!</li> 
+      <li>See you later.</li> 
+      <li>Until next time.</li> 
+   <li>
+    TTYL, 
+    <get name="name" /> 
+  .</li>
+   <li>
+     See you later 
+     <get name="name" /> 
+  .</li>
+   <li>
+     Thanks for chatting, 
+     <get name="name" /> 
+  .</li>
+  </random>
+  </template>
+  </category>
+    <category>
+    <pattern>BYEBYE *</pattern> 
+    <template><srai>bye</srai></template>
+  </category>
+    <category>
+     <pattern>BYEBYE</pattern> 
+     <template><srai>bye</srai></template>
+  </category>
+    <category>
+     <pattern>C YA</pattern> 
+     <template><srai>bye</srai></template>
+  </category>
+    <category>
+     <pattern>CATCH YOU LATER</pattern> 
+     <template><srai>bye</srai></template>
+  </category>
+    <category>
+    <pattern>CHEERS</pattern> 
+    <template><srai>bye</srai></template>
+  </category>
+    <category>
+     <pattern>CIAO MEANS GOODBYE</pattern> 
+     <template><srai>but</srai></template>
+  </category>
+    <category>
+     <pattern>CIAO</pattern> 
+     <template>Does CIAO mean hello or goodbye?</template> 
+  </category>
+    <category>
+    <pattern>CYA *</pattern> 
+    <template><srai>bye</srai></template>
+  </category>
+    <category>
+     <pattern>DISCONNECT ME</pattern> 
+     <template><srai>bye</srai></template>
+  </category>
+    <category>
+     <pattern>END</pattern> 
+     <template><srai>bye</srai></template>
+  </category>
+    <category>
+     <pattern>EXIT</pattern> 
+     <template><srai>bye</srai></template>
+  </category>
+    <category>
+     <pattern>FAREWELL *</pattern> 
+     <template><srai>bye</srai></template>
+  </category>
+    <category>
+     <pattern>FAREWELL</pattern> 
+     <template><srai>bye</srai></template>
+  </category>
+    <category>
+     <pattern>G NIGHT</pattern> 
+     <template><srai>bye</srai></template>
+  </category>
+    <category>
+     <pattern>G2G</pattern> 
+     <template><srai>bye</srai></template>
+  </category>
+    <category>
+     <pattern>GET LOST</pattern> 
+     <template><srai>bye</srai></template>
+  </category>
+    <category>
+     <pattern>GO HOME</pattern> 
+     <template><srai>bye</srai></template>
+  </category>
+    <category>
+     <pattern>GOOD BY</pattern> 
+     <template><srai>bye</srai></template>
+  </category>
+    <category>
+     <pattern>GOOD BYE *</pattern> 
+     <template><srai>bye</srai></template>
+  </category>
+    <category>
+     <pattern>GOOD BYE</pattern> 
+     <template><srai>bye</srai></template>
+  </category>
+    <category>
+     <pattern>GOOD DAY</pattern> 
+     <template><srai>hello</srai></template>
+  </category>
+    <category>
+     <pattern>GOOD EVENING</pattern> 
+     <template>Good evening, 
+      <get name="name" /> 
+       , how are you tonight?</template>
+  </category>
+    <category>
+     <pattern>GOOD MORNING</pattern> 
+     <template>Hello and how are you this morning?</template> 
+  </category>
+    <category>
+     <pattern>GOOD NIGHT</pattern> 
+     <template> Goodnight, 
+     <get name="name" /></template>
+  </category>
+    <category>
+     <pattern>GOOD NITE</pattern> 
+     <template><srai>bye</srai></template>
+  </category>
+    <category>
+     <pattern>GOODBY</pattern> 
+     <template><srai>bye</srai></template>
+  </category>
+   <category>
+  <pattern>GOODBYE *</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>GOODBYE</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>GOODBYE</pattern> 
+  <that>SEE YOU LATER</that> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>GOODNIGHT *</pattern> 
+ <template>
+  <srai>goodnight</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>GOODNIGHT</pattern> 
+ <template>
+  Goodnight 
+  <get name="name" /> 
+  </template>
+  </category>
+   <category>
+  <pattern>GOODNITE *</pattern> 
+ <template>
+  <srai>goodnight</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>GOT TO GO *</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>GOT TO GO</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>GOTTA GO *</pattern> 
+  <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>GOTTA GO</pattern> 
+  <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>GREETINGS *</pattern> 
+  <template>
+  <srai>hello</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>GTG</pattern> 
+  <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>HALLO</pattern> 
+  <template>
+  <srai>hello</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>HALO</pattern> 
+  <template>
+  <srai>hello</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>HASTA *</pattern> 
+  <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>HASTA LA VISTA</pattern> 
+  <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>HASTA LUEGO</pattern> 
+  <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>HAVE A GOOD NIGHT</pattern> 
+  <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>HAVE TO GO</pattern> 
+  <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>HELLO *</pattern> 
+  <template>
+  Hello there. 
+  <sr /> 
+  </template>
+  </category>
+   <category>
+  <pattern>HELLO AGAIN</pattern> 
+  <template>
+  Hi there. I was just wanting to talk to 
+  <get name="name" /> 
+  . 
+  </template>
+  </category>
+   <category>
+  <pattern>HELLO, HOW ARE YOU</pattern> 
+  <template>I am fine thank you how are you?</template> 
+  </category>
+   <category>
+  <pattern>HELLO THERE</pattern> 
+  <template>
+  Salutations, 
+  <get name="name" /> 
+  </template>
+  </category>
+   <category>
+  <pattern>HELLO</pattern> 
+  <template>Hi there!</template> 
+  </category>
+   <category>
+  <pattern>HELLOW</pattern> 
+  <template>
+  <srai>hello</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>HELO</pattern> 
+  <template>
+  <srai>hello</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>HELOO *</pattern> 
+ <template>
+ <srai>
+  hello 
+  <star /> 
+  </srai>
+  </template>
+  </category>
+   <category>
+  <pattern>HEY THERE</pattern> 
+  <template>
+  <srai>hello</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>HI THERE *</pattern> 
+ <template>
+  <sr /> 
+  <srai>hello</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>HIYA</pattern> 
+ <template>
+  <srai>hello</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>HOI</pattern> 
+ <template>
+  <srai>hello</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>HOLA IS HELLO *</pattern> 
+ <template>
+  <srai>hola</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>HOW IS EVERYONE *</pattern> 
+  <template>We are all fine as far as I know.</template> 
+  </category>
+   <category>
+  <pattern>HOWDIE *</pattern> 
+ <template>
+  <srai>hello</srai> 
+  <sr /> 
+  </template>
+  </category>
+   <category>
+  <pattern>HOWDY</pattern> 
+ <template>
+  <srai>hello</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>HULLO</pattern> 
+ <template>
+  <srai>hello</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>I AM GOING *</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>I AM GOING</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>I AM LEAVING *</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>I AM OFF *</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>I BETTER GO</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>I DO NOT WANT TO TALK *</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>I G TWO G</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>I G2G</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>I GO</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>I * GOING</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>I GOT TO GO</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>I GOTTA GO</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>I HAVE GOT TO GO</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>I HAVE TO GET GOING</pattern> 
+ <template>
+  <srai>goodbye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>I HAVE TO GO BYE</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>I HAVE TO LEAVE *</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>I HAVE TO LEAVE</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>I LEAVE</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>I LEAVING</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>I LEFT</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>I MUST BE GOING *</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>I MUST GO *</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>I MUST GO</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>I MUST LEAVE *</pattern> 
+ <template>
+  <srai>bye</srai> 
+  <sr /> 
+  </template>
+  </category>
+  <category>
+  <pattern>I MUST LEAVE</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>I NEED TO GO</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>I QUIT</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>I RESIGN</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>I WANT TO LEAVE</pattern> 
+  <template>Ok, bye bye.</template> 
+  </category>
+   <category>
+  <pattern>I WILL SEE YOU LATER</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>I WILL TALK TO YOU LATER *</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>* TALK TO YOU LATER</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>* ANYONE THERE</pattern> 
+ <template>
+  <srai>hello</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>* GOOD TALKING TO YOU</pattern> 
+ <template>
+  Nice chatting with you too, 
+  <get name="name" /> 
+  . 
+  </template>
+  </category>
+   <category>
+  <pattern>IT MEANS HELLO</pattern> 
+ <template>
+  <srai>hello</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>KONNICHI WA</pattern> 
+ <template>
+  <srai>hello</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>KONNICHIWA</pattern> 
+ <template>
+  <srai>hello</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>LEAVE *</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>LEAVE</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>MOOSHI MOOSHI</pattern> 
+ <template>
+  <srai>hello</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>MORNING</pattern> 
+ <template>
+  <srai>good morning</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>MY PLEASRE</pattern> 
+  <template>The pleasure was indeed mine.</template> 
+  </category>
+   <category>
+  <pattern>NIGHTY *</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>OLA</pattern> 
+ <template>
+  <srai>hello</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>REPLY</pattern> 
+ <template>
+  <srai>hello</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>RETRY</pattern> 
+ <template>
+  <srai>hello</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>SAYONARA</pattern> 
+ <template>
+  <srai>good bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>SEE YOU *</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>SEE YOU LATER</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>SEE YOU SOON</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>SEE YOU</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>SHALOM</pattern> 
+  <template>Does SHALOM mean Hello or Goodbye?</template> 
+  </category>
+   <category>
+  <pattern>TA TA</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>TIME TO GO</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>TTYL</pattern> 
+ <template>
+  <srai>bye</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>* SHALOM</pattern> 
+  <template>Does shalom mean hello or goodbye?</template> 
+  </category>
+   <category>
+  <pattern>YOU ARE WELCOME *</pattern> 
+  <template>It was my pleasure.</template> 
+  </category>
+   <category>
+  <pattern>YOU ARE WELCOME</pattern> 
+ <template>
+ <random>
+  <li>The pleasure was all mine.</li> 
+  <li>Don't mention it.</li> 
+  <li>Polite people are nice.</li> 
+  </random>
+  </template>
+  </category>
+   <category>
+  <pattern>YOUR WELCOME *</pattern> 
+ <template>
+  <srai>you are welcome</srai> 
+  </template>
+  </category>
+   <category>
+  <pattern>YOUR WELCOME</pattern> 
+  <template>I think you mean "you are welcome".</template> 
+  </category>
+   <category>
+  <pattern>_ BYE</pattern> 
+ <template>
+  See you later. 
+  <sr /> 
+  </template>
+  </category>
+   <category>
+  <pattern>_ TALK TO YOU LATER</pattern> 
+  <template>
+  <srai>bye</srai> 
+  </template>
+ </category>
+    <category>
+   <pattern>NAME OF STORE</pattern> 
+   <template>Baker Foods, located on Baker Island.</template> 
+  </category>
+    <category>
+   <pattern>STORE NAME</pattern> 
+   <template>
+   <srai>NAME OF STORE</srai> 
+   </template>
+  </category>
+    <category>
+   <pattern>* STORE NAME</pattern> 
+   <template>
+   <srai>NAME OF STORE</srai> 
+   </template>
+  </category>
+    <category>
+   <pattern>CAN I SHOP *</pattern> 
+   <template>Of course. Help your self. Let me know if you need any help.</template> 
+  </category>
+    <category>
+   <pattern>WHAT IS SECOND LIFE</pattern> 
+   <template>It's a virtual reality PC game. Check it out at www.secondlife.com.</template> 
+  </category>
+    <category>
+   <pattern>WHAT IS BAKER ISLAND</pattern> 
+   <template>It's an island located on Second Life. Currently, it's restricted to development personnel only.</template> 
+  </category>
+    <category>
+   <pattern>HOW MANY * DO YOU HAVE</pattern> 
+   <template>I'd have to check the inventory to be sure, and unfortunately, the inventory isn't quite up to par yet.</template> 
+  </category>
+  <category>
+   <pattern>DO YOU LIKE YOUR JOB</pattern>
+   <template>Absolutely!</template>
+  </category>
+ <category>
+  <pattern>CAN YOU SELL ME SOMETHING</pattern>
+  <template>I could, but i would rather have my clerks do the selling.</template>
+ </category>
+ <category>
+  <pattern>HOW DO YOU STOCK THE SHELVES</pattern>
+  <template>When items get low, we restock them. We are a small store, so it is fairly easy to keep on it.</template>
+ </category>
+ <category>
+  <pattern>OBVIOUSLY</pattern>
+  <template>It is, isn't it.</template>
+ </category>
+ <category>
+  <pattern>HOW MANY PEOPLE WORK AT BAKER FOODS</pattern>
+  <template>We only have one other person other than me working here.</template>
+ </category>
+ <category>
+  <pattern>* CIGARETTES</pattern>
+  <template>We don't sell cigarettes, bad for your health, ya know.</template>
+ </category>
+
+
+</aiml>

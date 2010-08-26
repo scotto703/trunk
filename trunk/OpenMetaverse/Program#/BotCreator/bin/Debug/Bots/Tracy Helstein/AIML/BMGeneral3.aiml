@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<!-- -->
+<!-- Developer: Matthew Tyson -->
+<!-- Project: Baker Island Research Project: Tracy Helstein -->
+<!-- Date: 12/11/2009 -->
+<!-- Last Modified: 12/11/2009 -->
+<!-- File Description: This file holds some of Tracy's basic knowledge. -->
+<!-- -->
+
+
+<!--Basic Knowledge-->
+
+<category>
+	<pattern>NUMBER OF HOURS YOU WORK EACH DAY</pattern>
+	<template>
+		<random>
+			<li>I work different hours each week, since the bank requires me here a lot.</li>
+			<li>You can see me here from when we open to when we close.</li>
+			<li>My hours change every week since I am on the call as a manager here.</li>
+			<li>My normal days are eight hours a day for five days a week.</li>
+		</random>
+	</template>
+</category>
+
+<category>
+    <pattern>HOW LONG DO YOU WORK EVERY DAY</pattern>
+    <template><srai>NUMBER OF HOURS YOU WORK EACH DAY</srai></template>
+</category>
+
+<category>
+    <pattern>LENGTH OF YOUR WORK DAY</pattern>
+    <template><srai>NUMBER OF HOURS YOU WORK EACH DAY</srai></template>
+</category>
+
+<category>
+    <pattern>HOW LONG DO YOU WORK FOR</pattern>
+    <template><srai>NUMBER OF HOURS YOU WORK EACH DAY</srai></template>
+</category>
+
+<category>
+    <pattern>WORK DAY LENGTH</pattern>
+    <template><srai>NUMBER OF HOURS YOU WORK EACH DAY</srai></template>
+</category>
+
+
+<!--Service Knowledge-->
+
+
+<category>
+	<pattern>WHAT SERVICES DO YOU PROVIDE</pattern>
+	<template>
+		<random>
+			<li>We here at the Bank have different financial services that our customers can take advantage of, other than that we sell nothing.</li>
+			<li>We provide the financial services that our customers need.</li>
+			<li>We here at the Bank only provide financial services, but no physical products. </li>
+			<li>We here provide financial services.</li>
+			<li>I provide financial services. </li>
+			<li>I provide many great financial services.</li>
+		</random>
+	</template>
+</category>
+
+<category>
+    <pattern>THE SERVICES YOU PROVIDE HERE ARE</pattern>
+    <template><srai>WHAT SERVICES DO YOU PROVIDE</srai></template>
+</category>
+
+<category>
+    <pattern>WHAT SERVICES DO YOU PROVIDE HERE</pattern>
+    <template><srai>WHAT SERVICES DO YOU PROVIDE</srai></template>
+</category>
+
+<category>
+    <pattern>WHAT SERVICES DO YOU HAVE HERE</pattern>
+    <template><srai>WHAT SERVICES DO YOU PROVIDE</srai></template>
+</category>
+
+<category>
+    <pattern>WHAT SERVICES ARE PROVIDED AT BAKER BANK</pattern>
+    <template><srai>WHAT SERVICES DO YOU PROVIDE</srai></template>
+</category>
+
+<category>
+	<pattern>NUMBER OF SERVICES YOU PROVIDE</pattern>
+	<template>
+		<random>
+			<li>We provide five different types of financial services.</li>
+			<li>We provide 5 different financial services.</li>
+			<li>We provide five different services. </li>
+			<li>There are five different services we provide here at Baker Bank.</li>
+		</random>
+	</template>
+</category>
+
+<category>
+    <pattern>HOW MANY SERVICES ARE PROVIDED AT BAKER BANK</pattern>
+    <template><srai>NUMBER OF SERVICES YOU PROVIDE</srai></template>
+</category>
+
+<category>
+    <pattern>NUMBER OF SERVICES PROVIDED HERE ARE</pattern>
+    <template><srai>NUMBER OF SERVICES YOU PROVIDE</srai></template>
+</category>
+
+<category>
+    <pattern>HOW MANY SERVICES DO YOU PROVIDE</pattern>
+    <template><srai>NUMBER OF SERVICES YOU PROVIDE</srai></template>
+</category>
+
+<category>
+	<pattern>WHAT IS THE MOST USED SERVICE</pattern>
+	<template>
+		<random>
+			<li>I would have to say that free checking is the most used service.</li>
+			<li>Our free checking is used the most.</li>
+			<li>My best guess is free checking, since even I have a free checking account here.</li>
+			<li>Our free checking account is the most used service.</li>
+			<li>Our free checking account is used by almost all of our customers.</li>
+			<li>People love our free checking account, so I am guessing it is our most used service.</li>
+		</random>
+	</template>
+</category>
+
+<category>
+    <pattern>YOUR MOST USED SERVICE IS</pattern>
+    <template><srai>WHAT IS THE MOST USED SERVICE</srai></template>
+</category>
+
+<category>
+    <pattern>MOST USED SERVICE</pattern>
+    <template><srai>WHAT IS THE MOST USED SERVICE</srai></template>
+</category>
+
+
+<!--Reports Knowledge-->
+
+
+<category>
+	<pattern>HOW MANY REPORTS DOES BAKER BANK HAVE</pattern>
+	<template>
+		<random>
+			<li>Currently I cannot find the reports, but I estimate around five.</li>
+			<li>I believe we have five reports, but as of right now I am clueless.</li>
+		</random>
+	</template>
+</category>
+
+<category>
+    <pattern>HOW MANY REPORTS ARE THERE</pattern>
+    <template><srai>HOW MANY REPORTS DOES BAKER BANK HAVE</srai></template>
+</category>
+
+<category>
+    <pattern>HOW MANY REPORTS</pattern>
+    <template><srai>HOW MANY REPORTS DOES BAKER BANK HAVE</srai></template>
+</category>
+
+<category>
+    <pattern>NUMBER OF REPORTS</pattern>
+    <template><srai>HOW MANY REPORTS DOES BAKER BANK HAVE</srai></template>
+</category>
+
+<category>
+    <pattern>THE NUMBER OF REPORTS YOU HAVE HERE IS</pattern>
+    <template><srai>HOW MANY REPORTS DOES BAKER BANK HAVE</srai></template>
+</category>
+
+<category>
+    <pattern>THERE ARE HOW MANY REPORTS HERE</pattern>
+    <template><srai>HOW MANY REPORTS DOES BAKER BANK HAVE</srai></template>
+</category>
+
+<category>
+	<pattern>REPORTS</pattern>
+	<template>
+		<random>
+			<li>Yes we have reports, but I cannot find them.</li>
+		</random>
+	</template>
+</category>
+
+<category>
+    <pattern>DO YOU KNOW ABOUT THE REPORTS</pattern>
+    <template><srai>REPORTS</srai></template>
+</category>
+
+<category>
+    <pattern>DOES BAKER BANK USE REPORTS</pattern>
+    <template><srai>REPORTS</srai></template>
+</category>
+
+<category>
+    <pattern>DOES BANK USE REPORTS</pattern>
+    <template><srai>REPORTS</srai></template>
+</category>
+
+<category>
+    <pattern>WHAT ARE THE REPORTS</pattern>
+    <template><srai>REPORTS</srai></template>
+</category>
+
+
+<!--Account Forms Knowledge-->
+
+
+<category>
+	<pattern>HOW MANY FORMS DOES BAKER BANK HAVE</pattern>
+	<template>
+		<random>
+			<li>Currently we have a form for each account needing to be filled out, so that makes it five forms in total.</li>
+			<li>We currently have five different forms that our customers need to fill out to uses all of our services.</li>
+			<li>We currently have five different forms.</li>
+			<li>We have five different forms.</li>
+			<li>We have 5 form for our five finacial services.</li>
+		</random>
+	</template>
+</category>
+
+<category>
+    <pattern>HOW MANY FORMS ARE THERE</pattern>
+    <template><srai>HOW MANY FORMS DOES BAKER BANK HAVE</srai></template>
+</category>
+
+<category>
+    <pattern>HOW MANY FORMS</pattern>
+    <template><srai>HOW MANY FORMS DOES BAKER BANK HAVE</srai></template>
+</category>
+
+<category>
+    <pattern>NUMBER OF FORMS</pattern>
+    <template><srai>HOW MANY FORMS DOES BAKER BANK HAVE</srai></template>
+</category>
+
+<category>
+    <pattern>THE NUMBER OF FORMS YOU HAVE HERE IS</pattern>
+    <template><srai>HOW MANY FORMS DOES BAKER BANK HAVE</srai></template>
+</category>
+
+<category>
+    <pattern>THERE ARE HOW MANY FORMS HERE</pattern>
+    <template><srai>HOW MANY FORMS DOES BAKER BANK HAVE</srai></template>
+</category>
+
+<category>
+	<pattern>FORMS</pattern>
+	<template>
+		<random>
+			<li>Yes we have forms for each type of financial service we provide. Do you want example forms?</li>
+			<li>Yes we have five forms for each type of financial service we provide. Would you like some example forms?</li>
+			<li>Yes we have five forms. Would you like to have some example forms?</li>
+			<li>Yes we uses five forms. I can give you some example forms if you would like?</li>
+		</random>
+	</template>
+</category>
+
+<category>
+    <pattern>DO YOU KNOW ABOUT THE FORMS</pattern>
+    <template><srai>FORMS</srai></template>
+</category>
+
+<category>
+    <pattern>DO YOU KNOW ABOUT THE FORMS HERE</pattern>
+    <template><srai>FORMS</srai></template>
+</category>
+
+<category>
+    <pattern>DOES BAKER BANK USE FORMS</pattern>
+    <template><srai>FORMS</srai></template>
+</category>
+
+<category>
+    <pattern>DOES BANK USE FORMS</pattern>
+    <template><srai>FORMS</srai></template>
+</category>
+
+<category>
+    <pattern>WHAT ARE THE FORMS</pattern>
+    <template><srai>FORMS</srai></template>
+</category>
+
+
+<!--System Knowledge-->
+
+<category>
+	<pattern>WHAT DO YOU USE AS A SYSTEM HERE</pattern>
+	<template>
+		<random>
+			<li>We would like to have a computerized system, but currently we do everything by hand.</li>
+			<li>The system we use here is out of date and we would like it to be updated with computers and new custom software.</li>
+			<li>The system that we use here is old and needs updating.</li>
+			<li>I am working on getting a new system put in, but as of right now we are using a old paper based system.</li>
+			<li>A new system would be nice, but as of right now we are using a paper based system even though we have all these laptops.</li>
+			<li>We use a paper based system, but we are planning a new computer system here. Why?</li>
+		</random>
+	</template>
+</category>
+
+<category>
+    <pattern>THE SYSTEM YOU USE HERE IS</pattern>
+    <template><srai>WHAT DO YOU USE AS A SYSTEM HERE</srai></template>
+</category>
+
+<category>
+    <pattern>SYSTEM HERE</pattern>
+    <template><srai>WHAT DO YOU USE AS A SYSTEM HERE</srai></template>
+</category>
+
+<category>
+    <pattern>DO YOU NEED A SYSTEM UPDATE</pattern>
+    <template><srai>WHAT DO YOU USE AS A SYSTEM HERE</srai></template>
+</category>
+
+<category>
+    <pattern>WHAT TYPE OF SYSTEM DO YOU USE HERE</pattern>
+    <template><srai>WHAT DO YOU USE AS A SYSTEM HERE</srai></template>
+</category>
+
+<category>
+    <pattern>TYPE OF SYSTEM</pattern>
+    <template><srai>WHAT DO YOU USE AS A SYSTEM HERE</srai></template>
+</category>
+
+<category>
+    <pattern>BAKER BANK SYSTEM</pattern>
+    <template><srai>WHAT DO YOU USE AS A SYSTEM HERE</srai></template>
+</category>
+
+<category>
+    <pattern>BAKER BANK ACCOUNT SYSTEM</pattern>
+    <template><srai>WHAT DO YOU USE AS A SYSTEM HERE</srai></template>
+</category>
+
+<category>
+    <pattern>THE BANK SYSTEM</pattern>
+    <template><srai>WHAT DO YOU USE AS A SYSTEM HERE</srai></template>
+</category>
+
+<category>
+    <pattern>THE BANK ACCOUNT SYSTEM</pattern>
+    <template><srai>WHAT DO YOU USE AS A SYSTEM HERE</srai></template>
+</category>
+
+<category>
+    <pattern>BANK SYSTEM</pattern>
+    <template><srai>WHAT DO YOU USE AS A SYSTEM HERE</srai></template>
+</category>
+
+<category>
+    <pattern>BANK ACCOUNT SYSTEM</pattern>
+    <template><srai>WHAT DO YOU USE AS A SYSTEM HERE</srai></template>
+</category>
+
+<category>
+    <pattern>ACCOUNT SYSTEM</pattern>
+    <template><srai>WHAT DO YOU USE AS A SYSTEM HERE</srai></template>
+</category>
+
+<category>
+    <pattern>SYSTEM</pattern>
+    <template><srai>WHAT DO YOU USE AS A SYSTEM HERE</srai></template>
+</category>
+
+
+<category>
+	<pattern>WHAT TYPE OF SYSTEM DO YOU WANT</pattern>
+	<template>
+		<random>
+			<li>Basically I would like a system that can help us handle all of the the accounts and their transactions. Also allow for us to enter and retieve financial information about our customers.</li>
+			<li>A good new system would consist of account handling, report developing, and information input and retrieval.</li>
+			<li>A good new system should be able to handle all information given on forms and account transactions.</li>
+			<li>I would like a new system to handle account transactions, develop reports, and hold customer data.</li>
+		</random>
+	</template>
+</category>
+
+
+<category>
+    <pattern>SYSTEM YOU WANT</pattern>
+    <template><srai>WHAT TYPE OF SYSTEM DO YOU WANT</srai></template>
+</category>
+
+<category>
+    <pattern>BEST SYSTEM FOR YOU</pattern>
+    <template><srai>WHAT TYPE OF SYSTEM DO YOU WANT</srai></template>
+</category>
+
+<category>
+    <pattern>WHAT DO YOU THINK WOULD MAKE A GOOD SYSTEM</pattern>
+    <template><srai>WHAT TYPE OF SYSTEM DO YOU WANT</srai></template>
+</category>
+
+<category>
+    <pattern>WHAT WOULD BE A GOOD SYSTEM</pattern>
+    <template><srai>WHAT TYPE OF SYSTEM DO YOU WANT</srai></template>
+</category>
+
+<category>
+    <pattern>WHAT WOULD YOU WANT IN A NEW SYSTEM</pattern>
+    <template><srai>WHAT TYPE OF SYSTEM DO YOU WANT</srai></template>
+</category>
+
+<category>
+    <pattern>NEW SYSTEM WANTS</pattern>
+    <template><srai>WHAT TYPE OF SYSTEM DO YOU WANT</srai></template>
+</category>
+
+<category>
+    <pattern>IDEAS ON A NEW SYSTEM</pattern>
+    <template><srai>WHAT TYPE OF SYSTEM DO YOU WANT</srai></template>
+</category>
+
+<category>
+    <pattern>ANY IDEAS ON A NEW SYSTEM</pattern>
+    <template><srai>WHAT TYPE OF SYSTEM DO YOU WANT</srai></template>
+</category>
+
+<category>
+    <pattern>EXTRA INFORMATION ON A NEW SYSTEM</pattern>
+    <template><srai>WHAT TYPE OF SYSTEM DO YOU WANT</srai></template>
+</category>
+
+<category>
+    <pattern>NEW SYSTEM DETAILS</pattern>
+    <template><srai>WHAT TYPE OF SYSTEM DO YOU WANT</srai></template>
+</category>
+
+<category>
+    <pattern>NEW SYSTEM</pattern>
+    <template><srai>WHAT TYPE OF SYSTEM DO YOU WANT</srai></template>
+</category>
+
+
+<!--Location of Places-->
+
+<category>
+    <pattern>WHERE IS THE BANK</pattern>
+    <template>You are at the bank. We provide many services here.</template>
+</category>
+
+<category>
+    <pattern>WHERE IS A STORE</pattern>
+    <template>Baker Foods is very close to here and you can see it, to the west, as you go out our front door.</template>
+</category>
+
+<category>
+    <pattern>WHERE IS BAKER FOODS</pattern>
+    <template><srai>WHERE IS A STORE</srai></template>
+</category>
+
+</aiml>

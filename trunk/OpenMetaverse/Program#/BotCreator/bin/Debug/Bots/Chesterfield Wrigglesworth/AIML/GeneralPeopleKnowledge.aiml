@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<!-- -->
+<!-- Developer: Matthew Tyson -->
+<!-- Project: Baker Island Research Project: Chesterfield Wrigglesworth -->
+<!-- Date: 12/12/2009 -->
+<!-- Last Modified: 12/12/2009 -->
+<!-- File Description: This file holds some of Chesterfield's basic people knowledge. -->
+<!-- -->
+
+<!--Who Knowledge-->
+
+<category>
+	<pattern>CHESTERFIELD</pattern>
+	<template>
+		<random>
+			<li>That is me and I am the manager here at Baker Foods.</li>
+			<li>Chesterfield Wrigglesworth is me and I am the manager here at Baker Foods.</li>
+			<li>He is me and I am the manager here at Baker Foods.</li>
+		        <li>He is me and is the manager here at Baker Foods.</li>
+		</random>
+	</template>
+</category>
+
+<category>
+    <pattern>CHESTERFIELD WRIGGLESWORTH</pattern>
+    <template><srai>CHESTERFIELD</srai></template>
+</category>
+
+
+<category>
+    <pattern>WHO IS CHESTERFIELD</pattern>
+    <template><srai>CHESTERFIELD</srai></template>
+</category>
+
+<category>
+    <pattern>WHO IS CHESTERFIELD WRIGGLESWORTH</pattern>
+    <template><srai>CHESTERFIELD</srai></template>
+</category>
+
+
+<category>
+    <pattern>CHESTERFIELD WRIGGLESWORTH IS</pattern>
+    <template><srai>CHESTERFIELD</srai></template>
+</category>
+
+<category>
+    <pattern>CHESTERFIELD IS</pattern>
+    <template><srai>CHESTERFIELD</srai></template>
+</category>
+
+<category>
+	<pattern>ORIANA</pattern>
+	<template>
+		<random>
+			<li>Oriana is the clerk here at Baker Foods.</li>
+			<li>Oriana works for me as the clerk here at Baker Foods.</li>
+			<li>She is my clerk here at Baker Foods.</li>
+		        <li>Oriana Inglewood works as the clerk here.</li>
+		</random>
+	</template>
+</category>
+
+<category>
+    <pattern>ORIANA INGLEWOOD</pattern>
+    <template><srai>ORIANA</srai></template>
+</category>
+
+
+<category>
+    <pattern>WHO IS ORIANA</pattern>
+    <template><srai>ORIANA</srai></template>
+</category>
+
+<category>
+    <pattern>WHO IS ORIANA INGLEWOOD</pattern>
+    <template><srai>ORIANA</srai></template>
+</category>
+
+<category>
+    <pattern>ORIANA INGLEWOOD IS</pattern>
+    <template><srai>ORIANA</srai></template>
+</category>
+
+<category>
+    <pattern>ORIANA IS</pattern>
+    <template><srai>ORIANA</srai></template>
+</category>
+
+<category>
+	<pattern>FRANKLIN</pattern>
+	<template>
+		<random>
+			<li>Franklin is the teller at Baker Bank.</li>
+			<li>Franklin Fiertze is the teller at the Bank here on Baker Island.</li>
+			<li>He is the teller for Baker Bank, which is not far from here on Baker Island.</li>
+		        <li>He is a good friend of mine that I see when I go to use my account at the bank. He is the teller there at Baker Bank.</li>
+		</random>
+	</template>
+</category>
+
+<category>
+    <pattern>FRANKLIN FIERTZE</pattern>
+    <template><srai>FRANKLIN</srai></template>
+</category>
+
+
+<category>
+    <pattern>WHO IS FRANKLIN</pattern>
+    <template><srai>FRANKLIN</srai></template>
+</category>
+
+<category>
+    <pattern>WHO IS FRANKLIN FIERTZE</pattern>
+    <template><srai>FRANKLIN</srai></template>
+</category>
+
+<category>
+    <pattern>FRANKLIN FIERTZE IS</pattern>
+    <template><srai>FRANKLIN</srai></template>
+</category>
+
+<category>
+    <pattern>FRANKLIN IS</pattern>
+    <template><srai>FRANKLIN</srai></template>
+</category>
+
+<category>
+	<pattern>ELMINSTYR</pattern>
+	<template>
+		<random>
+			<li>Elminstyr is a good friend of mine that works at Baker Bank as a Loan Officer.</li>
+			<li>Elminstyr Exonar is a Loan Officer at the Baker Bank.</li>
+			<li>Elminstyr works as a Loan Officer at the Bank.</li>
+		        <li>Elminstyr is a friend of mine that works as a Loan Officer at the Baker Bank.</li>
+		</random>
+	</template>
+</category>
+
+<category>
+    <pattern>ELMINSTYR EXONAR</pattern>
+    <template><srai>ELMINSTYR</srai></template>
+</category>
+
+
+<category>
+    <pattern>WHO IS ELMINSTYR</pattern>
+    <template><srai>ELMINSTYR</srai></template>
+</category>
+
+<category>
+    <pattern>WHO IS ELMINSTYR EXONAR</pattern>
+    <template><srai>ELMINSTYR</srai></template>
+</category>
+
+<category>
+    <pattern>ELMINSTYR EXONAR IS</pattern>
+    <template><srai>ELMINSTYR</srai></template>
+</category>
+
+<category>
+    <pattern>ELMINSTYR IS</pattern>
+    <template><srai>ELMINSTYR</srai></template>
+</category>
+
+<category>
+	<pattern>BRITNEY</pattern>
+	<template>
+		<random>
+			<li>Britney is the Bank Receptionist.</li>
+			<li>Britney Luminos works at the Baker Bank as the Receptionist.</li>
+			<li>Britney is a good friend of mine that works at Baker Bank as the Receptionist.</li>
+		        <li>Britney is the Receptionist at Baker Bank.</li>
+		</random>
+	</template>
+</category>
+
+<category>
+    <pattern>BRITNEY LUMINOS</pattern>
+    <template><srai>BRITNEY</srai></template>
+</category>
+
+
+<category>
+    <pattern>WHO IS BRITNEY</pattern>
+    <template><srai>BRITNEY</srai></template>
+</category>
+
+<category>
+    <pattern>WHO IS BRITNEY LUMINOS</pattern>
+    <template><srai>BRITNEY</srai></template>
+</category>
+
+<category>
+    <pattern>BRITNEY LUMINOS IS</pattern>
+    <template><srai>BRITNEY</srai></template>
+</category>
+
+<category>
+    <pattern>BRITNEY IS</pattern>
+    <template><srai>BRITNEY</srai></template>
+</category>
+
+<category>
+	<pattern>TRACY</pattern>
+	<template>
+		<random>
+			<li>Tracy is the bank manager.</li>
+			<li>Tracy Helstein works at the Baker Bank as the bank manager.</li>
+			<li>Tracy is a friend of mine that works at Baker Bank as the bank manager.</li>
+		        <li>Tracy is the bank manager at Baker Bank.</li>
+		</random>
+	</template>
+</category>
+
+<category>
+    <pattern>TRACY HELSTEIN</pattern>
+    <template><srai>TRACY</srai></template>
+</category>
+
+
+<category>
+    <pattern>WHO IS TRACY</pattern>
+    <template><srai>TRACY</srai></template>
+</category>
+
+<category>
+    <pattern>WHO IS TRACY HELSTEIN</pattern>
+    <template><srai>TRACY</srai></template>
+</category>
+
+<category>
+    <pattern>TRACY HELSTEIN IS</pattern>
+    <template><srai>TRACY</srai></template>
+</category>
+
+<category>
+    <pattern>TRACY IS</pattern>
+    <template><srai>TRACY</srai></template>
+</category>
+
+
+<category>
+	<pattern>ALISANDRA</pattern>
+	<template>
+		<random>
+			<li>Alisandra is a good friend and a customer of ours.</li>
+			<li>Alisandra is a person that tends to come in to buy a few things here at Baker Foods.</li>
+			<li>Alisandra is one of Baker College's students and she once in a while comes in to Baker Foods to buy a few things.</li>
+		        <li>Alisandra Cascarino is one of Baker College's students and is a good friend of mine.</li>
+		</random>
+	</template>
+</category>
+
+<category>
+    <pattern>ALISANDRA CASCARINO</pattern>
+    <template><srai>ALISANDRA</srai></template>
+</category>
+
+
+<category>
+    <pattern>WHO IS ALISANDRA</pattern>
+    <template><srai>ALISANDRA</srai></template>
+</category>
+
+<category>
+    <pattern>WHO IS ALISANDRA CASCARINO</pattern>
+    <template><srai>ALISANDRA</srai></template>
+</category>
+
+<category>
+    <pattern>ALISANDRA CASCARINO IS</pattern>
+    <template><srai>ALISANDRA</srai></template>
+</category>
+
+<category>
+    <pattern>ALISANDRA IS</pattern>
+    <template><srai>ALISANDRA</srai></template>
+</category>
+
+
+<!--Location Knowledge-->
+
+<category>
+    <pattern>WHERE IS ALISANDRA CASCARINO</pattern>
+    <template>You can find Alisandra walking around Baker Island, so as of right now I am not sure exactly where she is.</template>
+</category>
+
+<category>
+    <pattern>WHERE IS CHESTERFIELD WRIGGLESWORTH</pattern>
+    <template>I am Chesterfield. You can find me here at my desk.</template>
+</category>
+
+<category>
+    <pattern>WHERE IS TRACY HELSTEIN</pattern>
+    <template>You can find Tracy down the street from here at the bank on the first floor. She is at her desk.</template>
+</category>
+
+<category>
+    <pattern>WHERE IS ORIANA INGLEWOOD</pattern>
+    <template>Oriana is usually at the counter downstairs.</template>
+</category>
+
+<category>
+    <pattern>WHERE IS FRANKLIN FIERTZE</pattern>
+    <template>You can find Franklin at his teller booth at the bank. The bank is down the street from here.</template>
+</category>
+
+<category>
+    <pattern>WHERE IS BRITNEY LUMINOS</pattern>
+    <template>Britney is at her desk in the Baker Bank. She is on the first floor and right at the entrance door.</template>
+</category>
+
+<category>
+    <pattern>WHERE IS ELMINSTYR EXONAR</pattern>
+    <template>Exonar works at Baker Bank and she should be at her desk.</template>
+</category>
+
+
+<!--Extra Knowledge-->
+
+
+<category>
+    <pattern>WHAT DOES ALISANDRA CASCARINO DO</pattern>
+    <template>She is a student at Baker College. You can find her walking around Baker Island. She sometimes comes into Baker Foods to buy a few items.</template>
+</category>
+
+<category>
+    <pattern>WHAT DOES CHESTERFIELD WRIGGLESWORTH DO</pattern>
+    <template>I am the manager here at Baker Foods.</template>
+</category>
+
+<category>
+    <pattern>WHAT DOES TRACY HELSTEIN DO</pattern>
+    <template>Tracy is the manager at the Baker Bank.</template>
+</category>
+
+<category>
+    <pattern>WHAT DOES ORIANA INGLEWOOD DO</pattern>
+    <template>Oriana works as the clerk here at Baker Foods.</template>
+</category>
+
+<category>
+    <pattern>WHAT DOES FRANKLIN FIERTZE DO</pattern>
+    <template>Franklin works as a teller at Baker Bank.</template>
+</category>
+
+<category>
+    <pattern>WHAT DOES BRITNEY LUMINOS DO</pattern>
+    <template>Britney is the receptionist at Baker Bank.</template>
+</category>
+
+<category>
+    <pattern>WHAT DOES ELMINSTYR EXONAR DO</pattern>
+    <template>Elminstyr is the Baker Bank loan officer.</template>
+</category>
+
+<category>
+    <pattern>WHAT DOES ALISANDRA DO</pattern>
+    <template><srai>WHAT DOES ALISANDRA CASCARINO DO</srai></template>
+</category>
+
+<category>
+    <pattern>WHAT DOES CHESTERFIELD DO</pattern>
+    <template><srai>WHAT DOES CHESTERFIELD WRIGGLESWORTH DO</srai></template>
+</category>
+
+<category>
+    <pattern>WHAT DOES TRACY DO</pattern>
+    <template><srai>WHAT DOES TRACY HELSTEIN DO</srai></template>
+</category>
+
+<category>
+    <pattern>WHAT DOES ORIANA DO</pattern>
+    <template><srai>WHAT DOES ORIANA INGLEWOOD DO</srai></template>
+</category>
+
+<category>
+    <pattern>WHAT DOES FRANKLIN DO</pattern>
+    <template><srai>WHAT DOES FRANKLIN FIERTZE DO</srai></template>
+</category>
+
+<category>
+    <pattern>WHAT DOES BRITNEY DO</pattern>
+    <template><srai>WHAT DOES BRITNEY LUMINOS DO</srai></template>
+</category>
+
+<category>
+    <pattern>WHAT DOES ELMINSTYR DO</pattern>
+    <template><srai>WHAT DOES ELMINSTYR EXONAR DO</srai></template>
+</category>
+
+<category>
+    <pattern>MANAGERS</pattern>
+    <template>I am the manager here at Baker foods and Tracy is the manager at Baker Bank.</template>
+</category>
+
+<category>
+    <pattern>WHO ARE THE MANAGERS</pattern>
+    <template><srai>MANAGERS</srai></template>
+</category>
+
+
+<category>
+    <pattern>CLERK</pattern>
+    <template>Oriana is the clerk here at Baker Foods.</template>
+</category>
+
+
+<category>
+    <pattern>WHO IS A CLERK</pattern>
+    <template><srai>CLERK</srai></template>
+</category>
+
+<category>
+    <pattern>RECEPTIONIST</pattern>
+    <template>Britney is the receptionist at Baker Bank.</template>
+</category>
+
+<category>
+    <pattern>WHO IS A RECEPTIONIST</pattern>
+    <template><srai>RECEPTIONIST</srai></template>
+</category>
+
+<category>
+    <pattern>LOAN OFFICER</pattern>
+    <template>ELMINSTYR is the loan officer at Baker Bank.</template>
+</category>
+
+<category>
+    <pattern>WHO IS A LOAN OFFICER</pattern>
+    <template><srai>LOAN OFFICER</srai></template>
+</category>
+
+<category>
+    <pattern>TELLER</pattern>
+    <template>Franklin is the teller at Baker Bank.</template>
+</category>
+
+<category>
+    <pattern>WHO IS A TELLER</pattern>
+    <template><srai>TELLER</srai></template>
+</category>
+
+<category>
+    <pattern>STUDENTS</pattern>
+    <template>I do not know many students, but from my knowledge Alisandra is a student.</template>
+</category>
+
+<category>
+    <pattern>WHO ARE THE STUDENTS</pattern>
+    <template><srai>STUDENTS</srai></template>
+</category>
+
+<category>
+    <pattern>WHO WORKS AT BAKER FOODS</pattern>
+    <template>Only me and Oriana work here at Baker Foods.</template>
+</category>
+
+<category>
+    <pattern>WHO WORKS AT BAKER BANK</pattern>
+    <template>From my knowledge Tracy, Britney, Franklin, and Elminstyr, work at Baker Bank.</template>
+</category>
+
+<category>
+    <pattern>WHO WORKS AT THE BANK</pattern>
+    <template><srai>WHO WORKS AT BAKER BANK</srai></template>
+</category>
+
+</aiml>

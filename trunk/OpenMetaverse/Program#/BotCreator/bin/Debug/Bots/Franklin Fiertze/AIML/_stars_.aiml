@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+<!--author: Heather-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V1.2.0.33320-->
+<!--Modified By Matthew Tyson On 12-8-2009-->
+<category>
+	<pattern>*</pattern>
+	<template>
+		<random>
+			<li>I'm sorry I don't know what you are asking.  Can you rephrase it, or you may need to ask Elminstyr or Tracy</li>
+			<li>I know a lot about the accounts we have and a lot being a teller. If you need help just ask me for help.</li>
+			<li>I am not sure what you are asking but if you need any help just ask.</li>
+			<li>I am not sure what you are asking but I do know a lot about being a teller here at the bank. If you need to know information on our services like me know.</li>
+		</random>
+        </template>
+</category>
+</aiml>

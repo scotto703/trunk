@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+
+<aiml>
+<!--author: Roberta09-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V1.2.0.33320-->
+<!--Edited By Matthew Tyson On 12-13-2009-->
+<category>
+	<pattern>WHEN DOES THE STORE GET DELIVERIES</pattern>
+	<template>Usually on Mondays.</template>
+</category>
+<category>
+	<pattern>WHO PUTS UP THE INVENTORY</pattern>
+	<template>I do</template>
+</category>
+<category>
+	<pattern>WHO PUTS PRICES ON THE ITEMS</pattern>
+	<template><srai>WHO PUTS UP THE INVENTORY</srai></template>
+</category>
+<category>
+	<pattern>WHO TAKES OLD OR OUT DATED ITEMS OF THE SHELVES</pattern>
+	<template><srai>WHO PUTS UP THE INVENTORY</srai></template>
+</category>
+</aiml>

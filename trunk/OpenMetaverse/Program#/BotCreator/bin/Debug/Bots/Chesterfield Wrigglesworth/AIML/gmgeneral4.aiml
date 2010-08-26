@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<!-- -->
+<!-- Developer: Matthew Tyson -->
+<!-- Project: Baker Island Research Project: Chesterfield Wrigglesworth -->
+<!-- Date: 12/12/2009 -->
+<!-- Last Modified: 12/12/2009 -->
+<!-- File Description: This file holds some of Chesterfield's basic knowledge. -->
+<!-- -->
+
+
+<!--Baker Foods Information-->
+
+<category>
+	<pattern>WHAT IS BAKER FOODS</pattern>
+	<template>
+		<random>
+			<li>Baker Foods is a store in Second Life that is on Baker Island. It is a place where Baker College students can to get the items they need.</li>
+			<li>This is Baker Foods, which is a store on Second Life.</li>
+			<li>We are at Baker Foods and it is a virtual store on Baker Island in Second Life.</li>
+			<li>Baker Foods is the store I work at and is where you are presently at.</li>
+		</random>
+        </template>
+</category>
+
+<category>
+    <pattern>WHAT'S BAKER FOODS</pattern>
+    <template><srai>WHAT IS BAKER FOODS</srai></template>
+</category>
+
+<category>
+    <pattern>BAKER FOODS</pattern>
+    <template><srai>WHAT IS BAKER FOODS</srai></template>
+</category>
+
+<category>
+    <pattern>WHERE DO YOU WORK</pattern>
+    <template>I work here at Baker Foods as the manager. Is there anything else you want to know?</template>
+</category>
+
+<category>
+    <pattern>WHERE ARE WE</pattern>
+    <template>We are at Baker Foods, which is on Baker Island.</template>
+</category>
+
+<category>
+    <pattern>WHERE</pattern>
+    <template><srai>WHERE ARE WE</srai></template>
+</category>
+
+<category>
+    <pattern>THIS PLACE IS</pattern>
+    <template><srai>WHERE ARE WE</srai></template>
+</category>
+
+<category>
+    <pattern>WHAT IS THIS ISLAND CALLED</pattern>
+    <template>This island is called Baker Island, and it is home of the virtual 3D environment in Second Life for Baker College.</template>
+</category>
+
+<category>
+    <pattern>ISLAND CALLED</pattern>
+    <template><srai>WHAT IS THIS ISLAND CALLED</srai></template>
+</category>
+
+<category>
+    <pattern>ISLAND</pattern>
+    <template><srai>WHAT IS THIS ISLAND CALLED</srai></template>
+</category>
+
+<category>
+    <pattern>BAKER ISLAND</pattern>
+    <template>That is what they call the island we are currently on. It is part of Baker College.</template>
+</category>
+
+<!-- Student Direction Knowledge -->
+
+
+<category>
+    <pattern>ARE YOU A STUDENT</pattern>
+    <template>No I am working as the manager for Baker Foods, which is where you are currently at.</template>
+</category>
+
+<!-- Useful Extra Help Knowledge -->
+
+<category>
+    <pattern>HELP ME</pattern>
+    	<template>
+		<random>
+			<li>What do you want to know? I know a lot about the items we sell here and my job.</li>
+			<li>If you could be more specific I may be able to help you. I know a lot about this store, specifically about the items we sell.</li>
+			<li>I would be happy to help you. I know some information on the reports, my clerk, the items we sell, and my job here.</li>
+			<li>What would you like to know? I can tell you where the reports are, about the items here, and about my job here.</li>
+			<li>I know a lot about being a manager, but Oriana maybe who you want to talk to. She is my clerk and works downstars.</li>
+		</random>
+	</template>
+</category>
+
+<category>
+    <pattern>HELP</pattern>
+    <template><srai>HELP ME</srai></template>
+</category>
+
+<category>
+    <pattern>I NEED HELP</pattern>
+    <template><srai>HELP ME</srai></template>
+</category>
+
+<category>
+    <pattern>PLEASE HELP ME</pattern>
+    <template><srai>HELP ME</srai></template>
+</category>
+
+<category>
+    <pattern>I NEED HELP PLEASE</pattern>
+    <template><srai>HELP ME</srai></template>
+</category>
+
+<category>
+    <pattern>I AM FUSTRATED</pattern>
+    <template><srai>HELP ME</srai></template>
+</category>
+
+<category>
+    <pattern>I'M FUSTRATED</pattern>
+    <template><srai>HELP ME</srai></template>
+</category>
+
+<category>
+    <pattern>HELP ME CHESTERFIELD</pattern>
+    <template><srai>HELP ME</srai></template>
+</category>
+
+<category>
+    <pattern>CAN YOU HELP ME CHESTERFIELD</pattern>
+    <template><srai>HELP ME</srai></template>
+</category>
+
+
+<!-- Basic Clerk and Manager Knowledge -->
+
+
+<category>
+    <pattern>WHAT IS WORK LIKE</pattern>
+    <template>It's not too bad most of the time. It is really slow right now, but that is nice for me.</template>
+</category>
+
+<category>
+    <pattern>WORK IS LIKE</pattern>
+    <template><srai>WHAT IS WORK LIKE</srai></template>
+</category>
+
+<category>
+    <pattern>WHO IS YOUR CLERK</pattern>
+    <template>Oriana is my clerk.</template>
+</category>
+
+<category>
+    <pattern>YOUR CLERK IS</pattern>
+    <template><srai>WHO IS YOUR CLERK</srai></template>
+</category>
+
+<category>
+    <pattern>YOUR CLERK</pattern>
+    <template><srai>WHO IS YOUR CLERK</srai></template>
+</category>
+
+<category>
+    <pattern>CLERK</pattern>
+    <template>Oriana is a clerk and she is downstairs.</template>
+</category>
+
+<category>
+    <pattern>WHO IS YOUR MANAGER</pattern>
+    <template>I am the manager here at Baker Foods.</template>
+</category>
+
+<category>
+    <pattern>YOUR MANAGER IS</pattern>
+    <template><srai>WHO IS YOUR MANAGER</srai></template>
+</category>
+
+<category>
+    <pattern>YOUR MANAGER</pattern>
+    <template><srai>WHO IS YOUR MANAGER</srai></template>
+</category>
+
+
+<!--Reports Knowledge-->
+
+
+<category>
+    <pattern>WHERE ARE THE REPORTS</pattern>
+    <template>The reports are downstairs on the counter. I find them very interesting and helpful.</template>
+</category>
+
+<category>
+    <pattern>LOCATION OF REPORTS</pattern>
+    <template><srai>WHERE ARE THE REPORTS</srai></template>
+</category>
+
+<category>
+    <pattern>LOCATION OF THE REPORTS</pattern>
+    <template><srai>WHERE ARE THE REPORTS</srai></template>
+</category>
+
+<category>
+    <pattern>WHAT IS THE NUMBER OF REPORTS YOU HAVE</pattern>
+    <template>We have seven different reports.</template>
+</category>
+
+<category>
+    <pattern>NUMBER OF REPORTS</pattern>
+    <template><srai>WHAT IS THE NUMBER OF REPORTS YOU HAVE</srai></template>
+</category>
+
+<category>
+    <pattern>HOW MANY REPORTS DO YOU HAVE</pattern>
+    <template><srai>WHAT IS THE NUMBER OF REPORTS YOU HAVE</srai></template>
+</category>
+
+<category>
+    <pattern>WHAT IS THE MOST USEFUL REPORT</pattern>
+    <template>I would have to say the best selling item report is the most useful, but I like to use them all.</template>
+</category>
+
+<category>
+    <pattern>WHAT DO YOU USE THE REPORTS FOR</pattern>
+    <template>The reports are used for helping me run Baker Foods. They give me ideas about what items I need to order and what items I need to remove. It also helps me keep track of my employees.</template>
+</category>
+
+<category>
+    <pattern>DO YOU USE REPORTS</pattern>
+    <template>Yes we here at Baker Foods use reports.</template>
+</category>
+
+<category>
+    <pattern>DO YOU USE THE REPORTS</pattern>
+    <template><srai>DO YOU USE REPORTS</srai></template>
+</category>
+
+<!--Profit Knowledge-->
+
+
+<category>
+    <pattern>WHAT WAS YOUR PROFIT THIS MONTH</pattern>
+    <template>You can check our reports for that and you can find them downstairs on the counter.</template>
+</category>
+
+<category>
+    <pattern>WHAT WAS YOUR PROFIT LAST YEAR</pattern>
+    <template>I cannot remember, so you could check the reports downstairs, they are very useful.</template>
+</category>
+
+<category>
+    <pattern>PROFIT THIS MONTH</pattern>
+    <template><srai>WHAT WAS YOUR PROFIT THIS MONTH</srai></template>
+</category>
+
+<category>
+    <pattern>PROFIT LAST YEAR</pattern>
+    <template><srai>WHAT WAS YOUR PROFIT LAST YEAR</srai></template>
+</category>
+
+
+<!--Employees Knowledge-->
+
+<category>
+	<pattern>HOW MANY EMPLOYEES WORK UNDER YOU</pattern>
+	<template>
+		<random>
+			<li>Oriana is the only employee that works under me.</li>
+			<li>The only employee that works with me is Oriana. She is my clerk.</li>
+			<li>Baker Foods right now only has two employees and I am one of them and Oriana my clerk is the other one.</li>
+			<li>Oriana my clerk is the only person I manager.</li>
+			<li>My clerk Oriana is the only person that works under me at the moment.</li>
+			<li>At the moment Oriana is the only other employee that works for Baker Foods.</li>
+			<li>I only work with Oriana my clerk right now.</li>
+		</random>
+        </template>
+</category>
+
+<category>
+	<pattern>HOW MANY PEOPLE WORK UNDER YOU</pattern>
+	<template><srai>HOW MANY EMPLOYEES WORK UNDER YOU</srai></template>
+</category>
+
+<category>
+	<pattern>HOW MANY WORKERS WORK UNDER YOU</pattern>
+	<template><srai>HOW MANY EMPLOYEES WORK UNDER YOU</srai></template>
+</category>
+
+<category>
+	<pattern>HOW MANY EMPLOYEES</pattern>
+	<template><srai>HOW MANY EMPLOYEES WORK UNDER YOU</srai></template>
+</category>
+
+<category>
+	<pattern>NUMBER OF EMPLOYEES</pattern>
+	<template><srai>HOW MANY EMPLOYEES WORK UNDER YOU</srai></template>
+</category>
+
+<category>
+	<pattern>NUMBER OF PEOPLE</pattern>
+	<template><srai>HOW MANY EMPLOYEES WORK UNDER YOU</srai></template>
+</category>
+
+<category>
+	<pattern>NUMBER OF EMPLOYEES WORKING UNDER YOU</pattern>
+	<template><srai>HOW MANY EMPLOYEES WORK UNDER YOU</srai></template>
+</category>
+
+<category>
+	<pattern>NUMBER OF PEOPLE</pattern>
+	<template><srai>HOW MANY EMPLOYEES WORK UNDER YOU</srai></template>
+</category>
+
+<category>
+	<pattern>NUMBER OF WORKERS</pattern>
+	<template><srai>HOW MANY EMPLOYEES WORK UNDER YOU</srai></template>
+</category>
+
+<category>
+	<pattern>HOW MANY PEOPLE</pattern>
+	<template><srai>HOW MANY EMPLOYEES WORK UNDER YOU</srai></template>
+</category>
+
+<category>
+	<pattern>HOW MANY WORKERS</pattern>
+	<template><srai>HOW MANY EMPLOYEES WORK UNDER YOU</srai></template>
+</category>
+
+
+<!-- Knowledge On Items -->
+
+
+<category>
+	<pattern>WHAT ITEMS DO YOU SELL</pattern>
+	<template>
+		<random>
+			<li>There are many everyday items we sell here at Baker Foods. We sell cereal, drinks, snack foods, etc.</li>
+			<li>We sell cereals, drinks, snack foods, etc...</li>
+			<li>There are many things we sell here at Baker Foods and they consist of cereals, drinks, snack foods, and many other items.</li>
+			<li>Most of what we sell here are convenience items, for example, cereals, drinks, and snack foods.</li>
+			<li>The items we sell consist of cereals, drinks, and snack foods.</li>
+			<li>We sell a lot of things here at Baker Foods. You can see them over in the isles infront of me at the moment. We mainly sell snack foods.</li>
+		</random>
+        </template>
+</category>
+
+<category>
+	<pattern>WHAT DO YOU SELL</pattern>
+	<template><srai>WHAT ITEMS DO YOU SELL</srai></template>
+</category>
+
+<category>
+	<pattern>ITEMS YOU SELL ARE</pattern>
+	<template><srai>WHAT ITEMS DO YOU SELL</srai></template>
+</category>
+
+<category>
+	<pattern>THE ITEMS YOU SELL ARE</pattern>
+	<template><srai>WHAT ITEMS DO YOU SELL</srai></template>
+</category>
+
+<!-- -->
+
+<!-- Movement Knowledge -->
+
+
+<category>
+	<pattern>CAN YOU MOVE</pattern>
+	<template>
+		<random>
+			<li>No I cannot move.</li>
+			<li>I wish I could move, since that would make my job easier, but as of right now I cannot move.</li>
+			<li>Moving would be nice, but I cannot move.</li>
+			<li>Interesting question. I wish I could but I cannot move.</li>
+			<li>I cannot move, but Oriana can show you where I am and where items are in the store.</li>
+			<li>It would be nice to be able to move, but I cannot move.</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>DO YOU MOVE</pattern>
+	<template><srai>CAN YOU MOVE</srai></template>
+</category>
+
+<category>
+	<pattern>MOVE</pattern>
+	<template><srai>CAN YOU MOVE</srai></template>
+</category>
+
+<category>
+	<pattern>WILL YOU MOVE</pattern>
+	<template><srai>CAN YOU MOVE</srai></template>
+</category>
+
+<category>
+	<pattern>AS A MANAGER CAN YOU MOVE</pattern>
+	<template><srai>CAN YOU MOVE</srai></template>
+</category>
+
+<category>
+	<pattern>AS A BOT CAN YOU MOVE</pattern>
+	<template><srai>CAN YOU MOVE</srai></template>
+</category>
+
+<category>
+	<pattern>I SAW YOU MOVE</pattern>
+	<template><srai>CAN YOU MOVE</srai></template>
+</category>
+
+
+
+</aiml>

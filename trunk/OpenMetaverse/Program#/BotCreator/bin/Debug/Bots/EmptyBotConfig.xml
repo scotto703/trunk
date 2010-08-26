@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BotData>
+  <FirstName></FirstName>
+  <LastName></LastName>
+  <Password></Password>
+  <Location></Location>
+  <X></X>
+  <Y></Y>
+  <Z></Z>
+  <AIMLPath></AIMLPath>
+  <BotSettingsPath></BotSettingsPath>
+</BotData>
