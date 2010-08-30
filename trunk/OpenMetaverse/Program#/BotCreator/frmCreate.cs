@@ -9,12 +9,8 @@
 //******************************************
 
 using System;
-using System.IO;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Text;
+using System.IO;
 using System.Windows.Forms;
 using System.Xml;
 
@@ -23,6 +19,7 @@ namespace BotGUI
     public partial class frmCreate : Form
     {
         #region Attributes
+
         private static string FirstName = "";
         private static string LastName = "";
         private static string Password = "";
@@ -34,16 +31,20 @@ namespace BotGUI
         private static string AIMLpath = "";
         private static string SettingsPath = "";
         private static Boolean Error = false;
+
         #endregion
 
         #region Constructor
+
         public frmCreate()
         {
             InitializeComponent();
         }
+
         #endregion
 
         #region Methods
+
         private void VerifyFields()
         {
             foreach (Control c in this.Controls)
@@ -63,7 +64,7 @@ namespace BotGUI
             // Check to see if a text box was blank
             if (Error == true)
             {
-                MessageBox.Show("The yellow field(s) cannot be empty", "Data Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(@"The yellow field(s) cannot be empty", "Data Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -90,7 +91,7 @@ namespace BotGUI
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Coordinates can only be integers!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(@"Coordinates can only be integers!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     Error = true;
                     return;
                 }
@@ -131,13 +132,13 @@ namespace BotGUI
             writeBotConfig();
             writeEventsXml();
             writeQuestionsXml();
-            copyBotSettingsTemplateToNewBot();            
+            copyBotSettingsTemplateToNewBot();
 
             MessageBox.Show("Data Sucessfully Saved", "Data Saved", MessageBoxButtons.OK);
 
             //clear data fields
             ClearFields();
-        }      
+        }
         private void ClearFields()
         {
             //clear all text boxes
@@ -150,7 +151,7 @@ namespace BotGUI
             FirstName = "";
             LastName = "";
             Password = "";
-            InWorldLocation = "";            
+            InWorldLocation = "";
             AIMLpath = "";
             SettingsPath = "";
 
@@ -160,7 +161,6 @@ namespace BotGUI
             txtPassword.BackColor = Color.White;
             txtLocation.BackColor = Color.White;
             txtCoordinates.BackColor = Color.White;
-
         }
         private void writeBotConfig()
         {
@@ -169,7 +169,7 @@ namespace BotGUI
             AIMLpath = "\\Bots\\" + FirstName + " " + LastName + "\\AIML";
             SettingsPath = "\\Bots\\" + FirstName + " " + LastName + "\\" + FirstName + " " + LastName + ".xml";
 
-            //set directory 
+            //set directory
             directory = System.Environment.CurrentDirectory + "\\Bots\\" + FirstName + " " + LastName;
 
             if (Directory.Exists(directory))
@@ -211,7 +211,7 @@ namespace BotGUI
                 {
                     xwriter.Close();
                 }
-            }            
+            }
         }
         private void writeEventsXml()
         {
@@ -243,7 +243,7 @@ namespace BotGUI
                 {
                     xwriter.Close();
                 }
-            }            
+            }
         }
         private void writeQuestionsXml()
         {
@@ -273,7 +273,7 @@ namespace BotGUI
 
                     xwriter.Close();
                 }
-                catch(Exception e)
+                catch (Exception e)
                 {
                     System.Windows.Forms.MessageBox.Show("Error writing to the questions.xml file: \n\n" + e.ToString());
                 }
@@ -306,7 +306,7 @@ namespace BotGUI
 
             try
             {
-                // Load Xml document 
+                // Load Xml document
                 doc = new XmlDocument();
                 doc.Load(filePath);
 
@@ -338,7 +338,7 @@ namespace BotGUI
                             tempCollection.Append(nameAttribute);
                         }
                     }
-                }               
+                }
             }
             catch (Exception e)
             {
@@ -349,9 +349,11 @@ namespace BotGUI
                 doc.Save(filePath);
             }
         }
+
         #endregion
 
         #region Event Methods (Callbacks)
+
         private void btnClear_Click(object sender, EventArgs e)
         {
             ClearFields();
@@ -360,21 +362,22 @@ namespace BotGUI
         {
             //Verifry user input
             VerifyFields();
-            if(Error == true)
+            if (Error == true)
             {
                 Error = false;
                 return;
             }
 
-            //if all fields check out 
-            AssignData();            
+            //if all fields check out
+            AssignData();
             CreateBot();
         }
         private void btnExit_Click(object sender, EventArgs e)
-        {            
+        {
             this.Dispose();
             this.Close();
-        }        
+        }
+
         #endregion
     }
 }

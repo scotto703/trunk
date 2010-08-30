@@ -29,6 +29,7 @@ namespace BotGUI
         public static frmClassMngr MainWindow = new frmClassMngr();                
         private int counter = 0; //counter for initial tab creation
         private List<BotLoad> runningBots = new List<BotLoad>();
+        private XmlBotList XmlBot = new XmlBotList();
         #endregion
 
         #region Constructor
@@ -36,6 +37,9 @@ namespace BotGUI
         {
             InitializeComponent();  // starts GUI
             GetBotList();  // populates list to load from
+
+            // Creates Bot List in BotList.XML in the Bots Dorectory
+            XmlBot.CreateXml();
         }
         #endregion
 
@@ -54,8 +58,11 @@ namespace BotGUI
             // Adds the names of each bot to the list of Available bots
             for (int n = 0; n < BotList.Length; n++)
             {
-                BotName = BotList[n].Name;
-                listAvailBot.Items.Add(BotName);                 
+                if (!BotList[n].Attributes.ToString().Contains("Hidden"))
+                {
+                    BotName = BotList[n].Name;
+                    listAvailBot.Items.Add(BotName);
+                }
             }             
         }
         private void loadBot()
@@ -89,12 +96,12 @@ namespace BotGUI
                     }
                     else
                     {
-                        MessageBox.Show("Bot is already loaded", "Error", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                        MessageBox.Show(@"Bot is already loaded", "Error", MessageBoxButtons.OK, MessageBoxIcon.Hand);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Need to select a name from the list", "Unable to Proceed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(@"Need to select a name from the list", "Unable to Proceed", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             catch (FileNotFoundException fnf)
@@ -285,11 +292,11 @@ namespace BotGUI
             {
                 if (botLB.Items.Count == 0)
                 {
-                    MessageBox.Show("There are no bots logged in to stop", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(@"There are no bots logged in to stop", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    MessageBox.Show("Please select a bot from the active bots list to log them out", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(@"Please select a bot from the active bots list to log them out", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }                     
         }        

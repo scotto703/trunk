@@ -6,12 +6,8 @@
 //******************************************
 
 using System;
-using System.IO;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Text;
+using System.IO;
 using System.Windows.Forms;
 using System.Xml;
 
@@ -20,28 +16,33 @@ namespace BotGUI
     public partial class frmEditBot : Form
     {
         #region Attributes
-        private static string FilePath;       
+
+        private static string FilePath;
         private static string FirstName = "";
         private static string LastName = "";
         private static string Password = "";
-        private static string InWorldLocation = "";        
+        private static string InWorldLocation = "";
         static string x;
         static string y;
         static string z;
         private static string AIMLpath = "";
         private static string SettingsPath = "";
         private static Boolean Error = false;
+
         #endregion
 
         #region Constructor
+
         public frmEditBot()
         {
             InitializeComponent();
             GetBotList();
         }
+
         #endregion
 
         #region Methods
+
         private void GetBotList()
         {
             string BotName;
@@ -118,7 +119,7 @@ namespace BotGUI
                                 reader.Read();
                                 SettingsPath = Environment.CurrentDirectory + reader.Value;
                             }
-                            break;                        
+                            break;
                     }
                 }
             }
@@ -146,7 +147,6 @@ namespace BotGUI
             ToolTip.IsBalloon = true;
             ToolTip.SetToolTip(btnAIMLpath, AIMLpath);
             ToolTip.SetToolTip(btnSettingsPath, SettingsPath);
-
         }
         private void ClearData()
         {
@@ -179,20 +179,20 @@ namespace BotGUI
             // Check to see if a text box was blank
             if (Error == true)
             {
-                MessageBox.Show("The yellow field(s) cannot be empty", "Data Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(@"The yellow field(s) cannot be empty", "Data Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (AIMLpath == "")
             {
-                MessageBox.Show("You must specify an AIML folder for your bot.", "Data Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(@"You must specify an AIML folder for your bot.", "Data Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Error = true;
                 return;
             }
 
             if (SettingsPath == "")
             {
-                MessageBox.Show("You must specify a Settings XML file for your bot.", "Data Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(@"You must specify a Settings XML file for your bot.", "Data Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Error = true;
                 return;
             }
@@ -220,7 +220,7 @@ namespace BotGUI
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Coordinates can only be integers!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(@"Coordinates can only be integers!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     Error = true;
                     return;
                 }
@@ -236,7 +236,7 @@ namespace BotGUI
             Password = txtPassword.Text;
             InWorldLocation = txtLocation.Text;
 
-            //Get Start coordinates, parse string into array, set x,y,z variables 
+            //Get Start coordinates, parse string into array, set x,y,z variables
             string coordinates = txtCoordinates.Text;
             string[] TestCoordinates = (coordinates.Split(new char[] { ',' }));
             x = TestCoordinates[0];
@@ -277,7 +277,7 @@ namespace BotGUI
                     xwriter.WriteElementString("Z", z);
                     xwriter.WriteElementString("AIMLPath", AIMLpath);
                     xwriter.WriteElementString("BotSettingsPath", SettingsPath);
-                    xwriter.WriteEndElement();                    
+                    xwriter.WriteEndElement();
 
                     MessageBox.Show("Data Sucessfully Saved", "Data Saved", MessageBoxButtons.OK);
                 }
@@ -296,13 +296,15 @@ namespace BotGUI
                                 + "Can't edit a bot that does not exist.", "Bot Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
         #endregion
 
         #region Event Methods
+
         private void cboBotList_SelectedIndexChanged(object sender, EventArgs e)
         {
             //retrieves bot data from select bot file
-            ReadBotFile();            
+            ReadBotFile();
             DisplayData();
         }
         private void btnAIMLpath_Click(object sender, EventArgs e)
@@ -311,22 +313,22 @@ namespace BotGUI
 
             // Check to make sure cancel was not selected
             if (dlgAIMLPath.SelectedPath != "")
-            {                
+            {
                 DirectoryInfo di = new DirectoryInfo(dlgAIMLPath.SelectedPath);
                 FileInfo[] fi = di.GetFiles("*.aiml");
                 string desintationFolder = Environment.CurrentDirectory + "\\Bots\\" + FirstName + " " + LastName + "\\AIML";
-                                
+
                 foreach (FileInfo fileName in fi)
                 {
                     try
-                    {                       
+                    {
                         File.Copy(dlgAIMLPath.SelectedPath + "\\" + fileName.Name, desintationFolder + "\\" + fileName.Name, true);
                     }
                     catch (Exception ex)
                     {
                         MessageBox.Show("Error copying file: \n\n" + ex.ToString());
                     }
-                }                
+                }
             }
         }
         private void btnSettingsPath_Click(object sender, EventArgs e)
@@ -337,7 +339,7 @@ namespace BotGUI
             //*********************************************
 
             /*
-            DialogResult userClickedOK = dlgSettingsPath.ShowDialog();             
+            DialogResult userClickedOK = dlgSettingsPath.ShowDialog();
 
             // Check to see if cancel was clicked
             if ( userClickedOK == DialogResult.OK)
@@ -359,7 +361,7 @@ namespace BotGUI
             }
 
             //if all fields check out load data variables
-            AssignData();            
+            AssignData();
 
             //write data to file
             WriteFile();
@@ -372,7 +374,7 @@ namespace BotGUI
 
             //clear text data fields
             ClearData();
-            
+
             //refill combo box
             GetBotList();
         }
@@ -381,19 +383,19 @@ namespace BotGUI
             //delete bot file
             DialogResult dlgResult;
 
-            dlgResult = MessageBox.Show("WARNING, YOU ARE ABOUT TO DELETE A BOT!", "DELETE BOT", 
+            dlgResult = MessageBox.Show(@"WARNING, YOU ARE ABOUT TO DELETE A BOT!", "DELETE BOT",
                                          MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
 
             if (dlgResult == DialogResult.OK)
             {
                 //delete file
-                Directory.Delete(FilePath, true);                
+                Directory.Delete(FilePath, true);
                 cboBotList.ResetText();
                 cboBotList.Items.Clear();
                 ClearData();
                 GetBotList();
             }
-         }
+        }
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Dispose();
@@ -403,6 +405,7 @@ namespace BotGUI
         {
             ClearData();
         }
+
         #endregion
     }
 }
