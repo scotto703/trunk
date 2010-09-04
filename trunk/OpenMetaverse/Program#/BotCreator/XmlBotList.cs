@@ -22,7 +22,7 @@ namespace BotGUI
         /// <summary>
         /// Holds the directory path for bots
         /// </summary>
-        private string botPath;
+        internal string botPath;
 
         /// <summary>
         ///
@@ -61,7 +61,7 @@ namespace BotGUI
                 //load bot list
                 LoadList();
             }
-            catch (System.IO.DirectoryNotFoundException ex)
+            catch (System.IO.DirectoryNotFoundException)
             {
                 MessageBox.Show(@"Bot Path Not Found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Hand);
             }
@@ -115,28 +115,24 @@ namespace BotGUI
         /// <returns></returns>
         public Boolean BotFound(String botName)
         {
-            try
+            var reader = new XmlTextReader(BotDirectory.ToString() + @"\BotList.Xml");
+
+            while (reader.Read())
             {
-                Boolean found = false;
-                XmlTextReader reader = new XmlTextReader(BotDirectory.ToString() + @"\BotList.Xml");
+                //If the XMLNode is not an element skip to the next loop iteration
+                if (reader.NodeType != XmlNodeType.Element) continue;
 
-                while(reader.Read())
+                //If the XML element name is not Bot, skip to the next loop iteration
+                if (reader.Name != "Bot") continue;
+
+                //Compare the current element string to botName and return true if there is a match
+                if (System.String.Compare(reader.ReadElementString(), botName, true) == 1)
                 {
-                    //If the XMLNode is not an element skip to the next loop iteration
-                    if (reader.NodeType != XmlNodeType.Element) continue;
-
-                    //If the XML element name is not Bot, skip to the next loop iteration
-                    if (reader.Name != "Bot") continue;
-
-                    //If bot name is found set  found to true and return value
-                    if ((System.String.Compare(reader.ReadElementString(), botName, true)) == 1)
-                        return found = true;
+                    return true;
                 }
             }
-            catch ()
-            {
-                throw;
-            }
+
+            return false;
         }
 
         /// <summary>

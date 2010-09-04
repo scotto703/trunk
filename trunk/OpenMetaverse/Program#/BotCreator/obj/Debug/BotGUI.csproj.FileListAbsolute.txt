@@ -224,17 +224,10 @@ C:\Users\scotto\Projects\BakerProject\OpenMetaverse\OpenMetaverse\Program#\BotCr
 C:\Users\scotto\Projects\BakerProject\OpenMetaverse\OpenMetaverse\Program#\BotCreator\obj\Debug\BotGUI.csproj.GenerateResource.Cache
 C:\Users\scotto\Projects\BakerProject\OpenMetaverse\OpenMetaverse\Program#\BotCreator\obj\Debug\BotGUI.exe.manifest
 C:\Users\scotto\Projects\BakerProject\OpenMetaverse\OpenMetaverse\Program#\BotCreator\obj\Debug\BotGUI.application
-D:\Baker Island Project\Baker Bots Svn\trunk\OpenMetaverse\Program#\BotCreator\obj\Debug\BotGUI.exe
-D:\Baker Island Project\Baker Bots Svn\trunk\OpenMetaverse\Program#\BotCreator\obj\Debug\BotGUI.pdb
 D:\Baker Island Project\Baker Bots Svn\trunk\OpenMetaverse\Program#\BotCreator\bin\Debug\BotGUI.exe.manifest
 D:\Baker Island Project\Baker Bots Svn\trunk\OpenMetaverse\Program#\BotCreator\bin\Debug\BotGUI.application
 D:\Baker Island Project\Baker Bots Svn\trunk\OpenMetaverse\Program#\BotCreator\bin\Debug\BotGUI.exe
 D:\Baker Island Project\Baker Bots Svn\trunk\OpenMetaverse\Program#\BotCreator\bin\Debug\BotGUI.pdb
-D:\Baker Island Project\Baker Bots Svn\trunk\OpenMetaverse\Program#\BotCreator\bin\Debug\OpenMetaverse.xml
-D:\Baker Island Project\Baker Bots Svn\trunk\OpenMetaverse\Program#\BotCreator\bin\Debug\OpenMetaverse.GUI.xml
-D:\Baker Island Project\Baker Bots Svn\trunk\OpenMetaverse\Program#\BotCreator\bin\Debug\OpenMetaverse.StructuredData.xml
-D:\Baker Island Project\Baker Bots Svn\trunk\OpenMetaverse\Program#\BotCreator\bin\Debug\OpenMetaverse.Utilities.xml
-D:\Baker Island Project\Baker Bots Svn\trunk\OpenMetaverse\Program#\BotCreator\bin\Debug\OpenMetaverseTypes.xml
 D:\Baker Island Project\Baker Bots Svn\trunk\OpenMetaverse\Program#\BotCreator\obj\Debug\ResolveAssemblyReference.cache
 D:\Baker Island Project\Baker Bots Svn\trunk\OpenMetaverse\Program#\BotCreator\obj\Debug\BotGUI.frmAboutBox1.resources
 D:\Baker Island Project\Baker Bots Svn\trunk\OpenMetaverse\Program#\BotCreator\obj\Debug\BotGUI.frmChoice.resources
@@ -246,3 +239,5 @@ D:\Baker Island Project\Baker Bots Svn\trunk\OpenMetaverse\Program#\BotCreator\o
 D:\Baker Island Project\Baker Bots Svn\trunk\OpenMetaverse\Program#\BotCreator\obj\Debug\ResGen.write.1.tlog
 D:\Baker Island Project\Baker Bots Svn\trunk\OpenMetaverse\Program#\BotCreator\obj\Debug\BotGUI.exe.manifest
 D:\Baker Island Project\Baker Bots Svn\trunk\OpenMetaverse\Program#\BotCreator\obj\Debug\BotGUI.application
+D:\Baker Island Project\Baker Bots Svn\trunk\OpenMetaverse\Program#\BotCreator\obj\Debug\BotGUI.exe
+D:\Baker Island Project\Baker Bots Svn\trunk\OpenMetaverse\Program#\BotCreator\obj\Debug\BotGUI.pdb

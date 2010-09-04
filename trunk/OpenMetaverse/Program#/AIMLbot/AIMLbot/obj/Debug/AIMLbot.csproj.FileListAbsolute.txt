@@ -83,3 +83,8 @@ C:\Users\scotto\Projects\BakerProject\OpenMetaverse\OpenMetaverse\Program#\AIMLb
 C:\Users\scotto\Projects\BakerProject\OpenMetaverse\OpenMetaverse\Program#\AIMLbot\AIMLbot\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\scotto\Projects\BakerProject\OpenMetaverse\OpenMetaverse\Program#\AIMLbot\AIMLbot\obj\Debug\AIMLbot.dll
 C:\Users\scotto\Projects\BakerProject\OpenMetaverse\OpenMetaverse\Program#\AIMLbot\AIMLbot\obj\Debug\AIMLbot.pdb
+D:\Baker Island Project\Baker Bots Svn\trunk\OpenMetaverse\Program#\AIMLbot\AIMLbot\bin\Debug\AIMLbot.dll
+D:\Baker Island Project\Baker Bots Svn\trunk\OpenMetaverse\Program#\AIMLbot\AIMLbot\bin\Debug\AIMLbot.pdb
+D:\Baker Island Project\Baker Bots Svn\trunk\OpenMetaverse\Program#\AIMLbot\AIMLbot\obj\Debug\ResolveAssemblyReference.cache
+D:\Baker Island Project\Baker Bots Svn\trunk\OpenMetaverse\Program#\AIMLbot\AIMLbot\obj\Debug\AIMLbot.dll
+D:\Baker Island Project\Baker Bots Svn\trunk\OpenMetaverse\Program#\AIMLbot\AIMLbot\obj\Debug\AIMLbot.pdb
