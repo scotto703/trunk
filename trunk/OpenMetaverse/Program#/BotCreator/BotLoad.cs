@@ -1,38 +1,38 @@
 ﻿//**************************************************************
 // Class: BotLoad
-// 
+//
 // Author: Joel McClain
 //
-// Refactored from: BakerIslandBots.cs By: Brian Schultz, Allan Blackford, 
-//                                         Justin Hemker, Brian Wetherell 
+// Refactored from: BakerIslandBots.cs By: Brian Schultz, Allan Blackford,
+//                                         Justin Hemker, Brian Wetherell
 // Date: 12-2-09
 //
 // Description: It all starts from this class.  It logs in bots,
-//              loads the AIML, positions bots, loads callback 
-//              methods, and processes all movement code.               
+//              loads the AIML, positions bots, loads callback
+//              methods, and processes all movement code.
 //
+// Updates: Lawrence Miller - removed hard coded references to specific bots
+//          from part of Self_ChatFromSimulator, Log_ChatFromSimulator
 //**************************************************************
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using OpenMetaverse.GUI;
-using OpenMetaverse;
-using System.Xml;
 using System.IO;
 using System.Reflection;
+using System.Threading;
+using System.Timers;
+using System.Xml;
 using AIMLbot;
 using AIMLbot.Utils;
-using System.Threading;
-using System.Globalization;
-using System.Timers;
+using OpenMetaverse;
 
 namespace BotGUI
 {
     class BotLoad
     {
         #region Virtual world properties
+
         string botName;
+
         public string Name
         {
             get
@@ -44,6 +44,7 @@ namespace BotGUI
                 botName = value;
             }
         }
+
         GridClient client = new GridClient();
         string FirstName; // Second Life login first name
         string LastName; // Second Life login last name
@@ -51,10 +52,13 @@ namespace BotGUI
         string LocationName; //Second Life Province
         int x; // x - coordinate of bot location
         int y; // y - coordinate of bot location
-        int z; // z - coordinate of bot location       
-        #endregion
+        int z; // z - coordinate of bot location
+        private XmlBotList XmlBot = new XmlBotList();
+
+        #endregion Virtual world properties
 
         #region AIMLbot properties
+
         string AimlPath; // this contains the path to AIML files. (AIML files are for dialogue)
         string SettingsPath; // this contains the path to the bot configuration file
         Bot myBot = new Bot();//This instantiates a new Bot.
@@ -73,9 +77,11 @@ namespace BotGUI
         Boolean movementExecuted;
         //Boolean CheckOut;
         BotEventReader eventReader;
-        #endregion
+
+        #endregion AIMLbot properties
 
         #region Constructor
+
         /// <summary>
         /// Ctor
         /// </summary>
@@ -87,13 +93,16 @@ namespace BotGUI
             myUser = new User(Name, myBot);
             eventReader = new BotEventReader(client, Name);
         }
+
         #endregion Constructor
 
         #region Methods
+
         public GridClient getClient()
         {
             return this.client;
         }
+
         private void ReadBotData()
         {
             string filePath = Environment.CurrentDirectory + "\\Bots\\" + botName + "\\BotConfig.xml";
@@ -158,10 +167,12 @@ namespace BotGUI
                 }
             }
         }
+
         public void LogBotOut()
         {
             client.Network.Logout();
         }
+
         public void InitBot()
         {
             // Get bots startup information
@@ -179,7 +190,7 @@ namespace BotGUI
 
             // register events for this bot
             client.Network.SimDisconnected += new EventHandler<SimDisconnectedEventArgs>(Network_SimDisconnected);
-            client.Network.LoginProgress +=new EventHandler<LoginProgressEventArgs>(Network_LoginProgress);
+            client.Network.LoginProgress += new EventHandler<LoginProgressEventArgs>(Network_LoginProgress);
             client.Self.ChatFromSimulator += new EventHandler<ChatEventArgs>(Self_ChatFromSimulator);
             client.Self.ChatFromSimulator += new EventHandler<ChatEventArgs>(Log_ChatFromSimulator);
             client.Self.IM += new EventHandler<InstantMessageEventArgs>(Self_InstantMessage);
@@ -200,13 +211,15 @@ namespace BotGUI
             // log bot in
             client.Network.BeginLogin(clientLogin);
 
-            // Load AIML Files            
+            // Load AIML Files
             botLoadAIML(AimlPath);
         }
+
         public void botLoadAIML(string path)
         {
             this.Loader.loadAIML(path);
         }
+
         private void PositionBot()
         {
             UUID managerChair = new UUID("62367cff-95e8-1c9d-73fe-f767848b9f5b");
@@ -269,6 +282,7 @@ namespace BotGUI
                 client.Self.Sit();
             }
         }
+
         #endregion Methods
 
         #region Event Methods (CallBacks)
@@ -280,16 +294,7 @@ namespace BotGUI
             Vector3 avatarPos = e.Position; //current location of avatar
 
             //Don't allow bots to respond to themselves, each other, or empty messages
-            if ((e.SourceID != client.Self.AgentID) &&
-                (e.FromName != "Alisandra Cascarino") &&
-                (e.FromName != "Britney Luminos") &&
-                (e.FromName != "Chesterfield Wrigglesworth") &&
-                (e.FromName != "Elminstyr Exonar") &&
-                (e.FromName != "Franklin Fiertze") &&
-                (e.FromName != "Oriana Inglewood") &&
-                (e.FromName != "Tracy Helstein") &&
-                (e.FromName != "William Ormidale") &&
-                (e.Message != ""))
+            if ((e.SourceID != client.Self.AgentID) && !XmlBot.BotFound(e.FromName) && (e.Message != ""))
             {
                 //Don't allow bots to respond to avatars on different floors or beyond (radius) meters away
                 //Must use SimPosition (RelativePosition returns position from object bot is sitting on)
@@ -322,7 +327,6 @@ namespace BotGUI
                     {
                         User chatUser = new User(e.FromName, myBot);
                         people.Add(chatUser);
-
                     }
 
                     //get index of current user from list
@@ -345,7 +349,7 @@ namespace BotGUI
                     //send encapsulated user message for AIML response
                     chatResult = myBot.Chat(chatRequest);
 
-                    //If user answers 'yes' (request) to a bot question (result), test to see if 
+                    //If user answers 'yes' (request) to a bot question (result), test to see if
                     //it was a request to change location
                     if (chatRequest.rawInput.ToUpper() == "YES")
                     {
@@ -355,7 +359,6 @@ namespace BotGUI
                                 movementExecuted = eventReader.findQuestionAndLoadEvent(chatQuestion);
                                 break;
                         }
-
                     }
 
                     //Only display bot reply if previous user answer did not create botMovement
@@ -385,16 +388,7 @@ namespace BotGUI
 
             DirectoryInfo dInfo = new DirectoryInfo(filePath);
 
-            if (avatarName == client.Self.Name ||
-                ((avatarName != "Alisandra Cascarino") &&
-                 (avatarName != "Britney Luminos") &&
-                 (avatarName != "Chesterfield Wrigglesworth") &&
-                 (avatarName != "Elminstyr Exonar") &&
-                 (avatarName != "Franklin Fiertze") &&
-                 (avatarName != "Oriana Inglewood") &&
-                 (avatarName != "Tracy Helstein") &&
-                 (avatarName != "William Ormidale") &&
-                 (avatarName != "Nimon Herbit")))
+            if (avatarName == client.Self.Name || !XmlBot.BotFound(avatarName))
             {
                 //Checks to see if the chat folder exists. If it doesn't, it is created.
                 if (!dInfo.Exists)
@@ -464,7 +458,7 @@ namespace BotGUI
                 //send encapsulated user message for AIML response
                 imResult = myBot.Chat(imRequest);
 
-                //If user answers 'yes' (request) to a bot question (result), test to see if 
+                //If user answers 'yes' (request) to a bot question (result), test to see if
                 //it was a request to change location
                 if (imRequest.rawInput.ToUpper() == "YES")
                 {
@@ -497,7 +491,7 @@ namespace BotGUI
             {
                 System.Windows.Forms.MessageBox.Show(botName + "was disconnected. \n\n" +
                                                      "Reason: " + e.Reason.ToString() + "\n");// +
-                                                     //"Message: " + message);
+                //"Message: " + message);
             }
         }
 
@@ -532,13 +526,7 @@ namespace BotGUI
 
                 if ((found == false) &&
                     (avatars[i].Name != client.Self.Name) &&
-                    (avatars[i].Name != "Alisandra Cascarino") &&
-                    (avatars[i].Name != "Britney Luminos") &&
-                    (avatars[i].Name != "Chesterfield Wrigglesworth") &&
-                    (avatars[i].Name != "Elminstyr Exonar") &&
-                    (avatars[i].Name != "Franklin Fiertze") &&
-                    (avatars[i].Name != "Oriana Inglewood") &&
-                    (avatars[i].Name != "Tracy Hydefeld"))
+                    !XmlBot.BotFound(avatars[i].Name))
                 {
                     client.Self.AnimationStart(Animations.TYPE, false);
                     Thread.Sleep(3000);
@@ -548,6 +536,6 @@ namespace BotGUI
             }
         }
 
-        #endregion Events
+        #endregion Event Methods (CallBacks)
     }
 }

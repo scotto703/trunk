@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Xml;
+﻿using System.Xml;
 using OpenMetaverse;
-using OpenMetaverse.StructuredData;
 
 namespace BotGUI
 {
@@ -53,7 +48,7 @@ namespace BotGUI
         }
 
         //constructor that takes a Vector3, event written for action 3
-        //which is the action to look at a position 
+        //which is the action to look at a position
         public static void WriteXml(Vector3 vec)
         {
             XmlWriterSettings settings = new XmlWriterSettings();

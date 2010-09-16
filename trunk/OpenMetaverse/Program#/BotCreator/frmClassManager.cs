@@ -38,7 +38,7 @@ namespace BotGUI
             InitializeComponent();  // starts GUI
             GetBotList();  // populates list to load from
 
-            // Creates Bot List in BotList.XML in the Bots Dorectory
+            // Creates Bot List in BotList.XML in the Bots Directory
             XmlBot.CreateXml();
         }
         #endregion

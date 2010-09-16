@@ -69,14 +69,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BotGUI.exe" size="126464">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BotGUI.exe" size="127488">
       <assemblyIdentity name="BotGUI" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>TKPq0pvYKrs5xCi+Nh/7QO+VuyU=</dsig:DigestValue>
+        <dsig:DigestValue>kWILWp5i20u4grjD+RyUVNgvqlk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

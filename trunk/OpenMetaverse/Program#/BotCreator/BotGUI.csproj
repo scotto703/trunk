@@ -101,6 +101,7 @@
     <Compile Include="BotEventReader.cs" />
     <Compile Include="BotLoad.cs" />
     <Compile Include="BotMove.cs" />
+    <Compile Include="BotEventWriter.cs" />
     <Compile Include="frmAboutBox1.cs">
       <SubType>Form</SubType>
     </Compile>
