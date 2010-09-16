@@ -88,3 +88,8 @@ D:\Baker Island Project\Baker Bots Svn\trunk\OpenMetaverse\Program#\AIMLbot\AIML
 D:\Baker Island Project\Baker Bots Svn\trunk\OpenMetaverse\Program#\AIMLbot\AIMLbot\obj\Debug\ResolveAssemblyReference.cache
 D:\Baker Island Project\Baker Bots Svn\trunk\OpenMetaverse\Program#\AIMLbot\AIMLbot\obj\Debug\AIMLbot.dll
 D:\Baker Island Project\Baker Bots Svn\trunk\OpenMetaverse\Program#\AIMLbot\AIMLbot\obj\Debug\AIMLbot.pdb
+D:\Baker Island Project\Baker Bots Svn\trunk\OpenMetaverse\Program#\AIMLbot\AIMLbot\bin\Debug\OpenMetaverse.xml
+D:\Baker Island Project\Baker Bots Svn\trunk\OpenMetaverse\Program#\AIMLbot\AIMLbot\bin\Debug\OpenMetaverse.GUI.xml
+D:\Baker Island Project\Baker Bots Svn\trunk\OpenMetaverse\Program#\AIMLbot\AIMLbot\bin\Debug\OpenMetaverse.StructuredData.xml
+D:\Baker Island Project\Baker Bots Svn\trunk\OpenMetaverse\Program#\AIMLbot\AIMLbot\bin\Debug\OpenMetaverse.Utilities.xml
+D:\Baker Island Project\Baker Bots Svn\trunk\OpenMetaverse\Program#\AIMLbot\AIMLbot\bin\Debug\OpenMetaverseTypes.xml

@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <events>
+  <event eventID ="0">
+    <action>
+      <createAction>
+        <UUID>85c4b697-8cf2-43f7-2c24-d3ba10d4733f</UUID>
+        <Vector>
+          <X>96.7</X>
+          <Y>180</Y>
+          <Z>26.3</Z>
+        </Vector>
+        <actionType>2</actionType>
+        <Timer>0</Timer>
+      </createAction>
+    </action>
+  </event>
   <event ID="1">
     <chat>Follow me please.</chat>
     <movement>

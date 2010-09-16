@@ -211,8 +211,8 @@ namespace BotGUI
                             loadBotActionMethod(reader);
                         else if (reader.Name == "chat")
                             loadChat(reader);
-                        else if (reader.Name == "eventLoop")
-                            loadLoop(reader);
+                        //else if (reader.Name == "eventLoop")
+                        //    loadLoop(reader);
                         break;
 
                     case XmlNodeType.EndElement:

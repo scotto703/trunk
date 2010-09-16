@@ -12,7 +12,10 @@
 //              methods, and processes all movement code.
 //
 // Updates: Lawrence Miller - removed hard coded references to specific bots
-//          from part of Self_ChatFromSimulator, Log_ChatFromSimulator
+//          from part of Self_ChatFromSimulator, Log_ChatFromSimulator.
+//          Rewrote positionbot.cs to process positioning for bots based on
+//          eventID 0 in bots events.xml file.  processing for continuous loops
+//          still in progress.
 //**************************************************************
 using System;
 using System.Collections.Generic;
@@ -222,66 +225,90 @@ namespace BotGUI
 
         private void PositionBot()
         {
-            UUID managerChair = new UUID("62367cff-95e8-1c9d-73fe-f767848b9f5b");
-            UUID receptionistChair = new UUID("0c5bd03d-9254-281b-ef48-0c0973b43a52");
-            UUID loanofficerChair = new UUID("60d1155f-4186-468b-3238-64184a040b7d");
-            UUID bankmanagerChair = new UUID("85c4b697-8cf2-43f7-2c24-d3ba10d4733f");
-            Vector3 POSvector = new Vector3(96.7F, 180.0F, 26.3F);
-            Vector3 tellercomputerVector = new Vector3(143.0F, 214.0F, 25.0F);
+            BotEventReader botReader = new BotEventReader(client, botName);
 
             if (client.Self.Name == "Alisandra Cascarino")
             {
-                //start Alisandra's movement code
-                //AlisandraMovement goAlisandra = new AlisandraMovement(client);
-                BotEventReader alisEvents = new BotEventReader(client, botName);
-
                 // Continous loop for Alisandra to keep wandering on the Island
                 while (true)
                 {
-                    alisEvents.findEventInXmlFile(1);
+                    botReader.findEventInXmlFile(1);
                 }
             }
             if (client.Self.Name == "Nimon Herbit")
             {
-                //start Nimon's movement code
-                //ShopperMovement goNimon = new ShopperMovement(client, 1);
-                BotEventReader nimonEvents = new BotEventReader(client, botName);
-
                 // Continous shopping loop for Nimon
                 while (true)
                 {
-                    nimonEvents.findEventInXmlFile(1);
+                    botReader.findEventInXmlFile(1);
                 }
             }
-            if (client.Self.Name == "Britney Luminos")
-            {
-                client.Self.RequestSit(receptionistChair, Vector3.Zero);
-                client.Self.Sit();
-            }
-            if (client.Self.Name == "Chesterfield Wrigglesworth")
-            {
-                client.Self.RequestSit(managerChair, Vector3.Zero);
-                client.Self.Sit();
-            }
-            if (client.Self.Name == "Elminstyr Exonar")
-            {
-                client.Self.RequestSit(loanofficerChair, Vector3.Zero);
-                client.Self.Sit();
-            }
-            if (client.Self.Name == "Franklin Fiertze")
-            {
-                client.Self.Movement.TurnToward(tellercomputerVector);
-            }
-            if (client.Self.Name == "Oriana Inglewood")
-            {
-                client.Self.Movement.TurnToward(POSvector);
-            }
-            if (client.Self.Name == "Tracy Helstein")
-            {
-                client.Self.RequestSit(bankmanagerChair, Vector3.Zero);
-                client.Self.Sit();
-            }
+
+            botReader.findEventInXmlFile(0);
         }
+
+        //private void PositionBot()
+        //{
+        //    UUID managerChair = new UUID("62367cff-95e8-1c9d-73fe-f767848b9f5b");
+        //    UUID receptionistChair = new UUID("0c5bd03d-9254-281b-ef48-0c0973b43a52");
+        //    UUID loanofficerChair = new UUID("60d1155f-4186-468b-3238-64184a040b7d");
+        //    UUID bankmanagerChair = new UUID("85c4b697-8cf2-43f7-2c24-d3ba10d4733f");
+        //    Vector3 POSvector = new Vector3(96.7F, 180.0F, 26.3F);
+        //    Vector3 tellercomputerVector = new Vector3(143.0F, 214.0F, 25.0F);
+
+        //    if (client.Self.Name == "Alisandra Cascarino")
+        //    {
+        //        //start Alisandra's movement code
+        //        //AlisandraMovement goAlisandra = new AlisandraMovement(client);
+        //        BotEventReader alisEvents = new BotEventReader(client, botName);
+
+        //        // Continous loop for Alisandra to keep wandering on the Island
+        //        while (true)
+        //        {
+        //            alisEvents.findEventInXmlFile(1);
+        //        }
+        //    }
+        //    if (client.Self.Name == "Nimon Herbit")
+        //    {
+        //        //start Nimon's movement code
+        //        //ShopperMovement goNimon = new ShopperMovement(client, 1);
+        //        BotEventReader nimonEvents = new BotEventReader(client, botName);
+
+        //        // Continous shopping loop for Nimon
+        //        while (true)
+        //        {
+        //            nimonEvents.findEventInXmlFile(1);
+        //        }
+        //    }
+        //    if (client.Self.Name == "Britney Luminos")
+        //    {
+        //        client.Self.RequestSit(receptionistChair, Vector3.Zero);
+        //        client.Self.Sit();
+        //    }
+        //    if (client.Self.Name == "Chesterfield Wrigglesworth")
+        //    {
+        //        client.Self.RequestSit(managerChair, Vector3.Zero);
+        //        client.Self.Sit();
+        //    }
+        //    if (client.Self.Name == "Elminstyr Exonar")
+        //    {
+        //        client.Self.RequestSit(loanofficerChair, Vector3.Zero);
+        //        client.Self.Sit();
+        //    }
+        //    if (client.Self.Name == "Franklin Fiertze")
+        //    {
+        //        client.Self.Movement.TurnToward(tellercomputerVector);
+        //    }
+        //    if (client.Self.Name == "Oriana Inglewood")
+        //    {
+        //        client.Self.Movement.TurnToward(POSvector);
+        //    }
+        //    if (client.Self.Name == "Tracy Helstein")
+        //    {
+        //        client.Self.RequestSit(bankmanagerChair, Vector3.Zero);
+        //        client.Self.Sit();
+        //    }
+        //}
 
         #endregion Methods
 
