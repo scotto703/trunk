@@ -53,8 +53,11 @@ namespace BotGUI
             //
             for (int n = 0; n < BotList.Length; n++)
             {
-                BotName = BotList[n].Name;
-                comboBox1.Items.Add(BotName);
+                if (!BotList[n].Attributes.ToString().Contains("Hidden"))
+                {
+                    BotName = BotList[n].Name;
+                    comboBox1.Items.Add(BotName);
+                }
             }
         }        
 

@@ -176,3 +176,28 @@ C:\Projects\Baker Bots Repository\trunk\OpenMetaverse\Program#\BotCreator\bin\De
 C:\Projects\Baker Bots Repository\trunk\OpenMetaverse\Program#\BotCreator\bin\Debug\OpenMetaverse.GUI.xml
 C:\Projects\Baker Bots Repository\trunk\OpenMetaverse\Program#\BotCreator\obj\Debug\BotGUI.exe.manifest
 C:\Projects\Baker Bots Repository\trunk\OpenMetaverse\Program#\BotCreator\obj\Debug\BotGUI.application
+C:\Projects\Baker Bots Repository\trunk\Bot Manager\Program#\BotCreator\obj\Debug\BotGUI.exe
+C:\Projects\Baker Bots Repository\trunk\Bot Manager\Program#\BotCreator\obj\Debug\BotGUI.pdb
+C:\Projects\Baker Bots Repository\trunk\Bot Manager\Program#\BotCreator\bin\Debug\BotGUI.exe.manifest
+C:\Projects\Baker Bots Repository\trunk\Bot Manager\Program#\BotCreator\bin\Debug\BotGUI.application
+C:\Projects\Baker Bots Repository\trunk\Bot Manager\Program#\BotCreator\bin\Debug\BotGUI.exe
+C:\Projects\Baker Bots Repository\trunk\Bot Manager\Program#\BotCreator\bin\Debug\BotGUI.pdb
+C:\Projects\Baker Bots Repository\trunk\Bot Manager\Program#\BotCreator\bin\Debug\PrimMesher.dll
+C:\Projects\Baker Bots Repository\trunk\Bot Manager\Program#\BotCreator\bin\Debug\log4net.dll
+C:\Projects\Baker Bots Repository\trunk\Bot Manager\Program#\BotCreator\bin\Debug\nunit.framework.dll
+C:\Projects\Baker Bots Repository\trunk\Bot Manager\Program#\BotCreator\bin\Debug\OpenMetaverse.xml
+C:\Projects\Baker Bots Repository\trunk\Bot Manager\Program#\BotCreator\bin\Debug\OpenMetaverse.Utilities.xml
+C:\Projects\Baker Bots Repository\trunk\Bot Manager\Program#\BotCreator\bin\Debug\OpenMetaverseTypes.xml
+C:\Projects\Baker Bots Repository\trunk\Bot Manager\Program#\BotCreator\bin\Debug\OpenMetaverse.StructuredData.xml
+C:\Projects\Baker Bots Repository\trunk\Bot Manager\Program#\BotCreator\bin\Debug\OpenMetaverse.GUI.xml
+C:\Projects\Baker Bots Repository\trunk\Bot Manager\Program#\BotCreator\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\Baker Bots Repository\trunk\Bot Manager\Program#\BotCreator\obj\Debug\BotGUI.formEventViewer.resources
+C:\Projects\Baker Bots Repository\trunk\Bot Manager\Program#\BotCreator\obj\Debug\BotGUI.frmAboutBox1.resources
+C:\Projects\Baker Bots Repository\trunk\Bot Manager\Program#\BotCreator\obj\Debug\BotGUI.frmClassMngr.resources
+C:\Projects\Baker Bots Repository\trunk\Bot Manager\Program#\BotCreator\obj\Debug\BotGUI.frmCreate.resources
+C:\Projects\Baker Bots Repository\trunk\Bot Manager\Program#\BotCreator\obj\Debug\BotGUI.frmEditBot.resources
+C:\Projects\Baker Bots Repository\trunk\Bot Manager\Program#\BotCreator\obj\Debug\BotGUI.frmNewEvent.resources
+C:\Projects\Baker Bots Repository\trunk\Bot Manager\Program#\BotCreator\obj\Debug\BotGUI.Properties.Resources.resources
+C:\Projects\Baker Bots Repository\trunk\Bot Manager\Program#\BotCreator\obj\Debug\BotGUI.csproj.GenerateResource.Cache
+C:\Projects\Baker Bots Repository\trunk\Bot Manager\Program#\BotCreator\obj\Debug\BotGUI.exe.manifest
+C:\Projects\Baker Bots Repository\trunk\Bot Manager\Program#\BotCreator\obj\Debug\BotGUI.application

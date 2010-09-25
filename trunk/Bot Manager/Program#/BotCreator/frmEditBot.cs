@@ -58,8 +58,11 @@ namespace BotGUI
             // Adds the names of each bot to the list of Available bots
             for (int n = 0; n < BotList.Length; n++)
             {
-                BotName = BotList[n].Name;
-                cboBotList.Items.Add(BotName);
+                if (!BotList[n].Attributes.ToString().Contains("Hidden"))
+                {
+                    BotName = BotList[n].Name;
+                    cboBotList.Items.Add(BotName);
+                }
             }
         }
         private void ReadBotFile()
