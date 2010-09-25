@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<movementQuestions>
-  <Question eventID ="0">This is a dummy question/event and should never be called, but is needed to load bots with no movement questions</Question>
-</movementQuestions>

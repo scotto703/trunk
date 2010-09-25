@@ -1,0 +1,63 @@
+LLWearable version 22
+Gamer Girl
+
+	permissions 0
+	{
+		base_mask	7fffffff
+		owner_mask	7fffffff
+		group_mask	7fffffff
+		everyone_mask	7fffbfff
+		next_owner_mask	7fffffff
+		creator_id	00000000-0000-0000-0000-000000000000
+		owner_id	05d08da9-a56f-4821-a4d3-4261008c19cf
+		last_owner_id	05d08da9-a56f-4821-a4d3-4261008c19cf
+		group_id	00000000-0000-0000-0000-000000000000
+	}
+	sale_info	0
+	{
+		sale_type	not
+		sale_price	10
+	}
+type 2
+parameters 39
+16 1.35
+31 .32
+112 0
+113 .61
+114 0
+115 0
+119 0
+130 .09
+131 .84
+132 .47
+133 0
+134 .27
+135 .53
+136 .63
+137 .5
+140 0
+141 0
+142 0
+143 -.98
+166 0
+167 0
+168 0
+169 0
+177 0
+181 -1
+182 .2
+183 -.02
+184 0
+192 0
+674 .56
+750 0
+752 .5
+754 -.49
+755 1.5
+757 .92
+762 .21
+763 0
+785 0
+789 0
+textures 1
+4 7ca39b4c-bd19-4699-aff7-f93fd03d3e7b

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BotData>
+  <FirstName>Nimon</FirstName>
+  <LastName>Herbit</LastName>
+  <Password>shopper127</Password>
+  <Location>Baker Island</Location>
+  <X>101</X>
+  <Y>191</Y>
+  <Z>25</Z>
+  <AIMLPath>\Bots\Nimon Herbit\AIML</AIMLPath>
+  <BotSettingsPath>\Bots\Nimon Herbit\Nimon Herbit.xml</BotSettingsPath>
+</BotData>

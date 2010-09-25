@@ -1,0 +1,33 @@
+LLWearable version 22
+LL Professional Female Avatar 2 Pants Fawn
+
+	permissions 0
+	{
+		base_mask	00082000
+		owner_mask	00082000
+		group_mask	00000000
+		everyone_mask	00000000
+		next_owner_mask	00082000
+		creator_id	ef5ac61a-72b0-48a6-843f-adb506d7ba86
+		owner_id	a1da715b-1a31-4ae8-9f0a-aceeccb91e2f
+		last_owner_id	a1da715b-1a31-4ae8-9f0a-aceeccb91e2f
+		group_id	00000000-0000-0000-0000-000000000000
+	}
+	sale_info	0
+	{
+		sale_type	not
+		sale_price	10
+	}
+type 5
+parameters 9
+625 .15
+638 0
+806 0
+807 0
+808 0
+814 1
+815 1
+816 0
+869 0
+textures 1
+2 1859b329-8ef1-d621-1d87-8c6067c90ffa

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<events>
+  <event ID="0" Name="Position Bot">
+    <action>
+      <createAction>
+        <Vector>
+          <X>143.0</X>
+          <Y>214.0</Y>
+          <Z>25.0</Z>
+        </Vector>
+        <actionType>3</actionType>
+        <Timer>0</Timer>
+      </createAction>
+    </action>
+  </event>
+</events>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BotData>
+  <FirstName>Tracy</FirstName>
+  <LastName>Helstein</LastName>
+  <Password>bankmanager</Password>
+  <Location>Baker Island</Location>
+  <X>147</X>
+  <Y>225</Y>
+  <Z>25</Z>
+  <AIMLPath>\Bots\Tracy Helstein\AIML</AIMLPath>
+  <BotSettingsPath>\Bots\Tracy Helstein\Tracy Helstein.xml</BotSettingsPath>
+</BotData>

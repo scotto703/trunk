@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<events>
+  <event ID="0" Name="Position Bot">
+    <action>
+      <createAction>
+        <UUID>85c4b697-8cf2-43f7-2c24-d3ba10d4733f</UUID>
+        <Vector>
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+        </Vector>
+        <actionType>2</actionType>
+        <Timer>0</Timer>
+      </createAction>
+    </action>
+  </event>
+</events>
