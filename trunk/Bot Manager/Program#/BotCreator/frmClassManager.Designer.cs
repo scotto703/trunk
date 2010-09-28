@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmClassMngr));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -70,6 +71,7 @@
             this.consoleB = new System.Windows.Forms.ToolStripButton();
             this.ListBotGB = new System.Windows.Forms.GroupBox();
             this.listAvailBot = new System.Windows.Forms.ListBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.botGB.SuspendLayout();
@@ -347,6 +349,7 @@
             this.loadBotB.Name = "loadBotB";
             this.loadBotB.Size = new System.Drawing.Size(23, 22);
             this.loadBotB.Text = "Load Bot";
+            this.loadBotB.ToolTipText = "Load Selected Bot";
             this.loadBotB.Click += new System.EventHandler(this.loadBotB_Click);
             // 
             // editBotB
@@ -367,6 +370,7 @@
             this.botStopB.Name = "botStopB";
             this.botStopB.Size = new System.Drawing.Size(23, 22);
             this.botStopB.Text = "Stop Bot";
+            this.botStopB.ToolTipText = "Stop Selected Bot";
             this.botStopB.Click += new System.EventHandler(this.botStopB_Click);
             // 
             // toolStripButton1
@@ -377,6 +381,7 @@
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton1.Text = "Bot Events";
+            this.toolStripButton1.ToolTipText = "View Bot Events";
             this.toolStripButton1.Click += new System.EventHandler(this.EventViewerToolStripButton_Click);
             // 
             // toolStripSeparator1
@@ -532,6 +537,7 @@
         private System.Windows.Forms.RichTextBox consoleRTB;
         private System.Windows.Forms.Button stopButton;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 

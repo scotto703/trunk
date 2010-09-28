@@ -124,8 +124,8 @@
   <data name="botManagerToolStripMenuItem1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALAgAA
-        CwIBm8luNgAAAnlJREFUOE9lU19IU1EYP6seZgUxKAqj6LWHHko00ixqREQPvRRlZA+VGeasDTGzFlFo
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALAQAA
+        CwEBNnBPWwAAAnlJREFUOE9lU19IU1EYP6seZgUxKAqj6LWHHko00ixqREQPvRRlZA+VGeasDTGzFlFo
         DKnwyVCCJdaKVi2jzdydaLKuOkHl7k+uTdtcs+7VLCIibPs634lzu6sLv3O++93v9zvnnu93dABAtE/P
         +9mivCWLbyzS6TbpCFm1kM2S7wsZ5cevrPQzk7l4dGP+cA4BBTgGUp99gZkv0BX7BA/CaegMfWC4T/Ew
         koZHFPZgyqflcLI+MPNV9iVmGaGl4y7U7F0HpwsIA8aYw2/3gim4M5aUr/nf6dnucaArC5yMRXXHtqlk
@@ -142,8 +142,8 @@
   <data name="simulationManagerToolStripMenuItem1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALAgAA
-        CwIBm8luNgAAAlpJREFUOE91k11IU2EYx99tbXNuOzvbmCIW0o3LbkJWoZlQ0AdE0Qi6qqCg7CoXZFl4
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALAQAA
+        CwEBNnBPWwAAAlpJREFUOE91k11IU2EYx99tbXNuOzvbmCIW0o3LbkJWoZlQ0AdE0Qi6qqCg7CoXZFl4
         kbCb6AuyrfmxnFNh9MGKFbEcWlaGzmF00URKQsgwTBwlTIl4Os9zeredwgP/88Lh/f+e//O+z1EBACt8
         6iNJ58Iv1aWl36raTMVE5c+1d5k2W7ZiyJZ9Ls9WNKZ3XkwoDAggSMollsc74ra+EbAHUzkJA/2gSu8A
         NrWVZH55ctLlctlzPm7Wvju4zGZqgGW2gW6xGUqic2CTQNZbCRCCvaAarwf2fjOwyS2gje9Z4RCqbn57
@@ -159,8 +159,8 @@
   <data name="howDoIToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALAgAA
-        CwIBm8luNgAAAjNJREFUOE91U11r02AUPmm0VHCdaC8nfoCCsPQzsW4yWxSGFxMFZTjccOzCP7DLXWT7
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALAQAA
+        CwEBNnBPWwAAAjNJREFUOE91U11r02AUPmm0VHCdaC8nfoCCsPQzsW4yWxSGFxMFZTjccOzCP7DLXWT7
         BfNmsP0Avc2Qbt3SucyVOUqjk7JWBWFgsoIXUih6sc31mPN2SZNWA+8Hec/znHPe53k5RAT3d6P8JOzn
         Ts/w6BN58PUcN47hoHFoHjSOdGuVjUS25AEQgT0i5RElXnmGoZ17yOs3EfQEG7wuYbd+B68Wh/Bi4b7i
         xjDwpDEbECtjxuXSAwdkg9vXC4U09rwfNJK5pwFWPU2U2Q1+9G0Sp6sLuFjbwJc/XmP66wsP8bntAQzl
@@ -329,6 +329,9 @@
         xqpmRvrMDCfOqSzay/kDb8bl0lx+mS8AAAAASUVORK5CYII=
 </value>
   </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>353, 17</value>
+  </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>36</value>
   </metadata>
