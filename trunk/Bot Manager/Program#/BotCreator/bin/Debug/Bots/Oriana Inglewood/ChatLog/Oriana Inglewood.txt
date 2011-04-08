@@ -1,0 +1,159 @@
+10/29/2010 10:42:02 AM: Oriana Inglewood: Hi everyone!
+10/29/2010 10:42:14 AM: ScottyPaul Zhaoying: hi
+10/29/2010 10:42:14 AM: Oriana Inglewood: Hello, what can I help you with?
+10/29/2010 10:42:22 AM: ScottyPaul Zhaoying: I don't know
+10/29/2010 10:42:22 AM: Oriana Inglewood: Me either.
+10/29/2010 10:42:32 AM: ScottyPaul Zhaoying: You could help me get my other bot working.
+10/29/2010 10:42:32 AM: Oriana Inglewood: I could but let's get back to that later.
+10/29/2010 11:02:26 AM: Oriana Inglewood: Hi everyone!
+10/29/2010 6:03:49 PM: ScottyPaul Zhaoying: hi oriana
+10/29/2010 6:03:49 PM: Oriana Inglewood: Hi there, do you need any help?
+10/29/2010 6:03:58 PM: ScottyPaul Zhaoying: aisle 1
+10/29/2010 6:03:58 PM: Oriana Inglewood: Would you like me to take you to aisle 1?
+10/29/2010 6:03:59 PM: Oriana Inglewood: Follow me please.
+10/29/2010 6:04:14 PM: Oriana Inglewood: This is where we keep general pharmacy items, baking goods, snacks, soda and beer.
+10/29/2010 6:04:16 PM: Oriana Inglewood: If you need anything else I'll be at the counter.
+10/29/2010 6:04:25 PM: ScottyPaul Zhaoying: Thanks
+10/29/2010 6:04:25 PM: Oriana Inglewood: Not a problem. It's my job to help out.
+10/29/2010 6:04:31 PM: ScottyPaul Zhaoying: yes
+10/30/2010 2:52:31 PM: Oriana Inglewood: Hi everyone!
+11/15/2010 3:01:19 PM: Oriana Inglewood: Hi everyone!
+11/15/2010 3:05:07 PM: ScottyPaul Zhaoying: Hi Alex
+11/15/2010 3:05:15 PM: ScottyPaul Zhaoying: Sure, why not?
+11/19/2010 4:02:03 PM: Oriana Inglewood: Hi everyone!
+11/19/2010 7:23:41 PM: Ruth Admiral: hello
+11/19/2010 7:23:41 PM: Oriana Inglewood: Hello.
+11/19/2010 7:24:05 PM: Ruth Admiral: Are you in my class mis611
+11/19/2010 7:24:05 PM: Oriana Inglewood: I am in Baker Island.  Where are you?
+11/19/2010 7:24:37 PM: Ruth Admiral: I am in Baker Island, too but are you in my class, too?
+11/19/2010 7:24:37 PM: Oriana Inglewood: I am in Baker Island.  Where are you?
+11/19/2010 7:24:50 PM: Ruth Admiral: Do you work here
+11/19/2010 7:24:50 PM: Oriana Inglewood: Yes, I am the clerk.
+11/19/2010 7:25:09 PM: Ruth Admiral: OK I would like to get a report from the Baker Stroe
+11/19/2010 7:25:09 PM: Oriana Inglewood: Why would you want to do get a report from the Baker Stroe?   You want only one?Blimey.
+11/19/2010 7:59:07 PM: ScottyPaul Zhaoying: Hey Ori
+11/19/2010 7:59:07 PM: Oriana Inglewood: You've got my full attention. How about rephrasing your question and maybe I can help you. I know a lot about the items we sell, my job here, and I can direct you to our reports. You can also ask my manager Chesterfield. He is upstairs at his desk.
+11/19/2010 7:59:17 PM: ScottyPaul Zhaoying: What do you sell here?
+11/19/2010 7:59:17 PM: Oriana Inglewood: I like to chat with my friends.
+11/19/2010 7:59:29 PM: ScottyPaul Zhaoying: What do you sell at Baker Foods?
+11/19/2010 7:59:30 PM: Oriana Inglewood: It's a personal matter, not for you to understand.
+11/19/2010 8:26:49 PM: ScottyPaul Zhaoying: aisle 1
+11/19/2010 8:26:49 PM: Oriana Inglewood: Would you like me to take you to aisle 1?
+11/19/2010 8:26:51 PM: Oriana Inglewood: Follow me please.
+11/19/2010 8:27:05 PM: Oriana Inglewood: This is where we keep general pharmacy items, baking goods, snacks, soda and beer.
+11/19/2010 8:27:08 PM: Oriana Inglewood: If you need anything else I'll be at the counter.
+11/19/2010 8:27:13 PM: ScottyPaul Zhaoying: Thanks
+11/19/2010 8:27:13 PM: Oriana Inglewood: Not a problem. It's my job to help out.
+11/19/2010 8:27:22 PM: ScottyPaul Zhaoying: yes
+11/19/2010 8:27:28 PM: Wonder Bread: If you would like to learn the nutritional infromation about this product please touch the product again
+11/19/2010 8:27:38 PM: Pegwuk Pfalz: please tell me
+11/19/2010 8:28:01 PM: Domino Sugar: If you would like to learn the nutritional infromation about this product please touch the product again
+11/19/2010 8:28:26 PM: Pizza: If you would like to learn the nutritional infromation about this product please touch the product again
+11/19/2010 8:28:26 PM: Domino Sugar: If you would like to learn the nutritional infromation about this product please touch the product again
+11/19/2010 8:28:30 PM: Pillsbury Flour: If you would like to learn the nutritional infromation about this product please touch the product again
+11/19/2010 8:28:34 PM: Morton Salt: If you would like to learn the nutritional infromation about this product please touch the product again
+11/19/2010 8:28:42 PM: Skippy Peanut Butter: If you would like to learn the nutritional infromation about this product please touch the product again
+11/19/2010 8:28:49 PM: Domino Sugar: If you would like to learn the nutritional infromation about this product please touch the product again
+11/19/2010 8:29:03 PM: Suzy Q's: If you would like to learn the nutritional infromation about this product please touch the product again
+11/19/2010 8:29:20 PM: Rryan Bigboots: i did
+11/19/2010 8:29:29 PM: Premium Saltines: If you would like to learn the nutritional infromation about this product please touch the product again
+11/19/2010 8:29:38 PM: Cake Mix: If you would like to learn the nutritional infromation about this product please touch the product again
+11/19/2010 8:29:42 PM: Honey Nut Cherrios: If you would like to learn the nutritional infromation about this product please touch the product again
+11/19/2010 8:29:44 PM: 7up 6-pack: If you would like to learn the nutritional infromation about this product please touch the product again
+11/19/2010 8:30:21 PM: Deanna Greycloak: Yes
+11/19/2010 8:30:21 PM: Oriana Inglewood: It's all good.
+11/19/2010 8:30:32 PM: Deanna Greycloak: In the lower left, above the chat box
+11/19/2010 8:30:32 PM: Oriana Inglewood: What is your real name?
+11/19/2010 8:30:42 PM: Pegwuk Pfalz: where is the manager?
+11/19/2010 8:30:42 PM: Oriana Inglewood: The manager?  Where is manager?
+11/19/2010 8:30:49 PM: Deanna Greycloak: Click with your mouse
+11/19/2010 8:30:52 PM: Pegwuk Pfalz: I am Ralph
+11/19/2010 8:30:52 PM: Oriana Inglewood: Do you mind if I tell other people you are Ralph.
+11/19/2010 8:31:01 PM: Pegwuk Pfalz: No
+11/19/2010 8:31:01 PM: Oriana Inglewood: OK then I will add it to my gossip files.
+11/19/2010 8:31:24 PM: ScottyPaul Zhaoying: What is your job here?
+11/19/2010 8:31:24 PM: Oriana Inglewood: Are you asking about my job here ?
+11/19/2010 8:31:29 PM: ScottyPaul Zhaoying: Yes
+11/19/2010 8:31:29 PM: Oriana Inglewood: I don't want to talk about that now.
+11/19/2010 8:31:40 PM: Pegwuk Pfalz: why not?
+11/19/2010 8:31:40 PM: Oriana Inglewood: Are you asking about my job at Baker Foods ?
+11/19/2010 8:31:41 PM: ScottyPaul Zhaoying: What is your job at Baker Foods?
+11/19/2010 8:31:41 PM: Oriana Inglewood: Are you asking about my job at Baker Foods ?
+11/19/2010 8:31:46 PM: ScottyPaul Zhaoying: yes
+11/19/2010 8:31:46 PM: Oriana Inglewood: I don't want to talk about that now.
+11/19/2010 8:31:55 PM: ScottyPaul Zhaoying: ARe you the clerk here?
+11/19/2010 8:31:55 PM: Oriana Inglewood: Yes I am the one and only clerk here.
+11/19/2010 8:32:23 PM: ScottyPaul Zhaoying: Hi chester
+11/19/2010 8:32:35 PM: Pegwuk Pfalz: hello
+11/19/2010 8:32:37 PM: Rryan Bigboots: How are you?
+11/19/2010 8:32:49 PM: ScottyPaul Zhaoying: Do you use reports?
+11/19/2010 8:32:49 PM: Pegwuk Pfalz: how is business?
+11/19/2010 8:33:01 PM: ScottyPaul Zhaoying: What reports do you need?
+11/19/2010 8:33:11 PM: Rryan Bigboots: I like your lamp.
+11/19/2010 8:33:13 PM: ScottyPaul Zhaoying: What reports do you use here.
+11/19/2010 8:33:22 PM: ScottyPaul Zhaoying: reports
+11/19/2010 8:34:17 PM: Pegwuk Pfalz: he doesn't seem interested
+11/19/2010 8:34:21 PM: ScottyPaul Zhaoying: Hey chester, tell me about your job at Baker Foods.
+11/19/2010 8:34:36 PM: Pegwuk Pfalz: what do you do?
+11/19/2010 8:34:47 PM: ScottyPaul Zhaoying: What does the manager do?
+11/19/2010 8:34:50 PM: Pegwuk Pfalz: who is oriana
+11/19/2010 8:35:23 PM: ScottyPaul Zhaoying: ARe you bored, chester?
+11/19/2010 8:35:29 PM: Deanna Greycloak: Downstairs
+11/19/2010 8:36:45 PM: Rryan Bigboots: running
+11/19/2010 8:36:45 PM: Oriana Inglewood: How about rephrasing your question and maybe I can help you. I know a lot about the items we sell, my job here, and I can direct you to our reports. You can also ask my manager Chesterfield. He is upstairs at his desk.
+11/19/2010 8:36:58 PM: Rryan Bigboots: got it
+11/19/2010 8:42:29 PM: Pegwuk Pfalz: hi
+11/19/2010 8:42:29 PM: Oriana Inglewood: Hello, nice day out today isn't it.
+11/19/2010 8:42:39 PM: Pegwuk Pfalz: yes it is'
+11/19/2010 8:42:39 PM: Oriana Inglewood: Pardon me? Our thoughts are one, Pegwuk Pfalz.
+11/19/2010 8:42:48 PM: Pegwuk Pfalz: we are melded
+11/19/2010 8:42:48 PM: Oriana Inglewood: Do you think I am melded too?
+11/19/2010 8:42:56 PM: Pegwuk Pfalz: yes
+11/19/2010 8:42:56 PM: Oriana Inglewood: Why?
+11/19/2010 8:43:03 PM: Pegwuk Pfalz: bye
+11/19/2010 8:43:03 PM: Oriana Inglewood: Thank you for shopping with us. Have a nice day!
+1/7/2011 11:24:19 AM: Oriana Inglewood: Hi everyone!
+1/12/2011 2:28:39 PM: Oriana Inglewood: Hi everyone!
+1/12/2011 2:29:22 PM: Premium Saltines: If you would like to learn the nutritional infromation about this product please touch the product again
+1/12/2011 2:29:22 PM: Folders Coffee: If you would like to learn the nutritional infromation about this product please touch the product again
+1/12/2011 2:29:22 PM: Oriana Inglewood: I don't understand what you are saying but my manager Chesterfield may. He is upstairs at his desk.
+1/12/2011 2:29:28 PM: Folders Coffee: If you would like to learn the nutritional infromation about this product please touch the product again
+1/12/2011 2:29:28 PM: Oriana Inglewood: If can reword your question that will help me figure out what you are trying to ask. I am very helpful when it comes to knowledge about the items we sell and being a clerk.
+1/12/2011 2:29:41 PM: Macaroni and Cheese: If you would like to learn the nutritional infromation about this product please touch the product again
+1/12/2011 2:30:00 PM: Morton Salt: If you would like to learn the nutritional infromation about this product please touch the product again
+1/12/2011 2:30:31 PM: ScottyPaul Zhaoying: Hi Oriana
+1/12/2011 2:30:31 PM: Oriana Inglewood: Hello ScottyPaul Zhaoying.
+1/12/2011 2:30:47 PM: ScottyPaul Zhaoying: what is your job at Baker foods?
+1/12/2011 2:30:47 PM: Oriana Inglewood: Are you asking about my job at Baker foods ?
+1/12/2011 2:30:52 PM: ScottyPaul Zhaoying: Yes
+1/12/2011 2:30:52 PM: Oriana Inglewood: I don't want to talk about that now.
+1/12/2011 2:30:58 PM: AndyW11 Resident: lol
+1/12/2011 2:30:58 PM: Oriana Inglewood: I'm glad you find this amusing.
+1/12/2011 2:30:59 PM: pleroma00 Resident: haha
+1/12/2011 2:31:06 PM: ScottyPaul Zhaoying: What do you do at baker foods?
+1/12/2011 2:31:06 PM: Oriana Inglewood: I'm the clerk here. I scan your items, process the payment, and give you your items back in either paper or plastic.
+1/12/2011 2:31:29 PM: ScottyPaul Zhaoying: aisle 1
+1/12/2011 2:31:29 PM: Oriana Inglewood: Would you like me to take you to aisle 1?
+1/12/2011 2:31:31 PM: Oriana Inglewood: Follow me please.
+1/12/2011 2:31:46 PM: Oriana Inglewood: This is where we keep general pharmacy items, baking goods, snacks, soda and beer.
+1/12/2011 2:31:49 PM: Oriana Inglewood: If you need anything else I'll be at the counter.
+1/12/2011 2:31:55 PM: ScottyPaul Zhaoying: thanks
+1/12/2011 2:31:55 PM: Oriana Inglewood: Not a problem. It's my job to help out.
+1/12/2011 2:32:03 PM: ScottyPaul Zhaoying: yes
+1/12/2011 2:33:28 PM: AndyW11 Resident: the receptionist at the coast guard station told me she was a nurse btw
+1/12/2011 2:33:28 PM: Oriana Inglewood: What is that?
+1/12/2011 2:33:29 PM: ScottyPaul Zhaoying: lol
+1/12/2011 2:33:31 PM: Ginsora Resident: I worked in banking 6 year. >.>
+1/12/2011 2:34:13 PM: AndyW11 Resident: oh lol well it worked haha
+1/12/2011 2:34:13 PM: Oriana Inglewood: "  What is that?  "? the receptionist at the coast guard station told me she was a nurse btw?I am glad you find this funny.  Interesting.  I'm glad to hear it.
+1/12/2011 2:34:37 PM: ScottyPaul Zhaoying: knock knock
+1/12/2011 2:34:45 PM: Ginsora Resident: No questions,but the area is intrguing.
+1/12/2011 2:34:51 PM: pleroma00 Resident: lol.
+1/12/2011 2:34:52 PM: Oriana Inglewood: I'm glad you find this amusing.
+1/12/2011 2:35:01 PM: AndyW11 Resident: what is our main job, just coding the app to work with these bots?
+1/12/2011 2:35:01 PM: Oriana Inglewood: I think our main job is a lot of things.
+1/12/2011 2:36:51 PM: AndyW11 Resident: ok makes sense.
+1/12/2011 2:36:51 PM: Oriana Inglewood: Very interesting question. I will have to get back to you on that. If you want to know about the items we sell or my job here just ask. I can also direct you to my manager Chesterfield.Whoa.
+4/7/2011 10:06:43 AM: Oriana Inglewood: Hi everyone!
+4/7/2011 10:27:17 AM: Oriana Inglewood: Hi everyone!
+4/7/2011 10:31:06 AM: Oriana Inglewood: Hi everyone!

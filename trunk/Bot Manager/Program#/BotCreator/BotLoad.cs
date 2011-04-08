@@ -135,15 +135,46 @@ namespace BotGUI
             // Get bots startup information            
             getBotAIMLPath();
             getBotSettingsPath();
-
+                     
             // create login parameters struct
             LoginParams clientLogin;
 
-            // populate login srutct properties
+            // ****************************************************************************
+            // These are my test statements - 1
+            // ****************************************************************************
+            
+            // this.Settings.LOGIN_SERVER = "http://127.0.0.1:9000/";
+
+            // ****************************************************************************
+            // End test statements - 1
+            // ****************************************************************************
+            
+            // populate login struct properties
+
             clientLogin = this.Network.DefaultLoginParams(getBotFirstName(), getBotLastName(), getBotPassword(), "Baker Island Bots", Assembly.GetExecutingAssembly().GetName().Version.ToString());
+            
+            // ****************************************************************************
+            // Temporarily Commented Out so I don't forget what I did
+            // ****************************************************************************
+
+            
             this.Settings.USE_LLSD_LOGIN = true;
-            this.Settings.USE_ASSET_CACHE = true;            
-            clientLogin.Start = NetworkManager.StartLocation(getBotStartLocation(), getBotStartXCoordinate(), getBotStartYCoordinate(), getBotStartZCoordinate());
+
+            // ****************************************************************************
+            // End Temporarily Commented Out
+            // ****************************************************************************
+
+            this.Settings.USE_ASSET_CACHE = true;
+
+            // ****************************************************************************
+            // These are my test statements - 2
+            // ****************************************************************************
+
+            // NOW EMPTY
+           
+            // ****************************************************************************
+            // End Test Statements - 2
+            // ****************************************************************************
 
             // register events for this bot            
             radiusTimer.Elapsed += new ElapsedEventHandler(OnTimedEventRadius);
@@ -228,6 +259,7 @@ namespace BotGUI
                 (e.FromName != "Franklin Fiertze") &&
                 (e.FromName != "Oriana Inglewood") &&
                 (e.FromName != "Tracy Helstein") &&
+                (e.FromName != "Counselor Silversmith") &&
                 (e.FromName != "William Ormidale") &&
                 (e.FromName != "Nimon Herbit") &&
                 (e.Message != ""))
@@ -242,6 +274,7 @@ namespace BotGUI
                     (this.Self.Name == "Oriana Inglewood") && (e.Position.Z <= this.Self.SimPosition.Z + 1) ||
                     (this.Self.Name == "William Ormidale") && (e.Position.Z <= this.Self.SimPosition.Z + 1) ||
                     (this.Self.Name == "Tracy Helstein") && (e.Position.Z <= this.Self.SimPosition.Z + 1) ||
+                    (this.Self.Name == "Counselor Silversmith") && (e.Position.Z <= this.Self.SimPosition.Z + 1) ||
                     (this.Self.Name == "Nimon Herbit") && (e.Position.Z <= this.Self.SimPosition.Z + 1)) &&
                     ((avatarPos != Vector3.Zero) && (Vector3.Distance(avatarPos, botPos) < radius)))
                 {
@@ -325,6 +358,7 @@ namespace BotGUI
                  (avatarName != "Franklin Fiertze") &&
                  (avatarName != "Oriana Inglewood") &&
                  (avatarName != "Tracy Helstein") &&
+                 (avatarName != "Counselor Silversmith") &&
                  (avatarName != "William Ormidale") &&
                  (avatarName != "Nimon Herbit")))
             {
@@ -454,6 +488,7 @@ namespace BotGUI
                     (avatars[i].Name != "Chesterfield Wrigglesworth") &&
                     (avatars[i].Name != "Elminstyr Exonar") &&
                     (avatars[i].Name != "Franklin Fiertze") &&
+                    (avatars[i].Name != "Counselor Silversmith") &&
                     (avatars[i].Name != "Oriana Inglewood") &&
                     (avatars[i].Name != "Tracy Hydefeld"))
                 {

@@ -1,4 +1,5 @@
-﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -12,7 +13,7 @@
     <StartupObject>BotGUI.Program</StartupObject>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
-    <OldToolsVersion>2.0</OldToolsVersion>
+    <OldToolsVersion>3.5</OldToolsVersion>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <IsWebBootstrapper>false</IsWebBootstrapper>
@@ -80,12 +81,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BotAction.cs" />
+    <Compile Include="BotActionWriter.cs" />
+    <Compile Include="BotChatWriter.cs" />
+    <Compile Include="BotEventEditor.cs" />
     <Compile Include="BotEventReader.cs" />
     <Compile Include="BotLoad.cs" />
     <Compile Include="BotLoadAIML.cs" />
     <Compile Include="BotMove.cs" />
     <Compile Include="BotMoveWriter.cs" />
     <Compile Include="BotChat.cs" />
+    <Compile Include="formEventEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formEventEditor.designer.cs">
+      <DependentUpon>formEventEditor.cs</DependentUpon>
+    </Compile>
     <Compile Include="formEventViewer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +134,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="formEventEditor.resx">
+      <DependentUpon>formEventEditor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formEventViewer.resx">
       <DependentUpon>formEventViewer.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -185,6 +198,9 @@
       <ProductName>.NET Framework 3.5</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

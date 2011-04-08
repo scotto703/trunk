@@ -1,0 +1,34 @@
+LLWearable version 22
+Professional Female Avatar 2 Jacket Fawn
+
+	permissions 0
+	{
+		base_mask	7fffffff
+		owner_mask	7fffffff
+		group_mask	00000000
+		everyone_mask	00000000
+		next_owner_mask	00082000
+		creator_id	ef5ac61a-72b0-48a6-843f-adb506d7ba86
+		owner_id	ef5ac61a-72b0-48a6-843f-adb506d7ba86
+		last_owner_id	ef5ac61a-72b0-48a6-843f-adb506d7ba86
+		group_id	00000000-0000-0000-0000-000000000000
+	}
+	sale_info	0
+	{
+		sale_type	not
+		sale_price	10
+	}
+type 8
+parameters 9
+606 1
+607 1
+608 1
+609 1
+780 1
+834 1
+835 1
+836 1
+877 0
+textures 2
+13 b9cbd2d0-256c-dcc8-7472-49c3ec682d75
+14 0ee91b86-2571-f457-b482-bcce92ffb639

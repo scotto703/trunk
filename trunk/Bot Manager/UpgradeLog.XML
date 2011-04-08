@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Bot Manager">
+</Property><Property Name="Solution File" Value="C:\Users\scotto\Projects\bakerbots\Bot Manager\Bot Manager.sln">
+</Property><Property Name="User Options File" Value="C:\Users\scotto\Projects\bakerbots\Bot Manager\Bot Manager.suo">
+</Property><Property Name="Date" Value="Friday, January 07, 2011">
+</Property><Property Name="Time" Value="11:23 AM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Bot Manager.sln" Description="File successfully backed up as C:\Users\scotto\Projects\bakerbots\Bot Manager\Backup\Bot Manager.sln">
+</Event><Event ErrorLevel="0" Project="" Source="Bot Manager.suo" Description="File successfully backed up as C:\Users\scotto\Projects\bakerbots\Bot Manager\Backup\Bot Manager.suo">
+</Event><Event ErrorLevel="0" Project="BotGUI" Source="Program#\BotCreator\BotGUI.csproj" Description="Project file successfully backed up as C:\Users\scotto\Projects\bakerbots\Bot Manager\Backup\Program#\BotCreator\BotGUI.csproj">
+</Event><Event ErrorLevel="0" Project="BotGUI" Source="Program#\BotCreator\BotGUI.csproj.user" Description="Project user file successfully backed up as C:\Users\scotto\Projects\bakerbots\Bot Manager\Backup\Program#\BotCreator\BotGUI.csproj.user">
+</Event><Event ErrorLevel="0" Project="BotGUI" Source="Program#\BotCreator\BotAction.cs" Description="File successfully backed up as C:\Users\scotto\Projects\bakerbots\Bot Manager\Backup\Program#\BotCreator\BotAction.cs">
+</Event><Event ErrorLevel="0" Project="BotGUI" Source="Program#\BotCreator\BotEventReader.cs" Description="File successfully backed up as C:\Users\scotto\Projects\bakerbots\Bot Manager\Backup\Program#\BotCreator\BotEventReader.cs">
+</Event><Event ErrorLevel="0" Project="BotGUI" Source="Program#\BotCreator\BotLoad.cs" Description="File successfully backed up as C:\Users\scotto\Projects\bakerbots\Bot Manager\Backup\Program#\BotCreator\BotLoad.cs">
+</Event><Event ErrorLevel="0" Project="BotGUI" Source="Program#\BotCreator\BotLoadAIML.cs" Description="File successfully backed up as C:\Users\scotto\Projects\bakerbots\Bot Manager\Backup\Program#\BotCreator\BotLoadAIML.cs">
+</Event><Event ErrorLevel="0" Project="BotGUI" Source="Program#\BotCreator\BotMove.cs" Description="File successfully backed up as C:\Users\scotto\Projects\bakerbots\Bot Manager\Backup\Program#\BotCreator\BotMove.cs">
+</Event><Event ErrorLevel="0" Project="BotGUI" Source="Program#\BotCreator\BotMoveWriter.cs" Description="File successfully backed up as C:\Users\scotto\Projects\bakerbots\Bot Manager\Backup\Program#\BotCreator\BotMoveWriter.cs">
+</Event><Event ErrorLevel="0" Project="BotGUI" Source="Program#\BotCreator\BotChat.cs" Description="File successfully backed up as C:\Users\scotto\Projects\bakerbots\Bot Manager\Backup\Program#\BotCreator\BotChat.cs">
+</Event><Event ErrorLevel="0" Project="BotGUI" Source="Program#\BotCreator\formEventViewer.cs" Description="File successfully backed up as C:\Users\scotto\Projects\bakerbots\Bot Manager\Backup\Program#\BotCreator\formEventViewer.cs">
+</Event><Event ErrorLevel="0" Project="BotGUI" Source="Program#\BotCreator\formEventViewer.designer.cs" Description="File successfully backed up as C:\Users\scotto\Projects\bakerbots\Bot Manager\Backup\Program#\BotCreator\formEventViewer.designer.cs">
+</Event><Event ErrorLevel="0" Project="BotGUI" Source="Program#\BotCreator\frmAboutBox1.cs" Description="File successfully backed up as C:\Users\scotto\Projects\bakerbots\Bot Manager\Backup\Program#\BotCreator\frmAboutBox1.cs">
+</Event><Event ErrorLevel="0" Project="BotGUI" Source="Program#\BotCreator\frmAboutBox1.Designer.cs" Description="File successfully backed up as C:\Users\scotto\Projects\bakerbots\Bot Manager\Backup\Program#\BotCreator\frmAboutBox1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="BotGUI" Source="Program#\BotCreator\frmClassManager.cs" Description="File successfully backed up as C:\Users\scotto\Projects\bakerbots\Bot Manager\Backup\Program#\BotCreator\frmClassManager.cs">
+</Event><Event ErrorLevel="0" Project="BotGUI" Source="Program#\BotCreator\frmClassManager.Designer.cs" Description="File successfully backed up as C:\Users\scotto\Projects\bakerbots\Bot Manager\Backup\Program#\BotCreator\frmClassManager.Designer.cs">
+</Event><Event ErrorLevel="0" Project="BotGUI" Source="Program#\BotCreator\frmCreate.cs" Description="File successfully backed up as C:\Users\scotto\Projects\bakerbots\Bot Manager\Backup\Program#\BotCreator\frmCreate.cs">
+</Event><Event ErrorLevel="0" Project="BotGUI" Source="Program#\BotCreator\frmCreate.Designer.cs" Description="File successfully backed up as C:\Users\scotto\Projects\bakerbots\Bot Manager\Backup\Program#\BotCreator\frmCreate.Designer.cs">
+</Event><Event ErrorLevel="0" Project="BotGUI" Source="Program#\BotCreator\frmEditBot.cs" Description="File successfully backed up as C:\Users\scotto\Projects\bakerbots\Bot Manager\Backup\Program#\BotCreator\frmEditBot.cs">
+</Event><Event ErrorLevel="0" Project="BotGUI" Source="Program#\BotCreator\frmEditBot.Designer.cs" Description="File successfully backed up as C:\Users\scotto\Projects\bakerbots\Bot Manager\Backup\Program#\BotCreator\frmEditBot.Designer.cs">
+</Event><Event ErrorLevel="0" Project="BotGUI" Source="Program#\BotCreator\frmNewEvent.cs" Description="File successfully backed up as C:\Users\scotto\Projects\bakerbots\Bot Manager\Backup\Program#\BotCreator\frmNewEvent.cs">
+</Event><Event ErrorLevel="0" Project="BotGUI" Source="Program#\BotCreator\frmNewEvent.Designer.cs" Description="File successfully backed up as C:\Users\scotto\Projects\bakerbots\Bot Manager\Backup\Program#\BotCreator\frmNewEvent.Designer.cs">
+</Event><Event ErrorLevel="0" Project="BotGUI" Source="Program#\BotCreator\Program.cs" Description="File successfully backed up as C:\Users\scotto\Projects\bakerbots\Bot Manager\Backup\Program#\BotCreator\Program.cs">
+</Event><Event ErrorLevel="0" Project="BotGUI" Source="Program#\BotCreator\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\scotto\Projects\bakerbots\Bot Manager\Backup\Program#\BotCreator\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="BotGUI" Source="Program#\BotCreator\Properties\Resources.Designer.cs" Description="File successfully backed up as C:\Users\scotto\Projects\bakerbots\Bot Manager\Backup\Program#\BotCreator\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="BotGUI" Source="Program#\BotCreator\Properties\Settings.Designer.cs" Description="File successfully backed up as C:\Users\scotto\Projects\bakerbots\Bot Manager\Backup\Program#\BotCreator\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="BotGUI" Source="Program#\BotCreator\BotGUI_TemporaryKey.pfx" Description="File successfully backed up as C:\Users\scotto\Projects\bakerbots\Bot Manager\Backup\Program#\BotCreator\BotGUI_TemporaryKey.pfx">
+</Event><Event ErrorLevel="0" Project="BotGUI" Source="Program#\BotCreator\Properties\Settings.settings" Description="File successfully backed up as C:\Users\scotto\Projects\bakerbots\Bot Manager\Backup\Program#\BotCreator\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="BotGUI" Source="Program#\BotCreator\formEventViewer.resx" Description="File successfully backed up as C:\Users\scotto\Projects\bakerbots\Bot Manager\Backup\Program#\BotCreator\formEventViewer.resx">
+</Event><Event ErrorLevel="0" Project="BotGUI" Source="Program#\BotCreator\frmAboutBox1.resx" Description="File successfully backed up as C:\Users\scotto\Projects\bakerbots\Bot Manager\Backup\Program#\BotCreator\frmAboutBox1.resx">
+</Event><Event ErrorLevel="0" Project="BotGUI" Source="Program#\BotCreator\frmClassManager.resx" Description="File successfully backed up as C:\Users\scotto\Projects\bakerbots\Bot Manager\Backup\Program#\BotCreator\frmClassManager.resx">
+</Event><Event ErrorLevel="0" Project="BotGUI" Source="Program#\BotCreator\frmCreate.resx" Description="File successfully backed up as C:\Users\scotto\Projects\bakerbots\Bot Manager\Backup\Program#\BotCreator\frmCreate.resx">
+</Event><Event ErrorLevel="0" Project="BotGUI" Source="Program#\BotCreator\frmEditBot.resx" Description="File successfully backed up as C:\Users\scotto\Projects\bakerbots\Bot Manager\Backup\Program#\BotCreator\frmEditBot.resx">
+</Event><Event ErrorLevel="0" Project="BotGUI" Source="Program#\BotCreator\frmNewEvent.resx" Description="File successfully backed up as C:\Users\scotto\Projects\bakerbots\Bot Manager\Backup\Program#\BotCreator\frmNewEvent.resx">
+</Event><Event ErrorLevel="0" Project="BotGUI" Source="Program#\BotCreator\Properties\Resources.resx" Description="File successfully backed up as C:\Users\scotto\Projects\bakerbots\Bot Manager\Backup\Program#\BotCreator\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="BotGUI" Source="Program#\BotCreator\BotGUI.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="BotGUI" Source="Program#\BotCreator\BotGUI.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Bot Manager.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Bot Manager.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="BotGUI" Source="Program#\BotCreator\BotGUI.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

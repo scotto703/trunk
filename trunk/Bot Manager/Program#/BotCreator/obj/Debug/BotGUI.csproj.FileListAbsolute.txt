@@ -201,3 +201,22 @@ C:\Projects\Baker Bots Repository\trunk\Bot Manager\Program#\BotCreator\obj\Debu
 C:\Projects\Baker Bots Repository\trunk\Bot Manager\Program#\BotCreator\obj\Debug\BotGUI.csproj.GenerateResource.Cache
 C:\Projects\Baker Bots Repository\trunk\Bot Manager\Program#\BotCreator\obj\Debug\BotGUI.exe.manifest
 C:\Projects\Baker Bots Repository\trunk\Bot Manager\Program#\BotCreator\obj\Debug\BotGUI.application
+C:\Users\scotto\Projects\bakerbots\Bot Manager\Program#\BotCreator\bin\Debug\BotGUI.exe.manifest
+C:\Users\scotto\Projects\bakerbots\Bot Manager\Program#\BotCreator\bin\Debug\BotGUI.application
+C:\Users\scotto\Projects\bakerbots\Bot Manager\Program#\BotCreator\bin\Debug\BotGUI.exe
+C:\Users\scotto\Projects\bakerbots\Bot Manager\Program#\BotCreator\bin\Debug\BotGUI.pdb
+C:\Users\scotto\Projects\bakerbots\Bot Manager\Program#\BotCreator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\scotto\Projects\bakerbots\Bot Manager\Program#\BotCreator\obj\Debug\BotGUI.formEventEditor.resources
+C:\Users\scotto\Projects\bakerbots\Bot Manager\Program#\BotCreator\obj\Debug\BotGUI.formEventViewer.resources
+C:\Users\scotto\Projects\bakerbots\Bot Manager\Program#\BotCreator\obj\Debug\BotGUI.frmAboutBox1.resources
+C:\Users\scotto\Projects\bakerbots\Bot Manager\Program#\BotCreator\obj\Debug\BotGUI.frmClassMngr.resources
+C:\Users\scotto\Projects\bakerbots\Bot Manager\Program#\BotCreator\obj\Debug\BotGUI.frmCreate.resources
+C:\Users\scotto\Projects\bakerbots\Bot Manager\Program#\BotCreator\obj\Debug\BotGUI.frmEditBot.resources
+C:\Users\scotto\Projects\bakerbots\Bot Manager\Program#\BotCreator\obj\Debug\BotGUI.frmNewEvent.resources
+C:\Users\scotto\Projects\bakerbots\Bot Manager\Program#\BotCreator\obj\Debug\BotGUI.Properties.Resources.resources
+C:\Users\scotto\Projects\bakerbots\Bot Manager\Program#\BotCreator\obj\Debug\ResGen.read.1.tlog
+C:\Users\scotto\Projects\bakerbots\Bot Manager\Program#\BotCreator\obj\Debug\ResGen.write.1.tlog
+C:\Users\scotto\Projects\bakerbots\Bot Manager\Program#\BotCreator\obj\Debug\BotGUI.exe.manifest
+C:\Users\scotto\Projects\bakerbots\Bot Manager\Program#\BotCreator\obj\Debug\BotGUI.application
+C:\Users\scotto\Projects\bakerbots\Bot Manager\Program#\BotCreator\obj\Debug\BotGUI.exe
+C:\Users\scotto\Projects\bakerbots\Bot Manager\Program#\BotCreator\obj\Debug\BotGUI.pdb

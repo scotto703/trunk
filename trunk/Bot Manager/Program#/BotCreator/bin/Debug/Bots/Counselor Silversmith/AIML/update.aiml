@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+  <category>
+    <pattern> Who are you and what is this place </pattern>
+    <template>
+               Hello. I am twin of Counselor South Paw. This is the Coast Guard's
+               PSSU Learning Center. This is where you can visit 24 X 7 X 365 to
+               obtain educational related information.
+    </template>
+  </category>
+  <category>
+    <pattern> Cool but do I have to be in the Coast Guard </pattern>
+    <template>
+               No, everyone is welcome here. But if you try to link to another
+               site from here that has restricted access, I will let you know.
+    </template>
+  </category>
+  <category>
+    <pattern> What information is available here </pattern>
+    <template>
+               We have links to schools; tuition assistance and financial aid
+               information to include the post 9/11 GIB link; study materials and
+               assessments to include CLEPs and language testing; discounted book
+               sales; schedule of education fairs and Try College for a Day
+               events; ideas for community projects related to education such as
+               Read to a Dog and Dr. Suess's Read Across America; and basic
+               skills development sites.
+    </template>
+  </category>
+  <category>
+    <pattern> Can we go through these one by one </pattern>
+    <template>
+               Sure, let's do that. On this board are lists of schools that are
+               very popular amongst our visitors. So let's link onto a school and
+               explore its information.
+    </template>
+  </category>
+  <category>
+    <pattern> I would like to link to Baker College </pattern>
+    <template> Alright, click on the logo for Baker College. </template>
+  </category>
+  <category>
+    <pattern> What else can I find out about here </pattern>
+    <template>
+               Well, students are always wondering if they can afford school.
+               Here we have links to the VA's site about the GI Bill, a site to
+               explore scholarships and grants possibilities, and a link to the
+               Coast Guard Institute web page on tuition assistance.
+    </template>
+  </category>
+  <category>
+    <pattern>
+              Can I check out the information on the Coast Guard Institute s site
+    </pattern>
+    <template>
+               Yes, just click on http://www.uscg.mil/hq/cgi/tag/tag.asp
+    </template>
+  </category>
+  <category>
+    <pattern>
+              Can we do this with an actual site in Second Life with an avatar or
+              a bot available there so that I could ask questions
+    </pattern>
+    <template> Yes, that would be better. What questions do you have? </template>
+  </category>
+  <category>
+    <pattern>
+              Is there information regarding tuition assistance for spouses
+    </pattern>
+    <template>
+               At the present time, spouses do not get tuition assistance, but
+               several schools will discount tuition, especially if the active
+               duty member takes classes, too. Coast Guard spouses may also CLEP
+               for free, which is a nice way to accumulate some college credit.
+    </template>
+  </category>
+  <category>
+    <pattern> Is there a site for CLEP </pattern>
+    <template>
+               Sure, it's right here under DANTES information. Try clicking on
+               its link.
+               http://www.dantes.doded.mil/dantes_web/examinations/CLEP.htm
+    </template>
+  </category>
+  <category>
+    <pattern> How was that site </pattern>
+    <template>
+               Interesting, but I would definitely have to study before I could
+               pass some of those exams.
+    </template>
+  </category>
+  <category>
+    <pattern>
+              We also have study materials here would you like to take a peek at
+              a practise test
+    </pattern>
+    <template> Not today, thanks. </template>
+  </category>
+  <category>
+    <pattern> Where would I find a practice test if I return tomorrow </pattern>
+    <template>
+               In case I am not here, you will find the link to study materials
+               here on this wall. For example, try clicking here to find a link
+               to a practice exam for American Government:
+               http://www.clepexampracticetests.com/american-govt.html
+    </template>
+  </category>
+  <category>
+    <pattern>
+              I think this is the coolest site in Second Life, I am going to
+              tell all my friends about it and I will definitely be back
+    </pattern>
+    <template> Awesome. Education is the Key! </template>
+  </category>
+  <category>
+    <pattern> Bye Twin of Southpaw </pattern>
+    <template> Bye-bye. See you tomorrow. </template>
+  </category>
+</aiml>
+      

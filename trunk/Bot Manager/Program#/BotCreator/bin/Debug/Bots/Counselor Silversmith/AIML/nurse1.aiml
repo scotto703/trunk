@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<aiml>
+<!--author: Jennifer-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V2.1.0.30883-->
+<category>
+	<pattern>19*</pattern><that>When did you have the heart attack?</that>
+	<template>Did you have surgery?</template>
+</category>
+<category>
+	<pattern>ALRIGHT</pattern>
+	<template>Do you smoke?</template>
+</category>
+<category>
+	<pattern>BYE</pattern>
+	<template><srai>GOODBYE</srai></template>
+</category>
+<category>
+	<pattern>BYE *</pattern>
+	<template><srai>GOODBYE</srai></template>
+</category>
+<category>
+	<pattern>GOODBYE</pattern>
+	<template>GOODBYE! NICE MEETING YOU!</template>
+</category>
+<category>
+	<pattern>GOODBYE *</pattern>
+	<template><srai>GOODBYE</srai></template>
+</category>
+<category>
+	<pattern>HELLO</pattern>
+	<template>Hello, My name is Jessica and I will be your nurse today! Let's start with a brief history, Ok?</template>
+</category>
+<category>
+	<pattern>HELLO *</pattern>
+	<template><srai>HELLO</srai></template>
+</category>
+<category>
+	<pattern>HEY</pattern>
+	<template><srai>HELLO</srai></template>
+</category>
+<category>
+	<pattern>HEY *</pattern>
+	<template><srai>HELLO</srai></template>
+</category>
+<category>
+	<pattern>HI</pattern>
+	<template><srai>HELLO</srai></template>
+</category>
+<category>
+	<pattern>HI *</pattern>
+	<template><srai>HELLO</srai></template>
+</category>
+<category>
+	<pattern>HOWDY</pattern>
+	<template><srai>HELLO</srai></template>
+</category>
+<category>
+	<pattern>I *</pattern><that>Do you still have cancer or is it in remission?</that>
+	<template>Have you ever had a heart attack?</template>
+</category>
+<category>
+	<pattern>MARIJUANA</pattern><that>What drugs do you use?</that>
+	<template>Have you ever been diagnosed with any type of cancer?</template>
+</category>
+<category>
+	<pattern>MY *</pattern><that>Who had the heart attack?</that>
+	<template>Are you currently taking any medications prescribed by a doctor?</template>
+</category>
+<category>
+	<pattern>MY *</pattern><that>Who was it?</that>
+	<template>Have you ever had a heart attack?</template>
+</category>
+<category>
+	<pattern>NO</pattern><that>Have you ever been diagnosed with any type of cancer?</that>
+	<template>Has anyone in your family had cancer?</template>
+</category>
+<category>
+	<pattern>NO</pattern><that>Do you drink alcoholic beverages?</that>
+	<template>Do you currently use drugs? Don't worry, all information is confidential.</template>
+</category>
+<category>
+	<pattern>NO</pattern><that>Do you currently use drugs? Don't worry, all information is confidential.</that>
+	<template>Have you ever been diagnosed with any type of cancer?</template>
+</category>
+<category>
+	<pattern>NO</pattern><that>Do you smoke?</that>
+	<template>Do you drink alcoholic beverages?</template>
+</category>
+<category>
+	<pattern>NO</pattern><that>Has anyone in your family had one?</that>
+	<template>Are you currently taking any medications prescribed by a doctor?</template>
+</category>
+<category>
+	<pattern>NO</pattern><that>Have you ever had a heart attack?</that>
+	<template>Has anyone in your family had one?</template>
+</category>
+<category>
+	<pattern>NO *</pattern><that>Have you ever had a heart attack?</that>
+	<template>Has anyone in your family had one?</template>
+</category>
+<category>
+	<pattern>NO *</pattern><that>Do you currently use drugs? Don't worry, all information is confidential.</that>
+	<template>Have you ever been diagnosed with any type of cancer?</template>
+</category>
+<category>
+	<pattern>NO *</pattern><that>Has anyone in your family had one?</that>
+	<template>Are you currently taking any medications prescribed by a doctor?</template>
+</category>
+<category>
+	<pattern>NO *</pattern><that>Do you smoke?</that>
+	<template><srai>YES</srai></template>
+</category>
+<category>
+	<pattern>NO *</pattern><that>Do you drink alcoholic beverages?</that>
+	<template>Do you currently use drugs? Don't worry, all information is confidential.</template>
+</category>
+<category>
+	<pattern>NO *</pattern><that>Have you ever been diagnosed with any type of cancer?</that>
+	<template>Has anyone in your family had cancer?</template>
+</category>
+<category>
+	<pattern>OK</pattern>
+	<template>Do you smoke?</template>
+</category>
+<category>
+	<pattern>OKAY</pattern>
+	<template>Do you smoke?</template>
+</category>
+<category>
+	<pattern>ONCE *</pattern><that>How often do you drink?</that>
+	<template>Do you currently use drugs? Don't worry, all information is confidential.</template>
+</category>
+<category>
+	<pattern>RARELY</pattern><that>Do you currently use drugs? Don't worry, all information is confidential.</that>
+	<template>What drugs do you use?</template>
+</category>
+<category>
+	<pattern>RARELY</pattern><that>Do you drink alcoholic beverages?</that>
+	<template>Do you currently use drugs? Don't worry, all information is confidential.</template>
+</category>
+<category>
+	<pattern>SHOOT</pattern>
+	<template>Do you smoke?</template>
+</category>
+<category>
+	<pattern>SOMETIMES</pattern><that>Do you drink alcoholic beverages?</that>
+	<template>Do you currently use drugs? Don't worry, all information is confidential.</template>
+</category>
+<category>
+	<pattern>SOMETIMES</pattern><that>Do you currently use drugs? Don't worry, all information is confidential.</that>
+	<template>What drugs do you use?</template>
+</category>
+<category>
+	<pattern>SOMETIMES</pattern><that>How often do you drink?</that>
+	<template>Do you currently use drugs? Don't worry, all information is confidential.</template>
+</category>
+<category>
+	<pattern>SURE</pattern>
+	<template>Do you smoke?</template>
+</category>
+<category>
+	<pattern>YES</pattern><that>Has anyone in your family had one?</that>
+	<template>Who had the heart attack?</template>
+</category>
+<category>
+	<pattern>YES</pattern><that>Do you currently use drugs? Don't worry, all information is confidential.</that>
+	<template>What drugs do you use?</template>
+</category>
+<category>
+	<pattern>YES</pattern><that>Have you ever had a heart attack?</that>
+	<template>When did you have the heart attack?</template>
+</category>
+<category>
+	<pattern>YES</pattern><that>Have you ever been diagnosed with any type of cancer?</that>
+	<template>Do you still have cancer or is it in remission?</template>
+</category>
+<category>
+	<pattern>YES</pattern><that>Do you drink alcoholic beverages?</that>
+	<template>How often do you drink?</template>
+</category>
+<category>
+	<pattern>YES</pattern><that>Has anyone in your family had cancer?</that>
+	<template>Who was it?</template>
+</category>
+<category>
+	<pattern>YES</pattern><that>Do you smoke?</that>
+	<template>Do you drink alcoholic beverages?</template>
+</category>
+<category>
+	<pattern>YES *</pattern><that>Have you ever been diagnosed with any type of cancer?</that>
+	<template>Do you still have cancer or is it in remission?</template>
+</category>
+<category>
+	<pattern>YES *</pattern><that>Do you drink alcoholic beverages?</that>
+	<template>How often do you drink?</template>
+</category>
+<category>
+	<pattern>YES *</pattern><that>Has anyone in your family had cancer?</that>
+	<template>Have you ever had a heart attack?</template>
+</category>
+<category>
+	<pattern>YES *</pattern><that>Has anyone in your family had one?</that>
+	<template>Are you currently taking any medications prescribed by a doctor?</template>
+</category>
+<category>
+	<pattern>YES *</pattern><that>Do you currently use drugs? Don't worry, all information is confidential.</that>
+	<template>What drugs do you use?</template>
+</category>
+<category>
+	<pattern>YES *</pattern><that>Have you ever had a heart attack?</that>
+	<template>When did you have the heart attack?</template>
+</category>
+<category>
+	<pattern>YES *</pattern><that>Do you smoke?</that>
+	<template>Do you drink alcoholic beverages?</template>
+</category>
+</aiml>

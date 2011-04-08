@@ -1,0 +1,52 @@
+LLWearable version 22
+Business - Caucasian - Adam n Eve Skins
+
+	permissions 0
+	{
+		base_mask	7fffffff
+		owner_mask	7fffffff
+		group_mask	00000000
+		everyone_mask	00000000
+		next_owner_mask	0008e000
+		creator_id	ef5ac61a-72b0-48a6-843f-adb506d7ba86
+		owner_id	ef5ac61a-72b0-48a6-843f-adb506d7ba86
+		last_owner_id	ef5ac61a-72b0-48a6-843f-adb506d7ba86
+		group_id	00000000-0000-0000-0000-000000000000
+	}
+	sale_info	0
+	{
+		sale_type	not
+		sale_price	10
+	}
+type 1
+parameters 26
+108 0
+110 0
+111 .45
+116 0
+117 0
+150 0
+162 0
+163 0
+165 0
+700 .25
+701 0
+702 0
+703 0
+704 0
+705 .5
+706 .6
+707 0
+708 0
+709 0
+710 0
+711 .5
+712 0
+713 .7
+714 0
+715 0
+775 0
+textures 3
+0 084cc266-06f8-ab3a-1840-7e29dbbf9478
+5 5767793d-35ae-2e25-b1a4-fa74390047aa
+6 3df77ca2-7144-4d04-e3a0-1e4c2089544a
