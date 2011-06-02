@@ -25,17 +25,39 @@ namespace BotGUI
 {
     class BotEventEditor
     {
+        /// <summary>
+        /// Name of the bot
+        /// </summary>
         string bot;
+        /// <summary>
+        /// Event xml document
+        /// </summary>
         XmlDocument eventDoc;
+        /// <summary>
+        /// Path or location of the event xml document
+        /// </summary>
         string eventLoc;
+        /// <summary>
+        /// List of events that the bot may perform
+        /// </summary>
         public List<Event> eventList;
+        /// <summary>
+        /// Action writer instance for writing to the event xml
+        /// </summary>
         BotActionWriter actionWriter;
+        /// <summary>
+        /// Chat writer instance for writing to the event xml
+        /// </summary>
         BotChatWriter chatWriter;
+        /// <summary>
+        /// Move writer instance for writing to the event xml
+        /// </summary>
         BotMoveWriter moveWriter;
 
-        //
-        //load event xml file
-        //
+        /// <summary>
+        /// load event xml file
+        /// </summary>
+        /// <param name="botName">String of the bot's name</param>
         public void loadBotEvents(string botName)
         {
             try
@@ -55,9 +77,10 @@ namespace BotGUI
             }
         }
 
-        //
-        //Return the event number and description of an especific event
-        //
+        /// <summary>
+        /// Return the event number and description of an especific event
+        /// </summary>
+        /// <param name="eventID">Integer that is the event number</param>
         public string getEventInfo(int eventID)
         {
             string eventInfo;
@@ -66,10 +89,11 @@ namespace BotGUI
             return eventInfo;
         }
 
-
-        //
-        //Return a TreeNode containing an event
-        //
+        /// <summary>
+        /// Return a TreeNode containing an event
+        /// </summary>
+        /// <param name="eventID">Integer that is the event number</param>
+        /// <param name="tree">Treeview</param>
         public TreeNode getEventNodes(int eventID, TreeView tree)
         {
             TreeNode node;
@@ -128,16 +152,27 @@ namespace BotGUI
                         node.Nodes[0].Nodes.Add("BotAction: Sleep Bot " + act.getTimeSleep() + " (milliseconds)");
                         node.Nodes[0].Nodes[i++].ForeColor = System.Drawing.Color.Crimson;
                         break;
+
+                    case "fly":
+                        node.Nodes[0].Nodes.Add("BotAction: Fly/Land ");
+                        node.Nodes[0].Nodes[i++].ForeColor = System.Drawing.Color.Crimson;
+                        break;
+
+                    case "clickObject":
+                        node.Nodes[0].Nodes.Add("BotAction: Click on object: " + act.getLocalID());
+                        node.Nodes[0].Nodes[i++].ForeColor = System.Drawing.Color.Crimson;
+                        break;
                 }
             }
 
             return node;
         }
 
-        //
-        //Edit a current event with a new event
-        //The new event keeps the same event ID as the previous event
-        //
+        /// <summary>
+        /// Edit a current event with a new event
+        /// The new event keeps the same event ID as the previous event
+        /// </summary>
+        /// <param name="newEvent">Event that is the new event</param>
         public void editEvent(Event newEvent)
         {
             for (int i = 0; i < eventList.Count; i++)
@@ -149,9 +184,10 @@ namespace BotGUI
             }
         }
 
-        //
-        //Insert an event before the selected event
-        //
+        /// <summary>
+        /// Insert an event before the selected event
+        /// </summary>
+        /// <param name="newEvent">Event that is the new event</param>
         public void insertEvent(Event newEvent)
         {
             if (newEvent.getEventID() < eventList.Count)
@@ -168,9 +204,10 @@ namespace BotGUI
             }
         }
 
-        //
-        //Add a new Event at the bottom of an event list
-        //
+        /// <summary>
+        /// Add a new Event at the bottom of an event list
+        /// </summary>
+        /// <param name="newEvent">Event that is the new event</param>
         public void addEvent(Event newEvent)
         {
             bool isRepeted = false;
@@ -188,17 +225,18 @@ namespace BotGUI
                 eventList.Add(newEvent);
         }
 
-        //
-        //Remove te especified event from the event List
-        //
+        /// <summary>
+        /// Remove the specified event from the event List
+        /// </summary>
+        /// <param name="newEvent">Integer that is the event ID</param>
         public void removeEvent(int eventID)
         {
             eventList.RemoveAt(eventID);
         }
 
-        //
-        //create the events.xml file based on the list of events "eventList<Event>"
-        //
+        /// <summary>
+        /// Create the events.xml file based on the list of events "eventList<Event>"
+        /// </summary>
         public void saveXmlFile()
         {
             FileStream fs;
@@ -290,15 +328,23 @@ namespace BotGUI
                         case "stopThread":
                             actionWriter.WriteStopThreadActionToXml(n.getTimeSleep(), n.getTime());
                             break;
+
+                        case "fly":
+                            actionWriter.WriteFlyActionToXml();
+                            break;
+
+                        case "clickObject":
+                            actionWriter.WriteClickObjectActionToXml(n.getLocalID());
+                            break;
                     }
                 }
             }
         }
 
 
-        //
-        //load events from xml to List<Event> eventList
-        //
+        /// <summary>
+        /// Load events from xml to List<Event> eventList
+        /// </summary>
         private void loadEventList()
         {
             eventList = new List<Event>();
@@ -335,6 +381,7 @@ namespace BotGUI
                         double yVal = 0;
                         double zVal = 0;
                         string uuid = "";
+                        uint localID = 0;
                         string iItem = "";
                         string aPoint = "";
                         int sleepTime = 0;
@@ -391,6 +438,8 @@ namespace BotGUI
                                             actionType = Int32.Parse(node1.InnerText);
                                         else if (node1.Name == "UUID")
                                             uuid = node1.InnerText;
+                                        else if (node1.Name == "localID")
+                                            localID = uint.Parse(node1.InnerText);
                                         else if (node1.Name == "InvItem")
                                             iItem = node1.InnerText;
                                         else if (node1.Name == "AttachPoint")
@@ -412,7 +461,7 @@ namespace BotGUI
                                     break;
                                 }
                         }
-                        Node newNode = new Node(actionType, sleepTime, timer, xVal, yVal, zVal, region, chat, uuid, iItem, aPoint);
+                        Node newNode = new Node(actionType, sleepTime, timer, xVal, yVal, zVal, region, chat, uuid, localID, iItem, aPoint);
                         listNodes.Add(newNode);
                     }
 
@@ -469,6 +518,7 @@ namespace BotGUI
         string action;
         int actionType;
         string UUID;
+        uint localID;
         string invItem;
         string attachPT;
         int timeSleep;
@@ -477,7 +527,7 @@ namespace BotGUI
         string region;
         string chat;
 
-        public Node(int nActionType, int nTimeSleep, int nTime, double nX, double nY, double nZ, string nRegion, string nChat, string nUUID, string nInvItem, string nAttachPT)
+        public Node(int nActionType, int nTimeSleep, int nTime, double nX, double nY, double nZ, string nRegion, string nChat, string nUUID, uint nLocalID, string nInvItem, string nAttachPT)
         {
             actionType = nActionType;
             timeSleep = nTimeSleep;
@@ -489,6 +539,7 @@ namespace BotGUI
             chat = nChat;
             action = "";
             UUID = nUUID;
+            localID = nLocalID;
             invItem = nInvItem;
             attachPT = nAttachPT;
 
@@ -529,6 +580,12 @@ namespace BotGUI
                         break;
                     case 6:
                         this.action = "stopThread";
+                        break;
+                    case 7:
+                        this.action = "fly";
+                        break;
+                    case 8:
+                        this.action = "clickObject";
                         break;
                 }
             }
@@ -632,6 +689,16 @@ namespace BotGUI
         public void setUUID(string nUUID)
         {
             UUID = nUUID;
+        }
+
+        public uint getLocalID()
+        {
+            return localID;
+        }
+
+        public void setLocalID(uint nLocalID)
+        {
+            localID = nLocalID;
         }
 
         public string getItemInv()

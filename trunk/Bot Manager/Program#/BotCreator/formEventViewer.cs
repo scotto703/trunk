@@ -27,6 +27,9 @@ namespace BotGUI
 {
     public partial class formEventViewer : Form
     {
+        /// <summary>
+        /// Form constructor
+        /// </summary>
         public formEventViewer()
         {
             InitializeComponent();
@@ -34,6 +37,9 @@ namespace BotGUI
             comboBox1.SelectedIndex = 0;
         }
 
+        /// <summary>
+        /// Retrieves the names of all bots and adds them to a combo box
+        /// </summary>
         private void GetBotList()
         {
             string BotName;
@@ -62,11 +68,18 @@ namespace BotGUI
             }
         }
 
+        /// <summary>
+        /// Builds the string that displays a bot action
+        /// Used on the combobox index change
+        /// </summary>
+        /// <param name="childnode">XmlNode with a createAction tag</param>
+        /// <returns>Returns a string of the results or returns error</returns>
         private string ProcessBotActionNode(XmlNode childnode)
         {
             foreach (XmlNode node in childnode.ChildNodes)
             {
                 string UUID = null;
+                string localID = null;
                 string invItem = null;
                 string attachPT = null;
                 string vectorCoord = null;
@@ -84,6 +97,8 @@ namespace BotGUI
                         //
                         if (innerNodes.Name == "UUID")
                             UUID = innerNodes.InnerText;
+                        else if (innerNodes.Name == "localID")
+                            localID = innerNodes.InnerText;
                         else if (innerNodes.Name == "InvItem")
                             invItem = innerNodes.InnerText;
                         else if (innerNodes.Name == "AttachPoint")
@@ -107,6 +122,8 @@ namespace BotGUI
 
                     if (UUID != null)
                         output += " UUID: " + UUID;
+                    if (localID != null)
+                        output += " Local ID: " + localID;
                     if (invItem != null)
                         output += " Inventory Item: " + invItem;
                     if (attachPT != null)
@@ -129,6 +146,11 @@ namespace BotGUI
             return "Error";
         }
 
+        /// <summary>
+        /// Used by ProcessBotActionNode for an actionType
+        /// </summary>
+        /// <param name="p">Action event number</param>
+        /// <returns>Returns name of the action or an error</returns>
         private string processActionType(string p)
         {
             string actionName;
@@ -153,11 +175,22 @@ namespace BotGUI
                 case "6":
                     actionName = "Sleep Bot";
                     return actionName;
+                case "7":
+                    actionName = "Fly/Land";
+                    return actionName;
+                case "8":
+                    actionName = "Click on object";
+                    return actionName;
                 default:
                     return "Error";
             }
         }
 
+        /// <summary>
+        /// Reads the vector node and returns the three numbers as a string
+        /// </summary>
+        /// <param name="cnode">Node with the vector</param>
+        /// <returns>Returns vector as a string or an error</returns>
         private string GetVectorAsString(XmlNode cnode)
         {
             XmlNodeList vector = cnode.ChildNodes;
@@ -177,6 +210,10 @@ namespace BotGUI
             return "Error";
         }
 
+        /// <summary>
+        /// When the combo box displaying each bot name is set to a different bot
+        /// update the event list to show the events of that bot 
+        /// </summary>
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             //
@@ -262,7 +299,10 @@ namespace BotGUI
                 editBtn.Enabled = false;
             }
         }
-
+        /// <summary>
+        /// When a different event from the event list is selected update
+        /// the details in the event textbox to reflect the new event
+        /// </summary>
         private void eventListLB_SelectedIndexChanged(object sender, EventArgs e)
         {
             treeView1.Nodes.Clear();
@@ -310,12 +350,11 @@ namespace BotGUI
                                     eventNode.Text = "BotAction: " + ProcessBotActionNode(childnode);
                                     eventNode.ForeColor = System.Drawing.Color.Crimson;
                                 }
-                                else if (childnode.Name == "Chat")
+                                else if (childnode.Name == "chat")
                                 {
                                     eventNode.Text = "BotChat: " + childnode.InnerText;
                                     eventNode.ForeColor = System.Drawing.Color.Blue;
                                 }
-
                                 eventIDNode.Nodes.Add(eventNode);
                             }
                         }
@@ -329,6 +368,10 @@ namespace BotGUI
             }
         }
 
+        /// <summary>
+        /// Loads the AIML trigger question from the questions.xml to that of the currently
+        /// selected event
+        /// </summary>
         private void displayAIMLTriggerQuestions(int selectedNodeID)
         {
             selectedNodeID = eventListLB.SelectedIndex;

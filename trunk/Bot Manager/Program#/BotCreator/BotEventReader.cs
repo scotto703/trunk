@@ -16,27 +16,103 @@ using System.Text;
 using System.IO;
 using System.Xml;
 using OpenMetaverse;
+using System.Threading;
 
 namespace BotGUI
 {
     class BotEventReader
     {
         #region Attributes
+        /// <summary>
+        /// Client of the bot to manipulate
+        /// </summary>
         private GridClient client;
+        /// <summary>
+        /// Handles the movement events of the bot
+        /// </summary>
         private BotMove botMovement;
+        /// <summary>
+        /// Handles actions of the bot
+        /// </summary>
         private BotAction action;
+        /// <summary>
+        /// Handles chatting from the bot
+        /// </summary>
         private BotChat chat;
+        /// <summary>
+        /// Path to the events.xml
+        /// </summary>
         private string eventFilePath;
+        /// <summary>
+        /// Path to the questions.xml
+        /// </summary>
         private string questionsPath;
-        private List<questionsAndEvents> movementQuestions = new List<questionsAndEvents>();        
+        /// <summary>
+        /// List of question and event pairs
+        /// </summary>
+        private List<questionsAndEvents> movementQuestions = new List<questionsAndEvents>();
+        /// <summary>
+        /// Construct that pairs a question and an event
+        /// </summary>
         private struct questionsAndEvents
         {
             public string question;
             public int eventID;
-        }           
+        }
+        //The event pause and exit variable in this class are not in use because they are
+        //at this time not necessary. The behavior that they may affect is not an issue
+        //or are rarely enough of an issue to require their use. The pause variable
+        //in BotMove is required in pausing the looping event of a bot.
+        /// <summary>
+        /// Will pause a loop in the event reader when set to true, currently commented out
+        /// </summary>
+        private bool eventPaused = false;
+        /// <summary>
+        /// Will exit a loop in the event reader when set to true, currently not used
+        /// </summary>
+        private bool eventExited = false;
+        /// <summary>
+        /// True to pause the event managed by this reader
+        /// false to resume an event
+        /// </summary>
+        public bool pauseEvent
+        {
+            get
+            {
+                return eventPaused;
+            }
+            set
+            {
+                botMovement.pauseMove = value;
+                eventPaused = value;
+            }
+        }
+        /// <summary>
+        /// True to exit and ignore events managed by this reader
+        /// false to allow the reader to resume handling events
+        /// currently untested and unused
+        /// </summary>
+        public bool exitEvent
+        {
+            get
+            {
+                return eventExited;
+            }
+            set
+            {
+                botMovement.exitMove = value;
+                eventExited = value;
+            }
+        }   
+
         #endregion
 
         #region Constructor
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="client">GridClient that is the client of the bot</param>
+        /// <param name="name">String that is the name of the bot</param>
         public BotEventReader(GridClient client, string name)
         {
             this.client = client; 
@@ -148,7 +224,7 @@ namespace BotGUI
                     switch (reader.NodeType)
                     {
                         case XmlNodeType.Element:
-                            if (reader.Name == "event")
+                            if (reader.Name == "event" && !reader.IsEmptyElement)
                             {
                                 while (reader.MoveToNextAttribute())
                                 {
@@ -196,25 +272,30 @@ namespace BotGUI
         {
             bool eventLoaded = false;
 
-            while (reader.Read() && !eventLoaded)
-            {                
-                switch (reader.NodeType)
-                {
-                    case XmlNodeType.Element:
-                        if (reader.Name == "movement")
-                            loadBotMoveMethod(reader);
-                        else if (reader.Name == "action")
-                            loadBotActionMethod(reader);
-                        else if (reader.Name == "chat")
-                            chat.loadChat(reader);                                          
-                        break;
+            while (reader.Read() && !eventLoaded && !eventExited)
+            {
+                //if (eventPaused)
+                //    Thread.Sleep(1000);
+                //else
+                //{
+                    switch (reader.NodeType)
+                    {
+                        case XmlNodeType.Element:
+                            if (reader.Name == "movement")
+                                loadBotMoveMethod(reader);
+                            else if (reader.Name == "action")
+                                loadBotActionMethod(reader);
+                            else if (reader.Name == "chat")
+                                chat.loadChat(reader);
+                            break;
 
-                    case XmlNodeType.EndElement:
-                        // End of event. Close the file.
-                        if (reader.Name == "event")                       
-                            eventLoaded = true;                        
-                        break;
-                }
+                        case XmlNodeType.EndElement:
+                            // End of event. Close the file.
+                            if (reader.Name == "event")
+                                eventLoaded = true;
+                            break;
+                    }
+                //}
             }
         }
 
@@ -335,6 +416,12 @@ namespace BotGUI
                                         {
                                             reader.Read();
                                             action.setUUID(new UUID(reader.Value));
+                                        }
+                                        if (reader.Name == "localID")
+                                        {
+                                            reader.Read();
+                                            uint tmpLocalID = uint.Parse(reader.Value);
+                                            action.setLocalID(tmpLocalID);
                                         }
                                         else if (reader.Name == "InvItem")
                                         {

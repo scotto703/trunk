@@ -9,15 +9,31 @@ namespace BotGUI
     class BotMoveWriter
     {
         #region Attributes
-
+        /// <summary>
+        /// Xml doument the writer will write to
+        /// </summary>
         XmlDocument XmlDoc;
+
+        /// <summary>
+        /// The number identifying the event
+        /// </summary>
         int eventNumber;
+
+        /// <summary>
+        /// The name of the bot
+        /// </summary>
         string botName;
 
         #endregion
 
         #region Constructor
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="XmlFile">XmlDocument that is the document to write to</param>
+        /// <param name="eventNum">Integer that is the number identifying the event</param>
+        /// <param name="name">String that is the name of the bot</param>
         public BotMoveWriter(XmlDocument XmlFile, int eventNum, string name)
         {
             this.XmlDoc = XmlFile;
@@ -29,6 +45,12 @@ namespace BotGUI
 
         #region Methods
 
+        /// <summary>
+        /// Writes a movement event to the xml this writer is assigned to
+        /// </summary>
+        /// <param name="x">Double that is the x of a vector</param>
+        /// <param name="y">Double that is the y of a vector</param>
+        /// <param name="z">Double that is the z of a vector</param>
         public void WriteWalkToXml(double x, double y, double z)
         {
             try
@@ -71,6 +93,13 @@ namespace BotGUI
             }
         }
 
+        /// <summary>
+        /// Writes a teleport event to the xml this writer is assigned to
+        /// </summary>
+        /// <param name="location">String that is the region name</param>
+        /// <param name="x">Double that is the x of a vector</param>
+        /// <param name="y">Double that is the y of a vector</param>
+        /// <param name="z">Double that is the z of a vector</param>
         public void WriteTeleportToXml(string location, double x, double y, double z)
         {
             try
@@ -124,6 +153,10 @@ namespace BotGUI
 
         }
 
+        /// <summary>
+        /// Sets the event ID of the writer
+        /// </summary>
+        /// <param name="nID">Integer that is the event ID</param>
         public void setEventId(int nID)
         {
             this.eventNumber = nID;

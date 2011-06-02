@@ -172,9 +172,11 @@
             "chat",
             "lookAt",
             "sit",
+            "stand",
             "stopThread",
             "teleport",
-            "moveTo"});
+            "moveTo",
+            "fly"});
             this.cbo_actionList.Location = new System.Drawing.Point(74, 19);
             this.cbo_actionList.Name = "cbo_actionList";
             this.cbo_actionList.Size = new System.Drawing.Size(217, 21);

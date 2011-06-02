@@ -21,28 +21,49 @@ namespace BotGUI
     public class BotAction
     {
         #region Attributes
-        //make grid a GridClient from OM library
+        /// <summary>
+        ///  make grid a GridClient from OM library
+        /// </summary>
         private GridClient grid;
 
-        //declare item as an InventoryItem from OM library
+        /// <summary>
+        /// declare item as an InventoryItem from OM library
+        /// </summary>
         private InventoryItem item;
 
-        //declare atchPoint as a Vector3 AttachmentPoint from OM library
+        /// <summary>
+        /// declare atchPoint as a Vector3 AttachmentPoint from OM library
+        /// </summary>
         private AttachmentPoint atchPoint;
 
-        //declare counter as a timer for timer events
+        /// <summary>
+        /// declare counter as a timer for timer events
+        /// </summary>
         private System.Timers.Timer counter = new System.Timers.Timer();              
 
-        //declare targetUUID as UUID object from OM library
+        /// <summary>
+        /// declare targetUUID as UUID object from OM library
+        /// </summary>
         private UUID targetUUID;
 
-        //declare a Vector3 location for object or position
+        /// <summary>
+        /// declare targetLocalID as an unsigned int that represent the local id of the object
+        /// </summary>
+        private uint targetLocalID;
+
+        /// <summary>
+        /// declare a Vector3 location for object or position
+        /// </summary>
         private Vector3 objOrPosition;
 
-        // integer to hold amount of time for thread to sleep
+        /// <summary>
+        /// integer to hold amount of time for thread to sleep
+        /// </summary>
         private int time;
 
-        // flag to determine if stopThread uses a random number
+        /// <summary>
+        ///  flag to determine if stopThread uses a random number
+        /// </summary>
         private bool random = false;
         #endregion
 
@@ -58,37 +79,64 @@ namespace BotGUI
         #endregion
 
         #region setMethods
-        //function to set the targetUUID for use by OM functions
+        /// <summary>
+        /// function to set the targetUUID for use by OM functions
+        /// </summary>
+        /// <param name="aUUID">Unique ID</param>
         public void setUUID(UUID aUUID)
         {
             targetUUID = aUUID;
         }
 
-        //function to set objOrPosition Vector3 variable for use by OM functions
+        /// <summary>
+        /// function to set the targetLocalID for use by OM functions
+        /// </summary>
+        /// <param name="aUUID">Unique ID</param>
+        public void setLocalID(uint lID)
+        {
+            targetLocalID = lID;
+        }
+
+        /// <summary>
+        /// function to set objOrPosition Vector3 variable for use by OM functions
+        /// </summary>
+        /// <param name="posObj">Vector3 object position</param>
         public void setVector3(Vector3 posObj)
         {
             objOrPosition = posObj;
         }
 
-        //function to set the item UUID for use by OM functions
+        /// <summary>
+        /// function to set the item UUID for use by OM functions
+        /// </summary>
+        /// <param name="aUUID">Unique ID</param>
         public void setInvItem(InventoryItem aUUID)
         {
             item = aUUID;
         }
 
-        //function to set the Vector3 atchPoint for use by OM functions
+        /// <summary>
+        /// function to set the Vector3 atchPoint for use by OM functions
+        /// </summary>
+        /// <param name="aUUID">Unique ID</param>
         public void setAtchPoint(AttachmentPoint aUUID)
         {
             atchPoint = aUUID;
         }
 
-        // sets the time integer
+        /// <summary>
+        /// sets the time integer
+        /// </summary>
+        /// <param name="lengthOfTime">Integer in millimeters</param>
         public void setTime(int lengthOfTime)
         {
             time = lengthOfTime;
         }
 
-        // sets the random boolean flag
+        /// <summary>
+        /// sets the random boolean flag
+        /// </summary>
+        /// <param name="value">Boolean value</param>
         public void setRandom(bool value)
         {
             random = value;
@@ -96,7 +144,11 @@ namespace BotGUI
         #endregion
 
         #region ActionMethods
-        //function call to cause the bot to perform an action
+        /// <summary>
+        /// function call to cause the bot to perform an action
+        /// </summary>
+        /// <param name="ActionType">Integer that denotes the action to be performed</param>
+        /// <param name="time">Integer length of time in milliseconds that is used for the animation event interval</param>
         public void createAction(int ActionType, int time)
         {
             //switch statement to decide which action to perform
@@ -135,12 +187,22 @@ namespace BotGUI
                 case 6:
                     stopThread();
                     break;
+                // case 7 is used to make the bot fly, or to land if it is already flying
+                case 7:
+                    toggleFly();
+                    break;
+                // case 8 is used to make the bot click on an object
+                case 8:
+                    clickObject(targetLocalID);
+                    break;
             }
         }
 
-        // Overloaded stopThread that uses a random amount of time between
-        // 2 and 10 minutes
-        // stops the thread for a given amount of time (1000 = 1 sec)
+        /// <summary>
+        /// Overloaded stopThread that uses a random amount of time between
+        /// 2 and 10 minutes
+        /// stops the thread for a given amount of time (1000 = 1 sec)
+        /// </summary>
         private void stopThread()
         {
             // generate random wait time if selected
@@ -161,52 +223,108 @@ namespace BotGUI
             this.setTime(0);         
         }       
 
-        //function to make the bot look in the direction specified
+        /// <summary>
+        /// function to make the bot look in the direction specified
+        /// </summary>
+        /// <param name="pos">Vector3 position of the location to look at</param>
         private void lookAt(Vector3 pos)
         {
             grid.Self.Movement.TurnToward(pos);            
         }
 
-        //function to start the animation specified, requires animation UUID
-        //which is listed in the Animations library in OM, also needs a boolean
-        //to say whether actions needs to be done or not based on communication
-        //to the bot
+        /// <summary>
+        /// function to start the animation specified, requires animation UUID
+        /// which is listed in the Animations library in OM, also needs a boolean
+        /// to say whether actions needs to be done or not based on communication
+        /// to the bot
+        /// </summary>
+        /// <param name="aUUID">Unique ID of the action to be performed</param>
+        /// <param name="b">Boolean stating to ensure if this works or not</param>
         private void animationStart(UUID aUUID, Boolean b)
         {
             grid.Self.AnimationStart(aUUID, b);
         }
 
-        //function to stop animation that the bot is performing, requires animation UUID
-        //which is listed in the Animation library in OM, also needs a boolean 
-        //to say whether communication needs to go to the bot or if it can fail
+        
+        /// <summary>
+        /// function to stop animation that the bot is performing, requires animation UUID
+        /// which is listed in the Animation library in OM, also needs a boolean 
+        /// to say whether communication needs to go to the bot or if it can fail
+        /// </summary>
+        /// <param name="aUUID">Unique ID of the action to be performed</param>
+        /// <param name="b">Boolean stating to ensure if this works or not</param>
         private void animationStop(UUID aUUID, Boolean b)
         {
             grid.Self.AnimationStop(aUUID, b);
         }
 
-        //function to tell the bot to sit on an object, requires UUID of object
-        //and Vector3
+        
+        /// <summary>
+        /// function to tell the bot to sit on an object, requires UUID of object
+        /// and Vector3
+        /// </summary>
+        /// <param name="aUUID">Unique ID of the object to sit on</param>
+        /// <param name="obj">Vector3 location of the object</param>
         private void sit(UUID aUUID, Vector3 obj)
         {
             grid.Self.RequestSit(aUUID, obj);
             grid.Self.Sit();
         }
 
-        //function to tell the bot to stand
+        
+        /// <summary>
+        /// function to tell the bot to stand
+        /// </summary>
         private void stand()
         {
             grid.Self.Stand();
         }
 
-        //function to tell the bot to attach an boject to self
-        //will use the variables item and atchPoint to do this 
+        /// <summary>
+        /// function to tell the bot to attach an oject to self
+        /// will use the variables item and atchPoint to do this
+        /// </summary>
         private void attachTo()
         {
             grid.Appearance.Attach(item, atchPoint);
-        }       
+        }
+
+        /// <summary>
+        /// Bot flies and moves to a high altitude
+        /// </summary>        
+        private void toggleFly()
+        {
+            int height = 60;//minimum height to fly to
+            if (grid.Self.Movement.Fly == false)
+            {
+                grid.Self.Movement.Fly = true;
+                while (grid.Self.SimPosition.Z < height)
+                {
+                    grid.Self.Movement.UpPos = true;
+                    Thread.Sleep(100);
+                    grid.Self.Movement.UpPos = false;
+                    Thread.Sleep(200);
+                }
+            }
+            else if (grid.Self.Movement.Fly == true)
+            {
+                grid.Self.Movement.Fly = false;
+            }
+        }
+
+        /// <summary>
+        /// Bot clicks on an object
+        /// </summary>        
+        private void clickObject(uint localID)
+        {
+            grid.Objects.ClickObject(grid.Network.CurrentSim, localID);
+        }
         #endregion
 
         #region EventHandlerMethods
+        /// <summary>
+        /// Handler function for the animate event, stops the animation
+        /// </summary> 
         private void OnTimer(object source, ElapsedEventArgs e)
         {
             animationStop(targetUUID, true);

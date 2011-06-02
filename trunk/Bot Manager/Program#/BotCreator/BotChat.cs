@@ -23,13 +23,18 @@ namespace BotGUI
     class BotChat
     {
         #region Attributes
-
+        /// <summary>
+        /// Client of the bot to manipulate
+        /// </summary>
         GridClient client;
 
         #endregion
 
         #region Constructor
-
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="client">GridClient that is the bot's client</param>
         public BotChat(GridClient client)
         {
             this.client = client;
@@ -42,7 +47,7 @@ namespace BotGUI
         /// <summary>
         /// This method will allow a bot to chat in-world
         /// </summary>
-        /// <param name="message">sentence that gets said in-world</param>
+        /// <param name="reader">XmlTextReader that currently points to the message to say</param>
         public void loadChat(XmlTextReader reader)
         {
             bool methodLoaded = false;

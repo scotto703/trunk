@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<movementQuestions>
+  <Question eventID="2">Our beautiful library is where you may find a book to read. It also has a media center where presentations are shown. The library is at the east end of the island, at the coordinates 165, 128. Would you like for me to point to its location?</Question>
+  <Question eventID="3">Baker Island has its own bank. While it serves only native Baker Island residents, it is open for anyone to visit. You will find it towards the north end of the island at the coordinates 130, 215. It is a short distance from the medical center. Would you like for me to point to its location?</Question>
+  <Question eventID="4">Should you require medical attention, our medical facilities can be found near the bank. The medical center will be found at the north end of the island at the coordinates 133, 203. Would you like for me to point to its location?</Question>
+  <Question eventID="5">Interested in soccer? Desire to run around for some exercise? The entrance to our stadium will be found along the south side of the island at the coordinate 114, 153. Would you like for me to point to its location?</Question>
+  <Question eventID="6">Should you be hungry or thirsty, visit our local grocery. Baker Island foods grocery is where you can buy food and beverages. The grocery will be found on the north side of the island at the coordinates 102, 200. Would you like for me to point to its location?</Question>
+  <Question eventID="7">The bar and grill will be found in front of the foods grocery. It is on the north side of the islandat the coordinates 74, 227. Would you like for me to point to its location?</Question>
+  <Question eventID="8">The PSSU learning center will be found at the south-east section of the island at the coordinates 191, 42. Would you like for me to point to its location?</Question>
+  <Question eventID="9">Would you like a tour of the island?</Question>
+  <Question eventID="9">Do you require aid? Would you like me to show you around?</Question>
+  <Question eventID="10">Do you want to see the presentation?</Question>
+</movementQuestions>

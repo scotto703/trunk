@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+
+
+
+
+<aiml>
+<!--author: me-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V2.1.0.34-->
+<category>
+	<pattern>_ LIBRARY _</pattern>
+	<template><srai>LIBRARY</srai></template>
+</category>
+<category>
+	<pattern>_ LIBRARY</pattern>
+	<template><srai>LIBRARY</srai></template>
+</category>
+<category>
+	<pattern>LIBRARY _</pattern>
+	<template><srai>LIBRARY</srai></template>
+</category>
+<category>
+	<pattern>LIBRARY</pattern>
+	<template>Our beautiful library is where you may find a book to read. It also has a media center where presentations are shown. The library is at the east end of the island, at the coordinates 165, 128. Would you like for me to point to its location?</template>
+</category>
+<category>
+	<pattern>_ BANK _</pattern>
+	<template><srai>BANK</srai></template>
+</category>
+<category>
+	<pattern>_ BANK</pattern>
+	<template><srai>BANK</srai></template>
+</category>
+<category>
+	<pattern>BANK _</pattern>
+	<template><srai>BANK</srai></template>
+</category>
+<category>
+	<pattern>BANK</pattern>
+	<template>Baker Island has its own bank. While it serves only native Baker Island residents, it is open for anyone to visit. You will find it towards the north end of the island at the coordinates 130, 215. It is a short distance from the medical center. Would you like for me to point to its location?</template>
+</category>
+<category>
+	<pattern>_ MEDICAL _</pattern>
+	<template><srai>MEDICAL</srai></template>
+</category>
+<category>
+	<pattern>_ MEDICAL</pattern>
+	<template><srai>MEDICAL</srai></template>
+</category>
+<category>
+	<pattern>MEDICAL _</pattern>
+	<template><srai>MEDICAL</srai></template>
+</category>
+<category>
+	<pattern>MEDICAL</pattern>
+	<template>Should you require medical attention, our medical facilities can be found near the bank. The medical center will be found at the north end of the island at the coordinates 133, 203. Would you like for me to point to its location?</template>
+</category>
+<category>
+	<pattern>_ STADIUM _</pattern>
+	<template><srai>STADIUM</srai></template>
+</category>
+<category>
+	<pattern>_ STADIUM</pattern>
+	<template><srai>STADIUM</srai></template>
+</category>
+<category>
+	<pattern>STADIUM _</pattern>
+	<template><srai>STADIUM</srai></template>
+</category>
+<category>
+	<pattern>STADIUM</pattern>
+	<template>Interested in soccer? Desire to run around for some exercise? The entrance to our stadium will be found along the south side of the island at the coordinate 114, 153. Would you like for me to point to its location?</template>
+</category>
+<category>
+	<pattern>_ GROCERY _</pattern>
+	<template><srai>GROCERY</srai></template>
+</category>
+<category>
+	<pattern>_ GROCERY</pattern>
+	<template><srai>GROCERY</srai></template>
+</category>
+<category>
+	<pattern>GROCERY _</pattern>
+	<template><srai>GROCERY</srai></template>
+</category>
+<category>
+	<pattern>GROCERY</pattern>
+	<template>Should you be hungry or thirsty, visit our local grocery. Baker Island foods grocery is where you can buy food and beverages. The grocery will be found on the north side of the island at the coordinates 102, 200. Would you like for me to point to its location?</template>
+</category>
+<category>
+	<pattern>_ GRILL _</pattern>
+	<template><srai>GRILL</srai></template>
+</category>
+<category>
+	<pattern>_ GRILL</pattern>
+	<template><srai>GRILL</srai></template>
+</category>
+<category>
+	<pattern>GRILL _</pattern>
+	<template><srai>GRILL</srai></template>
+</category>
+<category>
+	<pattern>GRILL</pattern>
+	<template>The bar and grill will be found in front of the foods grocery. It is on the north side of the islandat the coordinates 74, 227. Would you like for me to point to its location?</template>
+</category>
+<category>
+	<pattern>_ LEARNING CENTER _</pattern>
+	<template><srai>LEARNING CENTER</srai></template>
+</category>
+<category>
+	<pattern>_ LEARNING CENTER</pattern>
+	<template><srai>LEARNING CENTER</srai></template>
+</category>
+<category>
+	<pattern>LEARNING CENTER _</pattern>
+	<template><srai>LEARNING CENTER</srai></template>
+</category>
+<category>
+	<pattern>LEARNING CENTER</pattern>
+	<template>The PSSU learning center will be found at the south-east section of the island at the coordinates 191, 42. Would you like for me to point to its location?</template>
+</category>
+<category>
+	<pattern>_ LOCATIONS _</pattern>
+	<template><srai>LOCATIONS</srai></template>
+</category>
+<category>
+	<pattern>_ LOCATIONS</pattern>
+	<template><srai>LOCATIONS</srai></template>
+</category>
+<category>
+	<pattern>LOCATIONS _</pattern>
+	<template><srai>LOCATIONS</srai></template>
+</category>
+<category>
+	<pattern>LOCATIONS</pattern>
+	<template>We have a library, a bank, a medical center, a stadium, a grocery, a bar and grill, and a learning center.</template>
+</category>
+<category>
+	<pattern>_ TOUR _</pattern>
+	<template><srai>TOUR</srai></template>
+</category>
+<category>
+	<pattern>_ TOUR</pattern>
+	<template><srai>TOUR</srai></template>
+</category>
+<category>
+	<pattern>TOUR _</pattern>
+	<template><srai>TOUR</srai></template>
+</category>
+<category>
+	<pattern>TOUR</pattern>
+	<template>Would you like a tour of the island?</template>
+</category>
+<category>
+	<pattern>SHOW ME AROUND</pattern>
+	<template>Would you like a tour of the island?</template>
+</category>
+<category>
+	<pattern>PRESENTATION</pattern>
+	<template>Do you want to see the presentation?</template>
+</category>
+</aiml>

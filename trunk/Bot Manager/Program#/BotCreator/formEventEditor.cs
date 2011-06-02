@@ -19,31 +19,58 @@ namespace BotGUI
     public partial class formEventEditor : Form
     {
         #region Attributes
-
+        /// <summary>
+        /// Writes action events to xml
+        /// </summary>
         BotEventEditor be;
+        /// <summary>
+        /// Event ID that the form is showing
+        /// </summary>
         int eventID;
+        /// <summary>
+        /// Description of the event that was given during its creation
+        /// </summary>
         string eventDescription;
+        /// <summary>
+        /// Instance of the event class. Found in BotEventEditor.cs
+        /// </summary>
         Event singleEvent;
+        /// <summary>
+        /// Instance of the node class. Found in BotEventEditor.cs
+        /// </summary
         List<Node> nodes;
+        /// <summary>
+        /// Used by save button to determine if it should offer to 
+        /// insert or append 
+        /// </summary>
         bool isNewEvent;
+        /// <summary>
+        /// Used when updating fields on the form
+        /// </summary>
         bool isSameAction;
+        /// <summary>
+        /// Used when updating fields on the form to display information
+        /// about the currently selected node
+        /// </summary>
         int currentNode;
 
         #endregion
 
         #region Constructors
 
-        //
-        //Default Constructor
-        //
+        /// <summary>
+        /// Default Constructor
+        /// </summary>
         public formEventEditor()
         {
             InitializeComponent();
         }
 
-        //
-        //Constructor for editing an existing event
-        //
+        /// <summary>
+        /// Constructor for editing an existing event
+        /// </summary>
+        /// <param name="botName">String that is the bot's name</param>
+        /// <param name="eID">Integer that identifies the event show by the form</param>
         public formEventEditor(string botName, int eID)
         {
             InitializeComponent();
@@ -59,7 +86,7 @@ namespace BotGUI
             if (nodes.Count == 0)
             {
                 string infoNewNode = "This event has no actions, you can beging adding actions by modifying this Chat action";
-                Node emptyNode = new Node(0, 0, 0, 0.0, 0.0, 0.0, "", infoNewNode, "", "", "");
+                Node emptyNode = new Node(0, 0, 0, 0.0, 0.0, 0.0, "", "", infoNewNode, 0, "", "");
                 nodes.Add(emptyNode);
             }
 
@@ -125,7 +152,7 @@ namespace BotGUI
         {
             if (isNewEvent)
             {
-                Node newNode = new Node(0, 0, 0, 0.0, 0.0, 0.0, "", "", "", "", "");
+                Node newNode = new Node(0, 0, 0, 0.0, 0.0, 0.0, "", "", "", 0, "", "");
 
                 string msg = "Do you want to Insert a new action in the position selected? To Insert press YES," +
                         " to append a new action press NO";
@@ -167,9 +194,9 @@ namespace BotGUI
 
         #region Edit Events Methods
 
-        //
-        //reset all fields to its initial state
-        //
+        /// <summary>
+        /// reset all fields to its initial state
+        /// </summary>
         private void resetAllFields()
         {
             cbo_actionList.Enabled = false;
@@ -210,9 +237,10 @@ namespace BotGUI
         }
         
         
-        //
-        //set fields on form according to the action selected on the treeView
-        //
+        /// <summary>
+        /// set fields on form according to the action selected on the treeView
+        /// </summary>
+        /// <param name="act">String that identifies the action to configure fields to</param>
         private void setFields(string act)
         {
             switch (act)
@@ -244,12 +272,19 @@ namespace BotGUI
                 case "stopThread":
                     setFieldSleep();
                     break;
+                case "fly":
+                    setFieldFly();
+                    break;
+                case "clickObject":
+                    setFieldClickObject();
+                    break;
             }
         }
 
-        //
-        //Save the current action in the event
-        //
+        /// <summary>
+        /// Save the current action in the event
+        /// </summary>
+        /// <param name="act">String that identifies the action to call the correct save function</param>
         private void saveAction(string act)
         {
             switch (act)
@@ -281,13 +316,19 @@ namespace BotGUI
                 case "stopThread":
                     saveActionSleep();
                     break;
+                case "fly":
+                    saveActionFly();
+                    break;
+                case "clickObject":
+                    saveActionClickObject();
+                    break;
             }
         }
 
-        //
-        //Set the event ID and Description from the selected event on the form
-        //it also sets the treeView with all actions belonging to the current event
-        //
+        /// <summary>
+        /// Set the event ID and Description from the selected event on the form
+        /// it also sets the treeView with all actions belonging to the current event
+        /// </summary>
         private void setEventInfo()
         {
             txt_eventID.Text = eventID.ToString();
@@ -297,9 +338,9 @@ namespace BotGUI
             treeView.ExpandAll();
         }
 
-        //
-        //Enable fields for action LookAt
-        //
+        /// <summary>
+        /// Enable fields for action LookAt
+        /// </summary>
         private void setFieldsLookAt()
         {
             resetAllFields();
@@ -336,6 +377,9 @@ namespace BotGUI
             }
         }
 
+        /// <summary>
+        /// Updates the current node according to lookat event parameters
+        /// </summary>
         private void saveActionLookAt()
         {
             int i = currentNode;
@@ -361,9 +405,9 @@ namespace BotGUI
             }
         }
 
-        //
-        //Enable fields for action MoveTo
-        //
+        /// <summary>
+        /// Enable fields for action MoveTo
+        /// </summary>
         private void setFieldMoveTo()
         {
             resetAllFields();
@@ -392,6 +436,9 @@ namespace BotGUI
             }
         }
 
+        /// <summary>
+        /// Updates the current node according to moveto event parameters
+        /// </summary>
         private void saveActionMoveTo()
         {
             int i = currentNode;
@@ -415,9 +462,9 @@ namespace BotGUI
         }
 
 
-        //
-        //Enable fields for action teleport
-        //
+        /// <summary>
+        /// Enable fields for action teleport
+        /// </summary>
         private void setFieldteleport()
         {
             setFieldMoveTo();
@@ -435,6 +482,9 @@ namespace BotGUI
             }
         }
 
+        /// <summary>
+        /// Updates the current node according to teleport event parameters
+        /// </summary>
         private void saveActionteleport()
         {
             int i = currentNode;
@@ -458,9 +508,9 @@ namespace BotGUI
             }
         }
 
-        //
-        //Enable fields for action Chat
-        //
+        /// <summary>
+        /// Enable fields for action Chat
+        /// </summary>
         private void setFieldChat()
         {
             resetAllFields();
@@ -483,6 +533,9 @@ namespace BotGUI
             }
         }
 
+        /// <summary>
+        /// Updates the current node according to chat event parameters
+        /// </summary>
         private void saveActionChat()
         {
             int i = currentNode;
@@ -494,6 +547,9 @@ namespace BotGUI
             treeView.ExpandAll();
         }
 
+        /// <summary>
+        /// Enable fields for action animation
+        /// </summary>
         private void setFieldAnimation()
         {
             resetAllFields();
@@ -521,9 +577,9 @@ namespace BotGUI
             }
         }
 
-        //
-        //Enable fields for action Animation
-        //
+        /// <summary>
+        /// Updates the current node according to animation event parameters
+        /// </summary>
         private void saveActionAnimation()
         {
             int i = currentNode;
@@ -546,9 +602,9 @@ namespace BotGUI
             }
         }
 
-        //
-        //Enable fields for action Sit
-        //
+        /// <summary>
+        /// Enable fields for action Sit
+        /// </summary>
         private void setFieldSit()
         {
             resetAllFields();
@@ -585,6 +641,9 @@ namespace BotGUI
             }
         }
 
+        /// <summary>
+        /// Updates the current node according to sit event parameters
+        /// </summary>
         private void saveActionSit()
         {
             int i = currentNode;
@@ -610,9 +669,9 @@ namespace BotGUI
             }
         }
 
-        //
-        //Enable fields for action Stand
-        //
+        /// <summary>
+        /// Enable fields for action Stand
+        /// </summary>
         private void setFieldStand()
         {
             resetAllFields();
@@ -637,6 +696,9 @@ namespace BotGUI
             }
         }
 
+        /// <summary>
+        /// Updates the current node according to stand event parameters
+        /// </summary>
         private void saveActionStand()
         {
             int i = currentNode;
@@ -658,9 +720,9 @@ namespace BotGUI
             }
         }
 
-        //
-        //Enable fields for action AttachTo
-        //
+        /// <summary>
+        /// Enable fields for action AttachTo
+        /// </summary>
         private void setFieldAttachTo()
         {
             resetAllFields();
@@ -691,6 +753,9 @@ namespace BotGUI
             }
         }
 
+        /// <summary>
+        /// Updates the current node according to attachto event parameters
+        /// </summary>
         private void saveActionAttachTo()
         {
             int i = currentNode;
@@ -714,9 +779,9 @@ namespace BotGUI
             }
         }
 
-        //
-        //Enable fields for action SleepBot
-        //
+        /// <summary>
+        /// Enable fields for action SleepBot
+        /// </summary>
         private void setFieldSleep()
         {
             resetAllFields();
@@ -744,6 +809,9 @@ namespace BotGUI
             }
         }
 
+        /// <summary>
+        /// Updates the current node according to sleep event parameters
+        /// </summary>
         private void saveActionSleep()
         {
             int i = currentNode;
@@ -766,9 +834,109 @@ namespace BotGUI
             }
         }
 
-        //
-        //Update the information contained in the treeView
-        //
+        /// <summary>
+        /// Enable fields for action fly/land
+        /// </summary>
+        private void setFieldFly()
+        {
+            resetAllFields();
+
+            cbo_actionList.Enabled = true;
+            btn_saveAction.Enabled = true;
+
+            if (isSameAction)
+            {
+                txt_actionType.Text = "7";
+            }
+            else
+            {
+                int i = currentNode;
+
+                cbo_actionList.Text = nodes[i].getActionNode();
+                txt_actionType.Text = nodes[i].getActionType().ToString();
+            }
+        }
+
+        /// <summary>
+        /// Updates the current node according to fly/land event parameters
+        /// </summary>
+        private void saveActionFly()
+        {
+            int i = currentNode;
+
+            try
+            {
+                nodes[i].setActionNode(cbo_actionList.Text);
+                nodes[i].setActionType(Int32.Parse(txt_actionType.Text));
+
+                updateTreeView();
+                treeView.ExpandAll();
+            }
+            catch (Exception e)
+            {
+                string message = "There was a problem with the values you entered: " + e.Message;
+                string caption = "User Error";
+                MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        /// <summary>
+        /// Enable fields for action click object
+        /// The click object action is currently disabled
+        /// Add "clickObject" to combo box to re-enable
+        /// Consider creating new text box and label for this instead of reusing UUID
+        /// </summary>
+        private void setFieldClickObject()
+        {
+            resetAllFields();
+
+            cbo_actionList.Enabled = true;
+            txt_UUID.Enabled = true;
+            btn_saveAction.Enabled = true;
+
+            if (isSameAction)
+            {
+                txt_UUID.Text = "";
+                txt_actionType.Text = "8";
+                txt_UUID.Focus();
+            }
+            else
+            {
+                int i = currentNode;
+
+                cbo_actionList.Text = nodes[i].getActionNode();
+                txt_UUID.Text = nodes[i].getLocalID().ToString();
+                txt_actionType.Text = nodes[i].getActionType().ToString();
+            }
+        }
+
+        /// <summary>
+        /// Updates the current node according to click object event parameters
+        /// </summary>
+        private void saveActionClickObject()
+        {
+            int i = currentNode;
+
+            try
+            {
+                nodes[i].setActionNode(cbo_actionList.Text);
+                nodes[i].setLocalID(uint.Parse(txt_UUID.Text));//uses uuid text box, consider changing later
+                nodes[i].setActionType(Int32.Parse(txt_actionType.Text));
+
+                updateTreeView();
+                treeView.ExpandAll();
+            }
+            catch (Exception e)
+            {
+                string message = "There was a problem with the values you entered: " + e.Message;
+                string caption = "Numeric Error";
+                MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        /// <summary>
+        /// Update the information contained in the treeView
+        /// </summary>
         private void updateTreeView()
         {
             TreeNode node1;
@@ -827,14 +995,21 @@ namespace BotGUI
                         node1.Nodes[0].Nodes.Add("BotAction: Sleep Bot " + act.getTimeSleep() + " (milliseconds)");
                         node1.Nodes[0].Nodes[i++].ForeColor = System.Drawing.Color.Crimson;
                         break;
+
+                    case "fly":
+                        node1.Nodes[0].Nodes.Add("BotAction: Fly/Land ");
+                        node1.Nodes[0].Nodes[i++].ForeColor = System.Drawing.Color.Crimson;
+                        break;
+                    
+                    case "clickObject":
+                        node1.Nodes[0].Nodes.Add("BotAction: Click Object: " + act.getLocalID());
+                        node1.Nodes[0].Nodes[i++].ForeColor = System.Drawing.Color.Crimson;
+                        break;
                 }
             }
         }
 
         #endregion
-
-       
-
 
     }
 }
