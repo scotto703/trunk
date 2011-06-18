@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<aiml>
+
+<category>
+	<pattern>_ THE TOUR</pattern>
+	<template><srai>TOUR</srai></template>
+</category>
+<category>
+	<pattern>_ A TOUR</pattern>
+	<template><srai>TOUR</srai></template>
+</category>
+<category>
+	<pattern>TOUR</pattern>
+	<template>Would you like a tour of the island?</template>
+</category>
+<category>
+	<pattern>SHOW ME AROUND</pattern>
+	<template><srai>TOUR</srai></template>
+</category>
+<category>
+	<pattern>_ SHOW ME AROUND</pattern>
+	<template><srai>TOUR</srai></template>
+</category>
+<category>
+	<pattern>SHOW ME AROUND _</pattern>
+	<template><srai>TOUR</srai></template>
+</category>
+<category>
+	<pattern>PRESENTATION</pattern>
+	<template>Do you want to see the presentation?</template>
+</category>
+<category>
+	<pattern>_ THE PRESENTATION _</pattern>
+	<template><srai>PRESENTATION</srai></template>
+</category>
+<category>
+	<pattern>_ THE PRESENTATION</pattern>
+	<template><srai>PRESENTATION</srai></template>
+</category>
+
+</aiml>

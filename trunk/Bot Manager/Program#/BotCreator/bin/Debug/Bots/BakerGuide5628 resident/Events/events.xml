@@ -161,8 +161,8 @@
     <action>
       <createAction>
         <Vector>
-          <x>165</x>
-          <y>128</y>
+          <x>186</x>
+          <y>127</y>
           <z>25</z>
         </Vector>
         <actionType>3</actionType>
@@ -173,6 +173,17 @@
       <createAction>
         <SleepTime>2000</SleepTime>
         <actionType>6</actionType>
+        <Timer>0</Timer>
+      </createAction>
+    </action>
+    <action>
+      <createAction>
+        <Vector>
+          <x>186</x>
+          <y>127</y>
+          <z>25</z>
+        </Vector>
+        <actionType>3</actionType>
         <Timer>0</Timer>
       </createAction>
     </action>
@@ -188,8 +199,8 @@
     <action>
       <createAction>
         <Vector>
-          <x>130</x>
-          <y>215</y>
+          <x>144</x>
+          <y>218</y>
           <z>25</z>
         </Vector>
         <actionType>3</actionType>
@@ -200,6 +211,17 @@
       <createAction>
         <SleepTime>2000</SleepTime>
         <actionType>6</actionType>
+        <Timer>0</Timer>
+      </createAction>
+    </action>
+    <action>
+      <createAction>
+        <Vector>
+          <x>144</x>
+          <y>218</y>
+          <z>25</z>
+        </Vector>
+        <actionType>3</actionType>
         <Timer>0</Timer>
       </createAction>
     </action>
@@ -215,8 +237,8 @@
     <action>
       <createAction>
         <Vector>
-          <x>133</x>
-          <y>203</y>
+          <x>129</x>
+          <y>184</y>
           <z>25</z>
         </Vector>
         <actionType>3</actionType>
@@ -227,6 +249,17 @@
       <createAction>
         <SleepTime>2000</SleepTime>
         <actionType>6</actionType>
+        <Timer>0</Timer>
+      </createAction>
+    </action>
+    <action>
+      <createAction>
+        <Vector>
+          <x>129</x>
+          <y>184</y>
+          <z>25</z>
+        </Vector>
+        <actionType>3</actionType>
         <Timer>0</Timer>
       </createAction>
     </action>
@@ -242,8 +275,8 @@
     <action>
       <createAction>
         <Vector>
-          <x>114</x>
-          <y>153</y>
+          <x>75</x>
+          <y>101</y>
           <z>25</z>
         </Vector>
         <actionType>3</actionType>
@@ -254,6 +287,17 @@
       <createAction>
         <SleepTime>2000</SleepTime>
         <actionType>6</actionType>
+        <Timer>0</Timer>
+      </createAction>
+    </action>
+    <action>
+      <createAction>
+        <Vector>
+          <x>75</x>
+          <y>101</y>
+          <z>25</z>
+        </Vector>
+        <actionType>3</actionType>
         <Timer>0</Timer>
       </createAction>
     </action>
@@ -269,8 +313,8 @@
     <action>
       <createAction>
         <Vector>
-          <x>102</x>
-          <y>200</y>
+          <x>93</x>
+          <y>183</y>
           <z>25</z>
         </Vector>
         <actionType>3</actionType>
@@ -281,6 +325,17 @@
       <createAction>
         <SleepTime>2000</SleepTime>
         <actionType>6</actionType>
+        <Timer>0</Timer>
+      </createAction>
+    </action>
+    <action>
+      <createAction>
+        <Vector>
+          <x>93</x>
+          <y>183</y>
+          <z>25</z>
+        </Vector>
+        <actionType>3</actionType>
         <Timer>0</Timer>
       </createAction>
     </action>
@@ -296,8 +351,8 @@
     <action>
       <createAction>
         <Vector>
-          <x>74</x>
-          <y>227</y>
+          <x>79</x>
+          <y>229</y>
           <z>25</z>
         </Vector>
         <actionType>3</actionType>
@@ -308,6 +363,17 @@
       <createAction>
         <SleepTime>2000</SleepTime>
         <actionType>6</actionType>
+        <Timer>0</Timer>
+      </createAction>
+    </action>
+    <action>
+      <createAction>
+        <Vector>
+          <x>79</x>
+          <y>229</y>
+          <z>25</z>
+        </Vector>
+        <actionType>3</actionType>
         <Timer>0</Timer>
       </createAction>
     </action>
@@ -323,8 +389,8 @@
     <action>
       <createAction>
         <Vector>
-          <x>191</x>
-          <y>42</y>
+          <x>178</x>
+          <y>41</y>
           <z>25</z>
         </Vector>
         <actionType>3</actionType>
@@ -335,6 +401,17 @@
       <createAction>
         <SleepTime>2000</SleepTime>
         <actionType>6</actionType>
+        <Timer>0</Timer>
+      </createAction>
+    </action>
+    <action>
+      <createAction>
+        <Vector>
+          <x>178</x>
+          <y>41</y>
+          <z>25</z>
+        </Vector>
+        <actionType>3</actionType>
         <Timer>0</Timer>
       </createAction>
     </action>
@@ -393,7 +470,7 @@
         <Timer>0</Timer>
       </createAction>
     </action>
-    <chat>Here is the library. The books are mostly for decoration but if you ask me later I can show you a presentation inside.</chat>
+    <chat>Here is the library. The books are mostly for decoration but you are free to relax here as long as you want.</chat>
     <action>
       <createAction>
         <SleepTime>5000</SleepTime>
@@ -680,7 +757,7 @@
     </action>
   </event>
   <event ID="10" Name="Presentation">
-    <chat>Follow me. We will fly to the roof of the library.</chat>
+    <chat>Not finished. Edit this later.</chat>
     <action>
       <createAction>
         <actionType>7</actionType>
@@ -763,9 +840,16 @@
     </movement>
     <movement>
       <moveTo>
-        <x>216</x>
-        <y>113</y>
+        <x>217</x>
+        <y>112</y>
         <z>38</z>
+      </moveTo>
+    </movement>
+    <movement>
+      <moveTo>
+        <x>217</x>
+        <y>117</y>
+        <z>41</z>
       </moveTo>
     </movement>
     <movement>

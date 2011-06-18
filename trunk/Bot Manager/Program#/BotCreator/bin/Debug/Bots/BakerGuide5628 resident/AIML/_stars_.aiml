@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-15"?>
 
 <aiml>
-<!--author: Me-->
-<!--licence: Standard-->
-<!--created with: GaitoBot AIML Editor V2.1.0.34-->
-<!--Modified By Matthew Tyson On 12-12-2009-->
+
 <category>
 	<pattern>*</pattern>
 	<template>
@@ -15,4 +12,5 @@
 			<li>I have prepared a presentation that shows the purpose of Baker Island. During the presentation you will be show the research supporting the mechanisms of this island.</li>
 		</random></template>
 </category>
+
 </aiml>

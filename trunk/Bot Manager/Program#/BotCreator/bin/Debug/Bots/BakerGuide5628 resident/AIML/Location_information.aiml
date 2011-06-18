@@ -1,22 +1,39 @@
 <?xml version="1.0" encoding="ISO-8859-15"?>
 
-
-
-
 <aiml>
-<!--author: me-->
-<!--licence: Standard-->
-<!--created with: GaitoBot AIML Editor V2.1.0.34-->
+
+<!--LIBRARY-->
+
 <category>
-	<pattern>_ LIBRARY _</pattern>
+	<pattern>_ ABOUT THE LIBRARY</pattern>
 	<template><srai>LIBRARY</srai></template>
 </category>
 <category>
-	<pattern>_ LIBRARY</pattern>
+	<pattern>_ ABOUT LIBRARY</pattern>
 	<template><srai>LIBRARY</srai></template>
 </category>
 <category>
-	<pattern>LIBRARY _</pattern>
+	<pattern>_ ABOUT BAKER ISLAND LIBRARY</pattern>
+	<template><srai>LIBRARY</srai></template>
+</category>
+<category>
+	<pattern>_ ABOUT BAKER ISLAND'S LIBRARY</pattern>
+	<template><srai>LIBRARY</srai></template>
+</category>
+<category>
+	<pattern>ABOUT THE LIBRARY</pattern>
+	<template><srai>LIBRARY</srai></template>
+</category>
+<category>
+	<pattern>ABOUT LIBRARY</pattern>
+	<template><srai>LIBRARY</srai></template>
+</category>
+<category>
+	<pattern>ABOUT BAKER ISLAND LIBRARY</pattern>
+	<template><srai>LIBRARY</srai></template>
+</category>
+<category>
+	<pattern>THE LIBRARY</pattern>
 	<template><srai>LIBRARY</srai></template>
 </category>
 <category>
@@ -24,15 +41,54 @@
 	<template>Our beautiful library is where you may find a book to read. It also has a media center where presentations are shown. The library is at the east end of the island, at the coordinates 165, 128. Would you like for me to point to its location?</template>
 </category>
 <category>
-	<pattern>_ BANK _</pattern>
+	<pattern>WHERE IS THE LIBRARY</pattern>
+	<template>The library is at the east end of the island, at the coordinates 165, 128. Would you like for me to point to its location?</template>
+</category>
+<category>
+	<pattern>WHERE IS LIBRARY</pattern>
+	<template><srai>WHERE IS THE LIBRARY</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS BAKER ISLAND LIBRARY</pattern>
+	<template><srai>WHERE IS THE LIBRARY</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS BAKER ISLAND'S LIBRARY</pattern>
+	<template><srai>WHERE IS THE LIBRARY</srai></template>
+</category>
+
+<!--BANK-->
+
+<category>
+	<pattern>_ ABOUT THE BANK</pattern>
 	<template><srai>BANK</srai></template>
 </category>
 <category>
-	<pattern>_ BANK</pattern>
+	<pattern>_ ABOUT BANK</pattern>
 	<template><srai>BANK</srai></template>
 </category>
 <category>
-	<pattern>BANK _</pattern>
+	<pattern>_ ABOUT BAKER ISLAND BANK</pattern>
+	<template><srai>BANK</srai></template>
+</category>
+<category>
+	<pattern>_ ABOUT BAKER ISLAND'S BANK</pattern>
+	<template><srai>BANK</srai></template>
+</category>
+<category>
+	<pattern>ABOUT THE BANK</pattern>
+	<template><srai>BANK</srai></template>
+</category>
+<category>
+	<pattern>ABOUT BANK</pattern>
+	<template><srai>BANK</srai></template>
+</category>
+<category>
+	<pattern>ABOUT BAKER ISLAND BANK</pattern>
+	<template><srai>BANK</srai></template>
+</category>
+<category>
+	<pattern>THE BANK</pattern>
 	<template><srai>BANK</srai></template>
 </category>
 <category>
@@ -40,31 +96,109 @@
 	<template>Baker Island has its own bank. While it serves only native Baker Island residents, it is open for anyone to visit. You will find it towards the north end of the island at the coordinates 130, 215. It is a short distance from the medical center. Would you like for me to point to its location?</template>
 </category>
 <category>
-	<pattern>_ MEDICAL _</pattern>
-	<template><srai>MEDICAL</srai></template>
+	<pattern>WHERE IS THE BANK</pattern>
+	<template>The bank is towards the north end of the island at the coordinates 130, 215. It is a short distance from the medical center. Would you like for me to point to its location?</template>
 </category>
 <category>
-	<pattern>_ MEDICAL</pattern>
-	<template><srai>MEDICAL</srai></template>
+	<pattern>WHERE IS BANK</pattern>
+	<template><srai>WHERE IS THE BANK</srai></template>
 </category>
 <category>
-	<pattern>MEDICAL _</pattern>
-	<template><srai>MEDICAL</srai></template>
+	<pattern>WHERE IS BAKER ISLAND BANK</pattern>
+	<template><srai>WHERE IS THE BANK</srai></template>
 </category>
 <category>
-	<pattern>MEDICAL</pattern>
+	<pattern>WHERE IS BAKER ISLAND'S BANK</pattern>
+	<template><srai>WHERE IS THE BANK</srai></template>
+</category>
+
+<!--MEDICAL CENTER-->
+
+<category>
+	<pattern>_ ABOUT THE MEDICAL CENTER</pattern>
+	<template><srai>MEDICAL CENTER</srai></template>
+</category>
+<category>
+	<pattern>_ ABOUT MEDICAL CENTER</pattern>
+	<template><srai>MEDICAL CENTER</srai></template>
+</category>
+<category>
+	<pattern>_ ABOUT BAKER ISLAND MEDICAL CENTER</pattern>
+	<template><srai>MEDICAL CENTER</srai></template>
+</category>
+<category>
+	<pattern>_ ABOUT BAKER ISLAND'S MEDICAL CENTER</pattern>
+	<template><srai>MEDICAL CENTER</srai></template>
+</category>
+<category>
+	<pattern>ABOUT THE MEDICAL CENTER</pattern>
+	<template><srai>MEDICAL CENTER</srai></template>
+</category>
+<category>
+	<pattern>ABOUT MEDICAL CENTER</pattern>
+	<template><srai>MEDICAL CENTER</srai></template>
+</category>
+<category>
+	<pattern>ABOUT BAKER ISLAND MEDICAL CENTER</pattern>
+	<template><srai>MEDICAL CENTER</srai></template>
+</category>
+<category>
+	<pattern>THE MEDICAL CENTER</pattern>
+	<template><srai>MEDICAL CENTER</srai></template>
+</category>
+<category>
+	<pattern>MEDICAL CENTER</pattern>
 	<template>Should you require medical attention, our medical facilities can be found near the bank. The medical center will be found at the north end of the island at the coordinates 133, 203. Would you like for me to point to its location?</template>
 </category>
 <category>
-	<pattern>_ STADIUM _</pattern>
+	<pattern>WHERE IS THE MEDICAL CENTER</pattern>
+	<template>The medical center will be found at the north end of the island at the coordinates 133, 203. Would you like for me to point to its location?</template>
+</category>
+<category>
+	<pattern>WHERE IS MEDICAL CENTER</pattern>
+	<template><srai>WHERE IS THE MEDICAL CENTER</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS BAKER ISLAND MEDICAL CENTER</pattern>
+	<template><srai>WHERE IS THE MEDICAL CENTER</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS BAKER ISLAND'S MEDICAL CENTER</pattern>
+	<template><srai>WHERE IS THE MEDICAL CENTER</srai></template>
+</category>
+
+<!--STADIUM-->
+
+<category>
+	<pattern>_ ABOUT THE STADIUM</pattern>
 	<template><srai>STADIUM</srai></template>
 </category>
 <category>
-	<pattern>_ STADIUM</pattern>
+	<pattern>_ ABOUT STADIUM</pattern>
 	<template><srai>STADIUM</srai></template>
 </category>
 <category>
-	<pattern>STADIUM _</pattern>
+	<pattern>_ ABOUT BAKER ISLAND STADIUM</pattern>
+	<template><srai>STADIUM</srai></template>
+</category>
+<category>
+	<pattern>_ ABOUT BAKER ISLAND'S STADIUM</pattern>
+	<template><srai>STADIUM</srai></template>
+</category>
+<category>
+	<pattern>ABOUT THE STADIUM</pattern>
+	<template><srai>STADIUM</srai></template>
+</category>
+<category>
+	<pattern>ABOUT STADIUM</pattern>
+	<template><srai>STADIUM</srai></template>
+</category>
+<category>
+	<pattern>ABOUT BAKER ISLAND STADIUM</pattern>
+	<template><srai>STADIUM</srai></template>
+</category>
+<category>
+	<pattern>THE STADIUM</pattern>
 	<template><srai>STADIUM</srai></template>
 </category>
 <category>
@@ -72,15 +206,74 @@
 	<template>Interested in soccer? Desire to run around for some exercise? The entrance to our stadium will be found along the south side of the island at the coordinate 114, 153. Would you like for me to point to its location?</template>
 </category>
 <category>
-	<pattern>_ GROCERY _</pattern>
+	<pattern>WHERE IS THE STADIUM</pattern>
+	<template>The entrance to our stadium will be found along the south side of the island at the coordinate 114, 153. Would you like for me to point to its location?</template>
+</category>
+<category>
+	<pattern>WHERE IS STADIUM</pattern>
+	<template><srai>WHERE IS THE STADIUM</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS BAKER ISLAND STADIUM</pattern>
+	<template><srai>WHERE IS THE STADIUM</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS BAKER ISLAND'S STADIUM</pattern>
+	<template><srai>WHERE IS THE STADIUM</srai></template>
+</category>
+
+<!--GROCERY-->
+
+<category>
+	<pattern>_ ABOUT THE GROCERY</pattern>
 	<template><srai>GROCERY</srai></template>
 </category>
 <category>
-	<pattern>_ GROCERY</pattern>
+	<pattern>_ ABOUT GROCERY</pattern>
 	<template><srai>GROCERY</srai></template>
 </category>
 <category>
-	<pattern>GROCERY _</pattern>
+	<pattern>_ ABOUT BAKER FOODS</pattern>
+	<template><srai>GROCERY</srai></template>
+</category>
+<category>
+	<pattern>_ ABOUT BAKER ISLAND GROCERY</pattern>
+	<template><srai>GROCERY</srai></template>
+</category>
+<category>
+	<pattern>_ ABOUT BAKER ISLAND FOOD GROCERY</pattern>
+	<template><srai>GROCERY</srai></template>
+</category>
+<category>
+	<pattern>_ ABOUT BAKER ISLAND FOODS GROCERY</pattern>
+	<template><srai>GROCERY</srai></template>
+</category>
+<category>
+	<pattern>_ ABOUT BAKER ISLAND's FOOD GROCERY</pattern>
+	<template><srai>GROCERY</srai></template>
+</category>
+<category>
+	<pattern>_ ABOUT BAKER ISLAND's FOODS GROCERY</pattern>
+	<template><srai>GROCERY</srai></template>
+</category>
+<category>
+	<pattern>ABOUT THE GROCERY</pattern>
+	<template><srai>GROCERY</srai></template>
+</category>
+<category>
+	<pattern>ABOUT GROCERY</pattern>
+	<template><srai>GROCERY</srai></template>
+</category>
+<category>
+	<pattern>ABOUT BAKER FOODS</pattern>
+	<template><srai>GROCERY</srai></template>
+</category>
+<category>
+	<pattern>ABOUT BAKER ISLAND GROCERY</pattern>
+	<template><srai>GROCERY</srai></template>
+</category>
+<category>
+	<pattern>THE GROCERY</pattern>
 	<template><srai>GROCERY</srai></template>
 </category>
 <category>
@@ -88,31 +281,237 @@
 	<template>Should you be hungry or thirsty, visit our local grocery. Baker Island foods grocery is where you can buy food and beverages. The grocery will be found on the north side of the island at the coordinates 102, 200. Would you like for me to point to its location?</template>
 </category>
 <category>
-	<pattern>_ GRILL _</pattern>
+	<pattern>WHERE IS THE GROCERY</pattern>
+	<template>The grocery will be found on the north side of the island at the coordinates 102, 200. Would you like for me to point to its location?</template>
+</category>
+<category>
+	<pattern>WHERE IS GROCERY</pattern>
+	<template><srai>WHERE IS THE GROCERY</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS BAKER ISLAND GROCERY</pattern>
+	<template><srai>WHERE IS THE GROCERY</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS BAKER ISLAND's GROCERY</pattern>
+	<template><srai>WHERE IS THE GROCERY</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS BAKER ISLAND FOOD GROCERY</pattern>
+	<template><srai>WHERE IS THE GROCERY</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS BAKER ISLAND FOODS GROCERY</pattern>
+	<template><srai>WHERE IS THE GROCERY</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS BAKER ISLAND'S FOOD GROCERY</pattern>
+	<template><srai>WHERE IS THE GROCERY</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS BAKER ISLAND'S FOODS GROCERY</pattern>
+	<template><srai>WHERE IS THE GROCERY</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS FOOD GROCERY</pattern>
+	<template><srai>WHERE IS THE GROCERY</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS THE FOOD GROCERY</pattern>
+	<template><srai>WHERE IS THE GROCERY</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS FOODS GROCERY</pattern>
+	<template><srai>WHERE IS THE GROCERY</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS THE FOODS GROCERY</pattern>
+	<template><srai>WHERE IS THE GROCERY</srai></template>
+</category>
+
+<!--BAR AND GRILL-->
+
+<category>
+	<pattern>_ ABOUT THE BAR AND GRILL</pattern>
 	<template><srai>GRILL</srai></template>
 </category>
 <category>
-	<pattern>_ GRILL</pattern>
+	<pattern>_ ABOUT THE BAR</pattern>
 	<template><srai>GRILL</srai></template>
 </category>
 <category>
-	<pattern>GRILL _</pattern>
+	<pattern>_ ABOUT THE GRILL</pattern>
+	<template><srai>GRILL</srai></template>
+</category>
+<category>
+	<pattern>_ ABOUT BAR AND GRILL</pattern>
+	<template><srai>GRILL</srai></template>
+</category>
+<category>
+	<pattern>_ ABOUT BARL</pattern>
+	<template><srai>GRILL</srai></template>
+</category>
+<category>
+	<pattern>_ ABOUT GRILL</pattern>
+	<template><srai>GRILL</srai></template>
+</category>
+<category>
+	<pattern>_ ABOUT BAKER ISLAND BAR AND GRILL</pattern>
+	<template><srai>GRILL</srai></template>
+</category>
+<category>
+	<pattern>_ ABOUT BAKER ISLAND'S BAR AND GRILL</pattern>
+	<template><srai>GRILL</srai></template>
+</category>
+<category>
+	<pattern>ABOUT THE BAR AND GRILL</pattern>
+	<template><srai>GRILL</srai></template>
+</category>
+<category>
+	<pattern>ABOUT BAR AND GRILL</pattern>
+	<template><srai>GRILL</srai></template>
+</category>
+<category>
+	<pattern>ABOUT BAR</pattern>
+	<template><srai>GRILL</srai></template>
+</category>
+<category>
+	<pattern>ABOUT GRILL</pattern>
+	<template><srai>GRILL</srai></template>
+</category>
+<category>
+	<pattern>ABOUT BAKER ISLAND BAR AND GRILL</pattern>
+	<template><srai>GRILL</srai></template>
+</category>
+<category>
+	<pattern>THE BAR AND GRILL</pattern>
+	<template><srai>GRILL</srai></template>
+</category>
+<category>
+	<pattern>BAR AND GRILL</pattern>
+	<template><srai>GRILL</srai></template>
+</category>
+<category>
+	<pattern>THE BAR</pattern>
+	<template><srai>GRILL</srai></template>
+</category>
+<category>
+	<pattern>BAR</pattern>
+	<template><srai>GRILL</srai></template>
+</category>
+<category>
+	<pattern>THE GRILL</pattern>
 	<template><srai>GRILL</srai></template>
 </category>
 <category>
 	<pattern>GRILL</pattern>
-	<template>The bar and grill will be found in front of the foods grocery. It is on the north side of the islandat the coordinates 74, 227. Would you like for me to point to its location?</template>
+	<template>The bar and grill will be found in front of the foods grocery. It is on the north side of the island at the coordinates 74, 227. Would you like for me to point to its location?</template>
 </category>
 <category>
-	<pattern>_ LEARNING CENTER _</pattern>
+	<pattern>WHERE IS THE GRILL</pattern>
+	<template>The bar and grill is on the north side of the island at the coordinates 74, 227. Would you like for me to point to its location?</template>
+</category>
+<category>
+	<pattern>WHERE IS GRILL</pattern>
+	<template><srai>WHERE IS THE GRILL</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS THE BAR</pattern>
+	<template><srai>WHERE IS THE GRILL</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS BAR</pattern>
+	<template><srai>WHERE IS THE GRILL</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS THE BAR AND GRILL</pattern>
+	<template><srai>WHERE IS THE GRILL</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS BAR AND GRILL</pattern>
+	<template><srai>WHERE IS THE GRILL</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS BAKER ISLAND BAR</pattern>
+	<template><srai>WHERE IS THE GRILL</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS BAKER ISLAND GRILL</pattern>
+	<template><srai>WHERE IS THE GRILL</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS BAKER ISLAND'S BAR</pattern>
+	<template><srai>WHERE IS THE GRILL</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS BAKER ISLAND'S GRILL</pattern>
+	<template><srai>WHERE IS THE GRILL</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS BAKER ISLAND BAR AND GRILL</pattern>
+	<template><srai>WHERE IS THE GRILL</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS BAKER ISLAND'S BAR AND GRILL</pattern>
+	<template><srai>WHERE IS THE GRILL</srai></template>
+</category>
+
+<!--LEARNING CENTER-->
+
+<category>
+	<pattern>_ ABOUT THE LEARNING CENTER</pattern>
 	<template><srai>LEARNING CENTER</srai></template>
 </category>
 <category>
-	<pattern>_ LEARNING CENTER</pattern>
+	<pattern>_ ABOUT LEARNING CENTER</pattern>
 	<template><srai>LEARNING CENTER</srai></template>
 </category>
 <category>
-	<pattern>LEARNING CENTER _</pattern>
+	<pattern>_ ABOUT THE PSSU LEARNING CENTER</pattern>
+	<template><srai>LEARNING CENTER</srai></template>
+</category>
+<category>
+	<pattern>_ ABOUT PSSU LEARNING CENTER</pattern>
+	<template><srai>LEARNING CENTER</srai></template>
+</category>
+<category>
+	<pattern>_ ABOUT BAKER ISLAND LEARNING CENTER</pattern>
+	<template><srai>LEARNING CENTER</srai></template>
+</category>
+<category>
+	<pattern>_ ABOUT BAKER ISLAND'S LEARNING CENTER</pattern>
+	<template><srai>LEARNING CENTER</srai></template>
+</category>
+<category>
+	<pattern>ABOUT THE LEARNING CENTER</pattern>
+	<template><srai>LEARNING CENTER</srai></template>
+</category>
+<category>
+	<pattern>ABOUT LEARNING CENTER</pattern>
+	<template><srai>LEARNING CENTER</srai></template>
+</category>
+<category>
+	<pattern>ABOUT THE PSSU LEARNING CENTER</pattern>
+	<template><srai>LEARNING CENTER</srai></template>
+</category>
+<category>
+	<pattern>ABOUT PSSU LEARNING CENTER</pattern>
+	<template><srai>LEARNING CENTER</srai></template>
+</category>
+<category>
+	<pattern>ABOUT BAKER ISLAND LEARNING CENTER</pattern>
+	<template><srai>LEARNING CENTER</srai></template>
+</category>
+<category>
+	<pattern>ABOUT BAKER ISLAND'S LEARNING CENTER</pattern>
+	<template><srai>LEARNING CENTER</srai></template>
+</category>
+<category>
+	<pattern>THE LEARNING CENTER</pattern>
+	<template><srai>LEARNING CENTER</srai></template>
+</category>
+<category>
+	<pattern>THE PSSU LEARNING CENTER</pattern>
 	<template><srai>LEARNING CENTER</srai></template>
 </category>
 <category>
@@ -120,15 +519,50 @@
 	<template>The PSSU learning center will be found at the south-east section of the island at the coordinates 191, 42. Would you like for me to point to its location?</template>
 </category>
 <category>
-	<pattern>_ LOCATIONS _</pattern>
+	<pattern>WHERE IS THE LEARNING CENTER</pattern>
+	<template>The PSSU learning center will be found at the south-east section of the island at the coordinates 191, 42. Would you like for me to point to its location?</template>
+</category>
+<category>
+	<pattern>WHERE IS LEARNING CENTER</pattern>
+	<template><srai>WHERE IS THE LEARNING CENTER</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS BAKER ISLAND LEARNING CENTER</pattern>
+	<template><srai>WHERE IS THE LEARNING CENTER</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS BAKER ISLAND'S LEARNING CENTER</pattern>
+	<template><srai>WHERE IS THE LEARNING CENTER</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS THE PSSU LEARNING CENTER</pattern>
+	<template><srai>WHERE IS THE LEARNING CENTER</srai></template>
+</category>
+<category>
+	<pattern>WHERE IS PSSU LEARNING CENTER</pattern>
+	<template><srai>WHERE IS THE LEARNING CENTER</srai></template>
+</category>
+
+<!--NON SPECIFIC-->
+
+<category>
+	<pattern>_ LOCATIONS ARE THERE _</pattern>
 	<template><srai>LOCATIONS</srai></template>
 </category>
 <category>
-	<pattern>_ LOCATIONS</pattern>
+	<pattern>_ LOCATIONS ARE THERE</pattern>
 	<template><srai>LOCATIONS</srai></template>
 </category>
 <category>
-	<pattern>LOCATIONS _</pattern>
+	<pattern>_ ABOUT THE LOCATIONS _</pattern>
+	<template><srai>LOCATIONS</srai></template>
+</category>
+<category>
+	<pattern>_ ABOUT THE LOCATIONS</pattern>
+	<template><srai>LOCATIONS</srai></template>
+</category>
+<category>
+	<pattern>ABOUT THE LOCATIONS</pattern>
 	<template><srai>LOCATIONS</srai></template>
 </category>
 <category>
@@ -136,27 +570,15 @@
 	<template>We have a library, a bank, a medical center, a stadium, a grocery, a bar and grill, and a learning center.</template>
 </category>
 <category>
-	<pattern>_ TOUR _</pattern>
-	<template><srai>TOUR</srai></template>
+	<pattern>BAKER ISLAND</pattern>
+	<template>Baker Island is the virtual extention of Baker College. The inhabitants will answer your questions on their jobs and the purpose of the buildings they reside in. <srai>LOCATIONS</srai></template>
 </category>
 <category>
-	<pattern>_ TOUR</pattern>
-	<template><srai>TOUR</srai></template>
+	<pattern>ABOUT BAKER ISLAND</pattern>
+	<template><srai>BAKER ISLAND</srai></template>
 </category>
 <category>
-	<pattern>TOUR _</pattern>
-	<template><srai>TOUR</srai></template>
-</category>
-<category>
-	<pattern>TOUR</pattern>
-	<template>Would you like a tour of the island?</template>
-</category>
-<category>
-	<pattern>SHOW ME AROUND</pattern>
-	<template>Would you like a tour of the island?</template>
-</category>
-<category>
-	<pattern>PRESENTATION</pattern>
-	<template>Do you want to see the presentation?</template>
+	<pattern>_ ABOUT BAKER ISLAND</pattern>
+	<template><srai>BAKER ISLAND</srai></template>
 </category>
 </aiml>

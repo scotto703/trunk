@@ -59,21 +59,19 @@ namespace BotGUI
             public string question;
             public int eventID;
         }
-        //The event pause and exit variable in this class are not in use because they are
-        //at this time not necessary. The behavior that they may affect is not an issue
-        //or are rarely enough of an issue to require their use. The pause variable
-        //in BotMove is required in pausing the looping event of a bot.
         /// <summary>
-        /// Will pause a loop in the event reader when set to true, currently commented out
+        /// Will pause a loop in the event reader when set to true
+        /// Currently does nothing
         /// </summary>
         private bool eventPaused = false;
         /// <summary>
-        /// Will exit a loop in the event reader when set to true, currently not used
+        /// Will exit most loops in the event reader when set to true
         /// </summary>
         private bool eventExited = false;
         /// <summary>
         /// True to pause the event managed by this reader
         /// false to resume an event
+        /// Currently pauses only movements
         /// </summary>
         public bool pauseEvent
         {
@@ -90,7 +88,8 @@ namespace BotGUI
         /// <summary>
         /// True to exit and ignore events managed by this reader
         /// false to allow the reader to resume handling events
-        /// currently untested and unused
+        /// Event reader may not immediately recognize the exit flag
+        /// Processing a current interation continues. The next interation is blocked
         /// </summary>
         public bool exitEvent
         {
@@ -139,7 +138,7 @@ namespace BotGUI
                 bool finished = false;
 
                 // process the data in the file
-                while (QReader.Read() && !finished)
+                while (QReader.Read() && !finished && !eventExited)
                 {
                     switch (QReader.NodeType)
                     {
@@ -219,7 +218,7 @@ namespace BotGUI
 
             try
             {
-                while (reader.Read() && !eventFound)
+                while (reader.Read() && !eventFound && !eventExited)
                 {
                     switch (reader.NodeType)
                     {
@@ -309,7 +308,7 @@ namespace BotGUI
         {              
             bool endOfMethod = false;
 
-            while (reader.Read() && !endOfMethod)
+            while (reader.Read() && !endOfMethod && !eventExited)
             {
                 switch (reader.NodeType)
                 {
@@ -327,7 +326,7 @@ namespace BotGUI
                         {
                             bool methodLoaded = false;
 
-                            while (reader.Read() && !methodLoaded)
+                            while (reader.Read() && !methodLoaded && !eventExited)
                             {
                                 switch (reader.NodeType)
                                 {
@@ -395,7 +394,7 @@ namespace BotGUI
             int actionType = 0; // this will be set to the correct action number
             int time = 0;  // if needed, this will be set to alloted time for action
 
-            while (reader.Read() && !endOfMethod)
+            while (reader.Read() && !endOfMethod && !eventExited)
             {
                 switch (reader.NodeType)
                 {
@@ -407,7 +406,7 @@ namespace BotGUI
                             // read and set the variables for this action
                             // and read the parameters for the createAction 
                             // method (actionType and time)
-                            while (reader.Read() && !methodLoaded)
+                            while (reader.Read() && !methodLoaded && !eventExited)
                             {
                                 switch (reader.NodeType)
                                 {
@@ -480,7 +479,18 @@ namespace BotGUI
                 }
             }
         }
-        
+        /// <summary>
+        /// Allows botload to directly issue a movement command
+        /// </summary>
+        /// <param name="destination">Vector3 that is the destination of the bot</param>
+        public void moveBot(Vector3 destination){
+            botMovement.moveTo(destination);
+        }
+        public void followAvatar(Avatar agent)
+        {
+            botMovement.chase(agent);
+        }
+
         #endregion
     }     
 }

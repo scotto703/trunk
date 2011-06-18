@@ -329,6 +329,6 @@ namespace BotGUI
         {
             animationStop(targetUUID, true);
         }        
-        #endregion       
+        #endregion
     }
 }

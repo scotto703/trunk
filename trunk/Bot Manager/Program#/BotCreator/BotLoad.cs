@@ -52,14 +52,13 @@ namespace BotGUI
         BotEventReader eventReaderLoopedEvent = null;
         List<User> people = new List<User>();
         XmlDocument BotConfigXML = null;
-        public bool pauseEvent = false;
-        public bool cancelEvent = false;
         bool highPriorityEvent = false;
         System.Timers.Timer loopedEventTimer = new System.Timers.Timer();
         System.Timers.Timer radiusDelayTimer = new System.Timers.Timer();
         System.Timers.Timer chatDelayTimer = new System.Timers.Timer();
         System.Timers.Timer attentionDelayTimer = new System.Timers.Timer();
         String conversationFocusOnThisPerson = "*";
+        System.Timers.Timer newVisitorTimer = new System.Timers.Timer();
 
         #endregion
         
@@ -138,8 +137,37 @@ namespace BotGUI
             return this;
         }        
         public void LogBotOut()
-        {                        
-            this.Network.Logout();            
+        {
+            //stop everything from running when bot logs out
+            //manager creates a new botload each login so the disused botload must be surpressed from doing anything
+            try //Might give an error when bot cannot be logged in due to when these are created
+            {
+                eventReader.pauseEvent = false;
+                eventReaderLoopedEvent.pauseEvent = false;
+                eventReaderLoopedEvent.exitEvent = true;
+                eventReader.exitEvent = true;
+            }
+            catch (NullReferenceException)
+            {
+                //ignore, nothing to pause/exit
+            }
+            this.Network.EventQueueRunning -= Network_EventQueueRunning;
+            this.Network.Logout();
+            radiusTimer.Enabled = false;
+            //radiusTimer.Dispose(); //These may cause an issue if something is still running to use them
+            ListTimer.Enabled = false;
+            //ListTimer.Dispose();
+            loopedEventTimer.Enabled = false;
+            //loopedEventTimer.Dispose();
+            radiusDelayTimer.Enabled = false;
+            //radiusDelayTimer.Dispose();
+            chatDelayTimer.Enabled = false;
+            //chatDelayTimer.Dispose();
+            attentionDelayTimer.Enabled = false;
+            //attentionDelayTimer.Dispose();
+            newVisitorTimer.Enabled = false;
+            //newVisitorTimer.Dispose();
+            
         }
         public void InitBot()
         {                        
@@ -201,11 +229,12 @@ namespace BotGUI
             radiusDelayTimer.Elapsed += new ElapsedEventHandler(OnTimedEventEnableRadiusTimer);
             chatDelayTimer.Elapsed += new ElapsedEventHandler(OnTimedEventResumeChat);
             attentionDelayTimer.Elapsed += new ElapsedEventHandler(OnTimedEventAllowNewUser);
+            newVisitorTimer.Elapsed += new ElapsedEventHandler(OnTimedEventMoveBotToNewVisitor);
 
             // Sets the timers
             radiusTimer.Interval = 2000; //The bot will scan for nearby people this often
             radiusTimer.Enabled = true;
-            ListTimer.Interval = 720000; //Clears people list this often. Consider GC.KeepAlive to prevent garbage collection when set high
+            ListTimer.Interval = 720000; //Clears people list this often
             ListTimer.Enabled = true;
             loopedEventTimer.Interval = 25000; //The looped event will be delayed by this much when bot is interrupted
             loopedEventTimer.AutoReset = false;
@@ -215,6 +244,13 @@ namespace BotGUI
             chatDelayTimer.AutoReset = false;
             attentionDelayTimer.Interval = 10000; //The bot will converse with only one person until this long
             attentionDelayTimer.AutoReset = false;
+            newVisitorTimer.Interval = 5000; //The bot look for a new visitor this frequently
+
+            //add bots that should follow new visitors below
+            if (getBotFirstName() == "BakerGuide5628")
+                newVisitorTimer.Enabled = true;
+            else
+                newVisitorTimer.Enabled = false;
             
             // Load AIMLBot settings for this bot
             AimlChatterBot.myBot.loadSettings(AimlChatterBot.SettingsPath);
@@ -235,30 +271,38 @@ namespace BotGUI
         public void botLoadAIML(string path)
         {
             AimlChatterBot.Loader.loadAIML(path);
-        }      
+        }
+        /// <summary>
+        /// Runs event 0 to position the bot
+        /// </summary>
         public void PositionBot()
         {
-            // Every bot has a postion event, in their events.xml file, the event number is always 0
-            // Have the position event do something, even if it is only a lookAt.
-            // It appears necessary in order to avoid a bug where this method is never resolved
-            // It became meaningful due to the additions of highPriorityEvent and radiusTimer.Enabled following it
             eventReader.findEventInXmlFile(0);
         }
         #endregion Methods
         
-        #region Event Methods (CallBacks) 
+        #region Event Methods (CallBacks)
+        /// <summary>
+        /// Handles events that continuously run
+        /// We use it for a bot's endless event
+        /// </summary>
         void Network_EventQueueRunning(object sender, EventQueueRunningEventArgs e)
         {
             if (this.Self.Name == "Alisandra Cascarino" || this.Self.Name == "Nimon Herbit" || this.Self.Name == "BakerGuide5628 Resident")
             {
                 bool runEventForever = true;
 
-                while (runEventForever == true)
+                while (runEventForever == true && Network.Connected)
                 {
+                    Thread.Sleep(500);//This loop might cause resources trouble if a bot above has no event 1
                     eventReaderLoopedEvent.findEventInXmlFile(1);
                 }
             }
         }
+        /// <summary>
+        /// Used during login
+        /// When the bot logs in this positions the bot
+        /// </summary>
         void Network_LoginProgress(object sender, LoginProgressEventArgs e)
         {
             if (e.Status == LoginStatus.Success)
@@ -280,6 +324,11 @@ namespace BotGUI
                 radiusTimer.Enabled = true;
             }
         }
+        /// <summary>
+        /// Bot responds to a chat message
+        /// Runs an event if the response to a trigger question is yes and
+        /// responds according to AIML if not
+        /// </summary>
         void Self_ChatFromSimulator(object sender, ChatEventArgs e)
         {
             int radius = 7; //set the radius (in meters) avatars must be within to chat with bots
@@ -287,39 +336,19 @@ namespace BotGUI
             Vector3 avatarPos = e.Position; //current location of avatar
             Boolean movementExecuted = false;
 
+            //This flag is usually set to true when the bot is busy typing or with an event
             if (!highPriorityEvent)
             {
+                //This is used to keep attention to one person for a length of time
                 if (conversationFocusOnThisPerson == "*" || conversationFocusOnThisPerson == e.FromName)
                 {
                     //Don't allow bots to respond to themselves, each other, or empty messages
-                    if ((e.SourceID != this.Self.AgentID) &&
-                        (e.FromName != "Alisandra Cascarino") &&
-                        (e.FromName != "Britney Luminos") &&
-                        (e.FromName != "Chesterfield Wrigglesworth") &&
-                        (e.FromName != "Elminstyr Exonar") &&
-                        (e.FromName != "Franklin Fiertze") &&
-                        (e.FromName != "Oriana Inglewood") &&
-                        (e.FromName != "Tracy Helstein") &&
-                        (e.FromName != "Counselor Silversmith") &&
-                        //(e.FromName != "William Ormidale") &&
-                        (e.FromName != "Nimon Herbit") &&
-                        (e.FromName != "BakerGuide5628 Resident") &&
-                        (e.Message != ""))
+                    if (IsNotABot(e.FromName) && e.Message != "")
                     {
                         //Don't allow bots to respond to avatars on different floors or beyond (radius) meters away
                         //Must use SimPosition (RelativePosition returns position from object bot is sitting on)
-                        if (((this.Self.Name == "Alisandra Cascarino") && (e.Position.Z <= this.Self.SimPosition.Z + 1) ||
-                            (this.Self.Name == "Britney Luminos") && (e.Position.Z <= this.Self.SimPosition.Z + 1) ||
-                            (this.Self.Name == "Chesterfield Wrigglesworth") && (e.Position.Z <= this.Self.SimPosition.Z + 1) ||
-                            (this.Self.Name == "Elminstyr Exonar") && (e.Position.Z <= this.Self.SimPosition.Z + 1) ||
-                            (this.Self.Name == "Franklin Fiertze") && (e.Position.Z <= this.Self.SimPosition.Z + 1) ||
-                            (this.Self.Name == "Oriana Inglewood") && (e.Position.Z <= this.Self.SimPosition.Z + 1) ||
-                            //(this.Self.Name == "William Ormidale") && (e.Position.Z <= this.Self.SimPosition.Z + 1) ||
-                            (this.Self.Name == "Tracy Helstein") && (e.Position.Z <= this.Self.SimPosition.Z + 1) ||
-                            (this.Self.Name == "Counselor Silversmith") && (e.Position.Z <= this.Self.SimPosition.Z + 1) ||
-                            (this.Self.Name == "Nimon Herbit") && (e.Position.Z <= this.Self.SimPosition.Z + 1) ||
-                            (this.Self.Name == "BakerGuide5628 Resident") && (e.Position.Z <= this.Self.SimPosition.Z + 1)) &&
-                            ((avatarPos != Vector3.Zero) && (Vector3.Distance(avatarPos, botPos) < radius)))
+                        if (((avatarPos.Z - botPos.Z) * (avatarPos.Z - botPos.Z) < 9) &&
+                            (Vector3.Distance(avatarPos, botPos) < radius))
                         {
                             //pause a running event
                             eventReaderLoopedEvent.pauseEvent = true;
@@ -370,7 +399,7 @@ namespace BotGUI
                             {
                                 AimlChatterBot.chatQuestion = AimlChatterBot.chatResult.RawOutput;
                             }
-
+                            
                             //send user message to AIMLbot.Request for encapsulation
                             AimlChatterBot.chatRequest = new Request(e.Message, people[peopleIndex], AimlChatterBot.myBot);
 
@@ -407,6 +436,7 @@ namespace BotGUI
                                 this.Self.AnimationStart(Animations.TYPE, false);
                                 Thread.Sleep(2000);
                                 this.Self.AnimationStop(Animations.TYPE, true);
+                                this.Self.Movement.TurnToward(e.Position);
 
                                 //use this to not include avatar name in each reply
                                 this.Self.Chat(AimlChatterBot.chatResult.Output, 0, ChatType.Normal);
@@ -415,7 +445,10 @@ namespace BotGUI
                     }
                 }
             }
-        }        
+        }
+        /// <summary>
+        /// Bot logs a chat message
+        /// </summary>
         void Log_ChatFromSimulator(object sender, ChatEventArgs e)
         {
             string messageToWrite = e.Message;
@@ -427,18 +460,7 @@ namespace BotGUI
 
             DirectoryInfo dInfo = new DirectoryInfo(filePath);
 
-            if (avatarName == this.Self.Name ||
-                ((avatarName != "Alisandra Cascarino") &&
-                 (avatarName != "Britney Luminos") &&
-                 (avatarName != "Chesterfield Wrigglesworth") &&
-                 (avatarName != "Elminstyr Exonar") &&
-                 (avatarName != "Franklin Fiertze") &&
-                 (avatarName != "Oriana Inglewood") &&
-                 (avatarName != "Tracy Helstein") &&
-                 (avatarName != "Counselor Silversmith") &&
-                 //(avatarName != "William Ormidale") &&
-                 (avatarName != "Nimon Herbit")&&
-                 (avatarName != "BakerGuide5628 Resident")))
+            if (avatarName == this.Self.Name || IsNotABot(avatarName))
             {
                 //Checks to see if the chat folder exists. If it doesn't, it is created.
                 if (!dInfo.Exists)
@@ -463,7 +485,10 @@ namespace BotGUI
         }
         //May require some work. Mirror the code in ChatFromSimulator should it be necessary.
         //The IMs could instead serve a different purpose than ChatFromSimulator.
-        //There is little reason for a visitor to IM a bot, but it may be useful for bots to IM each other               
+        //There is little reason for a visitor to IM a bot, but it may be useful for bots to IM each other
+        /// <summary>
+        /// Bot responds to an instant message
+        /// </summary>    
         void Self_IM(object sender, InstantMessageEventArgs e)
         {
             Boolean movementExecuted = false;
@@ -526,18 +551,29 @@ namespace BotGUI
                     this.Self.InstantMessage(e.IM.FromAgentID, AimlChatterBot.imResult.Output, e.IM.IMSessionID);
                 }
             }            
-        }        
+        }
+        //This may require code similar to logout, such as stopping everything from running
+        //and handling objects for garbage collection
+        /// <summary>
+        /// Sends a message box when the bot is unexpectedly disconnected
+        /// </summary>
         void Network_Disconnected(object sender, DisconnectedEventArgs e)
         {
             if (e.Reason == NetworkManager.DisconnectType.NetworkTimeout)
             {
                 System.Windows.Forms.MessageBox.Show(this.Self.Name + " was disconnected." + "\n\n" + e.Reason.ToString());                                
             }
-        }       
+        }
+       /// <summary>
+       /// Bot forgets the people it met
+       /// </summary>
         void OnTimedEventList(object source, ElapsedEventArgs e)
         {
             people.Clear();
         }
+        /// <summary>
+        /// Scans for nearby people and asks them to chat
+        /// </summary>
         void OnTimedEventRadius(object source, ElapsedEventArgs e)
         {
             //Quick fix to not have most bots greet people
@@ -550,7 +586,7 @@ namespace BotGUI
             }
             //Remove above to re-enable greeting for most bots
 
-            int radius = 5; //set the radius (in meters) to scan
+            int radius = 7; //set the radius (in meters) to scan
             Vector3 mypos = this.Self.SimPosition;
 
             try
@@ -560,7 +596,11 @@ namespace BotGUI
                 {
                     Vector3 pos = avatar.Position;
                     Vector3 location = mypos;
-                    return ((avatar.ParentID == 0) && (pos != Vector3.Zero) && (Vector3.Distance(pos, location) < radius));
+                    return ((avatar.ParentID == 0) && 
+                        (pos != Vector3.Zero) && 
+                        (Vector3.Distance(pos, location) < radius) &&
+                        (IsNotABot(avatar.Name))
+                        );
                 }
                    );
                 bool found = false;
@@ -574,18 +614,7 @@ namespace BotGUI
                         }
                     }
                     
-                    if ((found == false) &&
-                        (avatars[i].Name != this.Self.Name) &&
-                        (avatars[i].Name != "Alisandra Cascarino") &&
-                        (avatars[i].Name != "Britney Luminos") &&
-                        (avatars[i].Name != "Chesterfield Wrigglesworth") &&
-                        (avatars[i].Name != "Elminstyr Exonar") &&
-                        (avatars[i].Name != "Franklin Fiertze") &&
-                        (avatars[i].Name != "Counselor Silversmith") &&
-                        (avatars[i].Name != "Oriana Inglewood") &&
-                        (avatars[i].Name != "Tracy Hydefeld") &&
-                        (avatars[i].Name != "Nimon Herbit") &&
-                        (avatars[i].Name != "BakerGuide5628 Resident"))
+                    if (found == false)
                     {
                         //pause a running event, reset timer
                         eventReaderLoopedEvent.pauseEvent = true;
@@ -612,6 +641,7 @@ namespace BotGUI
                         this.Self.AnimationStart(Animations.TYPE, false);
                         Thread.Sleep(2000);
                         this.Self.AnimationStop(Animations.TYPE, true);
+                        this.Self.Movement.TurnToward(avatars[i].Position);
 
                         if (this.Self.Name == "BakerGuide5628 Resident")//Checks name for personalized greetings
                         {
@@ -622,6 +652,7 @@ namespace BotGUI
                         {
                             this.Self.Chat("Hello would you like to chat " + avatars[i].Name, 0, ChatType.Normal);
                         }
+                        break; //exiting for loop to greet only one person
                     }
                 }
             }
@@ -662,6 +693,143 @@ namespace BotGUI
         void OnTimedEventAllowNewUser(object source, ElapsedEventArgs e)
         {
             conversationFocusOnThisPerson = "*";
+        }
+        /// <summary>
+        /// Determines if given name matches a bot
+        /// Add the name of new bots here
+        /// This is obviously a bot. It also checks this botload for those who cannot edit the code
+        /// Check here if a bot gets into an endless chat loop with another bot
+        /// </summary>
+        /// <param name="name">Name to check</param>
+        Boolean IsNotABot(String name)
+        {
+            if ((name != Self.Name) &&
+                (name != "Alisandra Cascarino") &&
+                (name != "Britney Luminos") &&
+                (name != "Chesterfield Wrigglesworth") &&
+                (name != "Elminstyr Exonar") &&
+                (name != "Franklin Fiertze") &&
+                (name != "Counselor Silversmith") &&
+                (name != "Oriana Inglewood") &&
+                (name != "Tracy Helstein") &&
+                (name != "Nimon Herbit") &&
+                (name != "BakerGuide5628 Resident"))
+            {
+                return true;
+            }
+            else
+                return false;
+        }
+        /// <summary>
+        /// Moves the bot to a visitor not on it's people list
+        /// UNFINISHED
+        /// This moves the bot to the person but does so regardless of building interference
+        /// It walks through walls or stops inside no fly locations such as inside buildings
+        /// To remove, delete this method and the newVisitorTimer related items in attributes and initbot
+        /// </summary>
+        void OnTimedEventMoveBotToNewVisitor(object source, ElapsedEventArgs e){
+            
+            //if (!highPriorityEvent && radiusTimer.Enabled) //limits chases based on OnTimedEventsRadius frequency
+            if (!highPriorityEvent)
+            {
+                int radius = 150; //set the radius (in meters) to scan
+                int minRadius = 5; //does not chase when under this value
+
+                try
+                {
+                    //populate list with object in the radius
+                    List<Avatar> avatars = this.Network.CurrentSim.ObjectsAvatars.FindAll(delegate(Avatar avatar)
+                    {
+                        Vector3 pos = avatar.Position;
+                        Vector3 location = Self.SimPosition;
+                        return ((avatar.ParentID == 0) && (pos != Vector3.Zero) && 
+                            (Vector3.Distance(pos, location) < radius) && 
+                            (Vector3.Distance(pos, location) > minRadius) &&
+                            //Difference of height squared. Ignore people too far above or below
+                            ((pos.Z - location.Z) * (pos.Z - location.Z) < 9) &&
+                            (IsNotABot(avatar.Name))
+                            ); 
+                    }
+                       );
+                    bool found = false;
+                    for (int i = 0; i < avatars.Count; i++)
+                    {
+                        for (int j = 0; j < people.Count; j++)
+                        {
+                            if (people[j].UserID == avatars[i].Name)
+                            {
+                                found = true;
+                            }
+                        }
+
+                        if ((found == false))
+                        {
+                            
+                            //stop interference
+                            highPriorityEvent = true; //blocks new events
+                            loopedEventTimer.Stop(); //temporarily stop running looped event
+                            eventReaderLoopedEvent.pauseEvent = true;
+                            radiusTimer.Enabled = false; //temporarily stop looking for people to greet
+                            radiusDelayTimer.Stop();
+                            chatDelayTimer.Stop();
+                            newVisitorTimer.Stop();
+
+                            //follow movement code here
+                            //Consider a loop that updates the autopilot each iteration to follow a person more closely
+                            //or follow the example at http://lib.openmetaverse.org/wiki/Follow_an_avatar utilizing onobjectupdate
+
+                            Thread.Sleep(1000);//a pause is needed for the pauseEvent to work smoothly
+
+                            //Below is fairly dependable but moveTo may not be the best option to follow an agent
+                            //flying and running is too quick resulting in less autopilot precision
+                            //expect odd teleport corrections from moveBot when running
+                            //walk or find another solution when using moveTo to reduce odd teleports
+                            //moveBot method as is will not change the destination if the target moves until it completes the current move
+
+                            //Self.Movement.AlwaysRun = true; 
+                            //Vector3 chase = avatars[i].Position;
+                            //chase.X++;
+                            //chase.Y++;
+                            //eventReader.moveBot(chase);
+                            //Self.Movement.AlwaysRun = false;
+
+                            //Below uses an edited version of botMove that closely follows target
+                            //It is a potential problem that the constant autopilots would interfere with the code that bypasses
+                            //obstructions, but it appears to not be much of an issue
+                            Self.Movement.AlwaysRun = true;
+                            eventReader.followAvatar(avatars[i]);
+                            Self.Movement.AlwaysRun = false;
+
+                            //Below is a simple autopilot
+                            //It runs straight towards the target and does not handle obstructions
+                            //Self.Movement.AlwaysRun = true;
+                            //while ((Vector3.Distance(avatars[i].Position, Self.SimPosition) > minRadius))
+                            //{
+                            //    Self.AutoPilotLocal((int)avatars[i].Position.X + 1, (int)avatars[i].Position.Y + 1, avatars[i].Position.Z);
+                            //    Thread.Sleep(2000);
+                            //}
+                            //Self.AutoPilotCancel();
+                            //Self.Movement.AlwaysRun = false;
+
+                            //set bot to normal function
+                            loopedEventTimer.Start();
+                            newVisitorTimer.Start();
+                            radiusTimer.Enabled = true;
+                            highPriorityEvent = false;
+                            //The for loop will make the bot immediately go after the next avatar in the list without the break
+                            //The for loop can be removed after a few edits but how to handle two avatar at once needs to be decided
+                            //Such as going for the same avatar or going to each avatar in sequence
+                            //This will go after the first avatar as it currently is. It may ignore the avatar for awhile if this
+                            //triggers again while the avatar is within the minimum radius
+                            break;  
+                        }
+                    }
+                }
+                catch (NullReferenceException)
+                {
+                    //does nothing if no avatars are found
+                }
+            }  
         }
         #endregion Events
     }

@@ -39,16 +39,16 @@ namespace BotGUI
         /// </summary>
         private string regionName;          
         /// <summary>
-        /// Will pause non-flying movement when true
-        /// Flying movement does not pause
+        /// Will pause movement when true
         /// </summary>
         private bool movePaused = false;
         /// <summary>
-        /// Will exit and block non-flying movement when true
-        /// Flying movement ignores this
-        /// Unused and untested
+        /// Will exit and block movement when true
         /// </summary>
         private bool moveExited = false;
+        /// <summary>
+        /// True to pause movement, false to resume movement
+        /// </summary>
         public bool pauseMove
         {
             get
@@ -60,10 +60,14 @@ namespace BotGUI
                 movePaused = value;
                 if (value == true)
                 {
-                    client.Self.AutoPilotCancel();
+                    client.Self.AutoPilotCancel();//insurance for an immediate stop
                 }
             }
         }
+        /// <summary>
+        /// True to exit movement event and block further movement
+        /// false to allow movement
+        /// </summary>
         public bool exitMove
         {
             get
@@ -74,7 +78,7 @@ namespace BotGUI
             {
                 moveExited = value;
             }
-        } 
+        }
 
         #endregion 
 
@@ -108,7 +112,7 @@ namespace BotGUI
         public void moveTo(Vector3 destination)
         {
             bool arrived = false;
-            Vector3 endingPos = vectorConvert(destination);
+            Vector3 endingPos = destination;
             //Flying adds to autopilot's problems with z axis
             if (client.Self.Movement.Fly == true)
                 endingPos.Z = client.Self.SimPosition.Z;
@@ -117,18 +121,18 @@ namespace BotGUI
             Vector3 jumpPos = client.Self.SimPosition;
             float botX = 0;
             float botY = 0;
-            Vector3 idleValue;
-            idleValue.X = 0;
-            idleValue.Y = 0;
-            idleValue.Z = 0;
+
             //insurance that a move action does not run for more than 5 minutes
             int failSafeExit = 0;
             int sleepTime = 500;
             int fiveMinutes = 300 * 1000 / sleepTime;
             
             if(movePaused == false && moveExited == false)
-                client.Self.AutoPilot((double)endingPos.X, (double)endingPos.Y, (double)endingPos.Z);
-            idleCntr = -8;//Used to avoid teleport just after bot begins moving. 
+                client.Self.AutoPilotLocal((int)endingPos.X, (int)endingPos.Y, (int)endingPos.Z);
+            //used to avoid teleport just after bot begins moving.
+            //change to reduce teleports after bot begins moving
+            idleCntr = -8; 
+
             if (client.Self.Movement.Fly != true)
             {
                 while (!arrived && !moveExited)
@@ -137,13 +141,13 @@ namespace BotGUI
                     if (movePaused == true)
                     {
                         client.Self.AutoPilotCancel();
-                        while (movePaused == true)
+                        while (movePaused == true && !moveExited)
                         {
                             Thread.Sleep(1000);
                         }
-                        client.Self.AutoPilot((double)endingPos.X, (double)endingPos.Y, (double)endingPos.Z);
+                        client.Self.AutoPilotLocal((int)endingPos.X, (int)endingPos.Y, (int)endingPos.Z);
                     }
-                    else if (endingPos.ApproxEquals(vectorConvert(client.Self.SimPosition), TARGET_DISTANCE) ||
+                    else if (endingPos.ApproxEquals(client.Self.SimPosition, TARGET_DISTANCE) ||
                                 destination.ApproxEquals(client.Self.SimPosition, TARGET_DISTANCE))
                     {
                         client.Self.AutoPilotCancel();
@@ -159,7 +163,8 @@ namespace BotGUI
                             continue;
                         }
                         //if idle for a few loops then reposition bot
-                        if (client.Self.Velocity.Equals(idleValue))
+                        //if (client.Self.Velocity.Equals(Vector3.Zero))
+                        if (client.Self.Velocity.ApproxEquals(Vector3.Zero, 1)) //check for slow velocity instead of no velocity
                         {
                             idleCntr++;
                         }
@@ -189,12 +194,14 @@ namespace BotGUI
 
                             //teleport a short jump and continue moving
                             client.Self.Teleport(client.Network.CurrentSim.Handle, jumpPos);
-                            client.Self.AutoPilot((double)endingPos.X, (double)endingPos.Y, (double)endingPos.Z);
-                            idleCntr = -8;//delays the next jump without using a thread sleep
+                            client.Self.AutoPilotLocal((int)endingPos.X, (int)endingPos.Y, (int)endingPos.Z);
+                            //delays the next jump without using a thread sleep
+                            //change if bot teleports frequently after resuming movement
+                            idleCntr = -8;
                         }
 
                         //Fixes problem that autopilot has with the z axis
-                        //Does not correct anything until it is close to the destination
+                        //Does not correct anything until the bot is close to the destination
                         float x = destination.X - client.Self.SimPosition.X;
                         float y = destination.Y - client.Self.SimPosition.Y;
                         float x2 = x * x;
@@ -205,12 +212,12 @@ namespace BotGUI
                             if ((int)endingPos.Z > (int)client.Self.SimPosition.Z)
                             {
                                 endingPos.Z = endingPos.Z - (int)((endingPos.Z - client.Self.SimPosition.Z) * 0.9) - 1;
-                                client.Self.AutoPilot(endingPos.X, endingPos.Y, endingPos.Z);
+                                client.Self.AutoPilotLocal((int)endingPos.X, (int)endingPos.Y, (int)endingPos.Z);
                             }
                             else if ((int)endingPos.Z < (int)client.Self.SimPosition.Z)
                             {
                                 endingPos.Z = endingPos.Z + (int)((client.Self.SimPosition.Z - endingPos.Z) * 0.9) + 1;
-                                client.Self.AutoPilot(endingPos.X, endingPos.Y, endingPos.Z);
+                                client.Self.AutoPilotLocal((int)endingPos.X, (int)endingPos.Y, (int)endingPos.Z);
                             }
                         }
                     }
@@ -221,15 +228,15 @@ namespace BotGUI
                 while (!arrived && !moveExited)
                 {
                     Thread.Sleep(sleepTime);
-                    if (endingPos.ApproxEquals(vectorConvert(client.Self.SimPosition), TARGET_DISTANCE * 10))
+                    if (endingPos.ApproxEquals(client.Self.SimPosition, TARGET_DISTANCE * 10))
                     {
                         client.Self.AutoPilotCancel();
-                        client.Self.Teleport(regionName, destination);
+                        client.Self.Teleport(regionName, endingPos);
                         arrived = true;
                     }
-                    else if (client.Self.Velocity.Equals(idleValue))
+                    else if (client.Self.Velocity.Equals(Vector3.Zero))
                     {
-                        client.Self.AutoPilot((double)endingPos.X, (double)endingPos.Y, (double)endingPos.Z);
+                        client.Self.AutoPilotLocal((int)endingPos.X, (int)endingPos.Y, (int)endingPos.Z);
                     }
                     //Pausing the bot's movement while in the air is rare. It will happen when the situation is
                     //made intentionally or during a rare timing bug when the pause is tripped while the move
@@ -238,12 +245,144 @@ namespace BotGUI
                     if (movePaused) 
                     {
                         client.Self.AutoPilotCancel();
-                        while (movePaused == true)
+                        while (movePaused == true && !moveExited)
                         {
                             Thread.Sleep(1000);
                         }
                         client.Self.Movement.Fly = false;
                         client.Self.Teleport(client.Network.CurrentSim.Handle, destination);
+                    }
+                }
+            }
+        }
+        /// <summary>
+        /// Follows an avatar
+        /// </summary>
+        /// <param name="agent">Avatar to follow</param>
+        public void chase(Avatar agent)
+        {
+            bool arrived = false;
+            Vector3 endingPos = agent.Position;
+
+            int idleCntr = 0;
+            Vector3 jumpPos = client.Self.SimPosition;
+            float botX = 0;
+            float botY = 0;
+
+            //insurance that a move action does not run for more than 5 minutes
+            int failSafeExit = 0;
+            int sleepTime = 500;
+            int fiveMinutes = 300 * 1000 / sleepTime;
+
+            if (movePaused == false && moveExited == false)
+                client.Self.AutoPilotLocal((int)endingPos.X, (int)endingPos.Y, (int)endingPos.Z);
+            //used to avoid teleport just after bot begins moving.
+            //change to reduce teleports after bot begins moving
+            idleCntr = -8;
+
+            while (!arrived && !moveExited)
+                
+            {
+                Thread.Sleep(sleepTime);
+                //Update follow destination and autopilot
+                if ((agent.Position.Z - client.Self.SimPosition.Z) *    
+                   (agent.Position.Z - client.Self.SimPosition.Z) < 9)
+                { //Difference of height squared. No autopilot update when too far above or below
+
+                    endingPos = agent.Position;
+                    if (movePaused == false && moveExited == false)
+                        client.Self.AutoPilotLocal((int)endingPos.X, (int)endingPos.Y, (int)endingPos.Z);     
+                }
+                else
+                {
+                    //stop following and break loop when target is too high or low
+                    client.Self.AutoPilotCancel();
+                    break;
+                }
+
+
+                if (movePaused == true)
+                {
+                    client.Self.AutoPilotCancel();
+                    while (movePaused == true && !moveExited)
+                    {
+                        Thread.Sleep(1000);
+                    }
+                    client.Self.AutoPilotLocal((int)endingPos.X, (int)endingPos.Y, (int)endingPos.Z);
+                }
+                else if (endingPos.ApproxEquals(client.Self.SimPosition, TARGET_DISTANCE * 2))
+                {
+                    client.Self.AutoPilotCancel();
+                    arrived = true;
+                }
+                else
+                {
+
+                    failSafeExit++;
+                    if (failSafeExit > fiveMinutes)
+                    {
+                        client.Self.Teleport(client.Network.CurrentSim.Handle, endingPos);
+                        client.Self.AutoPilotCancel();
+                        arrived = true;
+                        break;
+                    }
+                    //if idle for a few loops then reposition bot
+                    //if (client.Self.Velocity.Equals(Vector3.Zero))
+                    if (client.Self.Velocity.ApproxEquals(Vector3.Zero, 1)) //check for slow velocity instead of no velocity
+                    {
+                        idleCntr++;
+                    }
+                    else
+                    {
+                        idleCntr = 0;
+                    }
+
+                    if (idleCntr > 4)
+                    {
+                        idleCntr = 0;
+                        botX = endingPos.X - client.Self.SimPosition.X;
+                        botY = endingPos.Y - client.Self.SimPosition.Y;
+                        jumpPos = client.Self.SimPosition;
+
+                        if (botX > 0)
+                            jumpPos.X = jumpPos.X + 2;
+                        else if (botX < 0)
+                            jumpPos.X = jumpPos.X - 2;
+
+                        if (botY > 0)
+                            jumpPos.Y = jumpPos.Y + 2;
+                        else if (botY < 0)
+                            jumpPos.Y = jumpPos.Y - 2;
+
+                        jumpPos.Z = jumpPos.Z + 1;
+
+                        //teleport a short jump and continue moving
+                        client.Self.Teleport(client.Network.CurrentSim.Handle, jumpPos);
+                        client.Self.AutoPilotLocal((int)endingPos.X, (int)endingPos.Y, (int)endingPos.Z);
+                        //delays the next jump without using a thread sleep
+                        //change if bot teleports frequently after resuming movement
+                        idleCntr = -8;
+                    }
+
+                    //Fixes problem that autopilot has with the z axis
+                    //Does not correct anything until the bot is close to the destination
+                    float x = endingPos.X - client.Self.SimPosition.X;
+                    float y = endingPos.Y - client.Self.SimPosition.Y;
+                    float x2 = x * x;
+                    float y2 = y * y;
+
+                    if (x2 < 36 & y2 < 36)
+                    {
+                        if ((int)endingPos.Z > (int)client.Self.SimPosition.Z)
+                        {
+                            endingPos.Z = endingPos.Z - (int)((endingPos.Z - client.Self.SimPosition.Z) * 0.9) - 1;
+                            client.Self.AutoPilotLocal((int)endingPos.X, (int)endingPos.Y, (int)endingPos.Z);
+                        }
+                        else if ((int)endingPos.Z < (int)client.Self.SimPosition.Z)
+                        {
+                            endingPos.Z = endingPos.Z + (int)((client.Self.SimPosition.Z - endingPos.Z) * 0.9) + 1;
+                            client.Self.AutoPilotLocal((int)endingPos.X, (int)endingPos.Y, (int)endingPos.Z);
+                        }
                     }
                 }
             }

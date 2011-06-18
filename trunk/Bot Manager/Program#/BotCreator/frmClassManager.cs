@@ -24,8 +24,13 @@ namespace BotGUI
     public partial class frmClassMngr : Form
     {
         #region Attributes
-
-        private int counter = 0; //counter for initial tab creation
+        /// <summary>
+        /// counter for initial tab creation
+        /// </summary>
+        private int counter = 0;
+        /// <summary>
+        /// List of botloads, which means this is the list of running bots
+        /// </summary>
         private List<BotLoad> runningBots = new List<BotLoad>();
         
         #endregion        
@@ -93,10 +98,12 @@ namespace BotGUI
             }
             catch (NullReferenceException)
             {
+                //No bots logged in
                 if (botLB.Items.Count == 0)
                 {
                     MessageBox.Show("There are no bots logged in to stop", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
+                //No bot was selected
                 else
                 {
                     MessageBox.Show("Please select a bot from the active bots list to log them out", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -158,6 +165,8 @@ namespace BotGUI
         }
         private void EventViewerToolStripButton_Click(object sender, EventArgs e)
         {
+            if (listAvailBot.Items.Count == 0)//quick fix to avoid error when there are no bots
+                return;
             formEventViewer newEventViewer = new formEventViewer();
             newEventViewer.ShowDialog();
             newEventViewer.Dispose();
@@ -193,7 +202,9 @@ namespace BotGUI
         #endregion
 
         #region Methods
-
+        /// <summary>
+        /// Looks in bots folder and gets the name of each bot there
+        /// </summary>
         private void GetBotList() 
         {
             listAvailBot.Items.Clear();
@@ -217,6 +228,9 @@ namespace BotGUI
                 }
             }             
         }
+        /// <summary>
+        /// Create and log the bot into Second Life
+        /// </summary>
         private void loadBot()
         {
             try
@@ -240,7 +254,7 @@ namespace BotGUI
                         selectedBot.InitBot();
                         LoadDefaultAIML(selectedBot);
                         LoadBotSpecificAIML(selectedBot);
-
+                        
                         // Adds bot to list of active bots
                         botLB.Items.Add(listAvailBot.SelectedItem.ToString());  
 
@@ -249,16 +263,19 @@ namespace BotGUI
                     }
                     else
                     {
+                        //A bot instance of the requested bot already exists
                         MessageBox.Show("Bot is already loaded", "Error", MessageBoxButtons.OK, MessageBoxIcon.Hand);
                     }
                 }
                 else
                 {
+                    //No bot was selected from the list
                     MessageBox.Show("Need to select a name from the list", "Unable to Proceed", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             catch (FileNotFoundException)
             {
+                //Missing files
                 MessageBox.Show("Bot configuration files not found." + "\n\n" +
                                 "Reasons why loading a bot would fail:" + "\n\n" +
                                 "1. Bot is not registered with Second Life" + "\n" +
@@ -270,12 +287,17 @@ namespace BotGUI
             }
             catch (DirectoryNotFoundException dnf)
             {
+                //Missing folders
                 MessageBox.Show("Bot directory not found." + "\n\n" + dnf.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 // Tab was created for this bot, but it did not load. So we remove the tab.
                 tabControl1.TabPages.RemoveByKey(listAvailBot.SelectedItem.ToString());
             }            
         }
+        /// <summary>
+        /// Load AIML from the defaultAIML folder
+        /// </summary>
+        /// <param name="selectedBot">The botload instance belonging to the target bot</param>
         private void LoadDefaultAIML(BotLoad selectedBot)
         {
             try
@@ -285,13 +307,19 @@ namespace BotGUI
             }
             catch (FileNotFoundException)
             {
+                //Did not find any files to load
                 AppendTextToBotTab("No baseline AIML files to load");
             }
             catch (Exception)
             {
+                //catchall
                 AppendTextToBotTab("Error loading baseline AIML files");
             }
         }
+        /// <summary>
+        /// Load AIML from the bot's AIML folder
+        /// </summary>
+        /// <param name="selectedBot">The botload instance belonging to the target bot</param>
         private void LoadBotSpecificAIML(BotLoad selectedBot)
         {
             try
@@ -301,14 +329,22 @@ namespace BotGUI
             }
             catch (FileNotFoundException)
             {
+                //Did not find any AIML files belonging to the bot to load
                 AppendTextToBotTab("No bot specific AIML files to load");
             }
             catch (Exception)
             {
+                //catchall
                 AppendTextToBotTab("Error loading bot specific files");
             }
             
         }
+        /// <summary>
+        /// Load AIML files found at the given path
+        /// </summary>
+        /// <param name="selectedBot">The botload instance belonging to the target bot</param>
+        /// <param name="path">Path to the AIML files</param>
+        /// <param name="folder">Folder containing the AIML files</param>
         private void LoadAIMLTestFiles(BotLoad selectedBot, string path, FolderBrowserDialog folder)
         {
             try
@@ -318,9 +354,14 @@ namespace BotGUI
             }
             catch (FileNotFoundException)
             {
+                //Did not find any AIML files at given path
                 AppendTextToBotTab("No AIML files to load in selected folder"); 
             }
-        }        
+        }
+        /// <summary>
+        /// Adds a tab to the tab control show each bot that is logged in
+        /// </summary>
+        /// <param name="client">GridClient belonging to the bot</param>
         private void newTab(GridClient client)
         {
             //instantiate a new tab with background color white
@@ -388,7 +429,11 @@ namespace BotGUI
                 tabControl1.SelectTab(listAvailBot.SelectedItem.ToString());
             }
             counter++;//add to the counter for first time bot loaded        
-        }        
+        }
+        /// <summary>
+        /// Add a new line to the status text box of a tab
+        /// </summary>
+        /// <param name="text">New line to be added</param>
         private void AppendTextToBotTab(string text)
         {
             // Gets current time to append to text
@@ -399,11 +444,21 @@ namespace BotGUI
             StatusOutput status = (StatusOutput)(tabControl1.SelectedTab.Controls[0]);
             status.ForeColor = System.Drawing.Color.Red;
             status.AppendText("\n" + "[" + currentTime + "] " + text);            
-        }        
+        }
+        /// <summary>
+        /// Returns true or false depending on if the bot is logged in
+        /// Searches the active bot listbox
+        /// </summary>
+        /// <param name="botName">Name of the bot to search for</param>
         private Boolean findBotLB(string botName)
         {
             return botLB.Items.Contains(botName);
-        }        
+        }
+        /// <summary>
+        /// Returns true or false depending on if the bot already has a tab
+        /// Searches the bot status tab control
+        /// </summary>
+        /// <param name="botName">Name of the bot to search for</param>
         private Boolean findBotTab(string botName)
         {
             if (tabControl1.TabPages.IndexOfKey(botName) > -1)
@@ -415,6 +470,10 @@ namespace BotGUI
                 return false;
             }
         }
+        /// <summary>
+        /// Logs out a bot and removes it from the running bots list
+        /// </summary>
+        /// <param name="botToStop">Name of the bot to stop</param>
         private void stopBot(string botToStop)
         {
             // Check to see if there are any bots logged in
@@ -434,7 +493,7 @@ namespace BotGUI
 
                         // Remove bots name from Active Bots list
                         botLB.Items.Remove(botToStop);
-
+                        
                         // Removes bot status panel from tabs
                         // tabControl1.TabPages.RemoveByKey(botToStop);
                         tabControl1.TabPages.Remove(tabControl1.SelectedTab);

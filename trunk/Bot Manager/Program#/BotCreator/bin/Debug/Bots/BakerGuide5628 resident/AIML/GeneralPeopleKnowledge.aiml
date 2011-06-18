@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+
+
+<aiml>
+<!-- -->
+<!-- Follows the Oriana AIML provided by Matthew Tyson -->
+<!-- Snips borrowed from AIML of Oriana -->
+<!-- -->
+<!--Who Knowledge-->
+<category>
+	<pattern>CHESTERFIELD</pattern>
+	<template>Chesterfield Wrigglesworth is the manager of the Foods Grocery. He may be found on the second floor of the Foods Grocery.</template>
+</category>
+<category> 
+	<pattern>_ CHESTERFIELD WRIGGLESWORTH _</pattern> 
+	<template><srai>CHESTERFIELD</srai></template>
+</category>
+<category> 
+	<pattern>_ ABOUT CHESTERFIELD _</pattern> 
+	<template><srai>CHESTERFIELD</srai></template>
+</category>
+<category> 
+	<pattern>_ ABOUT CHESTERFIELD</pattern> 
+	<template><srai>CHESTERFIELD</srai></template>
+</category>
+<category>
+	<pattern>ORIANA</pattern>
+	<template>You will find Oriana at Baker's Foods Grocery. She handles the cashiers counter.</template>
+</category>
+<category> 
+	<pattern>_ ORIANA INGLEWOOD _</pattern> 
+	<template><srai>ORIANA</srai></template>
+</category>
+<category> 
+	<pattern>_ ABOUT ORIANA _</pattern> 
+	<template><srai>ORIANA</srai></template>
+</category>
+<category> 
+	<pattern>_ ABOUT ORIANA</pattern> 
+	<template><srai>ORIANA</srai></template>
+</category>
+<category>
+	<pattern>FRANKLIN</pattern>
+	<template>Franklin Fiertze is the teller at the bank.</template>
+</category>
+<category> 
+	<pattern>_ FRANKLIN FIERTZE _</pattern> 
+	<template><srai>FRANKLIN</srai></template>
+</category>
+<category> 
+	<pattern>_ ABOUT FRANKLIN _</pattern> 
+	<template><srai>FRANKLIN</srai></template>
+</category>
+<category> 
+	<pattern>_ ABOUT FRANKLIN</pattern> 
+	<template><srai>FRANKLIN</srai></template>
+</category>
+<category>
+	<pattern>ELMINSTYR</pattern>
+	<template>Elminstyr Exonar is the loan officer at the bank.</template>
+</category>
+<category> 
+	<pattern>_ ELMINSTYR EXONAR _</pattern> 
+	<template><srai>ELMINSTYR</srai></template>
+</category>
+<category> 
+	<pattern>_ ABOUT ELMINSTYR _</pattern> 
+	<template><srai>ELMINSTYR</srai></template>
+</category>
+<category> 
+	<pattern>_ ABOUT ELMINSTYR</pattern> 
+	<template><srai>ELMINSTYR</srai></template>
+</category>
+<category>
+	<pattern>BRITNEY</pattern>
+	<template>Briteny Luminos is the receptionist found just inside the entrance of the bank.</template>
+</category>
+<category> 
+	<pattern>_ BRITNEY LUMINOS _</pattern> 
+	<template><srai>BRITNEY</srai></template>
+</category>
+<category> 
+	<pattern>_ ABOUT BRITNEY _</pattern> 
+	<template><srai>BRITNEY</srai></template>
+</category>
+<category> 
+	<pattern>_ ABOUT BRITNEY</pattern> 
+	<template><srai>BRITNEY</srai></template>
+</category>
+<category>
+	<pattern>TRACY</pattern>
+	<template>If you must speak with the manager of the bank, Tracy Helstein, then look for her on the first floor of the bank.</template>
+</category>
+<category> 
+	<pattern>_ TRACY HELSTEIN _</pattern> 
+	<template><srai>TRACY</srai></template>
+</category>
+<category> 
+	<pattern>_ ABOUT TRACY _</pattern> 
+	<template><srai>TRACY</srai></template>
+</category>
+<category> 
+	<pattern>_ ABOUT TRACY</pattern> 
+	<template><srai>TRACY</srai></template>
+</category>
+<category> 
+	<pattern>ALISANDRA</pattern> 
+	<template>If I recall correctly, I have seen an Alisandra Cascarino wandering the island.</template>
+</category>
+<category> 
+	<pattern>_ ALISANDRA CASCARINO _</pattern> 
+	<template><srai>ALISANDRA</srai></template>
+</category>
+<category> 
+	<pattern>_ ABOUT ALISANDRA _</pattern> 
+	<template><srai>ALISANDRA</srai></template>
+</category>
+<category> 
+	<pattern>_ ABOUT ALISANDRA</pattern> 
+	<template><srai>ALISANDRA</srai></template>
+</category>
+<!--Location Knowledge-->
+<category> 
+	<pattern>WHERE IS ALISANDRA</pattern> 
+	<template>Alisandra is a student that does not keep to one place. I have seen her loiter around the benches in front of the library, and at the gazebo near the grocery.</template>
+</category>
+<category> 
+	<pattern>WHERE IS ALISANDRA _</pattern> 
+	<template><srai>WHERE IS ALISANDRA</srai></template>
+</category>
+<category> 
+	<pattern>WHERE IS CASCARINO</pattern> 
+	<template><srai>WHERE IS ALISANDRA</srai></template>
+</category>
+<category> 
+	<pattern>WHERE IS CHESTERFIELD</pattern> 
+	<template>Look for Chesterfield on the second floor of the grocery.</template>
+</category>
+<category> 
+	<pattern>WHERE IS CHESTERFIELD _</pattern> 
+	<template><srai>WHERE IS CHESTERFIELD</srai></template>
+</category>
+<category> 
+	<pattern>WHERE IS WRIGGLESWORTH</pattern> 
+	<template><srai>WHERE IS CHESTERFIELD</srai></template>
+</category>
+<category> 
+	<pattern>WHERE IS TRACY</pattern> 
+	<template>Look for Tracy on the first floor of the bank.</template>
+</category>
+<category> 
+	<pattern>WHERE IS TRACY _</pattern> 
+	<template><srai>WHERE IS TRACY</srai></template>
+</category>
+<category> 
+	<pattern>WHERE IS HELSTEIN</pattern> 
+	<template><srai>WHERE IS TRACY</srai></template>
+</category>
+<category> 
+	<pattern>WHERE IS ORIANA</pattern> 
+	<template>Oriana should be tending to the grocery.</template>
+</category>
+<category> 
+	<pattern>WHERE IS ORIANA _</pattern> 
+	<template><srai>WHERE IS ORIANA</srai></template>
+</category>
+<category> 
+	<pattern>WHERE IS INGLEWOOD</pattern> 
+	<template><srai>WHERE IS ORIANA</srai></template>
+</category>
+<category> 
+	<pattern>WHERE IS FRANKLIN</pattern> 
+	<template>Find Franklin on the first floor of the bank.</template>
+</category>
+<category> 
+	<pattern>WHERE IS FRANKLIN _</pattern> 
+	<template><srai>WHERE IS FRANKLIN</srai></template>
+</category>
+<category> 
+	<pattern>WHERE IS FIERTZE</pattern> 
+	<template><srai>WHERE IS FRANKLIN</srai></template>
+</category>
+<category> 
+	<pattern>WHERE IS BRITNEY</pattern> 
+	<template>Britney may be found just inside the entrance of the bank.</template>
+</category>
+<category> 
+	<pattern>WHERE IS BRITNEY _</pattern> 
+	<template><srai>WHERE IS BRITNEY</srai></template>
+</category>
+<category> 
+	<pattern>WHERE IS LUMINOS</pattern> 
+	<template><srai>WHERE IS BRITNEY</srai></template>
+</category>
+<category> 
+	<pattern>WHERE IS ELMINSTYR</pattern> 
+	<template>Elminstyr should be on the second floor of the bank.</template>
+</category>
+<category> 
+	<pattern>WHERE IS ELMINSTYR _</pattern> 
+	<template><srai>WHERE IS ELMINSTYR</srai></template>
+</category>
+<category> 
+	<pattern>WHERE IS EXONAR</pattern> 
+	<template><srai>WHERE IS ELMINSTYR</srai></template>
+</category>
+<!--Extra Knowledge-->
+<category> 
+	<pattern>WHAT DOES ALISANDRA CASCARINO DO</pattern> 
+	<template>She is a student at Baker College. You can find her walking around Baker Island. She sometimes comes into Baker Foods to buy a few items.</template>
+</category>
+<category> 
+	<pattern>WHAT DOES CHESTERFIELD WRIGGLESWORTH DO</pattern> 
+	<template>Chesterfield is the manager at Baker Foods.</template>
+</category>
+<category> 
+	<pattern>WHAT DOES TRACY HELSTEIN DO</pattern> 
+	<template>Tracy is the manager at the Baker Bank.</template>
+</category>
+<category> 
+	<pattern>WHAT DOES ORIANA INGLEWOOD DO</pattern> 
+	<template>Oriana works as the clerk here at Baker Foods.</template>
+</category>
+<category> 
+	<pattern>WHAT DOES FRANKLIN FIERTZE DO</pattern> 
+	<template>Franklin works as a teller at Baker Bank.</template>
+</category>
+<category> 
+	<pattern>WHAT DOES BRITNEY LUMINOS DO</pattern> 
+	<template>Britney is the receptionist at Baker Bank.</template>
+</category>
+<category> 
+	<pattern>WHAT DOES ELMINSTYR EXONAR DO</pattern> 
+	<template>Elminstyr is the Baker Bank loan officer.</template>
+</category>
+<category> 
+	<pattern>WHAT DOES ALISANDRA DO</pattern> 
+	<template><srai>WHAT DOES ALISANDRA CASCARINO DO</srai></template>
+</category>
+<category> 
+	<pattern>WHAT DOES CHESTERFIELD DO</pattern> 
+	<template><srai>WHAT DOES CHESTERFIELD WRIGGLESWORTH DO</srai></template>
+</category>
+<category> 
+	<pattern>WHAT DOES TRACY DO</pattern> 
+	<template><srai>WHAT DOES TRACY HELSTEIN DO</srai></template>
+</category>
+<category> 
+	<pattern>WHAT DOES ORIANA DO</pattern> 
+	<template><srai>WHAT DOES ORIANA INGLEWOOD DO</srai></template>
+</category>
+<category> 
+	<pattern>WHAT DOES FRANKLIN DO</pattern> 
+	<template><srai>WHAT DOES FRANKLIN FIERTZE DO</srai></template>
+</category>
+<category> 
+	<pattern>WHAT DOES BRITNEY DO</pattern> 
+	<template><srai>WHAT DOES BRITNEY LUMINOS DO</srai></template>
+</category>
+<category> 
+	<pattern>WHAT DOES ELMINSTYR DO</pattern> 
+	<template><srai>WHAT DOES ELMINSTYR EXONAR DO</srai></template>
+</category>
+<category> 
+	<pattern>MANAGERS</pattern> 
+	<template>Chesterfield the manager at Baker foods and Tracy is the manager at Baker Bank.</template>
+</category>
+<category> 
+	<pattern>WHO ARE THE MANAGERS</pattern> 
+	<template><srai>MANAGERS</srai></template>
+</category>
+<category> 
+	<pattern>RECEPTIONIST</pattern> 
+	<template>Britney is the receptionist at Baker Bank.</template>
+</category>
+<category> 
+	<pattern>WHO IS A RECEPTIONIST</pattern> 
+	<template><srai>RECEPTIONIST</srai></template>
+</category>
+<category> 
+	<pattern>LOAN OFFICER</pattern> 
+	<template>Elminstyr is the loan officer at Baker Bank.</template>
+</category>
+<category> 
+	<pattern>WHO IS A LOAN OFFICER</pattern> 
+	<template><srai>LOAN OFFICER</srai></template>
+</category>
+<category> 
+	<pattern>TELLER</pattern> 
+	<template>Franklin is the teller at Baker Bank.</template>
+</category>
+<category> 
+	<pattern>WHO IS A TELLER</pattern> 
+	<template><srai>TELLER</srai></template>
+</category>
+<category> 
+	<pattern>STUDENTS</pattern> 
+	<template>I do not know many students, but from my knowledge Alisandra is a student.</template>
+</category>
+<category> 
+	<pattern>WHO ARE THE STUDENTS</pattern> 
+	<template><srai>STUDENTS</srai></template>
+</category>
+<category> 
+	<pattern>WHO WORKS AT BAKER FOODS</pattern> 
+	<template>From my knowledge only Oriana and Chesterfield works at Baker Foods.</template>
+</category>
+<category> 
+	<pattern>WHO WORKS AT BAKER BANK</pattern> 
+	<template>From my knowledge Tracy, Britney, Franklin, and Elminstyr, work at the Baker Bank.</template>
+</category>
+<category> 
+	<pattern>WHO WORKS AT THE BANK</pattern> 
+	<template><srai>WHO WORKS AT BAKER BANK</srai></template>
+</category>
+</aiml>
